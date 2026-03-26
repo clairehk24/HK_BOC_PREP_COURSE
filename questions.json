@@ -1,0 +1,149 @@
+{
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "mc1",
+      "type": "mc",
+      "category": "Domain 2: Assessment, Evaluation and Diagnosis",
+      "difficulty": "medium",
+      "prompt": "An athlete experiences a varus force on the proximal tibia. What type of fracture is he most likely to experience?",
+      "choices": ["Lateral", "Bicondylar", "Medial", "Bicondylar with soft tissue injuries"],
+      "answer": 2,
+      "rationale": ""
+    },
+    {
+      "id": "mc2",
+      "type": "mc",
+      "category": "Domain 1: Risk Reduction, Wellness and Health Literacy",
+      "difficulty": "medium",
+      "prompt": "Why are children at a greater risk for heat-related illness?",
+      "choices": ["They sweat more.", "They have higher subcutaneous fat stores.", "They have a reduced capacity to evaporate sweat.", "They have higher breathing rates."],
+      "answer": 2,
+      "rationale": ""
+    },
+    {
+      "id": "ms1",
+      "type": "ms",
+      "category": "Domain 3: Critical Incident Management",
+      "difficulty": "medium",
+      "prompt": "Which of the following are typical symptoms of someone suffering from acute stroke?",
+      "choices": ["numbness or weakness of the face, arm, or leg", "confusion, speech problems, and cognitive defects", "normal vision", "impaired coordination and walking"],
+      "answer": [0, 1, 3],
+      "rationale": ""
+    },
+    {
+      "id": "ms2",
+      "type": "ms",
+      "category": "Domain 2: Assessment, Evaluation and Diagnosis",
+      "difficulty": "hard",
+      "prompt": "Which of the following accurately describes fibromyalgia? Select all that apply.",
+      "choices": [
+        "characterized by local tissue injury",
+        "only occurs in patients with depression",
+        "responds well to most interventions with known analgesic effects",
+        "characterized by widespread muscle, joint, and connective tissue pain",
+        "occurs in the absence of tissue injury"
+      ],
+      "answer": [3, 4],
+      "rationale": ""
+    },
+    {
+      "id": "dd1",
+      "type": "dd",
+      "category": "Domain 2: Assessment, Evaluation and Diagnosis",
+      "difficulty": "medium",
+      "prompt": "Type: Matching drag drop\n\nMatch the pain with the structure and pathology.",
+      "dd": {
+        "tokens": ["musculoskeletal pain", "chronic inflammation", "serious pathology", "lumbar stenosis", "bone pain"],
+        "zones": [
+          { "label": "pain that decreases at rest", "accept": "musculoskeletal pain" },
+          { "label": "morning pain that decreases with movement", "accept": "chronic inflammation" },
+          { "label": "pain at night that is intractable", "accept": "serious pathology" },
+          { "label": "pain that occurs with walking but is relieved when seated", "accept": "lumbar stenosis" },
+          { "label": "pain at rest and during activity", "accept": "bone pain" }
+        ]
+      },
+      "rationale": ""
+    },
+    {
+      "id": "dd2",
+      "type": "dd",
+      "category": "Domain 2: Assessment, Evaluation and Diagnosis",
+      "difficulty": "medium",
+      "prompt": "Type: Matching drag drop\n\nMatch the motor function.",
+      "dd": {
+        "tokens": ["C2", "C4", "C6", "C8"],
+        "zones": [
+          { "label": "cervical extension", "accept": "C2" },
+          { "label": "shoulder shrug", "accept": "C4" },
+          { "label": "elbow flexion and wrist extension", "accept": "C6" },
+          { "label": "thumb extension", "accept": "C8" }
+        ]
+      },
+      "rationale": ""
+    },
+    {
+      "id": "hs_knee1",
+      "type": "hs",
+      "category": "Domain 2: Assessment, Evaluation and Diagnosis",
+      "difficulty": "medium",
+      "prompt": "During the evaluation of a patients knee injury the athletic trainer palpates the tibial tuberosity. On the image below, identify the tibial tuberosity.\n\nUse your mouse and click/drag the circle to the area/region to be identified. You may reposition the circle until you are satisfied with its placement.",
+      "hs": {
+        "imageSrc": "images/Knee_cap.png",
+        "tolerancePct": 6,
+        "answer": { "xPct": 52.3, "yPct": 78.9 }
+      },
+      "rationale": ""
+    },
+    {
+      "id": "ft1",
+      "type": "ft",
+      "category": "Domain 2: Assessment, Evaluation and Diagnosis",
+      "difficulty": "hard",
+      "title": "Focused testlet",
+      "scenario": "A 70-year-old client presents to your clinic with shoulder pain that is worse at night. The client does not remember any trauma and reports insidious onset. Her AROM is limited in shoulder flexion and abduction. She has a positive painful arc and has weakness in abduction and external rotation.",
+      "questions": [
+        {
+          "id": "ft1_q1",
+          "type": "ms",
+          "prompt": "1. What are the most appropriate special tests to perform. Select all that apply.",
+          "choices": ["Spurling’s", "Apprehension test", "Empty can", "Crank test"],
+          "answer": [2],
+          "rationale": ""
+        },
+        {
+          "id": "ft1_q2",
+          "type": "mc",
+          "prompt": "No change in symptoms is noted with the Spurling’s test, apprehension test, or crank test. The empty can test was positive.\n\n2. Based on the noted shoulder weakness and positive special test, the most likely diagnosis is",
+          "choices": ["rotator cuff tear", "radiculopathy", "partial radiculopathy", "inconclusive (further testing needed)"],
+          "answer": 0,
+          "rationale": ""
+        },
+        {
+          "id": "ft1_q3",
+          "type": "ms",
+          "prompt": "3. You would like to start your patient on AAROM exercises for home. What are the most appropriate exercises for your patient to perform at home? Select all that apply.",
+          "choices": ["wall climbs using fingers to assist", "pendulums", "bilateral shoulder flexion using a cane", "wall push-ups"],
+          "answer": [0, 2],
+          "rationale": ""
+        },
+        {
+          "id": "ft1_q4",
+          "type": "mc",
+          "prompt": "4. (Placeholder) Add your 4th testlet question here.",
+          "choices": ["Option A", "Option B", "Option C", "Option D"],
+          "answer": 0,
+          "rationale": ""
+        },
+        {
+          "id": "ft1_q5",
+          "type": "ms",
+          "prompt": "5. (Placeholder) Add your 5th testlet question here. Select all that apply.",
+          "choices": ["Option A", "Option B", "Option C", "Option D"],
+          "answer": [0],
+          "rationale": ""
+        }
+      ]
+    }
+  ]
+}

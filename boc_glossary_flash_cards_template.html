@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOC Exam Prep Course | Glossary Term Flash Cards</title>
+  <style>
+    :root {
+      --primary: #243B53;
+      --secondary: #486581;
+      --accent: #BCCCDC;
+      --background: #F5F7FA;
+      --surface: #FFFFFF;
+      --text: #102A43;
+      --muted: #7B8794;
+      --border: #D9E2EC;
+
+      --radius: 12px;
+      --radius-sm: 8px;
+      --shadow: 0 4px 12px rgba(16, 42, 67, 0.08);
+
+      --max-width: 1100px;
+      --transition: 0.25s ease;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color var(--transition);
+    }
+
+    a:hover,
+    a:focus {
+      color: var(--secondary);
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: 1px solid var(--primary);
+      border-radius: var(--radius-sm);
+      padding: 12px 18px;
+      font-size: 0.98rem;
+      font-weight: 700;
+      transition: all var(--transition);
+    }
+
+    button:focus,
+    a:focus,
+    .card:focus {
+      outline: 3px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    button.primary {
+      background-color: var(--primary);
+      color: var(--surface);
+    }
+
+    button.primary:hover {
+      background-color: var(--secondary);
+      border-color: var(--secondary);
+    }
+
+    button.secondary {
+      background-color: var(--surface);
+      color: var(--primary);
+      border-color: var(--border);
+    }
+
+    button.secondary:hover {
+      background-color: var(--accent);
+      border-color: var(--secondary);
+    }
+
+    button.danger {
+      background-color: var(--surface);
+      color: var(--primary);
+      border-color: var(--border);
+    }
+
+    button.danger:hover {
+      background-color: var(--accent);
+      border-color: var(--secondary);
+    }
+
+    button.active {
+      background-color: var(--secondary);
+      color: var(--surface);
+      border-color: var(--secondary);
+    }
+
+    button:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+    }
+
+    .site-header {
+      background-color: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 20px;
+    }
+
+    .site-header-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .site-title {
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .site-subtitle {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .container {
+      width: 90%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+      flex: 1;
+    }
+
+    .section {
+      margin-bottom: 28px;
+    }
+
+    .card-panel {
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+    }
+
+    .page-intro h1 {
+      font-size: 2.2rem;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .page-intro p {
+      color: var(--muted);
+      max-width: 780px;
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-size: 1.35rem;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .section-text {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .button-secondary-link {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: var(--surface);
+      color: var(--primary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      transition: all var(--transition);
+    }
+
+    .button-secondary-link:hover,
+    .button-secondary-link:focus {
+      background-color: var(--accent);
+      border-color: var(--secondary);
+      color: var(--primary);
+    }
+
+    .toolbar,
+    .study-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .toolbar-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--primary);
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 20px;
+      align-items: start;
+    }
+
+    .flashcard {
+      position: relative;
+      min-height: 340px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background-color: var(--surface);
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 28px 24px;
+      cursor: pointer;
+      user-select: none;
+      overflow: hidden;
+    }
+
+    .flashcard::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 6px;
+      background: var(--primary);
+    }
+
+    .flashcard.back::before {
+      background: var(--secondary);
+    }
+
+    .badge,
+    .badge-right {
+      position: absolute;
+      top: 14px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--primary);
+    }
+
+    .badge {
+      left: 14px;
+    }
+
+    .badge-right {
+      right: 14px;
+    }
+
+    .card-text {
+      font-size: 1.7rem;
+      line-height: 1.35;
+      color: var(--text);
+      white-space: pre-wrap;
+    }
+
+    .card-hint {
+      margin-top: 16px;
+      font-size: 0.98rem;
+      color: var(--muted);
+    }
+
+    .divider {
+      height: 1px;
+      background-color: var(--border);
+      margin: 22px 0;
+      border: 0;
+    }
+
+    .study-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .study-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: flex-start;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      background: var(--surface);
+    }
+
+    .study-item strong {
+      display: block;
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+
+    .study-item small {
+      color: var(--muted);
+      display: block;
+    }
+
+    .study-item .actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .site-footer {
+      background-color: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 18px 20px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .footer-link {
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .page-intro h1 {
+        font-size: 1.9rem;
+      }
+
+      .flashcard {
+        min-height: 280px;
+      }
+
+      .card-text {
+        font-size: 1.4rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .site-title {
+        font-size: 1.5rem;
+      }
+
+      .card-panel {
+        padding: 22px;
+      }
+
+      .toolbar,
+      .study-toolbar {
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="site-title">BOC Exam Prep Course</div>
+      <div class="site-subtitle">Exam preparation resources for athletic training learners</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-intro section">
+      <a class="button-secondary-link" href="index.html">Back to Home</a>
+      <h1 style="margin-top: 20px;">Glossary Term Flash Cards</h1>
+      <p>
+        Use this page to study key glossary terms for the BOC Exam Prep Course.
+        Replace the placeholder flash cards below with your final glossary content.
+      </p>
+      <p>
+        Learners can flip each card, move through the deck, shuffle the order,
+        and save cards into a custom study set.
+      </p>
+    </section>
+
+    <section class="card-panel section" aria-label="Directions">
+      <h2 class="section-title">How to Use</h2>
+      <p class="section-text">
+        Click the flash card to flip between the term and definition. Use the navigation
+        buttons to move through the deck. Select <strong>Add to My Study</strong> to save
+        a card into the custom study deck on the right.
+      </p>
+    </section>
+
+    <section class="card-panel section">
+      <div class="toolbar">
+        <div class="toolbar-group">
+          <span class="pill" id="deckCountPill">5 cards in deck</span>
+          <span class="pill" id="viewPill">Viewing: Main Deck</span>
+        </div>
+
+        <div class="toolbar-group">
+          <button id="shuffleBtn" class="primary" type="button">Shuffle</button>
+          <button id="resetDeckBtn" class="secondary" type="button">Reset Study Deck</button>
+          <button id="clearStateBtn" class="danger" type="button">Clear Saved Data</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <section class="card-panel" aria-label="Study flashcards">
+        <div class="study-toolbar" style="margin-bottom: 14px;">
+          <h2 class="section-title" style="margin-bottom: 0;">Study Deck</h2>
+          <div class="toolbar-group">
+            <button id="viewSelectionBtn" type="button" class="active">Main Deck</button>
+            <button id="viewMyStudyBtn" type="button" class="secondary">My Study Deck</button>
+          </div>
+        </div>
+
+        <div
+          id="card"
+          class="flashcard front"
+          role="button"
+          tabindex="0"
+          aria-live="polite"
+          aria-label="Flashcard. Click to flip."
+        >
+          <div class="badge" id="progress">1 / 5</div>
+          <div class="badge-right" id="metaBadge">Front</div>
+          <div class="card-text" id="cardText">Placeholder Term 1</div>
+          <div class="card-hint" id="cardHint">Click the card to view the definition.</div>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="toolbar">
+          <div class="toolbar-group">
+            <button id="prevBtn" type="button" class="secondary">◀ Prev</button>
+            <button id="flipBtn" type="button" class="primary">Flip</button>
+            <button id="nextBtn" type="button" class="secondary">Next ▶</button>
+          </div>
+
+          <div class="toolbar-group">
+            <button id="toggleStudyBtn" type="button" class="primary">Add to My Study</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="card-panel" aria-label="My Study deck">
+        <div class="study-toolbar">
+          <h2 class="section-title" style="margin-bottom: 0;">My Study Deck</h2>
+          <div class="toolbar-group">
+            <span class="pill" id="myCountPill">0 cards</span>
+            <button id="removeAllBtn" class="danger" type="button">Remove All</button>
+          </div>
+        </div>
+
+        <p class="section-text" style="margin-top: 8px;">
+          Saved cards will appear here. Select <strong>View</strong> to study the custom deck.
+        </p>
+
+        <div class="study-list" id="studyList" aria-label="My Study Deck list"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-link" href="copyright.html">Copyright Information</a>
+  </footer>
+
+  <script>
+    const DEFAULT_CARDS = [
+      {
+        id: "placeholder-1",
+        front: "Placeholder Term 1",
+        back: "Placeholder definition text goes here. Replace this with your first glossary definition."
+      },
+      {
+        id: "placeholder-2",
+        front: "Placeholder Term 2",
+        back: "Placeholder definition text goes here. Replace this with your second glossary definition."
+      },
+      {
+        id: "placeholder-3",
+        front: "Placeholder Term 3",
+        back: "Placeholder definition text goes here. Replace this with your third glossary definition."
+      },
+      {
+        id: "placeholder-4",
+        front: "Placeholder Term 4",
+        back: "Placeholder definition text goes here. Replace this with your fourth glossary definition."
+      },
+      {
+        id: "placeholder-5",
+        front: "Placeholder Term 5",
+        back: "Placeholder definition text goes here. Replace this with your fifth glossary definition."
+      }
+    ];
+
+    const STORAGE_KEY = "bocFlashcardsState";
+
+    const elCard = document.getElementById("card");
+    const elCardText = document.getElementById("cardText");
+    const elCardHint = document.getElementById("cardHint");
+    const elProgress = document.getElementById("progress");
+    const elMetaBadge = document.getElementById("metaBadge");
+    const elDeckCountPill = document.getElementById("deckCountPill");
+    const elViewPill = document.getElementById("viewPill");
+    const elMyCountPill = document.getElementById("myCountPill");
+    const elStudyList = document.getElementById("studyList");
+
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+    const flipBtn = document.getElementById("flipBtn");
+    const shuffleBtn = document.getElementById("shuffleBtn");
+    const resetDeckBtn = document.getElementById("resetDeckBtn");
+    const clearStateBtn = document.getElementById("clearStateBtn");
+    const toggleStudyBtn = document.getElementById("toggleStudyBtn");
+    const removeAllBtn = document.getElementById("removeAllBtn");
+    const viewSelectionBtn = document.getElementById("viewSelectionBtn");
+    const viewMyStudyBtn = document.getElementById("viewMyStudyBtn");
+
+    let mainDeck = [...DEFAULT_CARDS];
+    let myStudyIds = [];
+    let currentIndex = 0;
+    let showingBack = false;
+    let viewMode = "main";
+
+    function saveState() {
+      const payload = {
+        mainDeck,
+        myStudyIds,
+        currentIndex,
+        showingBack,
+        viewMode
+      };
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+    }
+
+    function loadState() {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return;
+
+      try {
+        const state = JSON.parse(raw);
+        if (Array.isArray(state.mainDeck) && state.mainDeck.length) mainDeck = state.mainDeck;
+        if (Array.isArray(state.myStudyIds)) myStudyIds = state.myStudyIds;
+        if (typeof state.currentIndex === "number") currentIndex = state.currentIndex;
+        if (typeof state.showingBack === "boolean") showingBack = state.showingBack;
+        if (state.viewMode === "main" || state.viewMode === "mystudy") viewMode = state.viewMode;
+      } catch (err) {
+        console.error("Could not load saved flash card state.", err);
+      }
+    }
+
+    function getMyStudyDeck() {
+      return mainDeck.filter(card => myStudyIds.includes(card.id));
+    }
+
+    function getActiveDeck() {
+      return viewMode === "mystudy" ? getMyStudyDeck() : mainDeck;
+    }
+
+    function ensureValidIndex() {
+      const deck = getActiveDeck();
+      if (deck.length === 0) {
+        currentIndex = 0;
+      } else if (currentIndex >= deck.length) {
+        currentIndex = deck.length - 1;
+      } else if (currentIndex < 0) {
+        currentIndex = 0;
+      }
+    }
+
+    function updateButtons() {
+      const deck = getActiveDeck();
+      const inMyStudy = deck.length && myStudyIds.includes(deck[currentIndex]?.id || "");
+
+      viewSelectionBtn.className = viewMode === "main" ? "active" : "secondary";
+      viewMyStudyBtn.className = viewMode === "mystudy" ? "active" : "secondary";
+
+      elViewPill.textContent = `Viewing: ${viewMode === "mystudy" ? "My Study Deck" : "Main Deck"}`;
+      elDeckCountPill.textContent = `${mainDeck.length} cards in deck`;
+      elMyCountPill.textContent = `${myStudyIds.length} card${myStudyIds.length === 1 ? "" : "s"}`;
+
+      prevBtn.disabled = deck.length === 0;
+      nextBtn.disabled = deck.length === 0;
+      flipBtn.disabled = deck.length === 0;
+      toggleStudyBtn.disabled = deck.length === 0;
+      removeAllBtn.disabled = myStudyIds.length === 0;
+
+      if (deck.length === 0) {
+        toggleStudyBtn.textContent = "Add to My Study";
+      } else {
+        toggleStudyBtn.textContent = inMyStudy ? "Remove from My Study" : "Add to My Study";
+      }
+    }
+
+    function renderStudyList() {
+      const myStudyDeck = getMyStudyDeck();
+      elStudyList.innerHTML = "";
+
+      if (myStudyDeck.length === 0) {
+        const empty = document.createElement("p");
+        empty.className = "section-text";
+        empty.textContent = "No cards have been added yet.";
+        elStudyList.appendChild(empty);
+        return;
+      }
+
+      myStudyDeck.forEach(card => {
+        const item = document.createElement("div");
+        item.className = "study-item";
+
+        const textWrap = document.createElement("div");
+        textWrap.innerHTML = `<strong>${card.front}</strong><small>${card.back}</small>`;
+
+        const actions = document.createElement("div");
+        actions.className = "actions";
+
+        const viewBtn = document.createElement("button");
+        viewBtn.type = "button";
+        viewBtn.className = "secondary";
+        viewBtn.textContent = "View";
+        viewBtn.addEventListener("click", () => {
+          viewMode = "mystudy";
+          showingBack = false;
+          const myDeck = getMyStudyDeck();
+          currentIndex = myDeck.findIndex(item => item.id === card.id);
+          if (currentIndex < 0) currentIndex = 0;
+          render();
+        });
+
+        const removeBtn = document.createElement("button");
+        removeBtn.type = "button";
+        removeBtn.className = "danger";
+        removeBtn.textContent = "Remove";
+        removeBtn.addEventListener("click", () => {
+          myStudyIds = myStudyIds.filter(id => id !== card.id);
+          ensureValidIndex();
+          render();
+        });
+
+        actions.appendChild(viewBtn);
+        actions.appendChild(removeBtn);
+        item.appendChild(textWrap);
+        item.appendChild(actions);
+        elStudyList.appendChild(item);
+      });
+    }
+
+    function renderCard() {
+      const deck = getActiveDeck();
+      ensureValidIndex();
+
+      if (deck.length === 0) {
+        elCard.classList.remove("back");
+        elCard.classList.add("front");
+        elProgress.textContent = "0 / 0";
+        elMetaBadge.textContent = "Empty";
+        elCardText.textContent = viewMode === "mystudy"
+          ? "No cards have been added to My Study yet."
+          : "No flash cards are available.";
+        elCardHint.textContent = "Add cards to begin studying.";
+        return;
+      }
+
+      const card = deck[currentIndex];
+      elProgress.textContent = `${currentIndex + 1} / ${deck.length}`;
+      elMetaBadge.textContent = showingBack ? "Back" : "Front";
+      elCardText.textContent = showingBack ? card.back : card.front;
+      elCardHint.textContent = showingBack
+        ? "Click the card to return to the term."
+        : "Click the card to view the definition.";
+
+      elCard.classList.toggle("back", showingBack);
+      elCard.classList.toggle("front", !showingBack);
+    }
+
+    function render() {
+      ensureValidIndex();
+      renderCard();
+      renderStudyList();
+      updateButtons();
+      saveState();
+    }
+
+    function flipCard() {
+      if (!getActiveDeck().length) return;
+      showingBack = !showingBack;
+      render();
+    }
+
+    function goNext() {
+      const deck = getActiveDeck();
+      if (!deck.length) return;
+      currentIndex = (currentIndex + 1) % deck.length;
+      showingBack = false;
+      render();
+    }
+
+    function goPrev() {
+      const deck = getActiveDeck();
+      if (!deck.length) return;
+      currentIndex = (currentIndex - 1 + deck.length) % deck.length;
+      showingBack = false;
+      render();
+    }
+
+    function shuffleDeck() {
+      for (let i = mainDeck.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [mainDeck[i], mainDeck[j]] = [mainDeck[j], mainDeck[i]];
+      }
+      currentIndex = 0;
+      showingBack = false;
+      render();
+    }
+
+    function toggleStudyCard() {
+      const deck = getActiveDeck();
+      if (!deck.length) return;
+
+      const card = deck[currentIndex];
+      if (myStudyIds.includes(card.id)) {
+        myStudyIds = myStudyIds.filter(id => id !== card.id);
+      } else {
+        myStudyIds.push(card.id);
+      }
+
+      render();
+    }
+
+    function resetStudyDeck() {
+      myStudyIds = [];
+      if (viewMode === "mystudy") viewMode = "main";
+      currentIndex = 0;
+      showingBack = false;
+      render();
+    }
+
+    function clearSavedData() {
+      localStorage.removeItem(STORAGE_KEY);
+      mainDeck = [...DEFAULT_CARDS];
+      myStudyIds = [];
+      currentIndex = 0;
+      showingBack = false;
+      viewMode = "main";
+      render();
+    }
+
+    elCard.addEventListener("click", flipCard);
+    flipBtn.addEventListener("click", flipCard);
+    nextBtn.addEventListener("click", goNext);
+    prevBtn.addEventListener("click", goPrev);
+    shuffleBtn.addEventListener("click", shuffleDeck);
+    toggleStudyBtn.addEventListener("click", toggleStudyCard);
+    resetDeckBtn.addEventListener("click", resetStudyDeck);
+    clearStateBtn.addEventListener("click", clearSavedData);
+    removeAllBtn.addEventListener("click", resetStudyDeck);
+
+    viewSelectionBtn.addEventListener("click", () => {
+      viewMode = "main";
+      currentIndex = 0;
+      showingBack = false;
+      render();
+    });
+
+    viewMyStudyBtn.addEventListener("click", () => {
+      viewMode = "mystudy";
+      currentIndex = 0;
+      showingBack = false;
+      render();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowRight") goNext();
+      if (event.key === "ArrowLeft") goPrev();
+      if (event.key === " " || event.key === "Spacebar") {
+        event.preventDefault();
+        flipCard();
+      }
+    });
+
+    loadState();
+    render();
+  </script>
+</body>
+</html>

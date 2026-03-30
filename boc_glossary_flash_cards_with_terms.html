@@ -1,0 +1,1667 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOC Exam Prep Course | Glossary Term Flash Cards</title>
+    <style>
+      :root {
+        --primary: #243b53;
+        --secondary: #486581;
+        --accent: #bcccdc;
+        --background: #f5f7fa;
+        --surface: #ffffff;
+        --text: #102a43;
+        --muted: #7b8794;
+        --border: #d9e2ec;
+
+        --radius: 12px;
+        --radius-sm: 8px;
+        --shadow: 0 4px 12px rgba(16, 42, 67, 0.08);
+
+        --max-width: 1100px;
+        --transition: 0.25s ease;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: var(--background);
+        color: var(--text);
+        line-height: 1.6;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      a {
+        color: var(--primary);
+        text-decoration: none;
+        transition: color var(--transition);
+      }
+
+      a:hover,
+      a:focus {
+        color: var(--secondary);
+      }
+
+      button {
+        font-family: inherit;
+        cursor: pointer;
+        border: 1px solid var(--primary);
+        border-radius: var(--radius-sm);
+        padding: 12px 18px;
+        font-size: 0.98rem;
+        font-weight: 700;
+        transition: all var(--transition);
+      }
+
+      button:focus,
+      a:focus,
+      .card:focus {
+        outline: 3px solid var(--accent);
+        outline-offset: 2px;
+      }
+
+      button.primary {
+        background-color: var(--primary);
+        color: var(--surface);
+      }
+
+      button.primary:hover {
+        background-color: var(--secondary);
+        border-color: var(--secondary);
+      }
+
+      button.secondary {
+        background-color: var(--surface);
+        color: var(--primary);
+        border-color: var(--border);
+      }
+
+      button.secondary:hover {
+        background-color: var(--accent);
+        border-color: var(--secondary);
+      }
+
+      button.danger {
+        background-color: var(--surface);
+        color: var(--primary);
+        border-color: var(--border);
+      }
+
+      button.danger:hover {
+        background-color: var(--accent);
+        border-color: var(--secondary);
+      }
+
+      button.active {
+        background-color: var(--secondary);
+        color: var(--surface);
+        border-color: var(--secondary);
+      }
+
+      button:disabled {
+        opacity: 0.55;
+        cursor: not-allowed;
+      }
+
+      .site-header {
+        background-color: var(--surface);
+        border-bottom: 1px solid var(--border);
+        padding: 20px;
+      }
+
+      .site-header-inner {
+        max-width: var(--max-width);
+        margin: 0 auto;
+      }
+
+      .site-title {
+        font-size: 1.9rem;
+        font-weight: 700;
+        color: var(--primary);
+      }
+
+      .site-subtitle {
+        margin-top: 6px;
+        color: var(--muted);
+        font-size: 1rem;
+      }
+
+      .container {
+        width: 90%;
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 40px 20px 60px;
+        flex: 1;
+      }
+
+      .section {
+        margin-bottom: 28px;
+      }
+
+      .card-panel {
+        background-color: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        padding: 28px;
+      }
+
+      .page-intro h1 {
+        font-size: 2.2rem;
+        color: var(--primary);
+        margin-bottom: 12px;
+      }
+
+      .page-intro p {
+        color: var(--muted);
+        max-width: 780px;
+        margin-bottom: 10px;
+      }
+
+      .section-title {
+        font-size: 1.35rem;
+        color: var(--primary);
+        margin-bottom: 12px;
+      }
+
+      .section-text {
+        color: var(--muted);
+        font-size: 1rem;
+      }
+
+      .button-secondary-link {
+        display: inline-block;
+        padding: 12px 20px;
+        background-color: var(--surface);
+        color: var(--primary);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-sm);
+        font-weight: 700;
+        transition: all var(--transition);
+      }
+
+      .button-secondary-link:hover,
+      .button-secondary-link:focus {
+        background-color: var(--accent);
+        border-color: var(--secondary);
+        color: var(--primary);
+      }
+
+      .toolbar,
+      .study-toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .toolbar-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .pill {
+        display: inline-block;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background-color: var(--surface);
+        border: 1px solid var(--border);
+        color: var(--primary);
+        font-size: 0.95rem;
+        font-weight: 700;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 20px;
+        align-items: start;
+      }
+
+      .flashcard {
+        position: relative;
+        min-height: 340px;
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        background-color: var(--surface);
+        box-shadow: var(--shadow);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 28px 24px;
+        cursor: pointer;
+        user-select: none;
+        overflow: hidden;
+      }
+
+      .flashcard::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 6px;
+        background: var(--primary);
+      }
+
+      .flashcard.back::before {
+        background: var(--secondary);
+      }
+
+      .badge,
+      .badge-right {
+        position: absolute;
+        top: 14px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-size: 0.9rem;
+        font-weight: 700;
+        border: 1px solid var(--border);
+        background: var(--surface);
+        color: var(--primary);
+      }
+
+      .badge {
+        left: 14px;
+      }
+
+      .badge-right {
+        right: 14px;
+      }
+
+      .card-text {
+        font-size: 1.7rem;
+        line-height: 1.35;
+        color: var(--text);
+        white-space: pre-wrap;
+      }
+
+      .card-hint {
+        margin-top: 16px;
+        font-size: 0.98rem;
+        color: var(--muted);
+      }
+
+      .divider {
+        height: 1px;
+        background-color: var(--border);
+        margin: 22px 0;
+        border: 0;
+      }
+
+      .study-list {
+        display: grid;
+        gap: 10px;
+        margin-top: 16px;
+      }
+
+      .study-item {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: flex-start;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-sm);
+        padding: 12px 14px;
+        background: var(--surface);
+      }
+
+      .study-item strong {
+        display: block;
+        color: var(--primary);
+        margin-bottom: 4px;
+      }
+
+      .study-item small {
+        color: var(--muted);
+        display: block;
+      }
+
+      .study-item .actions {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      .site-footer {
+        background-color: var(--surface);
+        border-top: 1px solid var(--border);
+        padding: 18px 20px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .footer-link {
+        font-weight: 600;
+        color: var(--primary);
+      }
+
+      @media (max-width: 900px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .page-intro h1 {
+          font-size: 1.9rem;
+        }
+
+        .flashcard {
+          min-height: 280px;
+        }
+
+        .card-text {
+          font-size: 1.4rem;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .site-title {
+          font-size: 1.5rem;
+        }
+
+        .card-panel {
+          padding: 22px;
+        }
+
+        .toolbar,
+        .study-toolbar {
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <div class="site-title">BOC Exam Prep Course</div>
+        <div class="site-subtitle">Exam preparation resources for athletic training learners</div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="page-intro section">
+        <a class="button-secondary-link" href="index.html">Back to Home</a>
+        <h1 style="margin-top: 20px">Glossary Term Flash Cards</h1>
+        <p>Use this page to study key glossary terms for the BOC Exam Prep Course. This version has been populated with glossary terms and definitions from your Word document.</p>
+        <p>Learners can flip each card, move through the deck, shuffle the order, and save cards into a custom study set.</p>
+      </section>
+
+      <section class="card-panel section" aria-label="Directions">
+        <h2 class="section-title">How to Use</h2>
+        <p class="section-text">
+          Click the flash card to flip between the term and definition. Use the navigation buttons to move through the deck. Select
+          <strong>Add to My Study</strong>
+          to save a card into the custom study deck on the right.
+        </p>
+      </section>
+
+      <section class="card-panel section">
+        <div class="toolbar">
+          <div class="toolbar-group">
+            <span class="pill" id="deckCountPill">178 cards in deck</span>
+            <span class="pill" id="viewPill">Viewing: Main Deck</span>
+          </div>
+
+          <div class="toolbar-group">
+            <button id="shuffleBtn" class="primary" type="button">Shuffle</button>
+            <button id="resetDeckBtn" class="secondary" type="button">Reset Study Deck</button>
+            <button id="clearStateBtn" class="danger" type="button">Clear Saved Data</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <section class="card-panel" aria-label="Study flashcards">
+          <div class="study-toolbar" style="margin-bottom: 14px">
+            <h2 class="section-title" style="margin-bottom: 0">Study Deck</h2>
+            <div class="toolbar-group">
+              <button id="viewSelectionBtn" type="button" class="active">Main Deck</button>
+              <button id="viewMyStudyBtn" type="button" class="secondary">My Study Deck</button>
+            </div>
+          </div>
+
+          <div id="card" class="flashcard front" role="button" tabindex="0" aria-live="polite" aria-label="Flashcard. Click to flip.">
+            <div class="badge" id="progress">1 / 178</div>
+            <div class="badge-right" id="metaBadge">Front</div>
+            <div class="card-text" id="cardText">absolute refractory period</div>
+            <div class="card-hint" id="cardHint">Click the card to view the definition.</div>
+          </div>
+
+          <hr class="divider" />
+
+          <div class="toolbar">
+            <div class="toolbar-group">
+              <button id="prevBtn" type="button" class="secondary">◀ Prev</button>
+              <button id="flipBtn" type="button" class="primary">Flip</button>
+              <button id="nextBtn" type="button" class="secondary">Next ▶</button>
+            </div>
+
+            <div class="toolbar-group">
+              <button id="toggleStudyBtn" type="button" class="primary">Add to My Study</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="card-panel" aria-label="My Study deck">
+          <div class="study-toolbar">
+            <h2 class="section-title" style="margin-bottom: 0">My Study Deck</h2>
+            <div class="toolbar-group">
+              <span class="pill" id="myCountPill">0 cards</span>
+              <button id="removeAllBtn" class="danger" type="button">Remove All</button>
+            </div>
+          </div>
+
+          <p class="section-text" style="margin-top: 8px">
+            Saved cards will appear here. Select
+            <strong>View</strong>
+            to study the custom deck.
+          </p>
+
+          <div class="study-list" id="studyList" aria-label="My Study Deck list"></div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-link" href="copyright.html">Copyright Information</a>
+    </footer>
+
+    <script>
+      const DEFAULT_CARDS = [
+        {
+          id: "absolute-refractory-period",
+          front: "absolute refractory period",
+          back: "The time immediately following a stimulus when depolarization prevents another response of the muscle cell from occurring.",
+        },
+        {
+          id: "acceleration-phase",
+          front: "acceleration phase",
+          back: "That portion of swing in which momentum is increased and the non-weight-bearing limb has propulsion forward. Also known as early swing.",
+        },
+        {
+          id: "achondroplasia",
+          front: "achondroplasia",
+          back: "A hereditary condition signified by short limbs due to ossification of long bone cartilage.",
+        },
+        {
+          id: "action-peak",
+          front: "action peak",
+          back: "The second ground reaction force peak. The peak occurs during the last half of support and is usually less than impact peak.",
+        },
+        {
+          id: "action-potential",
+          front: "action potential",
+          back: "A brief nerve impulse created from a rapid change in the electrical membrane potential on a nerve or muscle cell’s surface to cause a nerve to reverse its polarity or a muscle cell to contract.",
+        },
+        {
+          id: "adhesive-capsulitis",
+          front: "adhesive capsulitis",
+          back: "A condition that generally occurs in the glenohumeral joint. Inflammation within the joint’s capsule causes capsular wall thickening and adherence. Loss of motion in the joint results. Also known as frozen shoulder.",
+        },
+        {
+          id: "afferent-muscle-nerve-fiber",
+          front: "afferent muscle nerve fiber",
+          back: "A sensory nerve fiber from the muscle spindle and Golgi tendon organ. There are two primary types, A and C fibers. C fibers are pain receptors; A fibers are tension and length receptors. Group III delta are A receptors that respond to pressure pain. Group I are A receptors: Group Ia form muscle spindle primary endings and Group Ib form Golgi tendon organs. Group II are A receptors and form muscle spindle secondary endings.",
+        },
+        {
+          id: "agonist-ic",
+          front: "agonist(ic)",
+          back: "A muscle acting as a prime mover to produce a motion.",
+        },
+        {
+          id: "airborne-contact",
+          front: "airborne contact",
+          back: "Occurs when a person inhales infected droplets that have become airborne (i.e., exposure to bacteria or virus through coughing and sneezing).",
+        },
+        {
+          id: "allogenic-graft",
+          front: "allogenic graft",
+          back: "A graft taken from one person and transplanted into another.",
+        },
+        {
+          id: "altered-mental-status-ams",
+          front: "altered mental status (AMS)",
+          back: "General term used to describe various changes in a patient’s mental functioning that can range from slight confusion to coma. These can include signs and symptoms such as confusion, amnesia, disorientation, and unusual or strange behavior.",
+        },
+        {
+          id: "ambri",
+          front: "AMBRI",
+          back: "Atraumatic, multidirectional, bilateral, rehabilitation effective, inferior capsular shift required. A condition of nontraumatic shoulder instability that is multidirectional but usually responds well to the conservative treatment of rehabilitation.",
+        },
+        {
+          id: "amortization-phase",
+          front: "amortization phase",
+          back: "The second phase of a plyometric activity that is the rapid transition from eccentric to concentric motion.",
+        },
+        {
+          id: "angiogenesis",
+          front: "angiogenesis",
+          back: "Formation of new blood vessels.",
+        },
+        {
+          id: "anatomical-snuffbox",
+          front: "anatomical snuffbox",
+          back: "The space at the base of the thumb created by the extensor pollicis longus and brevis tendons.",
+        },
+        {
+          id: "antagonist-ic",
+          front: "antagonist(ic)",
+          back: "A muscle that opposes the motion of another muscle.",
+        },
+        {
+          id: "antalgic-gait",
+          front: "antalgic gait",
+          back: "A painful or abnormal walking or running pattern.",
+        },
+        {
+          id: "anterior",
+          front: "anterior",
+          back: "The front or top surface of a limb.",
+        },
+        {
+          id: "anterior-cruciate-ligament",
+          front: "anterior cruciate ligament",
+          back: "A ligament crossing through the knee joint that attaches from the anterior tibia to the posterior femur. The anterior cruciate ligament limits anterior movement of the tibia from the femur as well as rotation of the tibia",
+        },
+        {
+          id: "areolar-loose-or-irregular-connective-tissue",
+          front: "areolar (loose or irregular) connective tissue",
+          back: "Loose connective tissue with unorganized structure and relatively long distances between cross-links.",
+        },
+        {
+          id: "arthrogenic-muscle-inhibition-ami",
+          front: "arthrogenic muscle inhibition (AMI)",
+          back: "Reflex inhibition of muscle activity following injury. It is thought to be a protective mechanism for the joint to reduce excessive stresses that could be applied by strong muscles surrounding the joint. Most often, AMI is discussed as it relates to quadriceps inhibition following knee joint injury.",
+        },
+        {
+          id: "arthrokinematics",
+          front: "arthrokinematics",
+          back: "The motions between the bones that make up a joint, including roll, slide, spin, compression, and distraction.",
+        },
+        {
+          id: "autogenic-inhibition",
+          front: "autogenic inhibition",
+          back: "A protective mechanism provided by the Golgi tendon organ, in which a Golgi tendon organ stimulus facilitated by a sudden stretch causes a reflex activation of the antagonist and relaxation of the agonist.",
+        },
+        {
+          id: "autologous-graft",
+          front: "autologous graft",
+          back: "A graft of articular cartilage and bone plug that is taken from the same joint as the damaged cartilage, but it is removed from a part of the joint that does not bear weight.",
+        },
+        {
+          id: "avulsion",
+          front: "avulsion",
+          back: "The tearing away of a tendon or ligament attachment from bone.",
+        },
+        {
+          id: "bankart-lesion",
+          front: "Bankart lesion",
+          back: "Tear of the capsulolabral complex from the glenoid rim.",
+        },
+        {
+          id: "baseball-finger",
+          front: "baseball finger",
+          back: "The colloquial term for an avulsion of the extensor digitorum tendon from the distal phalanx of the finger; also known as mallet finger.",
+        },
+        {
+          id: "bennett-s-fracture",
+          front: "Bennett’s fracture",
+          back: "A fracture of the first metacarpal.",
+        },
+        {
+          id: "blepharospasm",
+          front: "blepharospasm",
+          back: "Involuntary eyelid closure.",
+        },
+        {
+          id: "blindisms",
+          front: "blindisms",
+          back: "Repetitive movements like hand waving, rocking, or finger flicking. There is no inherent harm in displaying blindisms other than the social stigma.",
+        },
+        {
+          id: "blood-borne-pathogens",
+          front: "blood-borne pathogens",
+          back: "Pathogenic microorganisms that are present in human blood and can cause disease in humans. These pathogens include, but are not limited to, hepatitis B virus (HBV) and human immunodeficiency virus (HIV).",
+        },
+        {
+          id: "boutonniere-deformity",
+          front: "boutonniere deformity",
+          back: "Deformity characterized by flexion of the PIP joint and hyperextension of the DIP joint.",
+        },
+        {
+          id: "bowstringing",
+          front: "bowstringing",
+          back: "When the pulley system holding the tendon in place ruptures so the tendon is no longer in proximity to the bone and displays an appearance similar to that of an archer’s bowstring.",
+        },
+        {
+          id: "boxer-s-fracture",
+          front: "boxer’s fracture",
+          back: "Fracture of the metacarpals secondary to a compressive force.",
+        },
+        {
+          id: "bradykinin",
+          front: "bradykinin",
+          back: "A local tissue hormone that is activated by the interaction of proteases upon the Hageman factor. A very potent local vasodilator. It increases vascular permeability and stimulates local pain receptors.",
+        },
+        {
+          id: "cadence",
+          front: "cadence",
+          back: "Gait tempo measured in steps per minute.",
+        },
+        {
+          id: "chemokines",
+          front: "chemokines",
+          back: "Chemotactic cytokines that are secreted by a number of cells in a wound such as endothelium, fibroblasts, keratinocytes, neutrophils, and macrophages. They are primarily involved in preventing angiogenesis during clot formation and remodeling phases but promoting angiogenesis during inflammation and proliferation phases.",
+        },
+        {
+          id: "chemotaxis",
+          front: "chemotaxis",
+          back: "Movement of cells or chemicals in response to a chemical stimulus. Vital activities in wound healing that occur through complex and not totally understood processes.",
+        },
+        {
+          id: "claw-toes",
+          front: "claw toes",
+          back: "Toes that are extended at the metatarsophalangeal joints and flexed at the proximal and distal interphalangeal joints.",
+        },
+        {
+          id: "cogwheel-resistance",
+          front: "cogwheel resistance",
+          back: "An abnormal response during muscle testing that is observed as a series of catch-and-release tensions rather than a smooth resistance, indicative of the person’s providing a less-than-maximal effort.",
+        },
+        {
+          id: "collagen",
+          front: "collagen",
+          back: "Major structure of the body’s protein. There are five types in the body: Type I, the most abundant type, is high in tensile strength and is found in dermis, fascia, and bone; Type II is found in cartilage; Type III is found in embryonic connective tissue; Types IV and V are found in basement membranes. Forms inelastic bundles to provide structure, integrity, and tensile strength to tissues.",
+        },
+        {
+          id: "colles-fracture",
+          front: "Colles’ fracture",
+          back: "A fracture to the distal radius resulting from a fall on the outstretched hand with the wrist in a hyperextended position.",
+        },
+        {
+          id: "commission-on-accreditation-of-athletic-training-education-caate",
+          front: "Commission on Accreditation of Athletic Training Education (CAATE)",
+          back: "The accrediting agency for athletic training programs.",
+        },
+        {
+          id: "commotio-cordis",
+          front: "commotio cordis",
+          back: "Sudden arrhythmic death caused by an impact to the chest wall. It is mostly seen in athletes between the ages of 8 and 18 who play sports with projectiles, such as baseballs, hockey pucks, or lacrosse balls. The timing and location of the impact are important factors in determining whether or not an athlete will have this condition. Immediate CPR and defibrillation are imperative for preventing death; even with CPR and AED use, survival is rare.",
+        },
+        {
+          id: "compartment-syndrome",
+          front: "compartment syndrome",
+          back: "A significant rise in intracompartmental pressure caused by severe bleeding within a muscular compartment that can compromise neurovascular structures.",
+        },
+        {
+          id: "concave-on-convex-rule",
+          front: "concave-on-convex rule",
+          back: "Roll and slide occur in the same direction when a concave surface moves on a convex surface. Also called the concave–convex rule.",
+        },
+        {
+          id: "convex-on-concave-rule",
+          front: "convex-on-concave rule",
+          back: "Roll and slide occur in opposite directions when a convex surface moves on a concave surface. Also called the convex–concave rule.",
+        },
+        {
+          id: "counternutation",
+          front: "counternutation",
+          back: "Movement of the sacrum when the superior base moves posteriorly as the distal sacrum and coccyx move anteriorly. During counternutation, the iliac crests move apart and the ischial tuberosities move closer together. Opposite of nutation.",
+        },
+        {
+          id: "coxa-saltans",
+          front: "coxa saltans",
+          back: "Medical term for snapping hip.",
+        },
+        {
+          id: "coxa-valga",
+          front: "coxa valga",
+          back: "Femoral neck angulation greater than 135°.",
+        },
+        {
+          id: "coxa-vara",
+          front: "coxa vara",
+          back: "Femoral neck angulation less than 120°.",
+        },
+        {
+          id: "crepitus",
+          front: "crepitus",
+          back: "A cracking or grating sound or sensation caused by inflammation or degenerative changes.",
+        },
+        {
+          id: "cytokines",
+          front: "cytokines",
+          back: "An enzyme produced by newly formed epithelial cells and fibroblasts.",
+        },
+        {
+          id: "decorticate",
+          front: "decorticate",
+          back: "Abnormal posturing in which a person is stiff with flexed arms, clenched fists, and legs held out straight. The arms are flexed in toward the body and the wrists and fingers are bent and held on the chest.",
+        },
+        {
+          id: "de-quervain-s-disease",
+          front: "De Quervain’s disease",
+          back: "Tenosynovitis of the abductor pollicis longus and extensor pollicis brevis tendons and their sheaths on the radial side of the thumb.",
+        },
+        {
+          id: "double-crush-syndrome",
+          front: "double-crush syndrome",
+          back: "A condition in which an injury at one site produces signs and symptoms at another site.",
+        },
+        {
+          id: "double-float",
+          front: "double float",
+          back: "The nonsupport phase in a running stride.",
+        },
+        {
+          id: "double-limb-support",
+          front: "double-limb support",
+          back: "The point of the gait cycle that occurs at the beginning of the stance phase during heel strike for one leg and the end of the stance phase just before toe-off for the other.",
+        },
+        {
+          id: "duty-to-act",
+          front: "duty to act",
+          back: "The legal obligation to provide care once a professional relationship has been established.",
+        },
+        {
+          id: "early-swing",
+          front: "early swing",
+          back: "The first part of the swing phase of gait.",
+        },
+        {
+          id: "elastin",
+          front: "elastin",
+          back: "An essential protein of connective-tissue elastic structures. Arranged in a wavy orientation. The wavy arrangement allows tissue to change with stress and to resume normal conditions after stress removal. It plays an unknown role in the remodeling phase.",
+        },
+        {
+          id: "empty-can-test",
+          front: "empty can test",
+          back: "A test for injury to the supraspinatus muscle when the arm is abducted to 90° and placed in the scapular plane while downward resistance is applied.",
+        },
+        {
+          id: "epicondylalgia",
+          front: "epicondylalgia",
+          back: "An overuse injury of the elbow that displays with signs and symptoms that include pain over the epicondyle with gripping tasks. See also epicondylopathy.",
+        },
+        {
+          id: "epicondylopathy",
+          front: "epicondylopathy",
+          back: "An overuse injury to the tendinous attachments of the flexor/pronator group at the medial epicondyle or the extensor/supinator group at the lateral epicondyle. Also referred to as tennis elbow when it occurs on the lateral epicondyle and golfer’s elbow when it occurs on the medial elbow.",
+        },
+        {
+          id: "epicondylitis",
+          front: "epicondylitis",
+          back: "Inflammation of an epicondyle.",
+        },
+        {
+          id: "epinephrine",
+          front: "epinephrine",
+          back: "A hormone. Also called adrenaline. A potent stimulator of the sympathetic nervous system. It is also a powerful vasopressor, increasing blood pressure, stimulating the heart muscle, accelerating the heart rate, and increasing cardiac output. It also increases such metabolic activities as glycogenolysis and glucose release.",
+        },
+        {
+          id: "epiphysiolysis",
+          front: "epiphysiolysis",
+          back: "A medical injury or condition where the epiphysis loosens or separates from the bone shaft.",
+        },
+        {
+          id: "exertional-heat-stroke",
+          front: "exertional heat stroke",
+          back: "A life-threatening condition characterized by central nervous system dysfunction and core temperature above 40°C.",
+        },
+        {
+          id: "exostosis",
+          front: "exostosis",
+          back: "Abnormal bone growth",
+        },
+        {
+          id: "extracellular-matrix",
+          front: "extracellular matrix",
+          back: "The basic material from which tissue develops. Produced by fibroblasts in wounds. Composed of fibers and ground substance. Serves as a foundation on which anything is cast.",
+        },
+        {
+          id: "extrinsic-risk-factors",
+          front: "extrinsic risk factors",
+          back: "External factors such as environment, equipment, or training load that influence injury risk.",
+        },
+        {
+          id: "feiss-line",
+          front: "Feiss line",
+          back: "A line from the tip of the medial malleolus to the first metatarsal head. It is used as a point of reference to determine the relative position of the navicular tubercle.",
+        },
+        {
+          id: "fibrin",
+          front: "fibrin",
+          back: "Insoluble fibrous protein. Formed by fibrinogen. Important in clotting.",
+        },
+        {
+          id: "fibroblast",
+          front: "fibroblast",
+          back: "A connective-tissue cell. Fibroblasts differentiate into chondroblasts, osteoblasts, and collagenoblasts. They form the fibrous tissues to support and bind a variety of the body’s tissues.",
+        },
+        {
+          id: "forefoot-valgus",
+          front: "forefoot valgus",
+          back: "An eversion deformity of the midtarsal joint causing the medial forefoot to be lower than the lateral forefoot in non–weight bearing when viewed in the same plane as a perpendicular line bisecting the calcaneus.",
+        },
+        {
+          id: "forefoot-varus",
+          front: "forefoot varus",
+          back: "An inversion deformity of the midtarsal joint causing the medial forefoot to be higher than the lateral forefoot in non–weight bearing when viewed in the same plane as a perpendicular line bisecting the calcaneus.",
+        },
+        {
+          id: "form-closure",
+          front: "form closure",
+          back: "A term that refers to the stability of the pelvic ring that is provided by the structure and shape of the joints and their ligaments and bony components.",
+        },
+        {
+          id: "frog-s-eye",
+          front: "frog’s eye",
+          back: "Condition in which the patellae face outward in relation to each other rather than forward.",
+        },
+        {
+          id: "genu-recurvatum",
+          front: "genu recurvatum",
+          back: "Excessive knee hyperextension.",
+        },
+        {
+          id: "genu-valgus",
+          front: "genu valgus",
+          back: "Knee alignment in which the knees are angled toward each other. Also called genu valgum.",
+        },
+        {
+          id: "genu-varum",
+          front: "genu varum",
+          back: "Knee alignment in which the knees are bowed outward. Also called genu varus.",
+        },
+        {
+          id: "glasgow-coma-scale",
+          front: "Glasgow Coma Scale",
+          back: "A standardized neurological scale used to assess level of consciousness following head injury.",
+        },
+        {
+          id: "golgi-mazzoni-corpuscles",
+          front: "Golgi-Mazzoni corpuscles",
+          back: "These afferent receptors are located in joint capsules. They are stimulated by joint compression but not by joint motion. Any weight-bearing activity stimulates these slowly adapting receptors. They are not believed to play a role in proprioception except in the identification of joint compression.",
+        },
+        {
+          id: "golgi-tendon-organ-gto",
+          front: "Golgi tendon organ (GTO)",
+          back: "A stretch receptor found in series within the musculotendinous structure. It responds to muscle contraction more than to muscle stretch to signal force.",
+        },
+        {
+          id: "granulation-tissue",
+          front: "granulation tissue",
+          back: "Newly formed vascular tissue that is produced during wound healing. Consists of fibroblasts, macrophages, and neovascular structure within a base of connective-tissue matrix of collagen, hyaluronic acid, and fibronectin. It has the velvety appearance of small, red, nodular masses seen in new tissue. It eventually forms the cicatrix of the wound.",
+        },
+        {
+          id: "hallux-valgus",
+          front: "hallux valgus",
+          back: "A condition also known as a bunion. Present when the first metatarsophalangeal joint is greater than 10° in valgus, so that the first toe points laterally toward the other toes.",
+        },
+        {
+          id: "hammertoe",
+          front: "hammertoe",
+          back: "Condition in which the toe is extended at the metatarsophalangeal joint, flexed at the proximal interphalangeal joint, and extended at the distal interphalangeal joint.",
+        },
+        {
+          id: "heel-off",
+          front: "heel-off",
+          back: "The portion of the stance phase of the gait cycle in which the weight begins to transfer to the front of the foot and the heel is lifted off the floor. Also known as terminal stance.",
+        },
+        {
+          id: "heel-strike",
+          front: "heel strike",
+          back: "The portion of the stance phase of the gait cycle in which the heel first comes in contact with the floor. Also known as initial contact.",
+        },
+        {
+          id: "hematochezia",
+          front: "hematochezia",
+          back: "Vomiting of blood.",
+        },
+        {
+          id: "hemiarthroplasty",
+          front: "hemiarthroplasty",
+          back: "A joint replacement surgery in which only half of the joint is replaced.",
+        },
+        {
+          id: "heterotopic-ossification",
+          front: "heterotopic ossification",
+          back: "Benign process characterized by heterotopic ossification, or bone formation, within large muscles.",
+        },
+        {
+          id: "histamine",
+          front: "histamine",
+          back: "A local tissue hormone released by mast cells and granulocytes. Increases vascular permeability to proteins and fibronectin.",
+        },
+        {
+          id: "hooke-s-law",
+          front: "Hooke’s law",
+          back: "Law stating that the stress applied to a body to deform it is proportional to the strain as long as the body’s elasticity limit is not exceeded.",
+        },
+        {
+          id: "hyaluronic-acid",
+          front: "hyaluronic acid",
+          back: "A major component of early granulation tissue. Greatest amounts are seen in a wound during the first 4 to 5 days. Promotes cell movement and migration during repair. Stimulates fibroblast proliferation. Produces edema by absorbing large amounts of water to increase fibroblast migration.",
+        },
+        {
+          id: "hypoglycemia",
+          front: "hypoglycemia",
+          back: "An abnormally low blood glucose level that can impair neurological and physical function.",
+        },
+        {
+          id: "hypothermia",
+          front: "hypothermia",
+          back: "Core temperature below 35°C (95°F).",
+        },
+        {
+          id: "hysteresis",
+          front: "hysteresis",
+          back: "The process of tissue lengthening that results when the tissue cannot withstand forces that are progressively applied to it.",
+        },
+        {
+          id: "informed-consent",
+          front: "informed consent",
+          back: "The process of providing patients with information needed to make voluntary healthcare decisions.",
+        },
+        {
+          id: "initial-swing",
+          front: "initial swing",
+          back: "The first portion of the swing phase that includes early swing and acceleration.",
+        },
+        {
+          id: "intrinsic-risk-factors",
+          front: "intrinsic risk factors",
+          back: "Internal factors such as anatomy, age, biomechanics, or fitness level that predispose an individual to injury.",
+        },
+        {
+          id: "jump-sign",
+          front: "jump sign",
+          back: "A reflex response to a trigger point palpation that includes a wincing or withdrawal reaction by the patient.",
+        },
+        {
+          id: "keloid",
+          front: "keloid",
+          back: "Grossly excessive scar formation.",
+        },
+        {
+          id: "kinesthesia",
+          front: "kinesthesia",
+          back: "The ability to perceive position and the quantity and speed of movement.",
+        },
+        {
+          id: "lactic-acid",
+          front: "lactic acid",
+          back: "A by-product of muscle activity that leads to fatigue by reducing the muscle’s calcium-binding capacity and impairing glycogen breakdown.",
+        },
+        {
+          id: "little-league-elbow",
+          front: "Little League elbow",
+          back: "A valgus traction force injury of the medial elbow that may start out as an inflammatory response or apophysitis and progress to an avulsion of the apophysis if the repetitive stress continues.",
+        },
+        {
+          id: "lower-motor-neuron-signs",
+          front: "lower motor neuron signs",
+          back: "Neurological findings indicating damage to motor pathways at or below the anterior horn cell. This may include flaccid paralysis, hypotonia, hyporeflexia, and muscle atrophy.",
+        },
+        {
+          id: "mallet-deformity",
+          front: "mallet deformity",
+          back: "Avulsion of the extensor digitorum longus from the distal phalanx. Also known as baseball finger.",
+        },
+        {
+          id: "mast-cells",
+          front: "mast cells",
+          back: "Connective-tissue cells. Also referred to as mastocytes and labrocytes. They store and produce various mediators of inflammation. Through their release of histamine, enzymes, and other mediators, mast cells cause increased local blood flow, attract immune cells, stimulate cell production of fibroblasts and endothelial cells, and promote and control remodeling of extracellular matrix.",
+        },
+        {
+          id: "meissner-s-corpuscles",
+          front: "Meissner’s corpuscles",
+          back: "Sensory nerve endings that transmit light-touch sensation.",
+        },
+        {
+          id: "midstance",
+          front: "midstance",
+          back: "The portion of the stance phase of the gait cycle in which the foot is directly under the body’s weight and the entire foot is in contact with the floor. Also known as single-leg support.",
+        },
+        {
+          id: "midswing",
+          front: "midswing",
+          back: "The portion of the swing phase of the gait cycle in which the non-weight-bearing limb is in the middle of the swing phase.",
+        },
+        {
+          id: "myasthenia-gravis",
+          front: "myasthenia gravis",
+          back: "Rare, chronic autoimmune disease marked by muscular weakness without atrophy.",
+        },
+        {
+          id: "myositis-ossificans",
+          front: "myositis ossificans",
+          back: "The formation of bone within a muscle that has suffered a contusion.",
+        },
+        {
+          id: "negligence",
+          front: "negligence",
+          back: "Failure to act according to the standard of care, resulting in harm.",
+        },
+        {
+          id: "neuromuscular-control",
+          front: "neuromuscular control",
+          back: "The ability to produce controlled movement through coordinated muscle activation.",
+        },
+        {
+          id: "norepinephrine",
+          front: "norepinephrine",
+          back: "A hormone that acts as a powerful vasoconstrictor at the immediate onset of injury. It may last from a few seconds to a few minutes.",
+        },
+        {
+          id: "nystagmus",
+          front: "nystagmus",
+          back: "A reflexive attempt to keep the eyes steady during body motion.",
+        },
+        {
+          id: "osgood-schlatter-disease",
+          front: "Osgood-Schlatter disease",
+          back: "An inflammation or avulsion of the tibial apophysis, occurring in active, prepubescent children.",
+        },
+        {
+          id: "osteitis-pubis",
+          front: "osteitis pubis",
+          back: "An inflammatory condition of shear stresses caused by either repeated trauma or strain on the symphysis pubis joint.",
+        },
+        {
+          id: "osteoarthritis",
+          front: "osteoarthritis",
+          back: "A condition caused by wearing and thinning of articular cartilage in a joint, eventually producing degeneration of the joint’s articular surface. Also known as degenerative joint disease (DJD).",
+        },
+        {
+          id: "osteoblasts",
+          front: "osteoblasts",
+          back: "Osteogenic cells from periosteum. They lay down the callus of fractured bone and convert later to chondrocytes.",
+        },
+        {
+          id: "osteochondritis-dissecans",
+          front: "osteochondritis dissecans",
+          back: "Avascular necrosis of a joint’s articular surface.",
+        },
+        {
+          id: "osteoclasts",
+          front: "osteoclasts",
+          back: "Large multinuclear cells. Resorb dead, necrotic bone tissue.",
+        },
+        {
+          id: "osteopenia",
+          front: "osteopenia",
+          back: "A mild to moderate bone density loss that places the person at risk for developing osteoporosis.",
+        },
+        {
+          id: "osteoporosis",
+          front: "osteoporosis",
+          back: "A marked decrease in bone density causing bone porosity and brittleness with increased risk of fracture.",
+        },
+        {
+          id: "pacinian-corpuscles",
+          front: "Pacinian corpuscles",
+          back: "Afferent nerve endings that lie throughout the joint capsule and periarticular structures. They are rapidly adapting receptors thought to be compression sensitive, especially during high-velocity changes when the joint accelerates or decelerates as it moves into its limits of motion.",
+        },
+        {
+          id: "patella-alta",
+          front: "patella alta",
+          back: "Position of the patella higher than normal in the patellofemoral groove.",
+        },
+        {
+          id: "patella-baja",
+          front: "patella baja",
+          back: "Position of the patella lower than normal in the patellofemoral groove.",
+        },
+        {
+          id: "pes-cavus",
+          front: "pes cavus",
+          back: "A foot with a high longitudinal arch.",
+        },
+        {
+          id: "pes-planus",
+          front: "pes planus",
+          back: "A foot with a flat longitudinal arch.",
+        },
+        {
+          id: "plantar-fasciitis",
+          front: "plantar fasciitis",
+          back: "Inflammation of the plantar fascia at its attachment to the calcaneus.",
+        },
+        {
+          id: "primary-impingement",
+          front: "primary impingement",
+          back: "Subacromial impingement in the shoulder that occurs because of a mechanical narrowing of the subacromial space; tendinous, bursal, or bony structures within the space reduce the available area in the space.",
+        },
+        {
+          id: "primary-survey",
+          front: "primary survey",
+          back: "An immediate, systematic assessment focusing on airway, breathing, circulation, disability, and exposure.",
+        },
+        {
+          id: "q-angle",
+          front: "Q-angle",
+          back: "The angle formed by a line from the anterior superior iliac spine to the middle patella and a line from the middle patella to the tibial tubercle.",
+        },
+        {
+          id: "rearfoot-valgus",
+          front: "rearfoot valgus",
+          back: "An abnormal condition in which the calcaneus is everted relative to the tibia.",
+        },
+        {
+          id: "rearfoot-varus",
+          front: "rearfoot varus",
+          back: "An abnormal condition in which the calcaneus is inverted relative to the posterior bisection of the lower leg.",
+        },
+        {
+          id: "refractory-period",
+          front: "refractory period",
+          back: "The time immediately following a stimulation, when the muscle fiber is unable to respond to additional stimuli. It is divided into an absolute refractory period and a relative refractory period.",
+        },
+        {
+          id: "relative-energy-deficiency-in-sport-red-s",
+          front: "relative energy deficiency in sport (RED-S)",
+          back: "Impaired physiological functioning caused by relative energy deficiency; includes, but is not limited to, impairments of metabolic rate, menstrual function, bone health, immunity, protein synthesis, and cardiovascular health.",
+        },
+        {
+          id: "romberg-test",
+          front: "Romberg test",
+          back: "A test for balance in which a patient stands with feet together and eyes closed. Increased postural sway compared to when eyes are open is a positive sign.",
+        },
+        {
+          id: "ruffini-nerve-endings",
+          front: "Ruffini nerve endings",
+          back: "These afferent receptors are in the joint capsule on the flexion side of the joint. They are slowly adapting and respond more to loads on the connective tissue in which they are contained than to displacement of that connective tissue. These receptors are stimulated by extreme joint motion when the capsule is stressed in extension with rotation.",
+        },
+        {
+          id: "russel-s-sign",
+          front: "Russel’s sign",
+          back: "Calluses on the back of hand or knuckles from self-induced vomiting.",
+        },
+        {
+          id: "salter-harris-fracture",
+          front: "Salter-Harris fracture",
+          back: "Fracture involving the epiphyseal plate.",
+        },
+        {
+          id: "second-impact-syndrome",
+          front: "second impact syndrome",
+          back: "Rapid and often fatal cerebral edema resulting from a second concussion before recovery from a previous one.",
+        },
+        {
+          id: "secondary-impingement",
+          front: "secondary impingement",
+          back: "The subacromial space narrows because of a dysfunction of the shoulder, so the humeral head is not centered as it should be within the glenoid. Muscle imbalances and posture leading to these imbalances often result in this impingement.",
+        },
+        {
+          id: "secondary-prevention",
+          front: "secondary prevention",
+          back: "Strategies focused on early detection and intervention to limit the severity or duration of injury or illness.",
+        },
+        {
+          id: "secondary-survey",
+          front: "secondary survey",
+          back: "A detailed head-to-toe evaluation conducted after life-threatening issues are addressed.",
+        },
+        {
+          id: "sensitivity",
+          front: "sensitivity",
+          back: "The ability of a clinical test to correctly identify individuals who have a condition.",
+        },
+        {
+          id: "slap-lesion",
+          front: "SLAP lesion",
+          back: "Superior labrum tear anterior and posterior in location. A tear in the labrum appearing superiorly either on the posterior or anterior glenoid.",
+        },
+        {
+          id: "smith-s-fracture",
+          front: "Smith's fracture",
+          back: "A fracture to the distal radius resulting from a fall on the outstretched hand with the wrist in a hyperflexed position.",
+        },
+        {
+          id: "specificity",
+          front: "specificity",
+          back: "The ability of a clinical test to correctly identify individuals who do not have a condition.",
+        },
+        {
+          id: "squinting-patellae",
+          front: "squinting patellae",
+          back: "Patellae that are angled toward each other rather than facing forward.",
+        },
+        {
+          id: "stance-phase",
+          front: "stance phase",
+          back: "The portion of the gait cycle during which the foot is in contact with the floor and the extremity is bearing partial or total body weight. In running, sometimes called the support phase.",
+        },
+        {
+          id: "standard-of-care",
+          front: "standard of care",
+          back: "The level of care expected of a reasonably competent professional under similar circumstances.",
+        },
+        {
+          id: "stride-length",
+          front: "stride length",
+          back: "The distance from heel strike of one foot to heel strike of the same foot in one gait cycle.",
+        },
+        {
+          id: "stride-rate",
+          front: "stride rate",
+          back: "In running, the inverse of cycle time or stride time: the number of step lengths over a given period.",
+        },
+        {
+          id: "stride-width",
+          front: "stride width",
+          back: "The body’s side-to-side movement as weight is shifted from one lower extremity to the other.",
+        },
+        {
+          id: "swan-neck-deformity",
+          front: "swan-neck deformity",
+          back: "A deformity caused by hyperextension at the PIP joint and hyperflexion at the DIP joint due to disruption of the volar plate and tensioning of the flexor tendons.",
+        },
+        {
+          id: "swing-phase",
+          front: "swing phase",
+          back: "The time during which the foot is not in contact with the floor and no weight is borne on the extremity.",
+        },
+        {
+          id: "swing-through",
+          front: "swing-through",
+          back: "The middle of the swing phase. Also called mid-swing.",
+        },
+        {
+          id: "swing-through-gait",
+          front: "swing-through gait",
+          back: "A three-point gait pattern with crutches in which the weight-bearing leg is advanced far enough to land in front of the crutches.",
+        },
+        {
+          id: "swing-to-gait",
+          front: "swing-to gait",
+          back: "A three-point gait pattern with crutches in which the patient swings the weight-bearing leg to the crutches.",
+        },
+        {
+          id: "tenodesis",
+          front: "tenodesis",
+          back: "The passive insufficiency of the long finger tendons. When the wrist flexes, the long finger extensors extend, and when the wrist extends, the long finger flexors flex. This motion allows opening and closing of the hand to be controlled passively by the wrist.",
+        },
+        {
+          id: "tertiary-prevention",
+          front: "tertiary prevention",
+          back: "Strategies aimed at reducing long-term impairments, disability, or complications following injury or illness.",
+        },
+        {
+          id: "thenar-eminence",
+          front: "thenar eminence",
+          back: "Intrinsic muscles of the thumb that include the abductor pollicis brevis, flexor pollicis brevis, opponens pollicis, and adductor pollicis.",
+        },
+        {
+          id: "thoracic-outlet-syndrome-tos",
+          front: "thoracic outlet syndrome (TOS)",
+          back: "A clinical term that describes compression of the neurovascular structures as they exit through the thoracic outlet at the base of the neck.",
+        },
+        {
+          id: "thrombin",
+          front: "thrombin",
+          back: "An enzyme that converts fibrinogen to fibrin to form a fibrin plug early in the inflammation phase. In later inflammation, it stimulates fibronectin production and fibroblast proliferation.",
+        },
+        {
+          id: "tibial-torsion",
+          front: "tibial torsion",
+          back: "An abnormal structural condition in which the tibia is rotated along its longitudinal axis so that the foot is rotated laterally beyond the normal 15° in relation to the patella’s midline.",
+        },
+        {
+          id: "tibial-varum",
+          front: "tibial varum",
+          back: "An abnormal condition in which the distal tibia is closer to the midline than the proximal tibia.",
+        },
+        {
+          id: "toe-off",
+          front: "toe-off",
+          back: "The portion of the gait cycle during which the foot comes off the floor and the swing phase begins. Also called push-off or preswing.",
+        },
+        {
+          id: "tubs",
+          front: "TUBS",
+          back: "Traumatic, unilateral, Bankart lesion, surgery required. A traumatic shoulder injury involving a tear of the anterior capsulolabral complex and requiring surgical repair.",
+        },
+        {
+          id: "upper-motor-neuron-signs",
+          front: "upper motor neuron signs",
+          back: "Neurological findings indicating damage to motor pathways above the anterior horn cell. This may include spasticity, hyperreflexia, presence of pathological reflexes, clonus, and a positive Babinski sign.",
+        },
+        {
+          id: "valgus",
+          front: "valgus",
+          back: "Alignment of a joint or stress to the joint that places the distal bone in a lateral direction; the “knock-kneed” position of the knee joint.",
+        },
+        {
+          id: "varus",
+          front: "varus",
+          back: "Alignment of a joint or stress to the joint that places the distal bone in a medial direction; the “bow-legged” position of the knee joint.",
+        },
+        {
+          id: "vector-borne-contact",
+          front: "vector-borne contact",
+          back: "Transmitted by an animal (i.e., exposure to infected animals such as dogs, raccoons, insects, and bats).",
+        },
+        {
+          id: "von-willebrand-factor-vw",
+          front: "von Willebrand factor (VW)",
+          back: "A protein present in the blood and is important in initiating platelet adhesion to initiate the platelet plug formation.",
+        },
+        {
+          id: "wallerian-degeneration",
+          front: "Wallerian degeneration",
+          back: "Degeneration of nerve fiber that occurs distal to the site of injury when the nerve fiber is cut or crushed.",
+        },
+        {
+          id: "wolff-s-law",
+          front: "Wolff’s law",
+          back: "A law that states that tissue, particularly bone, will adapt to the loads under which it is placed.",
+        },
+      ];
+
+      const STORAGE_KEY = "bocFlashcardsState_glossary_v2";
+
+      const elCard = document.getElementById("card");
+      const elCardText = document.getElementById("cardText");
+      const elCardHint = document.getElementById("cardHint");
+      const elProgress = document.getElementById("progress");
+      const elMetaBadge = document.getElementById("metaBadge");
+      const elDeckCountPill = document.getElementById("deckCountPill");
+      const elViewPill = document.getElementById("viewPill");
+      const elMyCountPill = document.getElementById("myCountPill");
+      const elStudyList = document.getElementById("studyList");
+
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+      const flipBtn = document.getElementById("flipBtn");
+      const shuffleBtn = document.getElementById("shuffleBtn");
+      const resetDeckBtn = document.getElementById("resetDeckBtn");
+      const clearStateBtn = document.getElementById("clearStateBtn");
+      const toggleStudyBtn = document.getElementById("toggleStudyBtn");
+      const removeAllBtn = document.getElementById("removeAllBtn");
+      const viewSelectionBtn = document.getElementById("viewSelectionBtn");
+      const viewMyStudyBtn = document.getElementById("viewMyStudyBtn");
+
+      let mainDeck = [...DEFAULT_CARDS];
+      let myStudyIds = [];
+      let currentIndex = 0;
+      let showingBack = false;
+      let viewMode = "main";
+
+      function saveState() {
+        const payload = {
+          mainDeck,
+          myStudyIds,
+          currentIndex,
+          showingBack,
+          viewMode,
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+      }
+
+      function loadState() {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return;
+
+        try {
+          const state = JSON.parse(raw);
+          if (Array.isArray(state.mainDeck) && state.mainDeck.length) mainDeck = state.mainDeck;
+          if (Array.isArray(state.myStudyIds)) myStudyIds = state.myStudyIds;
+          if (typeof state.currentIndex === "number") currentIndex = state.currentIndex;
+          if (typeof state.showingBack === "boolean") showingBack = state.showingBack;
+          if (state.viewMode === "main" || state.viewMode === "mystudy") viewMode = state.viewMode;
+        } catch (err) {
+          console.error("Could not load saved flash card state.", err);
+        }
+      }
+
+      function getMyStudyDeck() {
+        return mainDeck.filter((card) => myStudyIds.includes(card.id));
+      }
+
+      function getActiveDeck() {
+        return viewMode === "mystudy" ? getMyStudyDeck() : mainDeck;
+      }
+
+      function ensureValidIndex() {
+        const deck = getActiveDeck();
+        if (deck.length === 0) {
+          currentIndex = 0;
+        } else if (currentIndex >= deck.length) {
+          currentIndex = deck.length - 1;
+        } else if (currentIndex < 0) {
+          currentIndex = 0;
+        }
+      }
+
+      function updateButtons() {
+        const deck = getActiveDeck();
+        const inMyStudy = deck.length && myStudyIds.includes(deck[currentIndex]?.id || "");
+
+        viewSelectionBtn.className = viewMode === "main" ? "active" : "secondary";
+        viewMyStudyBtn.className = viewMode === "mystudy" ? "active" : "secondary";
+
+        elViewPill.textContent = `Viewing: ${viewMode === "mystudy" ? "My Study Deck" : "Main Deck"}`;
+        elDeckCountPill.textContent = `${mainDeck.length} cards in deck`;
+        elMyCountPill.textContent = `${myStudyIds.length} card${myStudyIds.length === 1 ? "" : "s"}`;
+
+        prevBtn.disabled = deck.length === 0;
+        nextBtn.disabled = deck.length === 0;
+        flipBtn.disabled = deck.length === 0;
+        toggleStudyBtn.disabled = deck.length === 0;
+        removeAllBtn.disabled = myStudyIds.length === 0;
+
+        if (deck.length === 0) {
+          toggleStudyBtn.textContent = "Add to My Study";
+        } else {
+          toggleStudyBtn.textContent = inMyStudy ? "Remove from My Study" : "Add to My Study";
+        }
+      }
+
+      function renderStudyList() {
+        const myStudyDeck = getMyStudyDeck();
+        elStudyList.innerHTML = "";
+
+        if (myStudyDeck.length === 0) {
+          const empty = document.createElement("p");
+          empty.className = "section-text";
+          empty.textContent = "No cards have been added yet.";
+          elStudyList.appendChild(empty);
+          return;
+        }
+
+        myStudyDeck.forEach((card) => {
+          const item = document.createElement("div");
+          item.className = "study-item";
+
+          const textWrap = document.createElement("div");
+          textWrap.innerHTML = `<strong>${card.front}</strong><small>${card.back}</small>`;
+
+          const actions = document.createElement("div");
+          actions.className = "actions";
+
+          const viewBtn = document.createElement("button");
+          viewBtn.type = "button";
+          viewBtn.className = "secondary";
+          viewBtn.textContent = "View";
+          viewBtn.addEventListener("click", () => {
+            viewMode = "mystudy";
+            showingBack = false;
+            const myDeck = getMyStudyDeck();
+            currentIndex = myDeck.findIndex((item) => item.id === card.id);
+            if (currentIndex < 0) currentIndex = 0;
+            render();
+          });
+
+          const removeBtn = document.createElement("button");
+          removeBtn.type = "button";
+          removeBtn.className = "danger";
+          removeBtn.textContent = "Remove";
+          removeBtn.addEventListener("click", () => {
+            myStudyIds = myStudyIds.filter((id) => id !== card.id);
+            ensureValidIndex();
+            render();
+          });
+
+          actions.appendChild(viewBtn);
+          actions.appendChild(removeBtn);
+          item.appendChild(textWrap);
+          item.appendChild(actions);
+          elStudyList.appendChild(item);
+        });
+      }
+
+      function renderCard() {
+        const deck = getActiveDeck();
+        ensureValidIndex();
+
+        if (deck.length === 0) {
+          elCard.classList.remove("back");
+          elCard.classList.add("front");
+          elProgress.textContent = "0 / 0";
+          elMetaBadge.textContent = "Empty";
+          elCardText.textContent = viewMode === "mystudy" ? "No cards have been added to My Study yet." : "No flash cards are available.";
+          elCardHint.textContent = "Add cards to begin studying.";
+          return;
+        }
+
+        const card = deck[currentIndex];
+        elProgress.textContent = `${currentIndex + 1} / ${deck.length}`;
+        elMetaBadge.textContent = showingBack ? "Back" : "Front";
+        elCardText.textContent = showingBack ? card.back : card.front;
+        elCardHint.textContent = showingBack ? "Click the card to return to the term." : "Click the card to view the definition.";
+
+        elCard.classList.toggle("back", showingBack);
+        elCard.classList.toggle("front", !showingBack);
+      }
+
+      function render() {
+        ensureValidIndex();
+        renderCard();
+        renderStudyList();
+        updateButtons();
+        saveState();
+      }
+
+      function flipCard() {
+        if (!getActiveDeck().length) return;
+        showingBack = !showingBack;
+        render();
+      }
+
+      function goNext() {
+        const deck = getActiveDeck();
+        if (!deck.length) return;
+        currentIndex = (currentIndex + 1) % deck.length;
+        showingBack = false;
+        render();
+      }
+
+      function goPrev() {
+        const deck = getActiveDeck();
+        if (!deck.length) return;
+        currentIndex = (currentIndex - 1 + deck.length) % deck.length;
+        showingBack = false;
+        render();
+      }
+
+      function shuffleDeck() {
+        for (let i = mainDeck.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [mainDeck[i], mainDeck[j]] = [mainDeck[j], mainDeck[i]];
+        }
+        currentIndex = 0;
+        showingBack = false;
+        render();
+      }
+
+      function toggleStudyCard() {
+        const deck = getActiveDeck();
+        if (!deck.length) return;
+
+        const card = deck[currentIndex];
+        if (myStudyIds.includes(card.id)) {
+          myStudyIds = myStudyIds.filter((id) => id !== card.id);
+        } else {
+          myStudyIds.push(card.id);
+        }
+
+        render();
+      }
+
+      function resetStudyDeck() {
+        myStudyIds = [];
+        if (viewMode === "mystudy") viewMode = "main";
+        currentIndex = 0;
+        showingBack = false;
+        render();
+      }
+
+      function clearSavedData() {
+        localStorage.removeItem(STORAGE_KEY);
+        mainDeck = [...DEFAULT_CARDS];
+        myStudyIds = [];
+        currentIndex = 0;
+        showingBack = false;
+        viewMode = "main";
+        render();
+      }
+
+      elCard.addEventListener("click", flipCard);
+      flipBtn.addEventListener("click", flipCard);
+      nextBtn.addEventListener("click", goNext);
+      prevBtn.addEventListener("click", goPrev);
+      shuffleBtn.addEventListener("click", shuffleDeck);
+      toggleStudyBtn.addEventListener("click", toggleStudyCard);
+      resetDeckBtn.addEventListener("click", resetStudyDeck);
+      clearStateBtn.addEventListener("click", clearSavedData);
+      removeAllBtn.addEventListener("click", resetStudyDeck);
+
+      viewSelectionBtn.addEventListener("click", () => {
+        viewMode = "main";
+        currentIndex = 0;
+        showingBack = false;
+        render();
+      });
+
+      viewMyStudyBtn.addEventListener("click", () => {
+        viewMode = "mystudy";
+        currentIndex = 0;
+        showingBack = false;
+        render();
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowRight") goNext();
+        if (event.key === "ArrowLeft") goPrev();
+        if (event.key === " " || event.key === "Spacebar") {
+          event.preventDefault();
+          flipCard();
+        }
+      });
+
+      loadState();
+      render();
+    </script>
+  </body>
+</html>

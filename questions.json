@@ -1,24 +1,84 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "questions": [
     {
-      "id": "mc1",
+      "id": "mc_olecranon_bursitis",
       "type": "mc",
       "category": "Domain 2: Assessment, Evaluation and Diagnosis",
       "difficulty": "medium",
-      "prompt": "An athlete experiences a varus force on the proximal tibia. What type of fracture is he most likely to experience?",
-      "choices": ["Lateral", "Bicondylar", "Medial", "Bicondylar with soft tissue injuries"],
+      "prompt": "You see a patient who has complaints of elbow pain and swelling. The patient works a desk job and spends a lot of time resting their elbow on the armrest of their desk chair. You believe this has caused the swelling seen on the posterior portion of the elbow. What is the most likely diagnosis for this patient?",
+      "choices": ["Lateral epicondylitis", "Cubital tunnel syndrome", "Olecranon bursitis", "Fractured elbow", "Volkmann's ischemic contracture"],
       "answer": 2,
       "rationale": ""
     },
     {
-      "id": "mc2",
+      "id": "mc_gallstones",
       "type": "mc",
-      "category": "Domain 1: Risk Reduction, Wellness and Health Literacy",
+      "category": "Domain 2: Assessment, Evaluation and Diagnosis",
       "difficulty": "medium",
-      "prompt": "Why are children at a greater risk for heat-related illness?",
-      "choices": ["They sweat more.", "They have higher subcutaneous fat stores.", "They have a reduced capacity to evaporate sweat.", "They have higher breathing rates."],
+      "prompt": "Your athlete complains of upper right quadrant pain after eating, especially foods like French fries or hotdogs. They have a positive Blumberg's sign. What do you suspect is causing the athlete's symptoms?",
+      "choices": ["Appendicitis", "Kidney stones", "Ulcerative colitis", "A peptic ulcer", "Gallstones"],
+      "answer": 4,
+      "rationale": ""
+    },
+    {
+      "id": "mc_shock",
+      "type": "mc",
+      "category": "Domain 3: Critical Incident Management",
+      "difficulty": "medium",
+      "prompt": "A patient has the following signs and symptoms: restlessness, confusion, obtundation, hypotension, tachycardia, respiration changes, and narrowing of pulse pressure. What condition is most likely?",
+      "choices": ["A drug overdose", "A seizure", "Altitude sickness", "Rhabdomyolysis", "Shock"],
+      "answer": 4,
+      "rationale": ""
+    },
+    {
+      "id": "mc_serratus_anterior",
+      "type": "mc",
+      "category": "Domain 4: Therapeutic Intervention",
+      "difficulty": "medium",
+      "prompt": "During an evaluation, you noted unilateral scapular winging. Based on this observation, what muscle would you target during treatment?",
+      "choices": ["Subscapularis", "Serratus anterior", "Biceps", "Triceps", "Trapezius"],
+      "answer": 1,
+      "rationale": ""
+    },
+    {
+      "id": "mc_achilles_tendinopathy",
+      "type": "mc",
+      "category": "Domain 4: Therapeutic Intervention",
+      "difficulty": "hard",
+      "prompt": "A runner with chronic Achilles tendinopathy reports morning stiffness and pain during push-off. Symptoms improve with light activity but worsen after activity load increases. Which exercise is most supported by evidence for long-term improvement?",
+      "choices": [
+        "Passive stretching only",
+        "Complete unloading of tendon until symptoms resolve",
+        "Progressive loading of the tendon through eccentric exercises",
+        "Low-intensity aerobic exercises only"
+      ],
       "answer": 2,
+      "rationale": ""
+    },
+    {
+      "id": "mc_shoulder_instability_progression",
+      "type": "mc",
+      "category": "Domain 4: Therapeutic Intervention",
+      "difficulty": "hard",
+      "prompt": "A swimmer with multidirectional shoulder instability demonstrates poor dynamic control during overhead movements. The clinician designs a program emphasizing neuromuscular control before strengthening. Which progression best reflects appropriate exercise sequencing?",
+      "choices": [
+        "Openchain isotonic strengthening to plyometrics to stabilization",
+        "Plyometric throwing drills to resistance training to closedchain control",
+        "Closedchain stabilization to openchain control to progressive resistance",
+        "Maximal resistance training followed by endurance work"
+      ],
+      "answer": 2,
+      "rationale": ""
+    },
+    {
+      "id": "mc_zero_based_budgeting",
+      "type": "mc",
+      "category": "Domain 5: Health Administration and Professional Responsibility",
+      "difficulty": "medium",
+      "prompt": "Which of the following budget types requires a clean slate to be the starting point of budget development each year and typically allocates specific budget amounts by categories of expenditures?",
+      "choices": ["Zero-based budgeting", "Line-item budgeting", "Formula budgeting", "Performance budgeting", "Lump-sum budgeting"],
+      "answer": 0,
       "rationale": ""
     },
     {
@@ -48,36 +108,65 @@
       "rationale": ""
     },
     {
-      "id": "dd1",
+      "id": "dd_scat6_order",
       "type": "dd",
-      "category": "Domain 2: Assessment, Evaluation and Diagnosis",
-      "difficulty": "medium",
-      "prompt": "Type: Matching drag drop\n\nMatch the pain with the structure and pathology.",
+      "category": "Domain 1: Risk Reduction, Wellness and Health Literacy",
+      "difficulty": "hard",
+      "prompt": "The athletic trainer needs to determine the possibility of a concussion in a player. When using the Sport Concussion Assessment Tool 6 (SCAT6), in what order should the athletic trainer perform the actions noted to determine the level of the injury? Drag the list items into the correct order.",
       "dd": {
-        "tokens": ["musculoskeletal pain", "chronic inflammation", "serious pathology", "lumbar stenosis", "bone pain"],
+        "tokens": [
+          "Screen for red flags",
+          "Observable signs",
+          "Perform Glasgow Coma Scale",
+          "Cervical spine assessment",
+          "Coordination and ocular/motor screen tests",
+          "Memory assessment Maddocks questions",
+          "Symptom evaluation",
+          "Cognitive screening",
+          "Coordination and balance tests",
+          "Delayed recall"
+        ],
         "zones": [
-          { "label": "pain that decreases at rest", "accept": "musculoskeletal pain" },
-          { "label": "morning pain that decreases with movement", "accept": "chronic inflammation" },
-          { "label": "pain at night that is intractable", "accept": "serious pathology" },
-          { "label": "pain that occurs with walking but is relieved when seated", "accept": "lumbar stenosis" },
-          { "label": "pain at rest and during activity", "accept": "bone pain" }
-        ]
-      },
-      "rationale": ""
-    },
-    {
-      "id": "dd2",
-      "type": "dd",
-      "category": "Domain 2: Assessment, Evaluation and Diagnosis",
-      "difficulty": "medium",
-      "prompt": "Type: Matching drag drop\n\nMatch the motor function.",
-      "dd": {
-        "tokens": ["C2", "C4", "C6", "C8"],
-        "zones": [
-          { "label": "cervical extension", "accept": "C2" },
-          { "label": "shoulder shrug", "accept": "C4" },
-          { "label": "elbow flexion and wrist extension", "accept": "C6" },
-          { "label": "thumb extension", "accept": "C8" }
+          {
+            "label": "1",
+            "accept": "Screen for red flags"
+          },
+          {
+            "label": "2",
+            "accept": "Observable signs"
+          },
+          {
+            "label": "3",
+            "accept": "Perform Glasgow Coma Scale"
+          },
+          {
+            "label": "4",
+            "accept": "Cervical spine assessment"
+          },
+          {
+            "label": "5",
+            "accept": "Coordination and ocular/motor screen tests"
+          },
+          {
+            "label": "6",
+            "accept": "Memory assessment Maddocks questions"
+          },
+          {
+            "label": "7",
+            "accept": "Symptom evaluation"
+          },
+          {
+            "label": "8",
+            "accept": "Cognitive screening"
+          },
+          {
+            "label": "9",
+            "accept": "Coordination and balance tests"
+          },
+          {
+            "label": "10",
+            "accept": "Delayed recall"
+          }
         ]
       },
       "rationale": ""
@@ -89,9 +178,12 @@
       "difficulty": "medium",
       "prompt": "During the evaluation of a patients knee injury the athletic trainer palpates the tibial tuberosity. On the image below, identify the tibial tuberosity.\n\nUse your mouse and click/drag the circle to the area/region to be identified. You may reposition the circle until you are satisfied with its placement.",
       "hs": {
-        "imageSrc": "images/Knee_cap.png",
+        "imageSrc": "images/knee_cap.png",
         "tolerancePct": 6,
-        "answer": { "xPct": 52.3, "yPct": 78.9 }
+        "answer": {
+          "xPct": 53.3,
+          "yPct": 97.9
+        }
       },
       "rationale": ""
     },
@@ -133,7 +225,7 @@
           "prompt": "4. (Placeholder) Add your 4th testlet question here.",
           "choices": ["Option A", "Option B", "Option C", "Option D"],
           "answer": 0,
-          "rationale": ""
+          "rationale": "Replace this placeholder with your content."
         },
         {
           "id": "ft1_q5",
@@ -141,7 +233,7 @@
           "prompt": "5. (Placeholder) Add your 5th testlet question here. Select all that apply.",
           "choices": ["Option A", "Option B", "Option C", "Option D"],
           "answer": [0],
-          "rationale": ""
+          "rationale": "Replace this placeholder with your content."
         }
       ]
     }

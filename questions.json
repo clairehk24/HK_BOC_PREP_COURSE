@@ -178,7 +178,7 @@
       "difficulty": "medium",
       "prompt": "During the evaluation of a patients knee injury the athletic trainer palpates the tibial tuberosity. On the image below, identify the tibial tuberosity.\n\nUse your mouse and click/drag the circle to the area/region to be identified. You may reposition the circle until you are satisfied with its placement.",
       "hs": {
-        "imageSrc": "images/knee_cap.png",
+        "imageSrc": "images/Knee_cap.png",
         "tolerancePct": 6,
         "answer": {
           "xPct": 53.3,

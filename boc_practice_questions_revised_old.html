@@ -115,27 +115,6 @@
         font-size: 0.98rem;
       }
 
-      .domain-checkbox-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        gap: 10px;
-      }
-
-      .domain-check {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        padding: 10px 12px;
-        border: 1px solid var(--border);
-        border-radius: var(--radius-sm);
-        background: var(--surface);
-        color: var(--text);
-      }
-
-      .domain-check input {
-        margin: 0;
-      }
-
       .site-header {
         background-color: var(--surface);
         border-bottom: 1px solid var(--border);
@@ -572,16 +551,9 @@
 
             <div class="controls">
               <div class="control-group">
-                <label>Domains</label>
-                <div id="domainSel" class="domain-checkbox-grid"></div>
+                <label for="domainSel">Domain</label>
+                <select id="domainSel"></select>
               </div>
-
-              <div class="control-group">
-                <label for="questionCountSel">Number of questions</label>
-                <select id="questionCountSel"></select>
-              </div>
-
-              <div id="studySetNote" class="section-text"></div>
 
               <div class="button-row">
                 <button id="btnRetryWrong" type="button" class="secondary">Retry Wrong Stack</button>
@@ -589,7 +561,7 @@
               </div>
 
               <p class="section-text">
-                Question order is randomized within the selected domains. Items are considered mastered once they reach 100%, and mastered items are then excluded. Partial credit is applied to
+                Question order is randomized within the selected domain. Items are considered mastered once they reach 100%, and mastered items are then excluded. Partial credit is applied to
                 multi-select and drag-and-drop items.
               </p>
             </div>
@@ -633,7 +605,7 @@
 
       <section class="card-panel section">
         <div id="qMeta" class="muted"></div>
-        <div id="qText" class="question-text">Choose one or more domains and a question count, then click “Start / Next” below the question area.</div>
+        <div id="qText" class="question-text">Choose a domain, then click “Start / Next” below the question area.</div>
         <div id="qUI"></div>
         <div id="feedback" class="feedback" style="display: none"></div>
 
@@ -651,6 +623,7 @@
       let QUESTIONS = [];
 
       const DOMAIN_OPTIONS = [
+        { value: "all", label: "All" },
         { value: "Domain 1: Risk Reduction, Wellness and Health Literacy", label: "Domain 1" },
         { value: "Domain 2: Assessment, Evaluation and Diagnosis", label: "Domain 2" },
         { value: "Domain 3: Critical Incident Management", label: "Domain 3" },
@@ -716,8 +689,6 @@
 
       const el = (id) => document.getElementById(id);
       const domainSel = el("domainSel");
-      const questionCountSel = el("questionCountSel");
-      const studySetNote = el("studySetNote");
       const btnNext = el("btnNext");
       const btnRetryWrong = el("btnRetryWrong");
       const btnResetAttempts = el("btnResetAttempts");
@@ -742,22 +713,11 @@
       const timer = { running: false, sessionMs: 0, questionMs: 0, lastTick: null, intervalId: null };
 
       function init() {
-        domainSel.innerHTML = DOMAIN_OPTIONS.map(
-          (d) => `
-            <label class="domain-check">
-              <input type="checkbox" class="domain-checkbox" value="${escapeHtmlAttr(d.value)}" checked />
-              <span>${escapeHtml(d.label)}</span>
-            </label>
-          `,
-        ).join("");
-
-        questionCountSel.innerHTML = buildQuestionCountOptions();
-        questionCountSel.value = String(Math.min(QUESTIONS.length, 35));
+        domainSel.innerHTML = DOMAIN_OPTIONS.map((d) => `<option value="${escapeHtmlAttr(d.value)}">${escapeHtml(d.label)}</option>`).join("");
 
         pillTotal.textContent = `Total: ${QUESTIONS.length}`;
 
         domainSel.addEventListener("change", rebuildQueueFiltered);
-        questionCountSel.addEventListener("change", rebuildQueueFiltered);
 
         btnNext.addEventListener("click", () => {
           state.mode = "filtered";
@@ -797,57 +757,10 @@
         return a && a.bestScore >= 1;
       }
 
-      function getSelectedDomains() {
-        const checked = Array.from(domainSel.querySelectorAll(".domain-checkbox:checked")).map((cb) => cb.value);
-        return checked.length ? checked : DOMAIN_OPTIONS.map((d) => d.value);
-      }
-
-      function getQuestionLimit() {
-        const limit = Number(questionCountSel.value);
-        return Number.isFinite(limit) && limit > 0 ? limit : QUESTIONS.length;
-      }
-
-      function buildQuestionCountOptions() {
-        const options = [];
-        for (let i = 5; i <= QUESTIONS.length; i += 5) {
-          options.push(`<option value="${i}">${i}</option>`);
-        }
-        if (!options.length || QUESTIONS.length % 5 !== 0) {
-          options.push(`<option value="${QUESTIONS.length}">${QUESTIONS.length}</option>`);
-        }
-        return options.join("");
-      }
-
-      function limitQueue(ids) {
-        const shuffled = shuffle(ids);
-        const limit = getQuestionLimit();
-        return shuffled.slice(0, Math.min(limit, shuffled.length));
-      }
-
-      function updateStudySetNote(availableCount, finalCount, modeLabel) {
-        const selectedDomains = getSelectedDomains();
-        const domainLabels = DOMAIN_OPTIONS.filter((d) => selectedDomains.includes(d.value))
-          .map((d) => d.label)
-          .join(", ");
-        const requestedCount = getQuestionLimit();
-
-        if (availableCount === 0) {
-          studySetNote.textContent = `${modeLabel}: no eligible questions found for ${domainLabels}.`;
-          return;
-        }
-
-        if (finalCount < requestedCount) {
-          studySetNote.textContent = `${modeLabel}: showing all ${finalCount} eligible question${finalCount === 1 ? "" : "s"} from ${domainLabels}. Requested ${requestedCount}.`;
-          return;
-        }
-
-        studySetNote.textContent = `${modeLabel}: ${finalCount} question${finalCount === 1 ? "" : "s"} selected from ${domainLabels}.`;
-      }
-
       function getFilteredQuestions() {
-        const selectedDomains = new Set(getSelectedDomains());
+        const dom = domainSel.value;
         return QUESTIONS.filter((q) => {
-          const domOk = selectedDomains.has(q.category);
+          const domOk = dom === "all" || q.category === dom;
           const notMastered = !isMastered(q.id);
           return domOk && notMastered;
         });
@@ -855,26 +768,24 @@
 
       function rebuildQueueFiltered() {
         const ids = getFilteredQuestions().map((q) => q.id);
-        state.queue = limitQueue(ids);
-        updateStudySetNote(ids.length, state.queue.length, "Study set");
+        state.queue = shuffle(ids);
         pillFiltered.textContent = `In set: ${state.queue.length}`;
         renderSummaryPills();
         renderWrongStack();
       }
 
       function rebuildQueueWrong() {
-        const selectedDomains = new Set(getSelectedDomains());
+        const dom = domainSel.value;
         const wrongIds = Object.entries(state.attempts)
           .filter(([qid, a]) => a.bestScore < 1)
           .map(([qid]) => qid)
           .filter((qid) => {
             const q = QUESTIONS.find((x) => x.id === qid);
             if (!q) return false;
-            return selectedDomains.has(q.category);
+            return dom === "all" || q.category === dom;
           });
 
-        state.queue = limitQueue(wrongIds);
-        updateStudySetNote(wrongIds.length, state.queue.length, "Wrong stack");
+        state.queue = shuffle(wrongIds);
         pillFiltered.textContent = `In set: ${state.queue.length}`;
         renderSummaryPills();
         renderWrongStack();
@@ -893,8 +804,8 @@
           renderTimer();
           qText.textContent =
             state.mode === "wrong"
-              ? "Wrong stack is empty (or all wrong items are mastered under the current domain and question-count filters)."
-              : "No remaining questions in the current domain and question-count filters (or you mastered them all).";
+              ? "Wrong stack is empty (or all wrong items are mastered under the current domain filter)."
+              : "No remaining questions in the current domain filter (or you mastered them all).";
           renderSummaryPills();
           renderWrongStack();
           return;

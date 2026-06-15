@@ -1200,9 +1200,7 @@
         const raw = typeof q.supporting_text === "string" ? q.supporting_text.trim() : "";
         if (!raw) return "";
 
-        let lines = raw
-          .split(/\r?\n/)
-          .filter((line) => line.trim());
+        let lines = raw.split(/\r?\n/).filter((line) => line.trim());
 
         if (q.type === "dd") {
           lines = lines.filter((line) => !line.includes("→"));

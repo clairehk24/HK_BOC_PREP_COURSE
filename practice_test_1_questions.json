@@ -1,0 +1,2090 @@
+{
+  "version": "1.1",
+  "source": "Practice Test 1.docx",
+  "questions": [
+    {
+      "id": "pt1_q001",
+      "type": "mc",
+      "prompt": "What sites of compression occur in thoracic outlet syndrome?",
+      "rationale": "",
+      "choices": [
+        "Interscalene triangle, costoclavicular space, insertion of the pectoralis minor, and the insertion of the pectoralis major",
+        "Scalene muscles",
+        "Between the clavicle and the first rib",
+        "Between the clavicle, the first rib, and head of the humerus",
+        "Costoclavicular space, the insertion of the scalene muscles, and the insertion of the pectoralis major"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "pt1_q002",
+      "type": "mc",
+      "prompt": "Which nerve root listed has a reflex response attributed to them?",
+      "rationale": "",
+      "choices": ["C1–C2", "C3–C4", "C5–C6", "C7–C8", "C8–T1"],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q003",
+      "type": "mc",
+      "prompt": "Which of the following conditions are potential degenerative changes that may occur in the cervical spine if chronic or overuse soft-tissue injuries are not identified and corrected?",
+      "rationale": "",
+      "choices": [
+        "Fibromyalgia and increased cervical kyphosis",
+        "Spondylitis",
+        "Facet syndrome and degenerative disc disease",
+        "Chronic cervical joint instabilities and scoliosis",
+        "Anteriolisthesis"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q004",
+      "type": "mc",
+      "prompt": "Which of the following factors increase one's susceptibility to muscular strains to the lumbar spine musculature?",
+      "rationale": "",
+      "choices": [
+        "Poor posture and sudden eccentric loads",
+        "Muscular imbalance and excessive lordosis",
+        "Poor conditioning and sudden extension with rotation",
+        "Lack of flexibility of the hip flexors and lack of flexibility to the back extensors",
+        "Weak abdominal muscles and hamstring inflexibility"
+      ],
+      "answer": 4
+    },
+    {
+      "id": "pt1_q005",
+      "type": "mc",
+      "prompt": "Which of the following special tests is used to reproduce symptoms of disc herniations or nerve root irritation?",
+      "rationale": "",
+      "choices": ["Bounce test", "Slump test", "Hoover test", "Trendelenburg test", "Sacroiliac dysfunction test"],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q006",
+      "type": "mc",
+      "prompt": "What structures are at risk for becoming entrapped with a humeroulnar dislocation or with the subsequent reduction and indicate a medical emergency?",
+      "rationale": "",
+      "choices": ["Brachial artery and median artery", "Ulnar nerve and median nerve", "Radial nerve", "Musculocutaneous nerve", "Radial artery"],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q007",
+      "type": "mc",
+      "prompt": "While a patient is having an MRI, various images show up on the screen. You see a bright white image across the screen with surrounding dark imaging around the abdomen. Which of the following is true about T1 versus T2 images?",
+      "rationale": "",
+      "choices": ["T1: dark fat, dark water/fluid", "T1: bright/white water/fluid, dark fat", "T2: bright/white fat, bright/white water/fluid", "T2: bright/white water/fluid, dark fat"],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q008",
+      "type": "mc",
+      "prompt": "Which of the following can be used when assessing a patient's sensory function?",
+      "rationale": "",
+      "choices": [
+        "Balancing on a firm or foam surface",
+        "Having the patient follow your finger back to their nose",
+        "Distinguishing surface texture",
+        "Balancing with closed eyes",
+        "Distinguishing pinpricks and temperature differences"
+      ],
+      "answer": 4
+    },
+    {
+      "id": "pt1_q009",
+      "type": "mc",
+      "prompt": "Which of the following are red flags for someone possibly suffering from depression?",
+      "rationale": "",
+      "choices": [
+        "Depressed mood and appetite disturbance",
+        "Diminished interest and planning for the future",
+        "Irritability or anger and shortness of breath",
+        "Substance abuse and worry or nervousness",
+        "Diminished performance and social withdrawal or isolation"
+      ],
+      "answer": 4
+    },
+    {
+      "id": "pt1_q010",
+      "type": "mc",
+      "prompt": "Which of the following are red flags for someone possibly suffering from an eating disorder?",
+      "rationale": "",
+      "choices": [
+        "Worry or nervousness",
+        "Fluctuations or other weight changes and increased thirst",
+        "Secretive, peculiar behavior and substance abuse",
+        "Ritualized eating habits",
+        "Mood change and panic attacks"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "pt1_q011",
+      "type": "mc",
+      "prompt": "If an athletic trainer suspects a patient has suffered a head injury, which of the following should result in an immediate referral to the emergency department?",
+      "rationale": "",
+      "choices": [
+        "Deteriorating neurological function and pinpoint pupils",
+        "Bleeding or cerebrospinal fluid coming out from the nose or ears, and irregular respirations or pulse",
+        "Vomiting and decreasing level of consciousness",
+        "Amnesia and seizures",
+        "Loss of consciousness and unequal, unreactive, or dilated pupil"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q012",
+      "type": "mc",
+      "prompt": "Which of the following conditions are medical emergencies and require the health care professional to initiate the emergency action plan?",
+      "rationale": "",
+      "choices": [
+        "Splenomegaly",
+        "Corneal abrasion and head laceration",
+        "Guillain-Barré syndrome and testicular torsion",
+        "Sickle cell trait collapse and sexually transmitted diseases",
+        "Stroke and coronavirus"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q013",
+      "type": "ms",
+      "prompt": "Which of the following aspects encompasses effective communication with a patient? Choose all that apply.",
+      "rationale": "",
+      "choices": ["Eye contact", "Repetition of key words from the patient", "Arms crossed behind the computer or writing implements", "Simple phrases of acknowledgment"],
+      "answer": [0, 1, 3]
+    },
+    {
+      "id": "pt1_q014",
+      "type": "mc",
+      "prompt": "Which of the following eye conditions would warrant immediate physician referral?",
+      "rationale": "",
+      "choices": ["Conjunctivitis", "Periorbital contusion", "Stye", "Subconjunctival hemorrhage", "Chemical burn to the eye and a displaced contact lens"],
+      "answer": 0
+    },
+    {
+      "id": "pt1_q015",
+      "type": "mc",
+      "prompt": "Which of the following dermatological conditions are highly contagious?",
+      "rationale": "",
+      "choices": ["Impetigo", "Head lice", "Pediculosis capitis", "Tinea versicolor", "Poison ivy"],
+      "answer": 0
+    },
+    {
+      "id": "pt1_q016",
+      "type": "mc",
+      "prompt": "The overall goal in diabetes treatment is to decrease the end-stage effects of the disease. Which of the following is an end-stage effect of diabetes?",
+      "rationale": "",
+      "choices": ["Stroke", "Colon cancer", "Cardiovascular disease", "Deafness", "Gastrointestinal problems"],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q017",
+      "type": "mc",
+      "prompt": "Which of the following is a red flag for diabetes?",
+      "rationale": "",
+      "choices": [
+        "Blurry vision and numbness, tingling, and pain in hands or feet",
+        "Confusion and polyuria",
+        "Headaches and polyphagia",
+        "Slurred speech and polydipsia",
+        "Tremors and lack of coordination"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "pt1_q018",
+      "type": "ms",
+      "prompt": "Which of the following immunizations are routinely required for children? Choose all that apply.",
+      "rationale": "",
+      "choices": ["Diphtheria", "Coronavirus", "Herpes zoster", "Human papillomavirus", "Whooping cough"],
+      "answer": [0, 4]
+    },
+    {
+      "id": "pt1_q019",
+      "type": "mc",
+      "prompt": "Damage to which of the following structures may anterolateral rotary instability be associated with?",
+      "rationale": "",
+      "choices": [
+        "Anterior cruciate ligament and posterior cruciate ligament",
+        "Arcuate ligament and anterolateral capsule",
+        "Iliotibial band and lateral joint capsule",
+        "Anteromedial capsule and posterolateral capsule",
+        "Biceps femoris and lateral collateral ligament"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "pt1_q020",
+      "type": "mc",
+      "prompt": "Rupture or laxity of which of the following structures may posteromedial rotary instability be associated with?",
+      "rationale": "",
+      "choices": [
+        "Posterior cruciate ligament and medial joint capsule",
+        "Anterior cruciate ligament and medial collateral ligament",
+        "Anterolateral capsule",
+        "Anteromedial capsule",
+        "Arcuate ligament"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "pt1_q021",
+      "type": "mc",
+      "prompt": "Obesity is a well-known risk factor for several conditions. Which of the following does obesity increase the likelihood of?",
+      "rationale": "",
+      "choices": ["Celiac disease", "Type I diabetes", "Breast cancer", "Depression", "Gastroesophageal reflux disease (GERD)"],
+      "answer": 4
+    },
+    {
+      "id": "pt1_q022",
+      "type": "mc",
+      "prompt": "Which of the following includes signs and symptoms of compartment syndrome in the lower leg?",
+      "rationale": "",
+      "choices": [
+        "Cool, dry skin from blood flow restrictions",
+        "Decreased blood pressure of the lower leg",
+        "Redness from decreased blood flow",
+        "Pulselessness from decreased blood flow and pain emanating from the involved compartment",
+        "Deformity of the lower leg due to blood flow and neurological changes"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "pt1_q023",
+      "type": "mc",
+      "prompt": "A patient is determined to have a rearfoot varus postural presentation. What are the chronic injuries that may occur because of this foot alignment?",
+      "rationale": "",
+      "choices": ["Anterior tibialis tendinitis", "Achilles tendon tendinitis", "Tarsal tunnel syndrome", "Peroneus tendinitis", "Medial tibial stress syndrome"],
+      "answer": 4
+    },
+    {
+      "id": "pt1_q024",
+      "type": "mc",
+      "prompt": "A 19-year-old boxer sustains a direct blow to the left side of their abdomen during a match. They complain of left upper quadrant pain that radiates to the left shoulder. Examination reveals abdominal rigidity and signs of shock. What is the most likely diagnosis?",
+      "rationale": "",
+      "choices": ["Liver laceration", "Kidney contusion", "Splenic rupture", "Bladder rupture"],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q025",
+      "type": "mc",
+      "prompt": "At what temperature should medications be stored to maintain potency and safety?",
+      "rationale": "",
+      "choices": ["55 to 75 °F", "60 to 85 °F", "65 to 75 °F", "65 to 80 °F"],
+      "answer": 3
+    },
+    {
+      "id": "pt1_q026",
+      "type": "mc",
+      "prompt": "Which of the following diagnoses is considered an autoimmune condition?",
+      "rationale": "",
+      "choices": ["Amenorrhea", "Fibromyalgia", "Neoplastic disease", "Pleurisy", "Celiac disease (Correct)"],
+      "answer": 4
+    },
+    {
+      "id": "pt1_q027",
+      "type": "mc",
+      "prompt": "Which action best reflects the athletic trainer’s professional responsibility in patient education?",
+      "rationale": "",
+      "choices": [
+        "Providing medical advice that is not within the scope of practice if the athletic trainer knows the information is true",
+        "Educating patients using evidence-based guidelines",
+        "Deferring all questions to the physician",
+        "Recommending anecdotal treatments that do not have evidence to support their use"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q028",
+      "type": "ms",
+      "prompt": "Which scenario would be an example of a breach of professional ethics? Choose all that apply.",
+      "rationale": "",
+      "choices": [
+        "Consulting with the supervising physician for a new sign or symptom of concern",
+        "Leaving a computer or laptop screen open to a patient's chart unattended while performing manual intervention on a patient",
+        "Discussing a patient’s positive progress with another patient",
+        "Sharing patient information with the coach when the athlete asked for information to be kept confidential"
+      ],
+      "answer": [1, 2, 3]
+    },
+    {
+      "id": "pt1_q029",
+      "type": "mc",
+      "prompt": "Which of the following factors may alter joint arthrokinematics?",
+      "rationale": "",
+      "choices": ["Muscle spasm", "Joint capsule contractures", "Joint flexibility", "Inflammation", "Ligament laxity"],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q030",
+      "type": "mc",
+      "prompt": "Which of the following presentations is consistent with shock?",
+      "rationale": "",
+      "choices": ["Rapid and strong pulse", "Warm, dry skin", "Marked drop in blood pressure", "Cyanotic skin that later turns chalky", "Hyperventilation"],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q031",
+      "type": "mc",
+      "prompt": "In the presence of which of the following criteria do the Ottawa ankle rules dictate the necessity of radiographic evaluation of the ankle?",
+      "rationale": "",
+      "choices": [
+        "Unable to bear weight for 10 steps",
+        "Pain and point tenderness in the calcaneal region",
+        "Pain and point tenderness along the distal 2.5 inches (6 cm) of the posterior edge or tip of either malleolus",
+        "Pain and point tenderness in the midfoot region",
+        "Pain and point tenderness noted at the base of the fifth metatarsal"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q032",
+      "type": "mc",
+      "prompt": "Which of the following could include potential causes of sudden cardiac death in young athletes?",
+      "rationale": "",
+      "choices": ["Hypertrophic cardiomyopathy", "Aortic enlargement", "Aortic stenosis", "Athlete's heart", "Respiratory distress"],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q033",
+      "type": "mc",
+      "prompt": "Anaphylactic shock is a medical emergency. Which of the following are the signs or symptoms of anaphylaxis?",
+      "rationale": "",
+      "choices": [
+        "Respiratory distress and syncope or near syncope",
+        "Hypertension and difficulty in swallowing",
+        "Urticaria and difficulty in speaking",
+        "Stupor and swollen tongue",
+        "Constricted pupils and facial oedema"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "pt1_q034",
+      "type": "mc",
+      "prompt": "The United States federal government has identified five disciplines or professions that they recognize as providers of mental health services. Which of the following is one of those five disciplines?",
+      "rationale": "",
+      "choices": ["Marriage, couple, and family therapy", "Family practice physicians", "Osteopathic physicians", "Clergy", "Athletic training"],
+      "answer": 0
+    },
+    {
+      "id": "pt1_q035",
+      "type": "mc",
+      "prompt": "Attention-deficit/hyperactivity disorder (ADHD) involves one's ability to maintain attention or to control their activity and impulses. Which of the following are the typical symptoms of hyperactivity and impulsivity?",
+      "rationale": "",
+      "choices": [
+        "Memory problems (e.g., appointments, deadlines)",
+        "Restless, fidgety, or always “on the go”",
+        "Difficulty in paying attention, especially to details",
+        "Problems concentrating on instructions",
+        "Failure to follow directions"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q036",
+      "type": "mc",
+      "prompt": "Which of the following medications would be safest for patients with a penicillin allergy?",
+      "rationale": "",
+      "choices": ["Cefadroxil", "Amoxicillin", "Dicloxacillin", "Erythromycin"],
+      "answer": 0
+    },
+    {
+      "id": "pt1_q037",
+      "type": "mc",
+      "prompt": "What is a common sign of pneumothorax?",
+      "rationale": "",
+      "choices": ["A shift of the trachea away from the affected lung", "Coughing bloody sputum", "Wheezing upon auscultation", "Laryngeal obstruction", "Intermittent fever"],
+      "answer": 0
+    },
+    {
+      "id": "pt1_q038",
+      "type": "mc",
+      "prompt": "Which condition is pictured here?\nInsert:\n\\P 09.02 ID 701322\\",
+      "rationale": "",
+      "image": {
+        "id": "701322",
+        "src": "",
+        "alt": ""
+      },
+      "choices": ["Corneal abrasion", "Subconjunctival hemorrhage", "Conjunctivitis", "Detached retina", "Hyphema"],
+      "answer": 4
+    },
+    {
+      "id": "pt1_q039",
+      "type": "mc",
+      "prompt": "Which condition is shown in this X-ray?\nInsert:\n\\P 09.03 ID 701324\\",
+      "rationale": "",
+      "image": {
+        "id": "701324",
+        "src": "",
+        "alt": ""
+      },
+      "choices": ["Spondylolysis", "Spondylitis", "Spondylolisthesis", "Spondyloarthritis", "Spondylofasciitis"],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q040",
+      "type": "mc",
+      "prompt": "What condition that results from low-back pain is considered a medical emergency and warrants immediate referral to prevent permanent dysfunction?",
+      "rationale": "",
+      "choices": ["Changes in sexual performance", "Numbness and tingling radiating down both legs", "Loss of appetite", "Changes in bathroom habits", "Changes in bowel or bladder control"],
+      "answer": 4
+    },
+    {
+      "id": "pt1_q041",
+      "type": "mc",
+      "prompt": "Between which two articulations does rotation of the cervical spine occur?",
+      "rationale": "",
+      "choices": ["Atlantooccipital joint", "Axial occipital joint", "Atlantoaxial joint", "C2 and C3 articulation", "A combination of the occipitus, axis, and atlas"],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q042",
+      "type": "mc",
+      "prompt": "A 16-year-old rugby player falls directly onto the ball during a tackle and immediately struggles to breathe, describing a sensation of being “winded.” They appear panicked but have normal chest rise and no visible signs of significant trauma. After a few minutes, their breathing begins to normalize, and they can speak clearly again. What is the most likely diagnosis?",
+      "rationale": "",
+      "choices": ["Solar plexus injury", "Abdominal muscle contusion", "Pneumothorax", "Rib fracture"],
+      "answer": 0
+    },
+    {
+      "id": "pt1_q043",
+      "type": "mc",
+      "prompt": "The dermatome of which nerve root would be identified by a sensory test over the lateral upper arm (deltoid patch)?",
+      "rationale": "",
+      "choices": ["C3–C4", "C4–C5", "C5–C6", "C6–C7", "C8–T1"],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q044",
+      "type": "mc",
+      "prompt": "When performing a peer review of a patient's medical condition, which of the following is true regarding the patient's confidentiality?",
+      "rationale": "",
+      "choices": [
+        "The patient has waived their right to confidentiality when there is a peer review.",
+        "The patient's identifiers must be removed before the peer review.",
+        "The peer reviewers must hold all information derived from the medical case confidential and sign a confidentiality agreement.",
+        "The peer reviewers must hold all information derived from the medical case confidential for at least 7 years after the patient has turned 18.",
+        "The patient must be informed of the peer review."
+      ],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q045",
+      "type": "mc",
+      "prompt": "You are assessing a gymnast who is having difficulty flexing their wrist and extending the elbow actively after a hard fall landing on their head. Which nerve root is suspected to be injured?",
+      "rationale": "",
+      "choices": ["C4", "C5", "C6", "C7", "C8"],
+      "answer": 3
+    },
+    {
+      "id": "pt1_q046",
+      "type": "ms",
+      "prompt": "Which of the following helps in the treatment of conditions such as heartburn, GERD, and peptic ulcer disease? Choose all that apply.",
+      "rationale": "",
+      "choices": [
+        "Lowering the acidity of gastric acid produced",
+        "Inhibiting the secretion of acid",
+        "Blocking the effect of acid on tissues",
+        "Increasing protective effects of naturally occurring mucus in the digestive tract"
+      ],
+      "answer": [1, 2, 3]
+    },
+    {
+      "id": "pt1_q047",
+      "type": "mc",
+      "prompt": "What is the ability of the central nervous system to use sensory input to control and remain aware of the movement of voluntary musculature in the body, as well as limb posture and orientation, called?",
+      "rationale": "",
+      "choices": ["Retraining the brain", "Neuromotor control", "Motor planning", "None of the above"],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q048",
+      "type": "mc",
+      "prompt": "Which of the following mechanisms of injury to the neck poses the greatest risk for catastrophic spine injury?",
+      "rationale": "",
+      "choices": ["Compression", "Traction", "Lateral flexion", "Rotation", "Distraction"],
+      "answer": 0
+    },
+    {
+      "id": "pt1_q049",
+      "type": "mc",
+      "prompt": "At which cervical vertebra does a burst fracture or Jefferson fracture occur?",
+      "rationale": "",
+      "choices": ["C1", "C2", "C3", "C4", "C5"],
+      "answer": 0
+    },
+    {
+      "id": "pt1_q050",
+      "type": "mc",
+      "prompt": "What is the condition pictured below, where there is a narrowing of the spinal canal, called?",
+      "rationale": "",
+      "image": {
+        "id": "",
+        "src": "",
+        "alt": ""
+      },
+      "choices": ["Spinal stenosis", "Osteophytes", "Fracture or dislocation of the cervical vertebra", "Disc herniation compressing nerve root", "Transient neuropraxia"],
+      "answer": 3
+    },
+    {
+      "id": "pt1_q051",
+      "type": "mc",
+      "prompt": "Apart from the upper trunk, which nerve roots are involved in most brachial plexus injuries?",
+      "rationale": "",
+      "choices": ["C5–T1", "C4–C8", "C6–T2", "C3–C8", "C4–T1"],
+      "answer": 0
+    },
+    {
+      "id": "pt1_q052",
+      "type": "mc",
+      "prompt": "Which special test is most likely to be positive if the athletic trainer suspects the patient has suffered a brachial plexus nerve stretch injury (neuropraxia)?",
+      "rationale": "",
+      "choices": ["Shoulder depression test", "Cervical distraction relief test", "Cervical compression relief test", "Tinel's sign", "Nerve root compression relief test"],
+      "answer": 0
+    },
+    {
+      "id": "pt1_q053",
+      "type": "mc",
+      "prompt": "For which nerve pathology does the photograph demonstrate the active upper-limb tension test?\nInsert:\n\\P 09.04 ID 701325\\ \\qq ID: Please add arrow. Xqq\\",
+      "rationale": "",
+      "image": {
+        "id": "701325",
+        "src": "",
+        "alt": ""
+      },
+      "choices": ["Ulnar nerve", "Median nerve", "Radial nerve", "Musculoskeletal nerve", "Deltoid nerve"],
+      "answer": 0
+    },
+    {
+      "id": "pt1_q054",
+      "type": "mc",
+      "prompt": "What is the diagnosis when a patient has dizziness or nystagmus caused by passive neck extension, lateral flexion, and rotation?",
+      "rationale": "",
+      "choices": ["Vertebral vein insufficiency", "Vertebral artery insufficiency", "Subclavian artery compression", "Subclavian vein compression", "Carotid artery aneurysm"],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q055",
+      "type": "mc",
+      "prompt": "What is the degenerative condition in which the anterior vertebral body of three or more consecutive vertebrae narrows?",
+      "rationale": "",
+      "choices": ["Scheuermann's disease", "Torticollis", "Vertebral artery compression", "Thoracic outlet syndrome", "Extreme kyphotic curvature syndrome"],
+      "answer": 0
+    },
+    {
+      "id": "pt1_q056",
+      "type": "mc",
+      "prompt": "Which special test is pictured here?\nInsert:\n\\P 09.05 ID 701326\\",
+      "rationale": "",
+      "image": {
+        "id": "701326",
+        "src": "",
+        "alt": ""
+      },
+      "choices": ["Oppenheim test", "Ticklish foot test", "Babinski test", "Hoover test", "Cremasteric test"],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q057",
+      "type": "mc",
+      "prompt": "What are darkened patches of skin indicating an underlying collagen disease affecting connective tissue called?",
+      "rationale": "",
+      "choices": ["Vitiligo", "Psoriasis", "Acanthosis nigricans", "Scleroderma", "Café au lait spots"],
+      "answer": 4
+    },
+    {
+      "id": "pt1_q058",
+      "type": "mc",
+      "prompt": "Which condition is defined by a form of rheumatic arthritis affecting the spine or sacroiliac resulting in decreased lumbar ROM?",
+      "rationale": "",
+      "choices": ["Stress fracture of the pars interarticularis", "Spina bifida occulta", "Ankylosing spondylitis", "Scheuermann's disease", "Pars articularis"],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q059",
+      "type": "mc",
+      "prompt": "Which of the following is used to close small, superficial, low-tension wounds?",
+      "rationale": "",
+      "choices": ["Skin glue", "Absorbable sutures", "Natural sutures", "Adhesive skin tape"],
+      "answer": 3
+    },
+    {
+      "id": "pt1_q060",
+      "type": "mc",
+      "prompt": "What CPT code are sit to stand, getting dressed, and reaching overhead all billed as?",
+      "rationale": "",
+      "choices": ["Therapeutic activities", "Therapeutic exercises", "Neuro reeducation", "Core strengthening"],
+      "answer": 0
+    },
+    {
+      "id": "pt1_q061",
+      "type": "mc",
+      "prompt": "During the resistive phase, what is the tensile strength in earlier healing phases so that the clinician and patient can focus on resolving the remaining deficiencies?",
+      "rationale": "",
+      "choices": ["Significantly less than", "Significantly greater than", "The same", "None of the above"],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q062",
+      "type": "mc",
+      "prompt": "A football player tears his anterior cruciate ligament. Which of the following inhibits him from straightening his knee?",
+      "rationale": "",
+      "choices": ["Pain", "Edema", "Instability", "All of the above"],
+      "answer": 3
+    },
+    {
+      "id": "pt1_q063",
+      "type": "mc",
+      "prompt": "A patient comes into the clinic with point tenderness at the calcaneus. The pain is worse with the first few steps in the morning and after running for long distances. What condition is most likely the cause of the patient’s symptoms?",
+      "rationale": "",
+      "choices": ["Metatarsalgia", "Plantar fasciitis", "Achilles tendinitis", "Heel spur syndrome", "Tarsal tunnel syndrome"],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q064",
+      "type": "mc",
+      "prompt": "What is the most common mechanism of injury for an anterior cruciate ligament tear?",
+      "rationale": "",
+      "choices": ["Direct blow to the anterior knee", "Hyperextension of the knee", "Sudden deceleration with change of direction", "Direct blow to the posterior knee", "Forced flexion of the knee"],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q065",
+      "type": "match",
+      "prompt": "Match the suture type to its best description.",
+      "rationale": "",
+      "matching": {
+        "pairs": [
+          {
+            "left": "Absorbable sutures",
+            "right": "Degrade and are eventually eliminated by either inflammatory reactions or hydrolysis"
+          },
+          {
+            "left": "Nonabsorbable sutures",
+            "right": "Weaken but are permanent"
+          },
+          {
+            "left": "Natural sutures",
+            "right": "Biological in origin and cause a more intense inflammatory reaction"
+          },
+          {
+            "left": "Synthetic sutures",
+            "right": "Made from polymers and do not cause an inflammatory reaction"
+          }
+        ]
+      },
+      "review_status": "matching_type_needs_html_support_or_conversion"
+    },
+    {
+      "id": "pt1_q066",
+      "type": "mc",
+      "prompt": "Which of the following structures is most commonly injured with lateral ankle sprains?",
+      "rationale": "",
+      "choices": ["Deltoid ligament", "Calcaneofibular ligament", "Posterior talofibular ligament", "Anterior talofibular ligament", "Tibiofibular ligament"],
+      "answer": 3
+    },
+    {
+      "id": "pt1_q067",
+      "type": "mc",
+      "prompt": "What is the basis for the frequency with which a drug is administered?",
+      "rationale": "",
+      "choices": ["Individual patient", "Drug's half-life", "Severity of the injury", "Strength of the drug"],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q068",
+      "type": "mc",
+      "prompt": "What condition results from inflammation of the bursa between the acromion and supraspinatus tendon?",
+      "rationale": "",
+      "choices": ["Rotator cuff tear", "Subacromial bursitis", "Adhesive capsulitis", "Glenoid labrum tear", "Biceps tendinitis"],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q069",
+      "type": "mc",
+      "prompt": "Which special test assesses impingement of the shoulder?",
+      "rationale": "",
+      "choices": ["Hawkins-Kennedy test", "Speed test", "Yergason test", "Drop-arm test", "Apprehension test"],
+      "answer": 0
+    },
+    {
+      "id": "pt1_q070",
+      "type": "match",
+      "prompt": "Match the suture technique to its application.",
+      "rationale": "",
+      "matching": {
+        "pairs": [
+          {
+            "left": "Simple interrupted",
+            "right": "Quick and easy single stitches, used for uncomplicated laceration and wound closure, with a poor cosmetic outcome"
+          },
+          {
+            "left": "Continuous",
+            "right": "Good for hemostasis, running suture"
+          },
+          {
+            "left": "Vertical mattress",
+            "right": "A two-step stitch, increased crosshatching, poor cosmoses, better eversion with precise approximation of skin edges"
+          },
+          {
+            "left": "Horizontal mattress",
+            "right": "Best for thicker tissue, used in callused skin, two-step stitch, increased ischemia if too tight"
+          },
+          {
+            "left": "Subcuticular",
+            "right": "Fast and easy, best cosmetic results, good approximation of tissue, running stitch, stitch can remain in for a longer period of time"
+          }
+        ]
+      },
+      "review_status": "matching_type_needs_html_support_or_conversion"
+    },
+    {
+      "id": "pt1_q071",
+      "type": "mc",
+      "prompt": "What condition occurs when the patella tracks abnormally within the femoral groove?",
+      "rationale": "",
+      "choices": ["Patellar tendinitis", "Patellar subluxation", "Chondromalacia patella", "Osgood-Schlatter disease", "Patellar fracture"],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q072",
+      "type": "mc",
+      "prompt": "An athlete continues to complain of heartburn during practice in the afternoon. What is the best advice you can give them for treatment before practice?",
+      "rationale": "",
+      "choices": ["Take two antacids at the start of practice.", "Drink a lot of water 30 min before practice.", "Do not eat 2 to 3 h before practice.", "Eat only carbs before practice."],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q073",
+      "type": "ms",
+      "prompt": "Which of the following includes the symptoms that clinicians are concerned about during the early rehabilitation phase? Choose all that apply.",
+      "rationale": "",
+      "choices": ["Edema", "Pain", "Localized temperature", "Slight redness"],
+      "answer": [0, 1, 2]
+    },
+    {
+      "id": "pt1_q074",
+      "type": "mc",
+      "prompt": "Which of the following manual techniques improves shoulder abduction?",
+      "rationale": "",
+      "choices": [
+        "Moving the concave humeral head inferior to the convex glenoid cavity",
+        "Moving the convex humeral head posterior on the concave glenoid cavity",
+        "Moving the concave humeral head anterior on the concave glenoid cavity",
+        "Moving the convex humeral head posterior on the concave glenoid cavity"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "pt1_q075",
+      "type": "mc",
+      "prompt": "What type of fracture occurs when the bone bends and cracks but does not break completely?",
+      "rationale": "",
+      "choices": ["Comminuted fracture", "Spiral fracture", "Greenstick fracture", "Oblique fracture", "Impacted fracture"],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q076",
+      "type": "ms",
+      "prompt": "What medications can decrease bone density and increase the risk of osteoporosis? Choose all that apply.",
+      "rationale": "",
+      "choices": ["Long-term use of corticosteroids", "Anticonvulsants", "Opiods", "Acetaminophen", "Antibiotics"],
+      "answer": [0, 1]
+    },
+    {
+      "id": "pt1_q077",
+      "type": "mc",
+      "prompt": "Which vitamin is essential for calcium absorption and bone health?",
+      "rationale": "",
+      "choices": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D", "Vitamin K"],
+      "answer": 3
+    },
+    {
+      "id": "pt1_q078",
+      "type": "mc",
+      "prompt": "Which of the following activities places the greatest stress on the growth plate of a 10-year-old boy biomechanically?",
+      "rationale": "",
+      "choices": ["Walking", "Running", "Plyometrics", "Body weight squatting"],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q079",
+      "type": "mc",
+      "prompt": "You notice an athlete who is having a harder time breathing during practice than normal. They are complaining of fatigue that is worse the longer they practice, and you think they look paler than normal. Upon assessing the athlete, you also notice their gums look pale. What condition does this athlete most likely have?",
+      "rationale": "",
+      "choices": ["Leukemia", "Hemophilia", "Anemia", "Thrombocytopenia", "Polycythemia"],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q080",
+      "type": "mc",
+      "prompt": "For young adults, what is the proper number of reps and sets in strength training?",
+      "rationale": "",
+      "choices": ["8 to 15 reps, 2 to 3 sets", "5 reps, 10 sets", "8 to 10 reps, 1 to 2 sets", "4 to 6 reps, 2 to 3 sets"],
+      "answer": 0
+    },
+    {
+      "id": "pt1_q081",
+      "type": "mc",
+      "prompt": "Which electrolyte is most responsible for regulating muscle contraction?",
+      "rationale": "",
+      "choices": ["Sodium", "Potassium", "Calcium", "Magnesium", "Chloride"],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q082",
+      "type": "mc",
+      "prompt": "What condition results from excessive heat exposure with dehydration?",
+      "rationale": "",
+      "choices": ["Heat cramps", "Heat exhaustion", "Heat stroke", "Hypothermia", "Frostbite"],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q083",
+      "type": "mc",
+      "prompt": "What is the most severe heat illness?",
+      "rationale": "",
+      "choices": ["Heat cramps", "Heat exhaustion", "Heat stroke", "Heat syncope", "Dehydration"],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q084",
+      "type": "mc",
+      "prompt": "Which condition is a rectal temperature of 94.3°F (34.6°C) a sign of?",
+      "rationale": "",
+      "choices": ["Hyperthermia", "Hypothermia", "Heat exhaustion", "Heat stroke", "Frostnip"],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q085",
+      "type": "mc",
+      "prompt": "What condition results from freezing of body tissues?",
+      "rationale": "",
+      "choices": ["Hypothermia", "Frostbite", "Chilblains", "Heat stroke", "Raynaud phenomenon"],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q086",
+      "type": "ms",
+      "prompt": "If your patient is on Warfarin, what foods should you educate the patient to be cautious about eating? Choose all that apply.",
+      "rationale": "",
+      "choices": ["Kale", "Spinach", "Grapefruit", "Iceberg lettuce", "Broccoli"],
+      "answer": [0, 1, 2, 4]
+    },
+    {
+      "id": "pt1_q087",
+      "type": "mc",
+      "prompt": "Which nutrient is the body's primary energy source?",
+      "rationale": "",
+      "choices": ["Protein", "Fat", "Carbohydrates", "Vitamins", "Minerals"],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q088",
+      "type": "mc",
+      "prompt": "A pregnant patient presents with sudden and sharp abdominal pain, dizziness, and vaginal bleeding. Which of the following conditions is most likely?",
+      "rationale": "",
+      "choices": ["Amenorrhea", "Ectopic pregnancy", "Gastroesophageal reflux disease", "Ovarian cancer"],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q089",
+      "type": "mc",
+      "prompt": "An athlete comes to the office to discuss return to play following an episode of vertigo that was treated with an Epley manoeuvre. What guidelines would you give this patient in their return to sport?",
+      "rationale": "",
+      "choices": [
+        "Can return to sport while taking the Valium",
+        "Avoid all rotations of the body or head",
+        "Continue head and eye exercises while gradually returning",
+        "Gradually return with limited symptoms"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q090",
+      "type": "ms",
+      "prompt": "You are educating a patient on modifiable risk factors for hypertension. Which of these should you include in your education? Choose all that apply.",
+      "rationale": "",
+      "choices": ["Race", "Physical inactivity", "Diet high in fruits and vegetables", "Age", "Daily baby aspirin"],
+      "answer": [1, 2]
+    },
+    {
+      "id": "pt1_q091",
+      "type": "mc",
+      "prompt": "A patient demonstrates small, tender, red papules, or bumps in the hair follicles, with a hair shaft within the papule. What is the best treatment option?",
+      "rationale": "",
+      "choices": ["Oral antibiotics", "Antibacterial soap use", "Excision", "Topical antifungal"],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q092",
+      "type": "mc",
+      "prompt": "What condition results from insufficient insulin production?",
+      "rationale": "",
+      "choices": ["Hyperthyroidism", "Diabetes mellitus", "Hypoglycemia", "Cushing syndrome", "Addison disease"],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q093",
+      "type": "match",
+      "prompt": "Match the type of microaggression with its definition.\nMicroinsults: Insensitive or rude remarks that convey contempt for the target\nMicroassaults: Verbal, nonverbal, implicit, or explicit discriminatory behavior such as sexism or racism\nMicroinvalidations: Comments dismissive of the feelings or experiences of the person being addressed or denying one’s own biases toward a social group.\nTestlet Questions",
+      "rationale": "",
+      "matching": {
+        "pairs": []
+      },
+      "review_status": "matching_type_needs_html_support_or_conversion"
+    },
+    {
+      "id": "pt1_testlet_01",
+      "type": "ft",
+      "title": "Testlet 1",
+      "scenario": "Please use the following information to answer questions in this testlet.\nA men’s basketball player comes into the clinic holding his hand and lower arm. He is in obvious pain, with blood dripping off his fingertips, and his forearm has a 45° deformity.",
+      "questions": [
+        {
+          "id": "pt1_t01_q094",
+          "type": "ms",
+          "prompt": "Using the SAMPLE format for obtaining a history, what questions should be asked? Choose all that apply.",
+          "rationale": "",
+          "choices": ["How long ago did this happen?", "What is your name?", "What is your pain like?", "Does your pain radiate?", "Can you describe the pain to me?", "When did you last eat?"],
+          "answer": [0, 5]
+        },
+        {
+          "id": "pt1_t01_q095",
+          "type": "ms",
+          "prompt": "Using the SAMPLE format for obtaining a history, what additional questions should be asked? Choose all that apply.",
+          "rationale": "",
+          "choices": [
+            "How did this happen?",
+            "Who was with you at the time of the accident?",
+            "How long have you been experiencing this problem?",
+            "Are there any past illnesses, operations, or injuries that pertain to this injury?",
+            "Do you have any allergies?"
+          ],
+          "answer": [0, 3, 4]
+        },
+        {
+          "id": "pt1_t01_q096",
+          "type": "ms",
+          "prompt": "Read the athlete information. Your observation reveals the forearm is most likely fractured. The finger appears to have been completely avulsed. You need to find the avulsion so it can be surgically reattached. Which of the following is the best way to handle the recovery of the avulsed piece? Choose all that apply\nAthlete information: The athlete has provided the following information:\nHe was one-arm dunking a basketball, and his forearm hit the rim and broke. On the way out of the rim, his ring got stuck on the hook that holds the net to the rim. The rim broke off the glass backboard, and glass scattered on the floor.",
+          "rationale": "",
+          "choices": [
+            "Use sterile saline solution to clean the avulsion of glass.",
+            "Use sterile gauze soaked in sterile saline solution to care for the avulsion and place in a plastic bag.",
+            "Use water to clean the avulsion of glass shards.",
+            "Place the avulsion in a sterile plastic bag after it is wrapped in gauze.",
+            "Place the avulsion on ice once in the plastic bag.",
+            "Place the avulsion in ice water once in the plastic bag."
+          ],
+          "answer": [1, 3, 4, 5]
+        },
+        {
+          "id": "pt1_t01_q097",
+          "type": "ms",
+          "prompt": "The avulsed portion of the finger has been collected. What is the immediate care for the avulsed finger? Choose all that apply.",
+          "rationale": "",
+          "choices": [
+            "Cover with a dry sterile dressing.",
+            "Cover with a wet sterile dressing.",
+            "Use personal protection precautions to protect yourself from blood.",
+            "Elevate the arm.",
+            "Apply direct pressure.",
+            "Apply a constricting band proximal to the injury."
+          ],
+          "answer": [0, 2, 4]
+        },
+        {
+          "id": "pt1_t01_q098",
+          "type": "dd",
+          "prompt": "The bleeding for the finger is now controlled, and the avulsed tissue is awaiting transportation to the hospital. You must now provide care for the deformity of the forearm. You have determined that both the radius and ulna have been fractured. What are the steps, in order, for caring of the forearm fracture? Drag the list items into the correct order.",
+          "rationale": "",
+          "dd": {
+            "tokens": [
+              "Assess the pulse, movement, and sensation.",
+              "Select a correct splint.",
+              "Stabilize the joints above and below the fractures.",
+              "Apply bandages distal to proximal.",
+              "Reassess pulse, movement, and sensation."
+            ],
+            "zones": [
+              {
+                "label": "1",
+                "accept": "Assess the pulse, movement, and sensation."
+              },
+              {
+                "label": "2",
+                "accept": "Select a correct splint."
+              },
+              {
+                "label": "3",
+                "accept": "Stabilize the joints above and below the fractures."
+              },
+              {
+                "label": "4",
+                "accept": "Apply bandages distal to proximal."
+              },
+              {
+                "label": "5",
+                "accept": "Reassess pulse, movement, and sensation."
+              }
+            ]
+          },
+          "review_status": "testlet subquestion type needs manual setup"
+        }
+      ],
+      "rationale": ""
+    },
+    {
+      "id": "pt1_testlet_02",
+      "type": "ft",
+      "title": "Testlet 2",
+      "scenario": "Please use the following information to answer the questions in this testlet.\nA patient reports blunt force trauma to the abdomen from a baseball bat. He indicates he is nauseated.",
+      "questions": [
+        {
+          "id": "pt1_t02_q099",
+          "type": "match",
+          "prompt": "When observing the patient, the athletic trainer checks to determine the extent of the injury. The athletic trainer needs to determine if the patient is experiencing a hemorrhage. Match each type of hemorrhage with the indications.",
+          "rationale": "",
+          "matching": {
+            "pairs": []
+          },
+          "review_status": "matching_type_needs_html_support_or_conversion"
+        },
+        {
+          "id": "pt1_t02_q100",
+          "type": "match",
+          "prompt": "When observing the patient, the athletic trainer checks to determine the extent of the injury. The athletic trainer needs to determine if the patient is experiencing a hemorrhage. Match each additional type of hemorrhage with the indications.",
+          "rationale": "",
+          "matching": {
+            "pairs": []
+          },
+          "review_status": "matching_type_needs_html_support_or_conversion"
+        },
+        {
+          "id": "pt1_t02_q101",
+          "type": "ms",
+          "prompt": "When palpating the abdominal quadrants, what types of signs and symptoms is the athletic trainer assessing? Choose all that apply.",
+          "rationale": "",
+          "choices": ["Pain", "Bowel sounds", "Rigidity", "Skin tone", "Fractures", "Distention"],
+          "answer": [0, 2, 4, 5]
+        },
+        {
+          "id": "pt1_t02_q102",
+          "type": "dd",
+          "prompt": "When performing percussion testing on the abdomen, what is the proper order? Place the number in the circle on the abdomen, with 1 being the first percussion and 13 being the last.\nCorrect order is 1-2-3-4-5-6-7-11-10-9-8-12-13",
+          "rationale": "",
+          "image": {
+            "id": "",
+            "src": "",
+            "alt": ""
+          },
+          "dd": {
+            "tokens": ["→ Oval 1", "→ Oval 2", "→ Oval 3", "→ Oval 4", "→ Oval 5", "→ Oval 6", "→ Oval 7", "→ Oval 11", "→ Oval 10", "→ Oval 9", "→ Oval 8", "→ Oval 12", "→ Oval 13"],
+            "zones": [
+              {
+                "label": "1",
+                "accept": "→ Oval 1"
+              },
+              {
+                "label": "2",
+                "accept": "→ Oval 2"
+              },
+              {
+                "label": "3",
+                "accept": "→ Oval 3"
+              },
+              {
+                "label": "4",
+                "accept": "→ Oval 4"
+              },
+              {
+                "label": "5",
+                "accept": "→ Oval 5"
+              },
+              {
+                "label": "6",
+                "accept": "→ Oval 6"
+              },
+              {
+                "label": "7",
+                "accept": "→ Oval 7"
+              },
+              {
+                "label": "8",
+                "accept": "→ Oval 11"
+              },
+              {
+                "label": "9",
+                "accept": "→ Oval 10"
+              },
+              {
+                "label": "10",
+                "accept": "→ Oval 9"
+              },
+              {
+                "label": "11",
+                "accept": "→ Oval 8"
+              },
+              {
+                "label": "12",
+                "accept": "→ Oval 12"
+              },
+              {
+                "label": "13",
+                "accept": "→ Oval 13"
+              }
+            ]
+          },
+          "review_status": "image_or_hotspot_needs_manual_setup"
+        },
+        {
+          "id": "pt1_t02_q103",
+          "type": "ms",
+          "prompt": "At this point, the athletic trainer decides to take the patient’s blood pressure. What are the contraindications to taking blood pressure in a particular extremity? Choose all that apply.",
+          "rationale": "",
+          "choices": ["Mastectomy", "Central lines", "Ports", "Infection", "Injury to that extremity"],
+          "answer": [0, 1, 2, 4]
+        },
+        {
+          "id": "pt1_t02_q104",
+          "type": "dd",
+          "prompt": "Click on the area of the extremity where the head of the stethoscope should be placed while taking blood pressure.",
+          "rationale": "",
+          "image": {
+            "id": "",
+            "src": "",
+            "alt": ""
+          },
+          "dd": {
+            "tokens": [],
+            "zones": []
+          },
+          "review_status": "image_or_hotspot_needs_manual_setup"
+        },
+        {
+          "id": "pt1_t02_q105",
+          "type": "match",
+          "prompt": "Match the Korotkoff sounds with the phase of assessing blood pressure.",
+          "rationale": "",
+          "matching": {
+            "pairs": [
+              {
+                "left": "Phase",
+                "right": "Sound"
+              },
+              {
+                "left": "I",
+                "right": "Tapping"
+              },
+              {
+                "left": "Auscultatory gap",
+                "right": "Silence"
+              },
+              {
+                "left": "II",
+                "right": "Swooshing"
+              },
+              {
+                "left": "III",
+                "right": "Knocking"
+              },
+              {
+                "left": "IV",
+                "right": "Abrupt mottling"
+              }
+            ]
+          },
+          "review_status": "matching_type_needs_html_support_or_conversion"
+        },
+        {
+          "id": "pt1_t02_q106",
+          "type": "ms",
+          "prompt": "The patient has a blood pressure of 96/60 and a pulse rate of 20, and he is increasingly agitated. What injuries or illnesses should be suspected at this time? Choose all that apply.",
+          "rationale": "",
+          "choices": ["Fractured ribs", "Ruptured spleen", "Ruptured liver", "Fractured kidney", "Ruptured appendix", "Shock"],
+          "answer": [0, 2, 3, 5]
+        }
+      ],
+      "rationale": ""
+    },
+    {
+      "id": "pt1_testlet_03",
+      "type": "ft",
+      "title": "Testlet 3",
+      "scenario": "Please use the following information to answer the questions in this testlet.\nA middle-distance runner on the track team comes into the athletic training facility complaining of pain in their left lower leg. The pain has been getting progressively worse, but today the pain has caused him to stop his workout. The athlete is currently participating in the indoor portion of the season.",
+      "questions": [
+        {
+          "id": "pt1_t03_q107",
+          "type": "ms",
+          "prompt": "What questions does the athletic trainer need to ask regarding the history of this injured athlete? Choose all that apply.",
+          "rationale": "",
+          "choices": [
+            "Have you ever injured this leg previously?",
+            "What makes the injured leg feel better?",
+            "What makes the leg feel worse?",
+            "Does your pain radiate up or down the leg?",
+            "On a scale of 0 to 10, how would you rate your pain?",
+            "How is your significant other doing?"
+          ],
+          "answer": [0, 1, 2, 3, 4]
+        },
+        {
+          "id": "pt1_t03_q108",
+          "type": "ms",
+          "prompt": "Read the patient information. The athletic trainer tries to isolate the location of the pain. What structures would the athletic trainer palpate related to this injury? Choose all that apply. (Palpations are negative and pain-free unless otherwise noted.)\nPatient Information: The information shared by the patient is as follows:\nThe leg hurts during workouts and has gotten worse over the last few weeks.\nToday is the worst pain and is 7 on a 10-point pain scale.\nRest calms the pain, but it takes longer to calm down.\nRunning causes the pain, and the more they run, the worse is the pain.\n(+) numbness and tingling on the top of the foot",
+          "rationale": "",
+          "choices": [
+            "Achilles tendon",
+            "Extensor digitorum longus (painful along the length of the muscle)",
+            "Extensor retinacula",
+            "Fibular head (peroneal nerve)",
+            "Fibular shaft",
+            "Extensor hallucis longus (painful along the length of the muscle)"
+          ],
+          "answer": [1, 3, 5]
+        },
+        {
+          "id": "pt1_t03_q109",
+          "type": "ms",
+          "prompt": "Read the patient information. The athletic trainer tries to isolate the location of the pain. What structures would the athletic trainer palpate related to this injury? Choose all that apply. (Palpations are negative and pain-free unless otherwise noted.)\nPatient Information: The information shared by the patient is as follows:\nThe leg hurts during workouts and has gotten worse over the last few weeks.\nToday is the worst pain and is 7 on a 10-point pain scale.\nRest calms the pain, but it is taking longer to calm down.\nRunning causes the pain, and the more he runs, the worse is the pain.\n(+) numbness and tingling on the top of the foot",
+          "rationale": "",
+          "choices": [
+            "Dorsalis pedis artery (diminished on the left side compared to the right)",
+            "Posterior tibial artery (diminished on the left side compared to the right)",
+            "Lateral malleolus",
+            "Medial malleolus",
+            "Anterior tibialis muscle and tendon (painful along the length of the muscle)",
+            "Peroneus brevis"
+          ],
+          "answer": [0, 1, 4]
+        },
+        {
+          "id": "pt1_t03_q110",
+          "type": "dd",
+          "prompt": "Read the additional information. Identify the compartments of the lower leg from the drawing.\nAdditional Information: The following information has now been found:\n(+) Diminished pulse in the left dorsalis pedis\n(+) Pain along the extensor digitorum longus\n(+) Pain along the extensor hallucis longus\n(+) Diminished pulse in the posterior tibial artery\n(+) Pain along the anterior tibialis muscle\na. Lateral compartment\nb. Anterior compartment\nc. Deep posterior compartment\nd. Superficial posterior compartment",
+          "rationale": "",
+          "dd": {
+            "tokens": [],
+            "zones": []
+          },
+          "review_status": "testlet subquestion type needs manual setup"
+        },
+        {
+          "id": "pt1_t03_q111",
+          "type": "ms",
+          "prompt": "The athletic trainer does a range of motion assessment. Which motions should be assessed? Choose all that apply.\nAROM",
+          "rationale": "",
+          "choices": [
+            "Dorsiflexion (difficult to perform fully, is painful, reduced approximately 15°)",
+            "Plantar flexion (full and unrestricted, approximately 45°)",
+            "Inversion (full and unrestricted, 35°)",
+            "Eversion (full and unrestricted, 35°)",
+            "Great toe extension",
+            "Great toe flexion"
+          ],
+          "answer": [0, 1, 2, 3]
+        },
+        {
+          "id": "pt1_t03_q112",
+          "type": "ms",
+          "prompt": "The athletic trainer does a range of motion assessment. Which motions should be assessed? Choose all that apply.\nPROM",
+          "rationale": "",
+          "choices": [
+            "Dorsiflexion (passive overpressure gains an additional 5°)",
+            "Plantar flexion (passive overpressure causes significant pain)",
+            "Inversion (passive overpressure gains an additional 3°)",
+            "Eversion (passive overpressure gains an additional 4°)",
+            "Great toe extension",
+            "Great toe flexion"
+          ],
+          "answer": [0, 1, 2, 3]
+        },
+        {
+          "id": "pt1_t03_q113",
+          "type": "ms",
+          "prompt": "A strength assessment is performed next. The results are shown. Choose all that apply.\nRROM",
+          "rationale": "",
+          "choices": [
+            "Dorsiflexion (The patient tested 3-/5 (fair-) upon a manual muscle test.)",
+            "Plantar flexion (The patient tested 4/5 (good) upon a manual muscle test.)",
+            "Inversion (The patient tested 4/5 (good) upon a manual muscle test.)",
+            "Eversion (The patient tested 4/5 (good) upon a manual muscle test.)",
+            "Great toe extension",
+            "Great toe flexion"
+          ],
+          "answer": [0, 1, 2, 3]
+        },
+        {
+          "id": "pt1_t03_q114",
+          "type": "ms",
+          "prompt": "What is the athletic trainer’s differential diagnosis of this athlete’s injury? Please identify those injuries or conditions that you believe are a result of your examination. Choose all that apply.\nPatient Information: The following information has been provided:\nAROM\nDorsiflexion (Passive overpressure gains an additional 5°.)\nPlantar flexion (Passive overpressure causes significant pain.)\nInversion (Passive overpressure gains an additional 3°.)\nEversion (Passive overpressure gains an additional 4°.)\nPROM\nDorsiflexion (The patient tested 3-/5; fair-.)\nPlantar flexion (The patient tested 4/5; good.)\nInversion (The patient tested 4/5; good.)\nEversion (The patient tested 4/5; good.)",
+          "rationale": "",
+          "choices": [
+            "Deep vein thrombosis",
+            "Exertional anterior compartment syndrome",
+            "Exertional deep posterior compartment syndrome",
+            "Exertional lateral compartment syndrome",
+            "Extensor digitorum longus strain",
+            "Extensor hallucis longus strain"
+          ],
+          "answer": [1, 4, 5]
+        }
+      ],
+      "rationale": ""
+    },
+    {
+      "id": "pt1_testlet_04",
+      "type": "ft",
+      "title": "Testlet 4",
+      "scenario": "Please use the following information to answer the questions in this testlet.\nA cross-country runner has a lower-leg stress fracture. The physician has asked that the athletic trainer maintain the cardiovascular integrity of this patient while healing occurs.",
+      "questions": [
+        {
+          "id": "pt1_t04_q115",
+          "type": "ms",
+          "prompt": "What are the most common sites of stress fracture in the lower extremity? Choose all that apply",
+          "rationale": "",
+          "choices": ["Pubis", "Tibia", "Sesamoids of the great toe", "Fibula", "Metatarsal shaft", "Calcaneus"],
+          "answer": [1, 3, 4, 5]
+        },
+        {
+          "id": "pt1_t04_q116",
+          "type": "ms",
+          "prompt": "The athletic trainer decides to use aquatic rehabilitation for this patient. Which of the following are contraindications to aquatic exercise? Choose all that apply.",
+          "rationale": "",
+          "choices": ["Fear of the water", "Active infection", "Open wound", "Fecal and urinary incontinence", "Urinary tract infection", "Recent radiation treatment"],
+          "answer": [1, 2, 4]
+        },
+        {
+          "id": "pt1_t04_q117",
+          "type": "ms",
+          "prompt": "The athletic trainer decides to place the athlete in the pool for aquatic exercise. What are the upper and lower target heart rate zones for this individual if he is submerged up to his neck? Choose all that apply.",
+          "rationale": "",
+          "choices": ["Upper rate is 181.", "Upper rate is 207.", "Upper rate is 198.", "Lower rate is 103.", "Lower rate is 120.", "Lower rate is 129."],
+          "answer": [1, 3]
+        },
+        {
+          "id": "pt1_t04_q118",
+          "type": "match",
+          "prompt": "Match each of the following exercises and activities to the appropriate level of rehabilitation (advanced, intermediate, or initial). Check your answers when you have finished.",
+          "rationale": "",
+          "matching": {
+            "pairs": [
+              {
+                "left": "Advanced",
+                "right": "Total land-based program; pool program: deep water with no flotation equipment"
+              },
+              {
+                "left": "Intermediate",
+                "right": "Sport-specific activities in the water, using flotation cuffs"
+              },
+              {
+                "left": "Initial",
+                "right": "Backward walking"
+              }
+            ]
+          },
+          "review_status": "matching_type_needs_html_support_or_conversion"
+        },
+        {
+          "id": "pt1_t04_q119",
+          "type": "ms",
+          "prompt": "Which of the following photos shows appropriate taping techniques for shin splints when this athlete is ready to return to competition? Choose all that apply.\n-Need to add image IDS to insert",
+          "rationale": "",
+          "image": {
+            "id": "",
+            "src": "",
+            "alt": ""
+          },
+          "choices": ["a.", "b.", "c.", "d.", "e."],
+          "answer": [0, 4]
+        }
+      ],
+      "rationale": ""
+    },
+    {
+      "id": "pt1_testlet_05",
+      "type": "ft",
+      "title": "Testlet 5",
+      "scenario": "Please use the following information to answer the questions in this testlet.\nA patient has recently had hand surgery, and the incision is not healing as quickly as the physician would like. The patient is in no pain. The patient’s incision is on the volar surface of the hand, midway between the metacarpal heads and the wrist.",
+      "questions": [
+        {
+          "id": "pt1_t05_q120",
+          "type": "ms",
+          "prompt": "The athletic trainer must determine which therapeutic modalities can aid in the healing process. Choose all that apply.",
+          "rationale": "",
+          "choices": ["Ultrasound", "Diathermy", "Laser", "Ultraviolet radiation", "Microcurrent"],
+          "answer": [0, 2, 4]
+        },
+        {
+          "id": "pt1_t05_q121",
+          "type": "match",
+          "prompt": "When using high-voltage stimulation, which waveform diagram corresponds to which type of therapy? Match the waveform diagram to the electrotherapy it best describes.\n1. Direct current\n2. Alternating current\n3. Pulsed current\n4. Biphasic current",
+          "rationale": "",
+          "matching": {
+            "pairs": []
+          },
+          "review_status": "matching_type_needs_html_support_or_conversion"
+        },
+        {
+          "id": "pt1_t05_q122",
+          "type": "dd",
+          "prompt": "The patient’s incision, indicated by the black line, is on the volar surface of the hand, midway between the metacarpal heads and the wrist. Click on the area where the active high voltage stimulation (HVS) electrode pad should be on this patient.",
+          "rationale": "",
+          "image": {
+            "id": "",
+            "src": "",
+            "alt": ""
+          },
+          "dd": {
+            "tokens": [],
+            "zones": []
+          },
+          "review_status": "image_or_hotspot_needs_manual_setup"
+        },
+        {
+          "id": "pt1_t05_q123",
+          "type": "dd",
+          "prompt": "Click on the area where the dispersive high-voltage stimulator (HVS) electrode pad should be placed on this patient.",
+          "rationale": "",
+          "image": {
+            "id": "",
+            "src": "",
+            "alt": ""
+          },
+          "dd": {
+            "tokens": [],
+            "zones": []
+          },
+          "review_status": "image_or_hotspot_needs_manual_setup"
+        },
+        {
+          "id": "pt1_t05_q124",
+          "type": "ms",
+          "prompt": "Why would the athletic trainer use a high-voltage stimulator (HVS) in this instance? Choose all that apply.",
+          "rationale": "",
+          "choices": ["It attracts fibroblasts.", "It inhibits bacterial growth.", "It reduces muscle spasm.", "It decreases the granulation of tissue.", "It reduces pain.", "It reduces oedema."],
+          "answer": [2, 4, 5]
+        }
+      ],
+      "rationale": ""
+    },
+    {
+      "id": "pt1_testlet_06",
+      "type": "ft",
+      "title": "Testlet 6",
+      "scenario": "Please use the following information to answer the questions in this testlet.\nA patient is in rehabilitation for an injury to the lateral collateral ligament tear of the elbow. The patient is a tennis player and indicates that the injury began when she was training too much about a year ago.",
+      "questions": [
+        {
+          "id": "pt1_t06_q125",
+          "type": "ms",
+          "prompt": "What are the tests that specifically test for lateral epicondylitis? Choose all that apply.",
+          "rationale": "",
+          "choices": ["Rotary drawer test", "Cozen’s test", "Golfer’s elbow test", "Mill’s test", "Wartenberg’s Sign", "Third finger extension test"],
+          "answer": [1, 3, 5]
+        },
+        {
+          "id": "pt1_t06_q126",
+          "type": "ms",
+          "prompt": "What muscles are most likely to be involved in lateral epicondylitis? Choose all that apply.",
+          "rationale": "",
+          "choices": ["Extensor carpi radialis brevis", "Supinator", "Flexor carpi ulnaris", "Flexor carpi radialis", "Extensor digitorum communis"],
+          "answer": [0, 4]
+        },
+        {
+          "id": "pt1_t06_q127",
+          "type": "ms",
+          "prompt": "Which improper tennis technique is likely to contribute to lateral epicondylitis? Choose all that apply.",
+          "rationale": "",
+          "choices": [
+            "Premature truncal rotation",
+            "The wrist flexed during the backhand",
+            "A forehand drop shot using a scooping motion",
+            "A backhand where the elbow leads ahead of the racquet",
+            "Overhead shots with the wrist in pronation and hyperextension"
+          ],
+          "answer": [0, 1, 3]
+        },
+        {
+          "id": "pt1_t06_q128",
+          "type": "ms",
+          "prompt": "Conservative treatment has not helped this patient, and the physician determines that surgical intervention has the best chance for returning the patient to her previous level of competitiveness. What is the primary focus of immediate postoperative management for lateral epicondylitis surgery? Choose all that apply.",
+          "rationale": "",
+          "choices": ["Immobilize in a posterior splint", "Isometric wrist extension", "Range of motion allowed from 45° to 120°", "Wound healing", "Isometric wrist flexion", "Compression"],
+          "answer": [0, 3]
+        },
+        {
+          "id": "pt1_t06_q129",
+          "type": "match",
+          "prompt": "Match the phase of rehabilitation with the predominant tissue healing phase.",
+          "rationale": "",
+          "matching": {
+            "pairs": [
+              {
+                "left": "Inactive phase",
+                "right": "Inflammation"
+              },
+              {
+                "left": "Active phase",
+                "right": "Early proliferation"
+              },
+              {
+                "left": "Resistive phase",
+                "right": "Later proliferation"
+              },
+              {
+                "left": "Aggressive phase",
+                "right": "Remodeling"
+              }
+            ]
+          },
+          "review_status": "matching_type_needs_html_support_or_conversion"
+        },
+        {
+          "id": "pt1_t06_q130",
+          "type": "mc",
+          "prompt": "Read the patient information\nThe athletic trainer is suspicious that there is an underlying issue that may be a cause for referral to the physician. Given the signs and symptoms, what would the athletic trainer suspect is occurring? Choose all that apply.\nPatient Information: A week into the rehabilitation process, the patient begins to have the following signs and symptoms:\n(+) Increased pain that is disproportionate to the injury\n(+) Pain even with light touch\n(+) Decreased range of motion\n(+) Redness of upper extremity\n(+) Excessive sweating\n(+) Decreased distal pulses",
+          "rationale": "",
+          "choices": ["Raynaud’s phenomenon", "Exertional rhabdomyolysis", "Complex regional pain syndrome", "Fibromyalgia", "Blood clot"],
+          "answer": 2
+        },
+        {
+          "id": "pt1_t06_q131",
+          "type": "ms",
+          "prompt": "What are some of the treatments that the athletic trainer can use for treating a complex regional pain syndrome? Choose all that apply.\n*g. Biofeedback",
+          "rationale": "",
+          "choices": ["Over-the-counter nonsteroidal anti-inflammatory drugs", "Beta-blockers", "A neoprene sleeve", "Heat therapy", "TENS", "Guided exercise to increase range of motion"],
+          "answer": [0, 1, 3, 4, 5]
+        },
+        {
+          "id": "pt1_t06_q132",
+          "type": "ms",
+          "prompt": "The athlete returns from the physician, and the athletic trainer is instructed to apply a TENS unit to relieve pain. Click on the areas where the two electrodes should be placed on the cutaneous nerves.",
+          "rationale": "",
+          "image": {
+            "id": "",
+            "src": "",
+            "alt": ""
+          },
+          "choices": [],
+          "answer": []
+        },
+        {
+          "id": "pt1_t06_q133",
+          "type": "match",
+          "prompt": "As the patient is progressing through their treatment, a part of the process is to reduce oedema, and massage has been selected. Select the type of massage technique and its use.",
+          "rationale": "",
+          "matching": {
+            "pairs": [
+              {
+                "left": "Effleurage",
+                "right": "Relaxes patient, increases surface circulation, and distributes lubrication"
+              },
+              {
+                "left": "Petrissage",
+                "right": "Increases circulation, promotes venous and lymphatic return, increases elasticity of skin, breaks up adhesions"
+              },
+              {
+                "left": "Tapotement",
+                "right": "Stimulates subcutaneous structures"
+              },
+              {
+                "left": "Vibration",
+                "right": "Relaxes limb"
+              },
+              {
+                "left": "Friction",
+                "right": "Aids absorption of oedema, reduces inflammation, reduces muscular spasm"
+              }
+            ]
+          },
+          "review_status": "matching_type_needs_html_support_or_conversion"
+        }
+      ],
+      "rationale": ""
+    },
+    {
+      "id": "pt1_testlet_07",
+      "type": "ft",
+      "title": "Testlet 7",
+      "scenario": "Please use the following information to answer the questions in this testlet.\nA football player was injured in a game the previous night. He indicates he took a helmet to the anterior superior iliac spine of the hip. X-rays of the affected hip and pelvis are negative.",
+      "questions": [
+        {
+          "id": "pt1_t07_q134",
+          "type": "ms",
+          "prompt": "This patient has an antalgic gait. What signs would the athletic trainer likely see when evaluating this patient’s gait? Choose all that apply.",
+          "rationale": "",
+          "choices": [
+            "Body weight is shifted over the unaffected hip.",
+            "The velocity of walking and cadence are decreased.",
+            "Patient’s affected-side foot is plantar flexed.",
+            "Patient’s affected-side knee is flexed.",
+            "Stance phase on the affected leg is shorter.",
+            "Swing phase of the unaffected leg is shorter."
+          ],
+          "answer": [0, 1, 4, 5]
+        },
+        {
+          "id": "pt1_t07_q135",
+          "type": "ms",
+          "prompt": "As part of the assessment process, the athletic trainer needs to determine the anterior-posterior pelvic tilt on the affected side. Select all the measurements that the athletic trainer must take.",
+          "rationale": "",
+          "choices": ["a.", "b.", "c.", "d."],
+          "answer": [0, 1]
+        },
+        {
+          "id": "pt1_t07_q136",
+          "type": "ms",
+          "prompt": "Read the information obtained during the assessment.\nThe athletic trainer decides to use ice and ultrasound over the area. The athletic trainer wants to use direct contact ultrasound. Which of the following is the protocol for direct coupling ultrasound? Choose all that apply.\nPatient Information: The following is information obtained during the assessment of this injury:\n(+) Pain over ASIS\n(+) Discoloration over ASIS\n(+) Decreased active ROM with hip flexion\n(+) Decreased active ROM with trunk flexion\n(+) Pain with trunk rotation\n(+) Anterior pelvic tilt on the affected side\n*g. Maintain contact in a circular or linear pattern.",
+          "rationale": "",
+          "choices": [
+            "Apply coupling gel to the treatment area.",
+            "Determine the treatment intensity based on the tissue depth.",
+            "Verify the output intensity is 0 before turning it on.",
+            "Select pulsed or continuous.",
+            "Determine the duration of treatment based on the size of the area.",
+            "Apply coupling gel to the ultrasound head."
+          ],
+          "answer": [0, 1, 2, 3, 4]
+        },
+        {
+          "id": "pt1_t07_q137",
+          "type": "match",
+          "prompt": "The athletic trainer needs to develop a plan for this patient to strengthen the area. Match each muscle with the exercise used for strengthening.",
+          "rationale": "",
+          "matching": {
+            "pairs": [
+              {
+                "left": "Gluteus medius, gluteus maximus, and tensor fasciae latae",
+                "right": "Lateral slide"
+              },
+              {
+                "left": "Quadriceps and iliopsoas",
+                "right": "Supine straight-leg raise"
+              },
+              {
+                "left": "Erector spinae multifidus, gluteals, and obliques",
+                "right": "Side-lying bridge (plank)"
+              }
+            ]
+          },
+          "review_status": "matching_type_needs_html_support_or_conversion"
+        },
+        {
+          "id": "pt1_t07_q138",
+          "type": "dd",
+          "prompt": "The patient is ready to return to full-contact play, and the athletic trainer needs to create a protective thermoplastic pad to prevent reinjury. Place the layers in the order in which they would be applied to the hip, starting with the bottom layer. Choose only those that apply.\nSpray adherent → 1. ____________\nSelf-adhesive large doughnut → 2. ____________\nHard shell → 3. ____________\nElastic tape → 4. ____________\nSelf-adhesive small doughnut",
+          "rationale": "",
+          "dd": {
+            "tokens": [],
+            "zones": []
+          },
+          "review_status": "testlet subquestion type needs manual setup"
+        }
+      ],
+      "rationale": ""
+    },
+    {
+      "id": "pt1_testlet_08",
+      "type": "ft",
+      "title": "Testlet 8",
+      "scenario": "Please use the following information to answer the questions in this testlet.\nA patient has suffered a wrist fracture. Post-treatment, the fracture was immobilized for six weeks, and the patient now has stiffness in the wrist.",
+      "questions": [
+        {
+          "id": "pt1_t08_q139",
+          "type": "mc",
+          "prompt": "Look at the photo of the acute injury and identify the type of fracture that has most likely occurred. Choose only one.",
+          "rationale": "",
+          "image": {
+            "id": "",
+            "src": "",
+            "alt": ""
+          },
+          "choices": ["Navicular (scaphoid) fracture", "Colles fracture", "Lunate fracture", "Boutonniere deformity", "Barton fracture", "Smith fracture"],
+          "answer": 1
+        },
+        {
+          "id": "pt1_t08_q140",
+          "type": "mc",
+          "prompt": "Which statements describe the mechanism of injury for this fracture? Choose all that apply.",
+          "rationale": "",
+          "choices": [
+            "Valgus stress to the forearm",
+            "Varus stress to the forearm",
+            "A fall onto an outstretched hand",
+            "Wrist in neutral with a direct blow to the forearm",
+            "Wrist pronated with a direct blow to the forearm",
+            "Wrist supinated with a direct blow to the forearm"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "pt1_t08_q141",
+          "type": "match",
+          "prompt": "Once the athletic trainer has received clearance from the physician, they decide to use joint mobilization to address the stiffness. This patient has no contraindication to joint mobilization. Match each joint to the correct loose-packed position.",
+          "rationale": "",
+          "matching": {
+            "pairs": [
+              {
+                "left": "Distal radioulnar anteroposterior (AP) and posteroanterior (PA) glides",
+                "right": "10° forearm supination"
+              },
+              {
+                "left": "Radiocarpal and ulnocarpal joint",
+                "right": "Neutral wrist with slight ulnar deviation"
+              },
+              {
+                "left": "Wrist (for dorsal glide)",
+                "right": "Neutral wrist flexion, slight ulnar deviation, and neutral forearm supination"
+              },
+              {
+                "left": "Wrist (for volar glide)",
+                "right": "Neutral in wrist flexion-extension with slight ulnar deviation and neutral forearm supination-pronation"
+              },
+              {
+                "left": "Wrist (radial glide and ulnar glide)",
+                "right": "Neutral in wrist flexion-extension with slight ulnar deviation and neutral forearm supination-pronation"
+              }
+            ]
+          },
+          "review_status": "matching_type_needs_html_support_or_conversion"
+        },
+        {
+          "id": "pt1_t08_q142",
+          "type": "ms",
+          "prompt": "Click on the areas to indicate the placement of the athletic trainer’s hands on this patient to perform wrist traction.",
+          "rationale": "",
+          "image": {
+            "id": "",
+            "src": "",
+            "alt": ""
+          },
+          "choices": [],
+          "answer": []
+        },
+        {
+          "id": "pt1_t08_q143",
+          "type": "mc",
+          "prompt": "The athletic trainer elects to perform wrist ventral (volar) glide mobilization on this patient. Select the photo that best depicts the proper ventral (volar) glide technique. The arrows on the photos indicate the force being applied. Select only one.",
+          "rationale": "",
+          "image": {
+            "id": "",
+            "src": "",
+            "alt": ""
+          },
+          "choices": ["a.", "b.", "c.", "d."],
+          "answer": 0
+        },
+        {
+          "id": "pt1_t08_q144",
+          "type": "mc",
+          "prompt": "The athletic trainer elects to perform wrist radial glide mobilization on this patient. Select the photo that best depicts the proper wrist dorsal glide technique. The arrows on the photos indicate the force being applied. Select only one.",
+          "rationale": "",
+          "image": {
+            "id": "",
+            "src": "",
+            "alt": ""
+          },
+          "choices": ["a.", "b.", "c.", "d."],
+          "answer": 1
+        }
+      ],
+      "rationale": ""
+    },
+    {
+      "id": "pt1_testlet_09",
+      "type": "ft",
+      "title": "Testlet 9",
+      "scenario": "Please use the following information to answer the questions in this testlet.\nA patient with hip and abdominal weakness has been given a home exercise program to strengthen various muscle groups.",
+      "questions": [
+        {
+          "id": "pt1_t09_q145",
+          "type": "ms",
+          "prompt": "The patient needs both open- and closed-chain activities. Select the exercises that represent open-chain activities around the hip and abdomen. Choose all that apply.",
+          "rationale": "",
+          "choices": ["a.", "d.", "b.", "e.", "c."],
+          "answer": [1, 2, 4]
+        },
+        {
+          "id": "pt1_t09_q146",
+          "type": "ms",
+          "prompt": "The patient has been performing planks. As you observe her planks, what area(s) need correction for proper form? Choose all that apply.",
+          "rationale": "",
+          "choices": [
+            "Improve head position to align with the trunk.",
+            "Distribute equal pressure on elbows and toes.",
+            "Align hips with back.",
+            "Keep elbows at a 90° angle.",
+            "Keep the feet at a 45° angle."
+          ],
+          "answer": [0, 1, 2]
+        },
+        {
+          "id": "pt1_t09_q147",
+          "type": "match",
+          "prompt": "Which major muscle groups are activated in the following exercises? Match each exercise to the muscle group(s) used.",
+          "rationale": "",
+          "matching": {
+            "pairs": [
+              {
+                "left": "Side bridge (plank)",
+                "right": "Quadratus lumborum and obliques"
+              },
+              {
+                "left": "Stability ball roll-out",
+                "right": "Rectus abdominis and iliopsoas"
+              },
+              {
+                "left": "Supine double leg lifts",
+                "right": "Lower rectus abdominis"
+              },
+              {
+                "left": "Oblique abdominal curl",
+                "right": "Obliques"
+              },
+              {
+                "left": "Side-lying sit-up",
+                "right": "Quadratus lumborum and obliques"
+              },
+              {
+                "left": "Lateral trunk rotation with resistance",
+                "right": "Quadratus lumborum and obliques"
+              }
+            ]
+          },
+          "review_status": "matching_type_needs_html_support_or_conversion"
+        }
+      ],
+      "rationale": ""
+    },
+    {
+      "id": "pt1_testlet_10",
+      "type": "ft",
+      "title": "Testlet 10",
+      "scenario": "Please use the following information to answer the questions in this testlet.\nThe athletic trainer has been tasked with creating a portion of the standing orders. The specific segment assigned is medical testing options.",
+      "questions": [
+        {
+          "id": "pt1_t10_q148",
+          "type": "ms",
+          "prompt": "For athletes with a soft-tissue organ injury, what medical test options should be recommended? Choose all that apply.",
+          "rationale": "",
+          "choices": ["X-ray", "Dexa", "Pet scan", "MRI", "CT scan", "Ultrasound"],
+          "answer": [3, 4, 5]
+        },
+        {
+          "id": "pt1_t10_q149",
+          "type": "ms",
+          "prompt": "Which of the following tests should be recommended for suspected vascular concern? Choose all that apply.",
+          "rationale": "",
+          "choices": ["Pet scan", "Complete blood test", "Basic metabolic panel blood test", "Ultrasound", "CT scan", "MRI"],
+          "answer": [3, 4]
+        },
+        {
+          "id": "pt1_t10_q150",
+          "type": "mc",
+          "prompt": "Review the photo. Is it an X-ray, CT scan, or bone scan?",
+          "rationale": "",
+          "image": {
+            "id": "",
+            "src": "",
+            "alt": ""
+          },
+          "choices": ["X-ray", "CT scan", "Bone scan"],
+          "answer": 0
+        },
+        {
+          "id": "pt1_t10_q151",
+          "type": "mc",
+          "prompt": "Review the photo. Is it an X-ray, CT scan, or bone scan?",
+          "rationale": "",
+          "image": {
+            "id": "",
+            "src": "",
+            "alt": ""
+          },
+          "choices": ["X-ray", "CT scan", "Bone scan"],
+          "answer": 1
+        },
+        {
+          "id": "pt1_t10_q152",
+          "type": "mc",
+          "prompt": "Review the photo. Is it an X-ray, CT scan, or bone scan?",
+          "rationale": "",
+          "image": {
+            "id": "",
+            "src": "",
+            "alt": ""
+          },
+          "choices": ["X-ray", "CT scan", "Bone scan"],
+          "answer": 1
+        },
+        {
+          "id": "pt1_t10_q153",
+          "type": "mc",
+          "prompt": "Review the photo. Is it an X-ray, CT scan, or bone scan?",
+          "rationale": "",
+          "image": {
+            "id": "",
+            "src": "",
+            "alt": ""
+          },
+          "choices": ["X-ray", "CT scan", "Bone scan"],
+          "answer": 2
+        }
+      ],
+      "rationale": ""
+    }
+  ],
+  "metadata": {
+    "source_numbered_questions_found": 153,
+    "embedded_images_extracted": 24,
+    "note": "Draft conversion preserving source wording where parsed. Items marked needs review require domain/image/hotspot/matching setup before use.",
+    "domain_filtering": "removed_for_full_practice_test"
+  },
+  "image_manifest": [
+    {
+      "embedded_image_index": 1,
+      "docx_media_name": "word/media/image5.png",
+      "extracted_filename": "pt1_image_001.png",
+      "path": "/mnt/data/practice_test_1_images/pt1_image_001.png"
+    },
+    {
+      "embedded_image_index": 2,
+      "docx_media_name": "word/media/image6.png",
+      "extracted_filename": "pt1_image_002.png",
+      "path": "/mnt/data/practice_test_1_images/pt1_image_002.png"
+    },
+    {
+      "embedded_image_index": 3,
+      "docx_media_name": "word/media/image7.png",
+      "extracted_filename": "pt1_image_003.png",
+      "path": "/mnt/data/practice_test_1_images/pt1_image_003.png"
+    },
+    {
+      "embedded_image_index": 4,
+      "docx_media_name": "word/media/image14.png",
+      "extracted_filename": "pt1_image_004.png",
+      "path": "/mnt/data/practice_test_1_images/pt1_image_004.png"
+    },
+    {
+      "embedded_image_index": 5,
+      "docx_media_name": "word/media/image8.png",
+      "extracted_filename": "pt1_image_005.png",
+      "path": "/mnt/data/practice_test_1_images/pt1_image_005.png"
+    },
+    {
+      "embedded_image_index": 6,
+      "docx_media_name": "word/media/image9.png",
+      "extracted_filename": "pt1_image_006.png",
+      "path": "/mnt/data/practice_test_1_images/pt1_image_006.png"
+    },
+    {
+      "embedded_image_index": 7,
+      "docx_media_name": "word/media/image10.png",
+      "extracted_filename": "pt1_image_007.png",
+      "path": "/mnt/data/practice_test_1_images/pt1_image_007.png"
+    },
+    {
+      "embedded_image_index": 8,
+      "docx_media_name": "word/media/image11.png",
+      "extracted_filename": "pt1_image_008.png",
+      "path": "/mnt/data/practice_test_1_images/pt1_image_008.png"
+    },
+    {
+      "embedded_image_index": 9,
+      "docx_media_name": "word/media/image12.png",
+      "extracted_filename": "pt1_image_009.png",
+      "path": "/mnt/data/practice_test_1_images/pt1_image_009.png"
+    },
+    {
+      "embedded_image_index": 10,
+      "docx_media_name": "word/media/image13.png",
+      "extracted_filename": "pt1_image_010.png",
+      "path": "/mnt/data/practice_test_1_images/pt1_image_010.png"
+    },
+    {
+      "embedded_image_index": 11,
+      "docx_media_name": "word/media/image15.png",
+      "extracted_filename": "pt1_image_011.png",
+      "path": "/mnt/data/practice_test_1_images/pt1_image_011.png"
+    },
+    {
+      "embedded_image_index": 12,
+      "docx_media_name": "word/media/image16.png",
+      "extracted_filename": "pt1_image_012.png",
+      "path": "/mnt/data/practice_test_1_images/pt1_image_012.png"
+    },
+    {
+      "embedded_image_index": 13,
+      "docx_media_name": "word/media/image17.png",
+      "extracted_filename": "pt1_image_013.png",
+      "path": "/mnt/data/practice_test_1_images/pt1_image_013.png"
+    },
+    {
+      "embedded_image_index": 14,
+      "docx_media_name": "word/media/image18.png",
+      "extracted_filename": "pt1_image_014.png",
+      "path": "/mnt/data/practice_test_1_images/pt1_image_014.png"
+    },
+    {
+      "embedded_image_index": 15,
+      "docx_media_name": "word/media/image19.png",
+      "extracted_filename": "pt1_image_015.png",
+      "path": "/mnt/data/practice_test_1_images/pt1_image_015.png"
+    },
+    {
+      "embedded_image_index": 16,
+      "docx_media_name": "word/media/image20.png",
+      "extracted_filename": "pt1_image_016.png",
+      "path": "/mnt/data/practice_test_1_images/pt1_image_016.png"
+    },
+    {
+      "embedded_image_index": 17,
+      "docx_media_name": "word/media/image21.png",
+      "extracted_filename": "pt1_image_017.png",
+      "path": "/mnt/data/practice_test_1_images/pt1_image_017.png"
+    },
+    {
+      "embedded_image_index": 18,
+      "docx_media_name": "word/media/image22.png",
+      "extracted_filename": "pt1_image_018.png",
+      "path": "/mnt/data/practice_test_1_images/pt1_image_018.png"
+    },
+    {
+      "embedded_image_index": 19,
+      "docx_media_name": "word/media/image23.png",
+      "extracted_filename": "pt1_image_019.png",
+      "path": "/mnt/data/practice_test_1_images/pt1_image_019.png"
+    },
+    {
+      "embedded_image_index": 20,
+      "docx_media_name": "word/media/image24.png",
+      "extracted_filename": "pt1_image_020.png",
+      "path": "/mnt/data/practice_test_1_images/pt1_image_020.png"
+    },
+    {
+      "embedded_image_index": 21,
+      "docx_media_name": "word/media/image1.png",
+      "extracted_filename": "pt1_image_021.png",
+      "path": "/mnt/data/practice_test_1_images/pt1_image_021.png"
+    },
+    {
+      "embedded_image_index": 22,
+      "docx_media_name": "word/media/image2.png",
+      "extracted_filename": "pt1_image_022.png",
+      "path": "/mnt/data/practice_test_1_images/pt1_image_022.png"
+    },
+    {
+      "embedded_image_index": 23,
+      "docx_media_name": "word/media/image3.png",
+      "extracted_filename": "pt1_image_023.png",
+      "path": "/mnt/data/practice_test_1_images/pt1_image_023.png"
+    },
+    {
+      "embedded_image_index": 24,
+      "docx_media_name": "word/media/image4.png",
+      "extracted_filename": "pt1_image_024.png",
+      "path": "/mnt/data/practice_test_1_images/pt1_image_024.png"
+    }
+  ]
+}

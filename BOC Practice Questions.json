@@ -1165,8 +1165,7 @@
                 ]
               ]
             }
-          },
-          "supporting_text": "Place the SCAT6 assessment steps in the correct order."
+          }
         },
         {
           "id": "domain1_t01_q075",
@@ -1241,8 +1240,7 @@
                 ]
               ]
             }
-          },
-          "supporting_text": "Choose the three BESS phases and place them in the correct order."
+          }
         },
         {
           "id": "domain1_t01_q078",
@@ -1412,8 +1410,7 @@
                 ]
               ]
             }
-          },
-          "supporting_text": "Place the return-to-play stages in the correct order after concussion symptoms resolve and neurocognitive testing returns to baseline."
+          }
         },
         {
           "id": "domain1_t01_q084",
@@ -1548,24 +1545,24 @@
           "matching": {
             "pairs": [
               {
-                "left": "Statute of limitations",
-                "right": "It is a state law that sets a certain length of time during which an aggrieved person may sue a health care provider."
+                "left": "It is a state law that sets a certain length of time during which an aggrieved person may sue a health care provider.",
+                "right": "Statute of limitations"
               },
               {
-                "left": "Sovereign immunity",
-                "right": "Neither the government nor their agents (athletic trainer) can be held liable for an act."
+                "left": "Neither the government nor their agents (athletic trainer) can be held liable for an act.",
+                "right": "Sovereign immunity"
               },
               {
-                "left": "Assumption of risk",
-                "right": "The football player was aware of the risks of participation and decided to proceed anyway."
+                "left": "The football player was aware of the risks of participation and decided to proceed anyway.",
+                "right": "Assumption of risk"
               },
               {
-                "left": "Good Samaritan immunity",
-                "right": "A health care provider voluntarily comes to the aid of an injured person."
+                "left": "A health care provider voluntarily comes to the aid of an injured person.",
+                "right": "Good Samaritan immunity"
               },
               {
-                "left": "Comparative negligence",
-                "right": "A patient ignores the prescription of their health care provider, a disregard that can lead to an injury or an aggravation of an injury."
+                "left": "A patient ignores the prescription of their health care provider, a disregard that can lead to an injury or an aggravation of an injury.",
+                "right": "Comparative negligence"
               }
             ]
           }
@@ -1612,28 +1609,28 @@
           "matching": {
             "pairs": [
               {
-                "left": "Scope of practice",
-                "right": "The boundaries within which an athletic trainer may provide their duties"
+                "left": "The boundaries within which an athletic trainer may provide their duties",
+                "right": "Scope of practice"
               },
               {
-                "left": "Standard of care",
-                "right": "The level at which a reasonable athletic trainer would practice"
+                "left": "The level at which a reasonable athletic trainer would practice",
+                "right": "Standard of care"
               },
               {
-                "left": "Negligence",
-                "right": "The failure to act as a reasonable athletic trainer would act in the same circumstance"
+                "left": "The failure to act as a reasonable athletic trainer would act in the same circumstance",
+                "right": "Negligence"
               },
               {
-                "left": "Duty of care",
-                "right": "A responsibility to provide care based upon a relationship between the athletic trainer and their patient"
+                "left": "A responsibility to provide care based upon a relationship between the athletic trainer and their patient",
+                "right": "Duty of care"
               },
               {
-                "left": "Breach of duty",
-                "right": "Finding that the athletic trainer had an obligation owed to a harmed patient and that it was violated"
+                "left": "Finding that the athletic trainer had an obligation owed to a harmed patient and that it was violated",
+                "right": "Breach of duty"
               },
               {
-                "left": "Informed consent",
-                "right": "Getting a patient to understand what occurs and the risks and benefits of an actual treatment and getting their permission to treat based on the information"
+                "left": "Getting a patient to understand what occurs and the risks and benefits of an actual treatment and getting their permission to treat based on the information",
+                "right": "Informed consent"
               }
             ]
           }

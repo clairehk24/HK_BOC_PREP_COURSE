@@ -12,7 +12,7 @@
         --background: #f5f7fa;
         --surface: #ffffff;
         --text: #102a43;
-        --muted: #52606d;
+        --muted: #7b8794;
         --border: #d9e2ec;
         --radius: 12px;
         --radius-sm: 8px;
@@ -28,20 +28,6 @@
       }
       html {
         scroll-behavior: smooth;
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        html {
-          scroll-behavior: auto;
-        }
-
-        *,
-        *::before,
-        *::after {
-          transition-duration: 0.01ms !important;
-          animation-duration: 0.01ms !important;
-          animation-iteration-count: 1 !important;
-        }
       }
 
       body {
@@ -63,46 +49,6 @@
       a:hover,
       a:focus {
         color: var(--secondary);
-      }
-
-      a:focus-visible,
-      button:focus-visible,
-      select:focus-visible,
-      input:focus-visible,
-      .token:focus-visible,
-      .slot:focus-visible,
-      .hsCircle:focus-visible {
-        outline: 3px solid var(--primary);
-        outline-offset: 3px;
-      }
-
-      .skip-link {
-        position: absolute;
-        left: 16px;
-        top: -48px;
-        z-index: 1001;
-        background: var(--primary);
-        color: var(--surface);
-        padding: 10px 14px;
-        border-radius: var(--radius-sm);
-        font-weight: 700;
-      }
-
-      .skip-link:focus {
-        top: 16px;
-        color: var(--surface);
-      }
-
-      .sr-only {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
       }
 
       button,
@@ -314,19 +260,12 @@
         gap: 14px;
       }
 
-      .control-group label,
-      .control-group legend {
+      .control-group label {
         display: block;
         font-size: 0.95rem;
         color: var(--primary);
         font-weight: 700;
         margin-bottom: 6px;
-      }
-
-      fieldset.control-group {
-        border: 0;
-        padding: 0;
-        margin: 0;
       }
 
       .button-row {
@@ -346,11 +285,6 @@
         flex-wrap: wrap;
       }
 
-      .timerBox .muted {
-        font-size: 0.78rem;
-        line-height: 1.2;
-      }
-
       .timerSeparator {
         width: 1px;
         height: 36px;
@@ -362,28 +296,6 @@
         font-size: 1.1rem;
         letter-spacing: 0.3px;
         color: var(--primary);
-      }
-
-      .stopwatch-panel {
-        padding: 16px 18px;
-      }
-
-      .stopwatch-panel .section-title {
-        font-size: 1.05rem;
-        margin-bottom: 8px;
-      }
-
-      .stopwatch-panel .controls {
-        gap: 8px;
-      }
-
-      .stopwatch-panel .button-row {
-        gap: 6px;
-      }
-
-      .stopwatch-panel button {
-        padding: 7px 10px;
-        font-size: 0.85rem;
       }
 
       .question-text {
@@ -740,15 +652,9 @@
         font-weight: 700;
       }
 
-      .slot.over,
-      .slot.selected-drop-target {
+      .slot.over {
         border-style: solid;
         border-color: var(--secondary);
-      }
-
-      .token.selected-token {
-        border-color: var(--primary);
-        box-shadow: 0 0 0 2px rgba(36, 59, 83, 0.2);
       }
 
       @media (max-width: 900px) {
@@ -817,7 +723,7 @@
         padding-top: 18px;
         border-top: 1px solid var(--border);
       }
-      .site-footer {
+      .dd .site-footer {
         background-color: var(--surface);
         border-top: 1px solid var(--border);
         padding: 18px 20px;
@@ -866,23 +772,26 @@
     </style>
   </head>
   <body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <div class="site-header-inner">
         <div class="site-title">BOC Exam Prep Course</div>
+        <div class="site-subtitle">Practice questions, wrong stack review, timers, and randomized study sets</div>
       </div>
     </header>
 
-    <main id="main-content" class="container">
+    <main class="container">
       <section class="page-intro section">
         <a class="button-secondary-link" href="index.html">Back to Home</a>
         <h1 style="margin-top: 20px">BOC Practice Questions</h1>
-        <p>Select one or more domains, choose the number of questions you want to practice, and click “Start / Next” to begin.</p>
-        <p>Use “Submit” to check each answer. Missed or partially correct questions are saved in the Wrong Stack, where you can retry them later. Use the stopwatch to time your full session or each individual question.</p>
+        <p>Use this page to practice exam-style questions by domain. This updated layout matches the design system used on the BOC Exam Prep Course homepage and flash card page.</p>
+        <p>
+          The quiz page uses your uploaded question data and keeps the core study features, including wrong stack review, timers, multi-select scoring, drag-and-drop items, hot spot items, and focused
+          testlets.
+        </p>
       </section>
 
       <section class="card-panel section">
-        <div class="pill-row" aria-label="Practice summary" aria-live="polite">
+        <div class="pill-row">
           <span class="pill" id="pill-total">Total: 0</span>
           <span class="pill" id="pill-filtered">In set: 0</span>
           <span class="pill" id="pill-score">Score: 0.0%</span>
@@ -896,17 +805,17 @@
             <h2 class="section-title">Study Controls</h2>
 
             <div class="controls">
-              <fieldset class="control-group">
-                <legend>Domains</legend>
+              <div class="control-group">
+                <label>Domains</label>
                 <div id="domainSel" class="domain-checkbox-grid"></div>
-              </fieldset>
+              </div>
 
               <div class="control-group">
                 <label for="questionCountSel">Number of questions</label>
                 <select id="questionCountSel"></select>
               </div>
 
-              <div id="studySetNote" class="section-text" aria-live="polite"></div>
+              <div id="studySetNote" class="section-text"></div>
 
               <div class="button-row">
                 <button id="btnRetryWrong" type="button" class="secondary">Retry Wrong Stack</button>
@@ -920,21 +829,21 @@
             </div>
           </section>
 
-          <section class="card-panel stopwatch-panel" aria-labelledby="stopwatch-title">
-            <h2 id="stopwatch-title" class="section-title">Stopwatch</h2>
+          <section class="card-panel">
+            <h2 class="section-title">Stopwatch</h2>
 
             <div class="controls">
-              <div class="timerBox" role="group" aria-label="Stopwatch timers">
+              <div class="timerBox">
                 <div>
                   <div class="muted">Session stopwatch</div>
-                  <div class="timerBig" id="sessionTime" role="timer" aria-live="off" aria-label="Session stopwatch time">00:00</div>
+                  <div class="timerBig" id="sessionTime">00:00</div>
                 </div>
 
                 <div class="timerSeparator"></div>
 
                 <div>
                   <div class="muted">Current question time</div>
-                  <div class="timerBig" id="questionTime" role="timer" aria-live="off" aria-label="Current question time">00:00</div>
+                  <div class="timerBig" id="questionTime">00:00</div>
                 </div>
               </div>
 
@@ -947,21 +856,20 @@
           </section>
         </div>
 
-        <aside class="card-panel" aria-labelledby="wrong-stack-title">
-          <h2 id="wrong-stack-title" class="section-title">Wrong Stack</h2>
+        <aside class="card-panel">
+          <h2 class="section-title">Wrong Stack</h2>
           <div class="stats">
-            <div id="wrongList" class="muted" aria-live="polite">None yet.</div>
+            <div id="wrongList" class="muted">None yet.</div>
             <div class="muted">Saved locally in this browser using localStorage.</div>
           </div>
         </aside>
       </section>
 
-      <section class="card-panel section" aria-labelledby="question-heading">
-        <h2 id="question-heading" class="sr-only">Practice question</h2>
-        <div id="qMeta" class="muted" aria-live="polite"></div>
-        <div id="qText" class="question-text" tabindex="-1">Choose one or more domains and a question count, then click “Start / Next” below the question area.</div>
+      <section class="card-panel section">
+        <div id="qMeta" class="muted"></div>
+        <div id="qText" class="question-text">Choose one or more domains and a question count, then click “Start / Next” below the question area.</div>
         <div id="qUI"></div>
-        <div id="feedback" class="feedback" style="display: none" role="status" aria-live="polite" aria-atomic="true"></div>
+        <div id="feedback" class="feedback" style="display: none"></div>
 
         <div class="question-footer">
           <button id="btnNext" type="button" class="primary">Start / Next</button>
@@ -1084,7 +992,7 @@
         ).join("");
 
         questionCountSel.innerHTML = buildQuestionCountOptions();
-        questionCountSel.value = String(Math.min(QUESTIONS.length, 25));
+        questionCountSel.value = String(Math.min(QUESTIONS.length, 35));
 
         pillTotal.textContent = `Total: ${QUESTIONS.length}`;
 
@@ -1163,10 +1071,12 @@
 
       function buildQuestionCountOptions() {
         const options = [];
-        for (let i = 25; i < QUESTIONS.length; i += 25) {
+        for (let i = 5; i <= QUESTIONS.length; i += 5) {
           options.push(`<option value="${i}">${i}</option>`);
         }
-        options.push(`<option value="all">All</option>`);
+        if (!options.length || QUESTIONS.length % 5 !== 0) {
+          options.push(`<option value="${QUESTIONS.length}">${QUESTIONS.length}</option>`);
+        }
         return options.join("");
       }
 
@@ -1277,7 +1187,6 @@
         if (q.type === "hs") renderHS(q);
         if (q.type === "ft") renderFT(q);
 
-        qText.focus({ preventScroll: true });
         renderSummaryPills();
         renderWrongStack();
       }
@@ -1444,9 +1353,6 @@
 
         const backdrop = document.createElement("div");
         backdrop.className = "image-viewer-backdrop";
-        backdrop.setAttribute("role", "dialog");
-        backdrop.setAttribute("aria-modal", "true");
-        backdrop.setAttribute("aria-label", "Enlarged question image");
 
         const panel = document.createElement("div");
         panel.className = "image-viewer-panel";
@@ -1455,7 +1361,6 @@
         closeBtn.className = "image-viewer-close";
         closeBtn.type = "button";
         closeBtn.textContent = "Close";
-        closeBtn.setAttribute("aria-label", "Close enlarged image");
 
         const img = document.createElement("img");
         img.alt = "";
@@ -1485,7 +1390,6 @@
             img.src = src;
             img.alt = alt || "Enlarged question image";
             backdrop.classList.add("open");
-            closeBtn.focus();
           },
         };
         return imageViewer;
@@ -1562,8 +1466,6 @@
       function renderMC(q) {
         const wrap = document.createElement("div");
         wrap.className = "answers";
-        wrap.setAttribute("role", "group");
-        wrap.setAttribute("aria-label", "Answer choices");
         q.choices.forEach((choice, idx) => {
           const div = document.createElement("label");
           div.className = "answer";
@@ -1592,8 +1494,6 @@
       function renderMS(q) {
         const wrap = document.createElement("div");
         wrap.className = "answers";
-        wrap.setAttribute("role", "group");
-        wrap.setAttribute("aria-label", "Answer choices");
         q.choices.forEach((choice, idx) => {
           const div = document.createElement("label");
           div.className = "answer";
@@ -1627,7 +1527,6 @@
         const bank = document.createElement("div");
         bank.className = "dd-bank";
         const placements = new Map();
-        let selectedDragToken = "";
         const zones = q.dd.zones.map((z, idx) => ({ ...z, _key: getDragDropZoneKey(z, idx) }));
 
         function makeToken(text) {
@@ -1635,18 +1534,8 @@
           t.className = "token";
           t.textContent = text;
           t.draggable = true;
-          t.tabIndex = 0;
-          t.setAttribute("role", "button");
-          t.setAttribute("aria-label", `Select ${text} for drag and drop`);
           t.addEventListener("dragstart", (e) => {
             e.dataTransfer.setData("text/plain", text);
-          });
-          t.addEventListener("keydown", (e) => {
-            if (e.key !== "Enter" && e.key !== " ") return;
-            e.preventDefault();
-            selectedDragToken = text;
-            bank.querySelectorAll(".token").forEach((tokenEl) => tokenEl.classList.remove("selected-token"));
-            t.classList.add("selected-token");
           });
           return t;
         }
@@ -1658,9 +1547,6 @@
         function buildSlot(zoneDef) {
           const slot = document.createElement("div");
           slot.className = "slot";
-          slot.tabIndex = 0;
-          slot.setAttribute("role", "button");
-          slot.setAttribute("aria-label", `${zoneDef.label || "Drop target"}. Press Enter or Space to place the selected item. Press Delete or Backspace to clear.`);
           const maxTokens = getDragDropAcceptList(zoneDef).length;
 
           function renderSlot() {
@@ -1671,12 +1557,10 @@
             if (!placedTokens.length) {
               slot.textContent = zoneDef.placeholder || "Drop here";
               slot.style.color = "var(--muted)";
-              slot.setAttribute("aria-label", `${zoneDef.label || "Drop target"}. Press Enter or Space to place the selected item.`);
               return;
             }
 
             slot.style.color = "var(--primary)";
-            slot.setAttribute("aria-label", `${zoneDef.label || "Drop target"}: ${placedTokens.join(", ")}. Press Delete or Backspace to clear.`);
             placedTokens.forEach((token) => {
               const chip = document.createElement("span");
               chip.className = "slot-token";
@@ -1687,8 +1571,23 @@
 
           renderSlot();
 
-          function placeToken(tokenText) {
+          slot.addEventListener("dragover", (e) => {
+            e.preventDefault();
+            slot.classList.add("over");
+          });
+
+          slot.addEventListener("dragleave", () => {
+            slot.classList.remove("over");
+          });
+
+          slot.addEventListener("drop", (e) => {
+            e.preventDefault();
+            slot.classList.remove("over");
+
+            const tokenText = e.dataTransfer.getData("text/plain");
             if (!tokenText) return;
+
+            // Remove token from any other zone first
             for (const [zoneKey, placedToken] of placements.entries()) {
               const placedTokens = Array.isArray(placedToken) ? placedToken : placedToken ? [placedToken] : [];
               if (placedTokens.includes(tokenText)) {
@@ -1707,39 +1606,11 @@
               const rerender = slotEl._renderSlot;
               if (typeof rerender === "function") rerender();
             });
-          }
-
-          slot.addEventListener("dragover", (e) => {
-            e.preventDefault();
-            slot.classList.add("over");
-          });
-
-          slot.addEventListener("dragleave", () => {
-            slot.classList.remove("over");
-          });
-
-          slot.addEventListener("drop", (e) => {
-            e.preventDefault();
-            slot.classList.remove("over");
-
-            placeToken(e.dataTransfer.getData("text/plain"));
           });
 
           slot.addEventListener("click", () => {
             placements.delete(zoneDef._key);
             renderSlot();
-          });
-
-          slot.addEventListener("keydown", (e) => {
-            if (e.key === "Delete" || e.key === "Backspace") {
-              e.preventDefault();
-              placements.delete(zoneDef._key);
-              renderSlot();
-              return;
-            }
-            if (e.key !== "Enter" && e.key !== " ") return;
-            e.preventDefault();
-            placeToken(selectedDragToken);
           });
 
           slot._renderSlot = renderSlot;
@@ -1819,7 +1690,7 @@
 
         const hint = document.createElement("div");
         hint.className = "muted";
-        hint.textContent = "Tip: drag an item into a slot, or select an item with Enter/Space and then press Enter/Space on a slot. Press Delete or Backspace on a slot to clear it.";
+        hint.textContent = "Tip: click a drop slot to clear it.";
 
         const btn = document.createElement("button");
         btn.className = "primary";
@@ -1881,7 +1752,6 @@
               if (cell && typeof cell === "object" && cell.zoneId) {
                 const zone = matching.zones.find((z) => z.id === cell.zoneId);
                 const select = document.createElement("select");
-                select.setAttribute("aria-label", zone ? `Select match for ${zone.label || zone.id}` : "Select match");
                 select.innerHTML = `<option value="">Select match</option>`;
                 options.forEach((optionValue) => {
                   const option = document.createElement("option");
@@ -1998,12 +1868,6 @@
 
         const circle = document.createElement("div");
         circle.className = "hsCircle";
-        circle.tabIndex = 0;
-        circle.setAttribute("role", "slider");
-        circle.setAttribute("aria-label", "Hot spot target position");
-        circle.setAttribute("aria-valuemin", "0");
-        circle.setAttribute("aria-valuemax", "100");
-        circle.setAttribute("aria-valuenow", "50");
         overlay.appendChild(circle);
 
         const hintRow = document.createElement("div");
@@ -2045,29 +1909,10 @@
           circle.style.left = circlePos.xPct + "%";
           circle.style.top = circlePos.yPct + "%";
           posPill.textContent = `circle: x=${circlePos.xPct.toFixed(1)}%, y=${circlePos.yPct.toFixed(1)}%`;
-          circle.setAttribute("aria-valuenow", String(Math.round(circlePos.xPct)));
-          circle.setAttribute("aria-valuetext", `x ${circlePos.xPct.toFixed(1)}%, y ${circlePos.yPct.toFixed(1)}%`);
         }
 
         setCirclePct(50, 50);
         btnCenter.addEventListener("click", () => setCirclePct(50, 50));
-
-        circle.addEventListener("keydown", (e) => {
-          const step = e.shiftKey ? 5 : 1;
-          if (e.key === "ArrowLeft") {
-            e.preventDefault();
-            setCirclePct(circlePos.xPct - step, circlePos.yPct);
-          } else if (e.key === "ArrowRight") {
-            e.preventDefault();
-            setCirclePct(circlePos.xPct + step, circlePos.yPct);
-          } else if (e.key === "ArrowUp") {
-            e.preventDefault();
-            setCirclePct(circlePos.xPct, circlePos.yPct - step);
-          } else if (e.key === "ArrowDown") {
-            e.preventDefault();
-            setCirclePct(circlePos.xPct, circlePos.yPct + step);
-          }
-        });
 
         let dragging = false;
 

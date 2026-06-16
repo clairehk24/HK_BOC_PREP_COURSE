@@ -327,6 +327,17 @@
         border-radius: var(--radius-sm);
       }
 
+      .question-image-actions {
+        margin-top: 10px;
+        display: flex;
+        gap: 8px;
+      }
+
+      .question-image-actions button {
+        padding: 8px 12px;
+        font-size: 0.88rem;
+      }
+
       .question-image-placeholder {
         min-height: 220px;
         border: 2px dashed var(--border);
@@ -344,6 +355,53 @@
         margin-top: 8px;
         color: var(--muted);
         font-size: 0.9rem;
+      }
+
+      .image-viewer-backdrop {
+        position: fixed;
+        inset: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        background: rgba(16, 42, 67, 0.82);
+        z-index: 1000;
+      }
+
+      .image-viewer-backdrop.open {
+        display: flex;
+      }
+
+      .image-viewer-panel {
+        max-width: min(92vw, 1200px);
+        max-height: 92vh;
+        display: grid;
+        gap: 10px;
+        justify-items: end;
+      }
+
+      .image-viewer-panel img {
+        max-width: 100%;
+        max-height: calc(92vh - 56px);
+        height: auto;
+        width: auto;
+        display: block;
+        border-radius: var(--radius-sm);
+        background: var(--surface);
+        box-shadow: 0 18px 36px rgba(16, 42, 67, 0.3);
+      }
+
+      .image-viewer-close {
+        border-color: rgba(255, 255, 255, 0.5);
+        background: rgba(255, 255, 255, 0.12);
+        color: #ffffff;
+      }
+
+      .image-viewer-close:hover,
+      .image-viewer-close:focus {
+        border-color: #ffffff;
+        background: rgba(255, 255, 255, 0.2);
+        color: #ffffff;
       }
 
       .answers {
@@ -478,6 +536,51 @@
         margin-bottom: 6px;
       }
 
+      .question-context-rich {
+        white-space: normal;
+      }
+
+      .patient-report-rich {
+        display: grid;
+        gap: 10px;
+      }
+
+      .patient-report-rich p {
+        margin: 0;
+      }
+
+      .patient-report-rich .section-title {
+        font-weight: 800;
+      }
+
+      .patient-report-rich .report-table {
+        border-collapse: collapse;
+        width: max-content;
+        max-width: 100%;
+      }
+
+      .patient-report-rich .report-table th,
+      .patient-report-rich .report-table td {
+        padding: 2px 18px 2px 0;
+        text-align: left;
+        vertical-align: top;
+        border: 0;
+      }
+
+      .patient-report-rich .report-table th {
+        font-weight: 800;
+        text-decoration: underline;
+      }
+
+      .patient-report-rich mark {
+        background: #fff59d;
+        padding: 0 2px;
+      }
+
+      .patient-report-rich del {
+        text-decoration: line-through;
+      }
+
       .matching-wrap {
         display: grid;
         gap: 12px;
@@ -520,12 +623,15 @@
         text-align: center;
       }
 
-      .zone .slot {
+      .zone .slot,
+      .dd-table .slot {
         min-width: 0;
         min-height: 30px;
         border: 1px dashed var(--border);
         border-radius: 8px;
         display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
         align-items: center;
         justify-content: flex-start;
         padding: 5px 8px;
@@ -533,6 +639,17 @@
         color: var(--muted);
         font-size: 0.9rem;
         line-height: 1.2;
+      }
+
+      .slot-token {
+        display: inline-flex;
+        align-items: center;
+        padding: 4px 8px;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        background: var(--surface);
+        color: var(--primary);
+        font-weight: 700;
       }
 
       .slot.over {
@@ -1171,13 +1288,23 @@
         return `zone_${index}`;
       }
 
+      function getDragDropAcceptList(zone) {
+        if (Array.isArray(zone.accept)) return zone.accept;
+        return [zone.accept];
+      }
+
       function scoreDragDrop(placements, zones) {
-        const total = Math.max(1, zones.length);
+        const total = Math.max(1, zones.reduce((sum, z) => sum + getDragDropAcceptList(z).length, 0));
         let ok = 0;
         zones.forEach((z, idx) => {
-          if (placements.get(getDragDropZoneKey(z, idx)) === z.accept) ok++;
+          const expected = new Set(getDragDropAcceptList(z));
+          const placed = placements.get(getDragDropZoneKey(z, idx));
+          const placedTokens = Array.isArray(placed) ? placed : placed ? [placed] : [];
+          placedTokens.forEach((token) => {
+            ok += expected.has(token) ? 1 : -1;
+          });
         });
-        return ok / total;
+        return clamp01(ok / total);
       }
 
       function normalizeMatchKey(value) {
@@ -1219,6 +1346,55 @@
         return lines.join("\n");
       }
 
+      let imageViewer = null;
+
+      function ensureImageViewer() {
+        if (imageViewer) return imageViewer;
+
+        const backdrop = document.createElement("div");
+        backdrop.className = "image-viewer-backdrop";
+
+        const panel = document.createElement("div");
+        panel.className = "image-viewer-panel";
+
+        const closeBtn = document.createElement("button");
+        closeBtn.className = "image-viewer-close";
+        closeBtn.type = "button";
+        closeBtn.textContent = "Close";
+
+        const img = document.createElement("img");
+        img.alt = "";
+
+        function closeViewer() {
+          backdrop.classList.remove("open");
+          img.removeAttribute("src");
+        }
+
+        closeBtn.addEventListener("click", closeViewer);
+        backdrop.addEventListener("click", (e) => {
+          if (e.target === backdrop) closeViewer();
+        });
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape" && backdrop.classList.contains("open")) closeViewer();
+        });
+
+        panel.appendChild(closeBtn);
+        panel.appendChild(img);
+        backdrop.appendChild(panel);
+        document.body.appendChild(backdrop);
+
+        imageViewer = {
+          backdrop,
+          img,
+          open(src, alt) {
+            img.src = src;
+            img.alt = alt || "Enlarged question image";
+            backdrop.classList.add("open");
+          },
+        };
+        return imageViewer;
+      }
+
       function renderQuestionImage(q, targetEl) {
         if (!q || !q.image) return;
 
@@ -1232,6 +1408,20 @@
           img.alt = imgObj.alt || "Question image";
           if (imgObj.width) img.style.width = imgObj.width;
           wrap.appendChild(img);
+
+          const actions = document.createElement("div");
+          actions.className = "question-image-actions";
+
+          const enlargeBtn = document.createElement("button");
+          enlargeBtn.type = "button";
+          enlargeBtn.className = "secondary";
+          enlargeBtn.textContent = "Enlarge image";
+          enlargeBtn.addEventListener("click", () => {
+            ensureImageViewer().open(imgObj.src, imgObj.alt || "Question image");
+          });
+
+          actions.appendChild(enlargeBtn);
+          wrap.appendChild(actions);
         } else if (imgObj.placeholder) {
           const box = document.createElement("div");
           box.className = "question-image-placeholder";
@@ -1257,15 +1447,16 @@
       }
 
       function appendQuestionContext(q, targetEl) {
-        const rawContext = typeof q.supporting_text === "string" ? q.supporting_text.trim() : "";
+        const rawHtmlContext = typeof q.supporting_html === "string" ? q.supporting_html.trim() : "";
         const contextText = getQuestionContextText(q);
-        if (!contextText && !(q && q.image && q.image.src)) return;
+        if (!rawHtmlContext && !contextText && !(q && q.image && q.image.src)) return;
 
-        if (contextText) {
+        if (rawHtmlContext || contextText) {
           const box = document.createElement("div");
           box.className = "question-context";
           const title = (q && typeof q.context_title === "string" && q.context_title.trim()) || "Patient Evaluation";
-          box.innerHTML = `<div class="question-context-title">${title}</div><div>${escapeHtml(contextText)}</div>`;
+          const body = rawHtmlContext ? `<div class="question-context-rich">${rawHtmlContext}</div>` : `<div>${escapeHtml(contextText)}</div>`;
+          box.innerHTML = `<div class="question-context-title">${title}</div>${body}`;
           targetEl.appendChild(box);
         }
 
@@ -1356,7 +1547,29 @@
         function buildSlot(zoneDef) {
           const slot = document.createElement("div");
           slot.className = "slot";
-          slot.textContent = zoneDef.placeholder || "Drop here";
+          const maxTokens = getDragDropAcceptList(zoneDef).length;
+
+          function renderSlot() {
+            const placed = placements.get(zoneDef._key);
+            const placedTokens = Array.isArray(placed) ? placed : placed ? [placed] : [];
+            slot.innerHTML = "";
+
+            if (!placedTokens.length) {
+              slot.textContent = zoneDef.placeholder || "Drop here";
+              slot.style.color = "var(--muted)";
+              return;
+            }
+
+            slot.style.color = "var(--primary)";
+            placedTokens.forEach((token) => {
+              const chip = document.createElement("span");
+              chip.className = "slot-token";
+              chip.textContent = token;
+              slot.appendChild(chip);
+            });
+          }
+
+          renderSlot();
 
           slot.addEventListener("dragover", (e) => {
             e.preventDefault();
@@ -1376,22 +1589,31 @@
 
             // Remove token from any other zone first
             for (const [zoneKey, placedToken] of placements.entries()) {
-              if (placedToken === tokenText) {
-                placements.delete(zoneKey);
+              const placedTokens = Array.isArray(placedToken) ? placedToken : placedToken ? [placedToken] : [];
+              if (placedTokens.includes(tokenText)) {
+                const remaining = placedTokens.filter((token) => token !== tokenText);
+                if (remaining.length) placements.set(zoneKey, remaining);
+                else placements.delete(zoneKey);
               }
             }
 
-            placements.set(zoneDef._key, tokenText);
-            slot.textContent = tokenText;
-            slot.style.color = "var(--primary)";
+            const currentPlaced = placements.get(zoneDef._key);
+            const currentTokens = Array.isArray(currentPlaced) ? currentPlaced : currentPlaced ? [currentPlaced] : [];
+            const nextTokens = maxTokens > 1 ? currentTokens.concat(tokenText) : [tokenText];
+            placements.set(zoneDef._key, nextTokens);
+
+            wrap.querySelectorAll(".slot").forEach((slotEl) => {
+              const rerender = slotEl._renderSlot;
+              if (typeof rerender === "function") rerender();
+            });
           });
 
           slot.addEventListener("click", () => {
             placements.delete(zoneDef._key);
-            slot.textContent = zoneDef.placeholder || "Drop here";
-            slot.style.color = "var(--muted)";
+            renderSlot();
           });
 
+          slot._renderSlot = renderSlot;
           return slot;
         }
 
@@ -1474,7 +1696,11 @@
         btn.className = "primary";
         btn.textContent = "Submit";
         btn.addEventListener("click", () => {
-          const missing = zones.some((z) => !placements.get(z._key));
+          const missing = zones.some((z) => {
+            const placed = placements.get(z._key);
+            const placedTokens = Array.isArray(placed) ? placed : placed ? [placed] : [];
+            return placedTokens.length < getDragDropAcceptList(z).length;
+          });
           if (missing) return;
 
           const score01 = scoreDragDrop(placements, zones);

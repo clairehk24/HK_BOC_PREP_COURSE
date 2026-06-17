@@ -1,7 +1,7 @@
 {
   "title": "BOC Practice Questions",
   "version": "1.1",
-  "source": "boc_practice_questions_domain_1.xlsx; boc_practice_questions_domain_2_updated.xlsx",
+  "source": "boc_practice_questions_domain_1.xlsx; boc_practice_questions_domain_2_updated.xlsx; boc_practice_questions_domain_3_updated.xlsx",
   "domains": [
     {
       "id": "domain_1",
@@ -16,6 +16,13 @@
       "category": "Assessment, Evaluation, and Diagnosis",
       "question_count": 159,
       "testlet_count": 4
+    },
+    {
+      "id": "domain_3",
+      "name": "Domain 3",
+      "category": "Critical Incident Management",
+      "question_count": 109,
+      "testlet_count": 3
     }
   ],
   "questions": [
@@ -4845,25 +4852,2254 @@
         }
       ],
       "rationale": ""
+    },
+    {
+      "id": "domain3_q001",
+      "source_question_number": 1,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "Which of the following is a component of an emergency action plan?",
+      "rationale": "",
+      "choices": ["Size of the venue", "Padlocks on gates", "Cooperation between emergency care providers", "Directions to the venue", "Consent of the patient"],
+      "answer": 2
+    },
+    {
+      "id": "domain3_q002",
+      "source_question_number": 2,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "The athletic trainer is dealing with an emergency situation. Which of the following is important to communicate when speaking with the emergency (9-1-1) operator?",
+      "rationale": "",
+      "choices": [
+        "Provide a specific description of the injury and care being provided.",
+        "Provide a diagnosis of the injury.",
+        "Provide the name and age of the injured patient.",
+        "Indicate the desired hospital or nearest care facility.",
+        "Get the name of the patient’s parents to get consent."
+      ],
+      "answer": 0
+    },
+    {
+      "id": "domain3_q003",
+      "source_question_number": 3,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What are the three basic steps to implementing an emergency plan?",
+      "rationale": "",
+      "choices": [
+        "Hand out responsibilities to various groups, practice the plan, and document it.",
+        "Review the plan with various groups of people involved, modify the plan as needed, and post it.",
+        "Engage all emergency personal for input, have each group rehearse the plan, and commit the plan to writing.",
+        "Distribute the plan to all staff members, maintain and modify the plan annually, and document the plan practice.",
+        "Write the plan, educate the emergency team members on the plan, and rehearse it."
+      ],
+      "answer": 4
+    },
+    {
+      "id": "domain3_q004",
+      "source_question_number": 4,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "You are treating an athlete who is showing signs of shock. Which of the following is the first step of general shock management?",
+      "rationale": "",
+      "choices": [
+        "Giving the patient medication to control the initial injury",
+        "Controlling the loss of fluids",
+        "Elevating the head and neck",
+        "Doing a secondary survey",
+        "Putting the person in recovery position"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "domain3_q005",
+      "source_question_number": 5,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What is the proper use of an inhaler in treating exercise-induced bronchospasm?",
+      "rationale": "",
+      "choices": [
+        "Shake the inhaler, exhale completely, insert the mouthpiece and seal with the lips, inhale slowly, and hold the medication in as long as possible.",
+        "Shake the inhaler for 30 seconds, insert the mouthpiece and seal with the lips, inhale slowly, and hold the medication in as long as possible.",
+        "Shake the inhaler, exhale completely, insert the mouthpiece and seal with the lips, inhale quickly, and hold the medication in as long as possible.",
+        "Shake the inhaler, place the inhaler close to the mouth but do not seal, inhale slowly, and hold the medication in as long as possible.",
+        "Shake the inhaler, inhale completely, insert the mouthpiece and seal with the lips, and exhale slowly."
+      ],
+      "answer": 0
+    },
+    {
+      "id": "domain3_q006",
+      "source_question_number": 6,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "The athletic trainer has witnessed an adult patient collapse. The EMS has been activated. The athletic trainer has determined there is no breathing and no heartbeat. What is the next step that should be taken?",
+      "rationale": "",
+      "choices": [
+        "Roll the patient onto their side and wait for advanced life support.",
+        "Get the AED.",
+        "Begin chest compressions at a rate of 100 per minute.",
+        "Reassess the patient to make sure they have no heartbeat.",
+        "Place an aspirin under the patient’s tongue."
+      ],
+      "answer": 2
+    },
+    {
+      "id": "domain3_q007",
+      "source_question_number": 7,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "During assessment, the athletic trainer notices a patient has abnormal eye movements and one pupil is unreactive to light. What is the athletic trainer’s next best step for this patient?",
+      "rationale": "",
+      "choices": [
+        "Cover the unresponsive eye and send the patient to the emergency room.",
+        "Cover both eyes and send the patient to the emergency room.",
+        "Place sterile saline solution in the eye and keep the patient from returning to competition.",
+        "Monitor the patient on the sideline and give him aspirin.",
+        "Monitor the patient’s vital signs and activate the EMS."
+      ],
+      "answer": 4
+    },
+    {
+      "id": "domain3_q008",
+      "source_question_number": 8,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "How does the athletic trainer determine the correct size of a blood pressure cuff?",
+      "rationale": "",
+      "choices": [
+        "Adults get an adult-sized device.",
+        "Children get a child-sized device.",
+        "The cuff wraps around the arm 1 to 1.5 times and takes up two-thirds of the length of the upper arm.",
+        "The cuff wraps around the arm 1 to 1.5 times and takes up half of the length of the upper arm.",
+        "The cuff wraps around the arm 1 to 1.5 times and takes up one-third of the length of the upper arm."
+      ],
+      "answer": 2
+    },
+    {
+      "id": "domain3_q009",
+      "source_question_number": 9,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "In what period of time will irreversible brain damage occur?",
+      "rationale": "",
+      "choices": ["1 minute of asystole", "4 minutes of asystole", "4 to 6 minutes of asystole", "6 to 10 minutes of asystole", "More than 10 minutes of asystole"],
+      "answer": 2
+    },
+    {
+      "id": "domain3_q010",
+      "source_question_number": 10,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "Which of the following is the best description for the proper placement of an adult pocket CPR mask with a one-way valve?",
+      "rationale": "",
+      "choices": [
+        "Place the flat end of the mask over the bridge of the nose and the pointed end over the patient’s chin and lower lip.",
+        "Place the pointed end of the mask over the bridge of the nose and the flat end over the patient’s chin and lower lip.",
+        "Place the pointed end of the mask over the bridge of the nose and the flat end over the patient’s chin and upper lip.",
+        "Place the pointed end of the mask over the upper lip and the flat end over the patient’s chin and lower lip.",
+        "Only apply the one-way valve mask after oxygen has been attached."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "domain3_q011",
+      "source_question_number": 11,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "Which statement describes the best placement of AED electrode pads on the chest of an adult?",
+      "rationale": "",
+      "choices": [
+        "The right pad is on the right anterior superior chest wall and the left pad is on the inferior posterior left side.",
+        "The right pad is on the right anterior superior chest wall and the left pad is on the inferior lateral left chest.",
+        "The right pad is on the anterior sternal chest wall and the left pad is on the upper anterior lateral left chest.",
+        "The right pad is on the anterior sternal chest wall and the left pad is on the posterior lateral left chest.",
+        "The right pad is on the anterior superior chest wall and the left pad is on the superior anterior left chest."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "domain3_q012",
+      "source_question_number": 12,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "Which of the following is the mechanism of injury for a contrecoup injury?",
+      "rationale": "",
+      "choices": [
+        "A moving head hitting an object and stopping abruptly",
+        "A moving head hitting an unyielding, moving object",
+        "A moving head hitting a moving object",
+        "A still head being hit by a moving object",
+        "A still head being hit by an unmoving object"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "domain3_q013",
+      "source_question_number": 13,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "An athlete has experienced a posterior dislocation of the knee. Which of the following secondary injury will most likely result from a posterior dislocation of the knee?",
+      "rationale": "",
+      "choices": [
+        "Dislocation of the patella",
+        "Rupture of the patellar tendon and popliteal artery",
+        "Rupture of the popliteal bursa and the posterior cruciate ligament",
+        "Damage to the neurovascular tissues",
+        "Damage of the femoral nerve"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "domain3_q014",
+      "source_question_number": 14,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What do agonal respirations indicate?",
+      "rationale": "",
+      "choices": ["Diabetic ketoacidosis", "Spinal cord injury", "Increased intracranial pressure", "Seizure", "Early-stage cardiac arrest"],
+      "answer": 4
+    },
+    {
+      "id": "domain3_q015",
+      "source_question_number": 15,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "A patient who has diabetes presents with the following signs: is conscious but confused, has normal breathing rates, has normal breath odor, and their pulse is rapid and weak. Given the signs presented, what is the athletic trainer’s best immediate emergency care of this patient?",
+      "rationale": "",
+      "choices": ["Inject insulin.", "Administer glucose between the cheek and gum line.", "Monitor vital signs.", "Administer high-flow oxygen.", "Determine if their breath smells sweet."],
+      "answer": 1
+    },
+    {
+      "id": "domain3_q016",
+      "source_question_number": 16,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What is most likely to result from a posterior dislocation of the sternal end of the clavicle?",
+      "rationale": "",
+      "choices": ["Cardiac arrest", "Difficulty in breathing", "Pneumothorax", "Ruptured subclavian artery", "Rupture of the esophagus"],
+      "answer": 1
+    },
+    {
+      "id": "domain3_q017",
+      "source_question_number": 17,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What injury will result from significant blunt trauma to the chest wall?",
+      "rationale": "",
+      "choices": ["Hemothorax", "Splenic rupture", "Rupture of the diaphragm", "Sucking chest wound", "Pneumothorax"],
+      "answer": 0
+    },
+    {
+      "id": "domain3_q018",
+      "source_question_number": 18,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "A baseball hits an athlete in the chest, directly over the heart. What condition does this most likely lead to?",
+      "rationale": "",
+      "choices": ["Respiratory arrest", "Hypotension", "Commotio cordis", "Traumatic asphyxia", "Myocarditis"],
+      "answer": 2
+    },
+    {
+      "id": "domain3_q019",
+      "source_question_number": 19,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What form of shock likely results from bradycardia, hypotension, and signs of a neck injury?",
+      "rationale": "",
+      "choices": ["Cardiogenic", "Septic", "Neurogenic", "Psychogenic", "Hypovolemic"],
+      "answer": 2
+    },
+    {
+      "id": "domain3_q020",
+      "source_question_number": 20,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "You are working in an event when someone runs up to you and says someone is having an allergic reaction. You immediately assess the person and confirm they are most likely experiencing an allergic reaction. However, you do not have an epinephrine pen. What is the next best course of action?",
+      "rationale": "",
+      "choices": [
+        "Call 9-1-1 and monitor the vital signs.",
+        "Promptly transport the patient to the emergency room without waiting for advanced life support.",
+        "Maintain the body temperature, elevate feet, and administer oxygen.",
+        "Maintain the body temperature, elevate arms and legs, and monitor the vital signs.",
+        "Monitor the vital signs and begin CPR as needed."
+      ],
+      "answer": 0
+    },
+    {
+      "id": "domain3_q021",
+      "source_question_number": 21,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What is the immediate care for a patient whom the athletic trainer suspects to have exertional rhabdomyolysis?",
+      "rationale": "",
+      "choices": [
+        "Get the patient to a physician immediately.",
+        "Get the patient to drink fluids with electrolytes.",
+        "Have the patient sit out of physical activity until they recover.",
+        "Have the patient slow their breathing pattern to a normal level.",
+        "Stop the patient’s activity and reintroduce activity gradually."
+      ],
+      "answer": 0
+    },
+    {
+      "id": "domain3_q022",
+      "source_question_number": 22,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "A patient has been bitten by a snake. What is the best care for this situation?",
+      "rationale": "",
+      "choices": [
+        "Apply a constricting band proximal to the bite and identify the markings on the snake.",
+        "Apply a constricting band distal to the bite and identify the markings on the snake.",
+        "Apply a constricting band proximal to the bite and either capture or kill the snake.",
+        "Apply a constricting band proximal to the bite, elevate the extremity, and identify the markings on the snake.",
+        "Apply a constricting band proximal to the bite and suck the venom or blood from the site."
+      ],
+      "answer": 0
+    },
+    {
+      "id": "domain3_q023",
+      "source_question_number": 23,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "Which of the following is included in the management of a patient with second-impact syndrome, with a Glasgow score of less than 9?",
+      "rationale": "",
+      "choices": [
+        "Place the patient in a quiet environment, lower the lights, and refer them to a physician.",
+        "Have the patient sit out of practice and games until they can pass the concussion testing standards for return to play.",
+        "Test the patient’s orientation, concentration, and memory; do a cranial nerve assessment; and do some exertional testing.",
+        "Call 9-1-1, monitor the vital signs, provide oxygen, and treat for shock.",
+        "Look for obvious deformities and increased pain and place ice on the area of impact."
+      ],
+      "answer": 3
+    },
+    {
+      "id": "domain3_q024",
+      "source_question_number": 24,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What is the proper equipment needed for backboarding a patient who is in a seated position?",
+      "rationale": "",
+      "choices": ["A stair chair", "A flexible stretcher", "A long backboard", "Start with a short backboard and then strap to a long backboard", "A scoop stretcher"],
+      "answer": 3
+    },
+    {
+      "id": "domain3_q025",
+      "source_question_number": 25,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "A patient presents the following signs and symptoms: restlessness, confusion, obtundation, hypotension, tachycardia, respiration changes, and narrowing of pulse pressure. What condition is it most likely?",
+      "rationale": "",
+      "choices": ["A drug overdose", "A seizure", "Altitude sickness", "Rhabdomyolysis", "Shock"],
+      "answer": 4
+    },
+    {
+      "id": "domain3_q026",
+      "source_question_number": 26,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What does a pulse pressure of 50 mmHg or greater indicate?",
+      "rationale": "",
+      "choices": ["Heart contusion", "Stroke", "Ruptured aorta", "Increased intracranial bleeding", "Sudden cardiac death"],
+      "answer": 3
+    },
+    {
+      "id": "domain3_q027",
+      "source_question_number": 27,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "When is it necessary to inject a patient with epinephrine?",
+      "rationale": "",
+      "choices": [
+        "Immediately after the patient is bitten by a bee",
+        "When the patient exhibits difficulty in breathing, symptoms of shock, itching, and swelling after coming in contact with an allergen",
+        "Whenever the patient is having an asthma attack",
+        "When the athletic trainer can see paradoxical breathing",
+        "Immediately after hives appear on the skin"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "domain3_q028",
+      "source_question_number": 28,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What is the proper mandated care standards set by OSHA when dealing with an abrasion that might transmit a communicable disease?",
+      "rationale": "",
+      "choices": [
+        "Have the patient stop the bleeding themselves, place a sterile gauze on the wound, and tape it in place.",
+        "Have the patient stop the bleeding themselves and apply an occlusive dressing.",
+        "The athletic trainer wears latex gloves, stops the bleeding, cleans the wound, and applies an occlusive dressing.",
+        "Wear a nonabsorbent gown, face mask, and gloves; stop the bleeding; and apply an occlusive dressing.",
+        "Apply a pressure bandage on the abrasion while wearing latex gloves and report the injury to the CDC for contact tracing."
+      ],
+      "answer": 2
+    },
+    {
+      "id": "domain3_q029",
+      "source_question_number": 29,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "A patient presents with lower leg swelling, decreased sensation over the dorsum of the foot, and a glossy skin appearance. What condition do you suspect the patient is experiencing?",
+      "rationale": "",
+      "choices": ["Deep vein thrombosis", "Anterior compartment syndrome", "Lymphedema", "Normal swelling after running for long periods of time"],
+      "answer": 1
+    },
+    {
+      "id": "domain3_q030",
+      "source_question_number": 30,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "Which of the following are eye conditions that are considered an emergency and need care by a physician?",
+      "rationale": "",
+      "choices": [
+        "Gradual loss of vision over a year’s time",
+        "A stye that will not resolve with hot packs",
+        "Crusty matter that makes it hard to open one’s eyes upon waking",
+        "Itching, burning, watery eye that appears pink",
+        "Displaced contact lens"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "domain3_q031",
+      "source_question_number": 31,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "A patient has an object impaled through his hand. What is the best treatment of this injury?",
+      "rationale": "",
+      "choices": [
+        "Call 9-1-1, apply a sterile gauze, remove the object quickly, apply a bandage, and keep the patient calm.",
+        "Call 9-1-1, apply a sterile gauze, apply a pressure bandage, remove the object if possible, and immobilize with a splint.",
+        "Apply a sterile gauze, immobilize the object, and splint to keep the hand and wrist immobilized.",
+        "Apply direct pressure to the brachial artery and the site of the impaled object. Place the arm in a sling and take the patient to the hospital for removal.",
+        "Cut off both ends of the impaled object and then remove it. Apply a sterile gauze, immobilize the wrist and hand, and get the patient to a physician."
+      ],
+      "answer": 2
+    },
+    {
+      "id": "domain3_q032",
+      "source_question_number": 32,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What injury would the athletic trainer most likely suspect if a patient’s mechanism of injury is a forceful impact to the forearm, intense swelling, and bruising with no deformity or specific point of pain but with severe pain with passive motion of the fingers?",
+      "rationale": "",
+      "choices": ["Fracture of both forearm bones", "Compartment syndrome", "Radial head fracture", "Tennis elbow", "Ruptured common flexor tendon"],
+      "answer": 1
+    },
+    {
+      "id": "domain3_q033",
+      "source_question_number": 33,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "How can an athletic trainer take an accurate blood pressure reading without a stethoscope?",
+      "rationale": "",
+      "choices": [
+        "Place two fingers over the brachial artery at the elbow, inflate the cuff to above 250 mmHg, release air slowly until a pulse is felt within the brachial artery (note this is the systolic number), and then note when the pulse is no longer felt (note this is the diastolic number).",
+        "Place two fingers over the radial artery at the wrist, inflate the cuff to above 200 mmHg, release air slowly until a pulse is felt within the radial artery (note this is the systolic number), and then note when the pulse is no longer felt (note this is the diastolic number).",
+        "Place two fingers over the radial artery of the elbow, inflate the cuff to 20 to 30 mmHg above the anticipated systolic pressure, and release air slowly until a pulse is felt within the radial artery (note this is the systolic number). It is not possible to note the diastolic in this fashion.",
+        "Place two fingers over the brachial artery above the elbow, inflate the cuff to above 250 mmHg, release air slowly until a pulse is felt within the brachial artery (note this is the systolic number), and then note when the pulse is no longer felt (note this is the diastolic number).",
+        "There is no way to take a blood pressure without a stethoscope."
+      ],
+      "answer": 2
+    },
+    {
+      "id": "domain3_q034",
+      "source_question_number": 34,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "The patient presents with a narrowing pulse pressure, engorged jugular veins, and muffled heart sounds. What is the suspected injury?",
+      "rationale": "",
+      "choices": ["Hemothorax", "Cardiac tamponade", "Flail chest", "Rib fracture", "Pneumothorax"],
+      "answer": 1
+    },
+    {
+      "id": "domain3_q035",
+      "source_question_number": 35,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "A patient with a known communicable disease is bleeding profusely from a wound. The athletic trainer fears for their physical well-being. What policy gives the athletic trainer the right to withhold service?",
+      "rationale": "",
+      "choices": ["None", "Bystander law", "Refusal to Care Rule", "NATA Code of Ethics", "Good Samaritan Act"],
+      "answer": 0
+    },
+    {
+      "id": "domain3_q036",
+      "source_question_number": 36,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "A patient with a history of violent behavior is agitated. To begin providing care for this patient, which of the following the athletic trainer needs to do?",
+      "rationale": "",
+      "choices": [
+        "Vacate the area and call the police.",
+        "Begin by establishing rapport with the patient through verbal and visual contact.",
+        "Get several people involved to restrain the patient so care can be given.",
+        "Wait until the patient calms down, but do not make eye contact.",
+        "Pretend as if nothing is wrong and proceed to care for the patient."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "domain3_q037",
+      "source_question_number": 37,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What is the bodily position for a patient who is going into shock as a result of a heart attack?",
+      "rationale": "",
+      "choices": ["Supine with feet elevated", "Supine with head elevated", "On the side to allow fluids to drain", "Supine", "Prone"],
+      "answer": 1
+    },
+    {
+      "id": "domain3_q038",
+      "source_question_number": 38,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "Which of the following is an indication for use of a nasopharyngeal airway (NPA)?",
+      "rationale": "",
+      "choices": [
+        "When there is a basal skull fracture",
+        "When there is a neck injury",
+        "When there is a facial injury",
+        "When there is a gag reflex and the patient has orofacial trauma",
+        "When a fractured jaw is suspected"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "domain3_q039",
+      "source_question_number": 39,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "When using a bag-valve mask on an adult, without using supplemental oxygen, what level of oxygen concentration can this device provide for the patient?",
+      "rationale": "",
+      "choices": ["3% to 5%", "5% to 10%", "10% to 15%", "15% to 20%", "21%"],
+      "answer": 4
+    },
+    {
+      "id": "domain3_q040",
+      "source_question_number": 40,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "A patient has hot and dry skin, has a temperature of 105 °F (40.5 °C), is unconscious, and is outside. What is the athletic trainer’s best treatment of this patient?",
+      "rationale": "",
+      "choices": [
+        "Call 9-1-1, monitor vital signs, maintain body temperature, and elevate limbs.",
+        "Call 9-1-1, monitor vital signs, decrease body temperature, and elevate limbs.",
+        "Call 9-1-1, monitor vital signs, give water to drink, and elevate limbs.",
+        "Call 9-1-1, monitor vital signs, and dunk patient in a tub of water at room temperature.",
+        "Call 9-1-1, monitor vital signs, and place patient in a tub of cold water until their core temperature reaches 102 °F (39 °C)."
+      ],
+      "answer": 4
+    },
+    {
+      "id": "domain3_q041",
+      "source_question_number": 41,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "An athletic trainer is assessing a patient on the field during a game. It is determined that additional equipment will be needed to remove the patient from the field. How is that information effectively communicated to the sideline athletic training staff?",
+      "rationale": "",
+      "choices": [
+        "The on-field athletic trainer runs back to the sideline to get the equipment.",
+        "The on-field athletic trainer yells to the sideline athletic training staff what equipment is needed.",
+        "The on-field athletic trainer uses emergency signals to indicate what equipment is needed.",
+        "A student who is on the field with the on-field athletic trainer runs to the sideline and retrieves the necessary equipment.",
+        "An official goes to the sideline and conveys the equipment that is needed to the sideline athletic training staff."
+      ],
+      "answer": 2
+    },
+    {
+      "id": "domain3_q042",
+      "source_question_number": 42,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "An athlete who is wearing an ill-fitting football helmet injures his cervical spine and must be backboarded. What is the proper management when working with this helmet?",
+      "rationale": "",
+      "choices": [
+        "Remove the helmet and then remove the shoulder pads using a two-person technique.",
+        "Remove the face mask and then remove the helmet using jaw stabilization while widening the helmet.",
+        "Remove the helmet using jaw and occiput stabilization and then remove the shoulder pads.",
+        "Remove the face mask and then remove the helmet using jaw and occiput stabilization while widening the helmet; then remove the shoulder pads.",
+        "Leave the helmet in place and add padding inside the helmet."
+      ],
+      "answer": 3
+    },
+    {
+      "id": "domain3_q043",
+      "source_question_number": 43,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "When the athletic trainer suspects an unconscious patient has a blocked airway, what is the first thing that needs to be done to correct it?",
+      "rationale": "",
+      "choices": ["Begin chest thrusts.", "Begin chest compressions.", "Do a finger sweep.", "Give two breaths.", "Open the airway by tilting the head and lifting the chin."],
+      "answer": 4
+    },
+    {
+      "id": "domain3_q044",
+      "source_question_number": 44,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What are the typical signs and symptoms of a patient who has exertional sickling?",
+      "rationale": "",
+      "choices": [
+        "Difficulty in breathing, irregular heartbeat, headache, nausea, and vomiting",
+        "Blood in the urine, fatigue, shortness of breath, high blood pressure, and heart palpitations",
+        "Hot and sweaty skin, elevated body temperature, painful joints, and muscular weakness",
+        "Abdominal pain that manifests itself more when exercising, fatigue, and general weakness",
+        "Swollen hands and feet, fatigue, headache, irregular heartbeat, and pale skin"
+      ],
+      "answer": 4
+    },
+    {
+      "id": "domain3_q045",
+      "source_question_number": 45,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What does the Jendrassik maneuver help define?",
+      "rationale": "",
+      "choices": [
+        "Deep tendon reflexes of the triceps",
+        "Deep tendon reflexes of the short head of biceps tendon",
+        "Deep tendon reflexes of the patella",
+        "Deep tendon reflexes of the brachioradialis",
+        "Disc herniation of the lumbar region"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "domain3_q046",
+      "source_question_number": 46,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "Under what condition can an oropharyngeal airway be used?",
+      "rationale": "",
+      "choices": ["The patient is combative.", "The patient has orofacial trauma.", "The patient has an intact gag reflex.", "The patient is unconscious.", "The patient is conscious."],
+      "answer": 3
+    },
+    {
+      "id": "domain3_q047",
+      "source_question_number": 47,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What is a side effect of taking nitroglycerin?",
+      "rationale": "",
+      "choices": ["Decreased respirator effort", "Stomach pain", "Restlessness", "Anxiety", "Headache"],
+      "answer": 4
+    },
+    {
+      "id": "domain3_q048",
+      "source_question_number": 48,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "A patient needs to be backboarded. The patient is prone with their head turned to the side. What does the athletic trainer controlling the head need to do before the patient is rolled into the supine position?",
+      "rationale": "",
+      "choices": [
+        "Use a cross-arm technique.",
+        "Stabilize the head, leaving the head turned to the side once patient is in supine position.",
+        "Stabilize the head while opening the airway with a head tilt.",
+        "Straighten the head and neck into prone position and alignment.",
+        "Wait for the EMS to arrive before stabilizing the head."
+      ],
+      "answer": 0
+    },
+    {
+      "id": "domain3_q049",
+      "source_question_number": 49,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "How is the size of a cervical collar determined?",
+      "rationale": "",
+      "choices": [
+        "By asking one’s age; anyone who is 12 years or older receives an adult collar",
+        "By asking one’s age; anyone who is 16 years or older receives an adult collar",
+        "By asking one’s age; anyone who is 18 years or older receives an adult collar",
+        "By following manufacturer’s guidelines",
+        "By measuring the distance between the patient’s jawline to the top of the shoulder using a measuring tape"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "domain3_q050",
+      "source_question_number": 50,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What is the most effective antidote for a morphine overdose?",
+      "rationale": "",
+      "choices": [
+        "Give them naloxone.",
+        "Give them activated charcoal and keep them from vomiting.",
+        "Begin high-flow oxygen with a bag-valve mask.",
+        "Place the patient in supine position and elevate the feet.",
+        "Place the patient in supine position and elevate the head."
+      ],
+      "answer": 0
+    },
+    {
+      "id": "domain3_q051",
+      "source_question_number": 51,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "The athletic trainer has controlled neck bleeding that could be from a lacerated vein or artery. What is the proper dressing for this area?",
+      "rationale": "",
+      "choices": ["Sterile gauze", "Occlusive dressing", "Pressure dressing", "Skin tape", "Semiocclusive dressing"],
+      "answer": 1
+    },
+    {
+      "id": "domain3_q052",
+      "source_question_number": 52,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What is the most accurate way to measure the core body temperature in a hyperthermic patient?",
+      "rationale": "",
+      "choices": ["Oral measurement", "Axillary measurement", "Tympanic measurement", "Temporal measurement", "Rectal thermistor measurement"],
+      "answer": 4
+    },
+    {
+      "id": "domain3_q053",
+      "source_question_number": 53,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What is the immediate treatment for an auricular hematoma?",
+      "rationale": "",
+      "choices": ["Aspiration", "Compression", "Ice", "A pressure bandage", "Antibiotics"],
+      "answer": 2
+    },
+    {
+      "id": "domain3_q054",
+      "source_question_number": 54,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "Which of the following is the best way to clean an abrasion?",
+      "rationale": "",
+      "choices": [
+        "Place antibiotic on the sterile gauze used to clean the wound while flushing the area with sterile water.",
+        "Clean the area with mild soap and water and debride with a brush.",
+        "Run water through the wound and cleanse from one side of the wound to the other.",
+        "Clean the wound in a circular pattern from the middle of the wound outward.",
+        "Clean with hydrogen peroxide and apply hydrocortisone cream."
+      ],
+      "answer": 1,
+      "review_notes": "Verbatim audit correction: option e was split across two Word paragraphs and has been restored to Choices / Options."
+    },
+    {
+      "id": "domain3_q055",
+      "source_question_number": 55,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "A patient requires backboarding. Which of the following best describes the treatment for this patient?",
+      "rationale": "",
+      "choices": [
+        "Apply ice to the area of injury once the patient is backboarded.",
+        "Remove their jersey, helmet, shoulder pads, and hip pads before backboarding them.",
+        "Apply a cervical collar before backboarding and removing the helmet.",
+        "Apply padding to fill any voids once the patient is backboarded.",
+        "Remove their shoulder pads before backboarding."
+      ],
+      "answer": 3
+    },
+    {
+      "id": "domain3_q056",
+      "source_question_number": 56,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "When does a laceration require sutures?",
+      "rationale": "",
+      "choices": [
+        "The patient has a large amount of hair in the area of the wound.",
+        "The patient’s wound shows fat.",
+        "The athletic trainer does not have butterfly bandages to close the wound.",
+        "The area of the wound is on a joint.",
+        "The patient is concerned they will have a scar."
+      ],
+      "answer": 1,
+      "review_notes": "Verbatim audit correction: option b was split across two Word paragraphs and has been restored to Choices / Options and Correct Answer."
+    },
+    {
+      "id": "domain3_q057",
+      "source_question_number": 57,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "A patient has sustained an open femur fracture with significant blood loss. The athletic trainer determines that the leg below the site of the fracture is pale, cold, and pulseless. What is the best treatment for this injury?",
+      "rationale": "",
+      "choices": [
+        "Call 9-1-1, place a sterile dressing over the wound, splint the fracture as it lies with two padded splints, and treat the patient for shock.",
+        "Call 9-1-1, place a sterile dressing over the wound, splint with a traction splint, and treat the patient for shock.",
+        "Call 9-1-1, place a sterile dressing over the wound, apply longitudinal traction to straighten the limb, splint with a traction splint, and treat the patient for shock.",
+        "Call 9-1-1, apply longitudinal traction to straighten the limb while another athletic trainer places pressure on the fracture site, splint with a traction splint, and treat the patient for shock.",
+        "Call 9-1-1, place a sterile dressing over the wound, treat the patient for shock, and await advanced life support."
+      ],
+      "answer": 2
+    },
+    {
+      "id": "domain3_q058",
+      "source_question_number": 58,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "When using a suctioning device to clear the throat of fluids, why should it not be used longer than 15 seconds at a time?",
+      "rationale": "",
+      "choices": [
+        "It can rob the patient of air.",
+        "It can become suctioned to the soft tissue of the throat.",
+        "It can dry out the mucous membranes.",
+        "It can temporarily paralyze the throat muscles.",
+        "It can cause a gag reflex."
+      ],
+      "answer": 0
+    },
+    {
+      "id": "domain3_q059",
+      "source_question_number": 59,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "Several ice hockey players at the start of the second period feel lightheaded and have headaches, fatigue, nausea, vomiting, and confusion. The athletic trainer begins to feel the same and knows they have not taken any drugs. More and more people become ill, even on the other team. What has happened?",
+      "rationale": "",
+      "choices": [
+        "People have been exposed to COVID-19.",
+        "People have been exposed to the flu.",
+        "People were exposed to carbon monoxide.",
+        "People were exposed to contaminated food.",
+        "People were exposed to contaminated water."
+      ],
+      "answer": 2
+    },
+    {
+      "id": "domain3_q060",
+      "source_question_number": 60,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "A patient has just had a grand mal seizure. What is the best treatment for this patient?",
+      "rationale": "",
+      "choices": [
+        "Place them on their side and prepare to suction as needed.",
+        "Leave them alone but keep the head turned to the side to allow fluids to drain.",
+        "Place them supine, open the airway, and check for airway breathing and circulation.",
+        "Place them prone and cover them with a blanket to maintain body temperature.",
+        "Turn them on their side with their head resting on their arm."
+      ],
+      "answer": 4
+    },
+    {
+      "id": "domain3_q061",
+      "source_question_number": 61,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "For an underage patient with no standing consent from the parent or guardian to give medical care, what steps should the athletic trainer take when a patient with a medical condition needs the intervention of an emergency room physician?",
+      "rationale": "",
+      "choices": [
+        "Continue to call the parent or guardian and wait to give care until one of them can be reached.",
+        "Give care to the patient and activate the emergency action plan. Notify the parent after the fact.",
+        "Activate the emergency action plan. Have the emergency medical technicians assume responsibility for finding the parent or guardian.",
+        "Ask the patient for permission and then have the patient sign a document giving permission to treat.",
+        "Call a neighbor of the patient and get permission to treat."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "domain3_q062",
+      "source_question_number": 62,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "A golfer turns her head toward another golfer when she hears them yell “Fore!” She is hit full force by the golf ball in her eye, and she is wearing a hard contact lens. She cannot see out of the eye at this time, and it appears that there is hyphema. What is the immediate treatment for this athlete?",
+      "rationale": "",
+      "choices": [
+        "Rinse her eye with sterile saline and remove the contact lens.",
+        "Use a suction cup to remove the contact lens.",
+        "Patch both eyes and call EMS.",
+        "Patch the one eye and call EMS.",
+        "Check the eye for lacerations using a fluorescein stain; if there are lacerations, patch the eye and call EMS."
+      ],
+      "answer": 2
+    },
+    {
+      "id": "domain3_q063",
+      "source_question_number": 63,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What is the priority when dealing with a laceration in the oral cavity?",
+      "rationale": "",
+      "choices": [
+        "Control the bleeding to prevent an airway obstruction.",
+        "Control the bleeding to prevent swallowing of large amounts of blood and vomiting.",
+        "Control the bleeding, recover any broken teeth, and protect oneself from blood-borne pathogens.",
+        "Prevent infection by placing a sterile dressing on the wound and apply direct pressure.",
+        "Position the patient in a head-forward position to prevent airway obstruction."
+      ],
+      "answer": 0
+    },
+    {
+      "id": "domain3_q064",
+      "source_question_number": 64,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "Which of the following indicates a patient has hypothermia?",
+      "rationale": "",
+      "choices": [
+        "Fatigue, headache, and weakness",
+        "Decreased blood pressure, rapid heart rate, and dehydration",
+        "Rectal temperature of 95 °F (35 °C)",
+        "Aggressive behavior, dizziness, pale skin, and shivering",
+        "Stomach cramps, nausea, cyanosis, and weakness"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "domain3_q065",
+      "source_question_number": 65,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What is the best treatment for an open carotid artery wound?",
+      "rationale": "",
+      "choices": [
+        "Apply direct pressure, elevate the head, and apply a pressure dressing.",
+        "Apply direct pressure, elevate the head, apply ice, and apply a pressure dressing.",
+        "Apply direct pressure, elevate the head, and apply an occlusive dressing.",
+        "Apply direct pressure, apply an occlusive dressing, and apply a pressure dressing.",
+        "Apply direct pressure and apply an occlusive dressing."
+      ],
+      "answer": 3
+    },
+    {
+      "id": "domain3_q066",
+      "source_question_number": 66,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "The patient is unconscious and has the following signs: deep breathing, pale skin tone, equal pupils, no paralysis, no convulsions, and acetone breath. What is the most likely condition?",
+      "rationale": "",
+      "choices": ["Concussion", "Epilepsy", "Shock", "Diabetic coma", "Fainting"],
+      "answer": 3
+    },
+    {
+      "id": "domain3_q067",
+      "source_question_number": 67,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What is the position of the lower extremity when there is a posterior dislocation of the hip?",
+      "rationale": "",
+      "choices": [
+        "The hip is flexed and the thigh internally rotated",
+        "The hip is flexed and the thigh externally rotated",
+        "The leg is straight and internally rotated",
+        "The leg is straight and externally rotated",
+        "The hip and knee are flexed and aligned with the second toe"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "domain3_q068",
+      "source_question_number": 68,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "When auscultating the chest to determine whether there is a systolic heart murmur, what is the best position for examining the patient?",
+      "rationale": "",
+      "choices": [
+        "While the patient is in supine position",
+        "When the patient is standing",
+        "When the patient is seated",
+        "When the patient has just completed a rigorous activity and then is placed in supine position",
+        "Within an hour of the patient waking up"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "domain3_q069",
+      "source_question_number": 69,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "How often should the athletic training staff practice with rescue squad personnel to ensure proper care of patients?",
+      "rationale": "",
+      "choices": [
+        "At least once every three years",
+        "Every three months",
+        "At least once a year",
+        "Not necessary as long as the athletic training staff know their role—it is up to the rescue squad to conduct their own training",
+        "Not necessary as long as the athletic training staff and rescue squad know where one’s responsibility begins and ends"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "domain3_q070",
+      "source_question_number": 70,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What are the signs and symptoms of a spontaneous pneumothorax?",
+      "rationale": "",
+      "choices": [
+        "Anxiety, decreased breath sounds, difficulty in breathing, and coughing up blood",
+        "Decreased breath sounds, difficulty in breathing, and coughing up blood",
+        "Decreased heart sounds, decreased breath sounds, difficulty in breathing, and coughing up blood",
+        "Rapid heart rate, a cough that causes chest pain, shift of the trachea toward the affected side, and decreased breath sounds on the affected side",
+        "Rapid heart rate, a cough that causes chest pain, shift of the trachea away from the affected side, and decreased breath sounds on the affected side"
+      ],
+      "answer": 4
+    },
+    {
+      "id": "domain3_q071",
+      "source_question_number": 71,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What does the athletic trainer need to do to ensure a pulse oximeter device will work properly once in place?",
+      "rationale": "",
+      "choices": [
+        "The device is recalibrated regularly.",
+        "The light on the device has unobstructed access to the capillary bed.",
+        "The patient is calm.",
+        "The patient is not exercising at the time.",
+        "The patient is not wearing oxygen."
+      ],
+      "answer": 1
+    },
+    {
+      "id": "domain3_q072",
+      "source_question_number": 72,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "How does an athletic trainer know a patient needs immediate emergency room care due to an asthma attack?",
+      "rationale": "",
+      "choices": [
+        "Controlled coughing, breathlessness, or wheezing",
+        "Peak flows of 50% of personal best",
+        "Peak flows of 85% of personal best",
+        "Hallucinations, double vision, and lightheadedness",
+        "Tachycardia"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "domain3_q073",
+      "source_question_number": 73,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What is the purpose of a full-body scan?",
+      "rationale": "",
+      "choices": [
+        "To determine any hidden injuries beyond the primary survey",
+        "To elicit the most painful areas that need care",
+        "To note bodily position and assist with determination of mechanism of injury",
+        "To ensure the scene is safe before caring for the patient",
+        "To determine oxygen saturation and pulses in the extremities"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "domain3_q074",
+      "source_question_number": 74,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "A diver is facedown in the pool with a suspected spinal cord injury after hitting the diving board. How is the patient’s airway protected before backboarding can occur?",
+      "rationale": "",
+      "choices": [
+        "The patient is given a snorkel.",
+        "The athletic trainer places a cervical collar on the patient’s neck and rolls the patient into a supine position.",
+        "The athletic trainer uses towels to make a halo around the patient’s head and rolls the patient into a supine position.",
+        "The athletic trainer needs to roll the upper half of the body as a single unit to a spine position.",
+        "The athletic trainer provides an oxygen mask with high-flow oxygen, places a cervical collar on the patient’s neck, and rolls the patient to a supine position."
+      ],
+      "answer": 3
+    },
+    {
+      "id": "domain3_q075",
+      "source_question_number": 75,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What is the next step once a tourniquet is applied?",
+      "rationale": "",
+      "choices": [
+        "Call the rescue squad and inform them of that care.",
+        "Apply a sterile dressing over the injury.",
+        "Check capillary refill in the extremity.",
+        "Write a letter T on the extremity.",
+        "Write TK, the site, the time of the tourniquet application, and rationale."
+      ],
+      "answer": 4
+    },
+    {
+      "id": "domain3_q076",
+      "source_question_number": 76,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "ms",
+      "prompt": "What are the keys to splinting a fracture? Choose all that apply.",
+      "rationale": "",
+      "choices": [
+        "Splinting the joint above and below the fracture and applying cold packs after splinting",
+        "Realigning the fracture, applying padding over the fracture site, and immobilizing the site",
+        "Applying three bandages to hold the splint in place (the one nearest the fracture must have the greatest pressure)",
+        "Checking the circulation above and below the site of the fracture and elevating once splinted",
+        "Applying the largest splint possible to be sure the surrounding areas are stable"
+      ],
+      "answer": [0, 1]
+    },
+    {
+      "id": "domain3_q077",
+      "source_question_number": 77,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "What is the best way to differentiate between a temporomandibular joint dislocation and a mandibular fracture?",
+      "rationale": "",
+      "choices": [
+        "Have the patient bite down while checking the alignment of their teeth. Misalignment indicates a fracture.",
+        "Have the patient move their mandible laterally and watch for a lack of range of motion. Lack of motion indicates a dislocation.",
+        "Have the patient distract and retract their mandible and watch for a lack of range of motion. Lack of motion indicates a dislocation.",
+        "Palpate externally the temporomandibular joint and have the patient open and close their mouth. Pain on movement indicates a dislocation.",
+        "Insert index fingers on the interior border of the mandible and press outward. Pain on movement indicates a fracture."
+      ],
+      "answer": 4
+    },
+    {
+      "id": "domain3_q078",
+      "source_question_number": 78,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "Which of the following is most true regarding emergency actions plans?",
+      "rationale": "",
+      "choices": [
+        "The written plan should be as short as possible.",
+        "Parents should always be in charge of enacting an emergency action plan at a high school event.",
+        "Coaches should not be trained in CPR and the use of an AED.",
+        "An emergency action plan can be copied from those of other schools to save time developing one.",
+        "Emergency action plans should be venue specific."
+      ],
+      "answer": 4
+    },
+    {
+      "id": "domain3_q079",
+      "source_question_number": 79,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "An athlete begins to have chest pain, heart palpitations, uncharacteristic shortness of breath, and dyspnea. Which of the following diagnostic testing would be most appropriate to determine the cause of the patient’s symptoms?",
+      "rationale": "",
+      "choices": ["CT scan", "Echocardiogram", "Cardiac event monitoring", "In-office ECG"],
+      "answer": 2
+    },
+    {
+      "id": "domain3_q080",
+      "source_question_number": 80,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "An athlete who receives a direct blow to the chest wall with a hard projectile may develop commotio cordis. Which among the following causes this life-threatening condition?",
+      "rationale": "",
+      "choices": ["Coronary artery compression", "Ventricular fibrillation", "Traumatic aortic rupture", "Mitral valve prolapse"],
+      "answer": 1
+    },
+    {
+      "id": "domain3_q081",
+      "source_question_number": 81,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "A patient presents for an eye exam after an injury. During examination, you see that there is an obscuration of the structures behind the cornea because of a cloudy anterior chamber. Which among the following is likely the cause?",
+      "rationale": "",
+      "choices": ["Cataract", "Orbital fracture", "Hyphema", "Retinal detachment"],
+      "answer": 2
+    },
+    {
+      "id": "domain3_q082",
+      "source_question_number": 82,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "A patient presents with photopsia, floaters, and loss of central visual acuity. Which of the following conditions is most likely to be associated with these symptoms?",
+      "rationale": "",
+      "choices": ["Dislocated contact lens", "Traumatic iritis", "Retinal detachment", "Macular degeneration"],
+      "answer": 2
+    },
+    {
+      "id": "domain3_q083",
+      "source_question_number": 83,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "A patient is presenting with signs and symptoms, such as pain disproportionate to wound severity, rapidly changing skin surface, fever, respiratory difficulty, and confusion. What do they most likely have?",
+      "rationale": "",
+      "choices": ["MRSA", "Necrotizing fasciitis", "HIV", "Hepatitis B"],
+      "answer": 1
+    },
+    {
+      "id": "domain3_q084",
+      "source_question_number": 84,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "match",
+      "prompt": "Match the precordial lead to its correct placement.",
+      "rationale": "",
+      "matching": {
+        "pairs": [
+          {
+            "left": "V1",
+            "right": "Fourth intercostal space on the right lateral border of sternum"
+          },
+          {
+            "left": "V2",
+            "right": "Fourth intercostal space on the left lateral border of sternum"
+          },
+          {
+            "left": "V3",
+            "right": "Midway between the V1 and V2 electrodes"
+          },
+          {
+            "left": "V4",
+            "right": "Fifth left intercostal space, at the midclavicular line"
+          },
+          {
+            "left": "V5",
+            "right": "Anterior axillary line, horizontally equal to V4"
+          },
+          {
+            "left": "V6",
+            "right": "Mid-axillary line, horizontally equal to V4 and V5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "domain3_q085",
+      "source_question_number": 85,
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "type": "mc",
+      "prompt": "Which of the following is the best initial management for a suspected cervical spine injury?",
+      "rationale": "",
+      "choices": ["Test for range of motion.", "Remove helmet immediately.", "Sit the athlete upright.", "Stabilize the head and neck in the position found.", "Apply ice to the cervical spine."],
+      "answer": 3
+    },
+    {
+      "id": "domain3_testlet_01",
+      "type": "ft",
+      "title": "Testlet 1",
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "scenario": "Please use the following information to answer the questions in this testlet.\nAn 18-year-old patient has been bitten by a bee on her neck and is prone on the ground. Upon arrival, the athletic trainer notes the following:\n     -A stinger in the neck\n     -Edema over the bite area\n     -Respiratory distress with wheezing\n     -Cyanosis",
+      "questions": [
+        {
+          "id": "domain3_t01_q086",
+          "source_question_number": 86,
+          "domain": "Domain 3",
+          "category": "Critical Incident Management",
+          "type": "dd",
+          "prompt": "In what order should the athletic trainer perform the following actions for this patient when using an EpiPen? Place the following steps in the appropriate order.",
+          "rationale": "",
+          "dd": {
+            "tokens": [
+              "Check the expiration date to make sure the pen is usable.",
+              "Check for fluid cloudiness or discoloration and discard if cloudiness or discoloration is found.",
+              "Hold EpiPen firmly with the black tip against the skin of thigh.",
+              "Push pen into the thigh and apply pressure for 10 seconds to inject the fluid.",
+              "Discard the pen using universal precautions."
+            ],
+            "zones": [
+              {
+                "id": "step_1",
+                "label": "Step 1",
+                "accept": "Check the expiration date to make sure the pen is usable."
+              },
+              {
+                "id": "step_2",
+                "label": "Step 2",
+                "accept": "Check for fluid cloudiness or discoloration and discard if cloudiness or discoloration is found."
+              },
+              {
+                "id": "step_3",
+                "label": "Step 3",
+                "accept": "Hold EpiPen firmly with the black tip against the skin of thigh."
+              },
+              {
+                "id": "step_4",
+                "label": "Step 4",
+                "accept": "Push pen into the thigh and apply pressure for 10 seconds to inject the fluid."
+              },
+              {
+                "id": "step_5",
+                "label": "Step 5",
+                "accept": "Discard the pen using universal precautions."
+              }
+            ],
+            "table": {
+              "column_headers": ["Order", "Action"],
+              "rows": [
+                [
+                  "1",
+                  {
+                    "zoneId": "step_1"
+                  }
+                ],
+                [
+                  "2",
+                  {
+                    "zoneId": "step_2"
+                  }
+                ],
+                [
+                  "3",
+                  {
+                    "zoneId": "step_3"
+                  }
+                ],
+                [
+                  "4",
+                  {
+                    "zoneId": "step_4"
+                  }
+                ],
+                [
+                  "5",
+                  {
+                    "zoneId": "step_5"
+                  }
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "domain3_t01_q087",
+          "source_question_number": 87,
+          "domain": "Domain 3",
+          "category": "Critical Incident Management",
+          "type": "mc",
+          "prompt": "Select the supply that is needed for treating this patient.",
+          "rationale": "",
+          "review_status": "question_image_placeholder",
+          "notes": "Source gives Correct Answer: A. Answer choice images have been added; the main question image is still a placeholder.",
+          "choices": [
+            {
+              "label": "A",
+              "image": {
+                "src": "images/Practice Test Questions/Domain 3/594875766.jpg",
+                "alt": "Answer choice A image"
+              }
+            },
+            {
+              "label": "B",
+              "image": {
+                "src": "images/Practice Test Questions/Domain 3/594746112.jpg",
+                "alt": "Answer choice B image"
+              }
+            },
+            {
+              "label": "C",
+              "image": {
+                "src": "images/Practice Test Questions/Domain 3/512988_constrictingband_ch6.jpg",
+                "alt": "Answer choice C image"
+              }
+            },
+            {
+              "label": "D",
+              "image": {
+                "src": "images/Practice Test Questions/Domain 3/1086P_2685.jpg",
+                "alt": "Answer choice D image"
+              }
+            }
+          ],
+          "answer": 0,
+          "review_notes": "Answer choice images added for options A-D. Main question image remains a placeholder and should be replaced when the final patient image is available.\nNeeds review"
+        },
+        {
+          "id": "domain3_t01_q088",
+          "source_question_number": 88,
+          "domain": "Domain 3",
+          "category": "Critical Incident Management",
+          "type": "hs",
+          "prompt": "Click on the area where an EpiPen injection should be given.",
+          "rationale": "",
+          "hs": {
+            "imageSrc": "images/Practice Test Questions/Domain 3/E2481_DSC_0082.jpg",
+            "answer": {
+              "xPct": 44,
+              "yPct": 52
+            },
+            "tolerancePct": 6
+          }
+        },
+        {
+          "id": "domain3_t01_q089",
+          "source_question_number": 89,
+          "domain": "Domain 3",
+          "category": "Critical Incident Management",
+          "type": "match",
+          "prompt": "The patient begins having abnormal breath sounds. The athletic trainer needs to identify the abnormal breath sound. Match the sound with its characteristics.",
+          "rationale": "",
+          "matching": {
+            "pairs": [
+              {
+                "left": "Crackles",
+                "right": "Sounds like rubbing dry hair together"
+              },
+              {
+                "left": "Wheezes",
+                "right": "High pitched and has a hissing or whistling quality"
+              },
+              {
+                "left": "Rhonchi",
+                "right": "Low pitched and has a rumbling quality"
+              },
+              {
+                "left": "Stridor",
+                "right": "A high-pitched, harsh wheeze that occurs most often on inhalation"
+              },
+              {
+                "left": "Pleural rub",
+                "right": "Resembles a crackle but is in one spot and is heard on inhalation and exhalation"
+              },
+              {
+                "left": "Mediastinal crunch",
+                "right": "Precordial crackles that synchronize with heartbeat"
+              }
+            ]
+          }
+        },
+        {
+          "id": "domain3_t01_q090",
+          "source_question_number": 90,
+          "domain": "Domain 3",
+          "category": "Critical Incident Management",
+          "type": "ms",
+          "prompt": "What information will the athletic trainer need to give to EMS to transfer this patient to them? Choose all that apply",
+          "rationale": "",
+          "choices": [
+            "When the EpiPen was administered",
+            "The history of the incident",
+            "What interventions have been provided",
+            "Pertinent medical conditions",
+            "The height and weight of patient",
+            "An emergency card",
+            "The patient’s medical history"
+          ],
+          "answer": [0, 1, 2, 3, 5]
+        },
+        {
+          "id": "domain3_t01_q091",
+          "source_question_number": 91,
+          "domain": "Domain 3",
+          "category": "Critical Incident Management",
+          "type": "ms",
+          "prompt": "What information will the athletic trainer need to document in their patient care report following an activation of an EAP? Choose all that apply.",
+          "rationale": "",
+          "choices": [
+            "Brief details of the incident including location and reason for assistance",
+            "Patient’s age, gender, and chief complaint",
+            "Patient’s insurance information",
+            "Extensive history of events leading to the incident",
+            "Level of consciousness and pain assessment",
+            "List of treatments provided in chronological order",
+            "Name of ambulance crew who received the transfer of care"
+          ],
+          "answer": [0, 1, 4, 5]
+        }
+      ],
+      "rationale": ""
+    },
+    {
+      "id": "domain3_testlet_02",
+      "type": "ft",
+      "title": "Testlet 2",
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "scenario": "Please use the following information to answer the questions in this testlet.\nA college football player lowered their head as they collided with another player. Upon arrival, the athletic trainer notes the following:\n     -The patient is facedown.\n     -There is tenderness over the cervical spinal column.\n     -There is a deformity of the cervical spine.\n     -There is some loss of movement in both upper and lower extremities.\n     -There is some loss of sensation in both upper and lower extremities.\n     -The patient is breathing and has a heartbeat.",
+      "questions": [
+        {
+          "id": "domain3_t02_q092",
+          "source_question_number": 92,
+          "domain": "Domain 3",
+          "category": "Critical Incident Management",
+          "type": "mc",
+          "prompt": "Select the immediate accepted method for stabilizing the head of this patient in preparation for backboarding.",
+          "rationale": "",
+          "review_status": "question_image_placeholder",
+          "notes": "Source gives Correct Answer: B. Answer choice images have been added; the main question image is still a placeholder.",
+          "choices": [
+            {
+              "label": "A",
+              "image": {
+                "src": "images/Practice Test Questions/Domain 3/512997_stabilizinghead1handsstraight_ch6.jpg",
+                "alt": "Answer choice A image"
+              }
+            },
+            {
+              "label": "B",
+              "image": {
+                "src": "images/Practice Test Questions/Domain 3/512998_stabilizinghead2handscrossed_ch6.jpg",
+                "alt": "Answer choice B image"
+              }
+            },
+            {
+              "label": "C",
+              "image": {
+                "src": "images/Practice Test Questions/Domain 3/512999_plasticcollar_ch6.jpg",
+                "alt": "Answer choice C image"
+              }
+            },
+            {
+              "label": "D",
+              "image": {
+                "src": "images/Practice Test Questions/Domain 3/513000_softcollar_ch6.jpg",
+                "alt": "Answer choice D image"
+              }
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "domain3_t02_q093",
+          "source_question_number": 93,
+          "domain": "Domain 3",
+          "category": "Critical Incident Management",
+          "type": "match",
+          "prompt": "There are five athletic trainers who will work to properly backboard this patient. Match each responsibility to the athletic trainer.",
+          "rationale": "",
+          "matching": {
+            "pairs": [
+              {
+                "left": "Athletic trainer 1",
+                "right": "Stabilizes the head and instructs when to lift the patient"
+              },
+              {
+                "left": "Athletic trainer 2",
+                "right": "Applies cross-chest straps"
+              },
+              {
+                "left": "Athletic trainer 3",
+                "right": "Stabilizes the hips"
+              },
+              {
+                "left": "Athletic trainer 4",
+                "right": "Straps the ankles"
+              },
+              {
+                "left": "Athletic trainer 5",
+                "right": "Slides the spine board next to the patient"
+              }
+            ]
+          }
+        },
+        {
+          "id": "domain3_t02_q094",
+          "source_question_number": 94,
+          "domain": "Domain 3",
+          "category": "Critical Incident Management",
+          "type": "dd",
+          "prompt": "The patient is secure on the backboard and the jersey, shoulder pads, and helmet have been removed. The patient is not moving. The EMS has arrived and has asked the athletic trainer to place four ECG electrodes on the patient’s extremities.",
+          "rationale": "",
+          "dd": {
+            "tokens": ["LL", "RA", "RL", "LA"],
+            "zones": [
+              {
+                "id": "drop_spot_4",
+                "label": "Drop spot 4",
+                "accept": "LL"
+              },
+              {
+                "id": "drop_spot_1",
+                "label": "Drop spot 1",
+                "accept": "RA"
+              },
+              {
+                "id": "drop_spot_3",
+                "label": "Drop spot 3",
+                "accept": "RL"
+              },
+              {
+                "id": "drop_spot_2",
+                "label": "Drop spot 2",
+                "accept": "LA"
+              }
+            ],
+            "table": {
+              "column_headers": ["ECG Electrode", "Drop Spot"],
+              "rows": [
+                [
+                  "A",
+                  {
+                    "zoneId": "drop_spot_1"
+                  }
+                ],
+                [
+                  "B",
+                  {
+                    "zoneId": "drop_spot_2"
+                  }
+                ],
+                [
+                  "C",
+                  {
+                    "zoneId": "drop_spot_3"
+                  }
+                ],
+                [
+                  "D",
+                  {
+                    "zoneId": "drop_spot_4"
+                  }
+                ]
+              ]
+            }
+          },
+          "image": {
+            "id": "701217",
+            "src": "images/Practice Test Questions/Domain 3/E9036_701217.png",
+            "alt": "Domain 3 question 94 image",
+            "placeholder": true
+          },
+          "review_notes": "Use image/illustration with four drop spots; mapping is LL→4, RA→1, RL→3, LA→2.\nIllustration needed for extremity ECG electrode drop spots.\nNeeds review"
+        },
+        {
+          "id": "domain3_t02_q095",
+          "source_question_number": 95,
+          "domain": "Domain 3",
+          "category": "Critical Incident Management",
+          "type": "match",
+          "prompt": "Match the basic components of an electrocardiogram (ECG) with the function it represents.",
+          "rationale": "",
+          "matching": {
+            "pairs": [
+              {
+                "left": "Atrial depolarization",
+                "right": "P wave"
+              },
+              {
+                "left": "Time between atrial depolarization and onset of ventricular depolarization",
+                "right": "PR interval"
+              },
+              {
+                "left": "Ventricular depolarization",
+                "right": "QRS complex"
+              },
+              {
+                "left": "Ventricular repolarization",
+                "right": "ST segment and T wave"
+              },
+              {
+                "left": "Final stage of ventricular repolarization",
+                "right": "U wave"
+              }
+            ]
+          }
+        },
+        {
+          "id": "domain3_t02_q096",
+          "source_question_number": 96,
+          "domain": "Domain 3",
+          "category": "Critical Incident Management",
+          "type": "match",
+          "prompt": "EMS has asked the athletic trainer to view the monitor and identify any abnormal rhythms. Select the name that matches the picture.",
+          "rationale": "",
+          "matching": {
+            "pairs": [
+              {
+                "left": {
+                  "image": {
+                    "src": "images/Practice Test Questions/Domain 3/E9036_701218.jpg",
+                    "alt": "Rhythm strip A"
+                  }
+                },
+                "right": "Normal sinus rhythm"
+              },
+              {
+                "left": {
+                  "image": {
+                    "src": "images/Practice Test Questions/Domain 3/E9036_701219.jpg",
+                    "alt": "Rhythm strip B"
+                  }
+                },
+                "right": "Ventricular tachycardia"
+              },
+              {
+                "left": {
+                  "image": {
+                    "src": "images/Practice Test Questions/Domain 3/E9036_701220.jpg",
+                    "alt": "Rhythm strip C"
+                  }
+                },
+                "right": "Ventricular fibrillation"
+              },
+              {
+                "left": {
+                  "image": {
+                    "src": "images/Practice Test Questions/Domain 3/E9036_701221.jpg",
+                    "alt": "Rhythm strip D"
+                  }
+                },
+                "right": "Premature ventricular contraction"
+              },
+              {
+                "left": {
+                  "image": {
+                    "src": "images/Practice Test Questions/Domain 3/E9036_701222.jpg",
+                    "alt": "Rhythm strip E"
+                  }
+                },
+                "right": "Atrial flutter"
+              },
+              {
+                "left": {
+                  "image": {
+                    "src": "images/Practice Test Questions/Domain 3/E9036_701223.jpg",
+                    "alt": "Rhythm strip F"
+                  }
+                },
+                "right": "Atrial fibrillation"
+              }
+            ]
+          },
+          "review_notes": "Rhythm strip images added to the matching prompts."
+        },
+        {
+          "id": "domain3_t02_q097",
+          "source_question_number": 97,
+          "domain": "Domain 3",
+          "category": "Critical Incident Management",
+          "type": "hs",
+          "prompt": "The patient becomes bradycardic and his blood pressure drops. The patient’s heart stops. The patient needs CPR before an AED can be applied. Where is the xyphoid process located?",
+          "rationale": "",
+          "hs": {
+            "imageSrc": "images\\Practice Test Questions\\Domain 3\\0644P_0177.jpg",
+            "answer": {
+              "xPct": 51,
+              "yPct": 64
+            },
+            "tolerancePct": 6
+          }
+        },
+        {
+          "id": "domain3_t02_q098",
+          "source_question_number": 98,
+          "domain": "Domain 3",
+          "category": "Critical Incident Management",
+          "type": "hs",
+          "prompt": "It is important to know where the hand has to be placed to perform CPR. Select the area that shows where hand placement should be?",
+          "rationale": "",
+          "hs": {
+            "imageSrc": "images\\Practice Test Questions\\Domain 3\\0644P_0177.jpg",
+            "answer": {
+              "xPct": 58,
+              "yPct": 55
+            },
+            "tolerancePct": 6
+          }
+        }
+      ],
+      "rationale": ""
+    },
+    {
+      "id": "domain3_testlet_03",
+      "type": "ft",
+      "title": "Testlet 3",
+      "domain": "Domain 3",
+      "category": "Critical Incident Management",
+      "scenario": "Please use the following information to answer the questions in this testlet.\nThere is a mass casualty situation. Many patients need care. The scene is safe to enter.",
+      "questions": [
+        {
+          "id": "domain3_t03_q099",
+          "source_question_number": 99,
+          "domain": "Domain 3",
+          "category": "Critical Incident Management",
+          "type": "match",
+          "prompt": "Using triage categories of red, yellow, green, and black, designate, which of the following patients are in which triage category? Match the correct condition to the appropriate action (triage category).",
+          "rationale": "",
+          "matching": {
+            "pairs": [
+              {
+                "left": "Red",
+                "right": "Flail chest"
+              },
+              {
+                "left": "Yellow",
+                "right": "Spinal cord injury"
+              },
+              {
+                "left": "Green",
+                "right": "Closed forearm fracture"
+              },
+              {
+                "left": "Black",
+                "right": "Brain matter protruding from the skull"
+              }
+            ]
+          }
+        },
+        {
+          "id": "domain3_t03_q100",
+          "source_question_number": 100,
+          "domain": "Domain 3",
+          "category": "Critical Incident Management",
+          "type": "ms",
+          "prompt": "Each patient will be assessed with primary and secondary surveys. Which of the following items are part of the primary survey? Choose all that apply.",
+          "rationale": "",
+          "choices": [
+            "Checking the airway",
+            "Checking capillary refill",
+            "Checking the dorsalis pedis pulse",
+            "Checking for papillary response",
+            "Checking for profuse bleeding",
+            "Checking for skin color",
+            "Checking for blood circulation",
+            "Taking blood pressure"
+          ],
+          "answer": [0, 4, 6]
+        },
+        {
+          "id": "domain3_t03_q101",
+          "source_question_number": 101,
+          "domain": "Domain 3",
+          "category": "Critical Incident Management",
+          "type": "ms",
+          "prompt": "The athletic trainer has a patient who is struggling to breathe. The patient is lying on their back. What questions should the athletic trainer ask the patient? Choose all that apply.",
+          "rationale": "",
+          "choices": ["What happened?", "When did the injury occur?", "What is your family health history?", "How much exercise do you get?", "Did you consume alcohol?"],
+          "answer": [0, 1]
+        },
+        {
+          "id": "domain3_t03_q102",
+          "source_question_number": 102,
+          "domain": "Domain 3",
+          "category": "Critical Incident Management",
+          "type": "ms",
+          "prompt": "The athletic trainer has a patient who is struggling to breathe. The patient is lying on their back. What additional questions should the athletic trainer ask the patient? Choose all that apply.",
+          "rationale": "",
+          "choices": [
+            "Do you have any allergies?",
+            "What medications do you take?",
+            "When did you last eat or drink?",
+            "What is your current health status?",
+            "Is there a position that provides you more comfort?",
+            "What is your pain like?"
+          ],
+          "answer": [0, 1, 2, 5]
+        },
+        {
+          "id": "domain3_t03_q103",
+          "source_question_number": 103,
+          "domain": "Domain 3",
+          "category": "Critical Incident Management",
+          "type": "mc",
+          "prompt": "The patient tells the athletic trainer that the bleachers collapsed and a small rod penetrated his chest; then the patient pulled it out. The patient feels stabbing pain and pressure. Upon observation, the athletic trainer notices the patient has distended neck veins and a deviation of the trachea. What injury should be suspected based on this information? Choose all that apply.",
+          "rationale": "",
+          "choices": ["Suffocation", "Shock", "Obstructed airway", "Cardiac tamponade", "Sucking chest wound"],
+          "answer": 4,
+          "review_notes": "Source heading says Multiple Choice, but prompt says “Choose all that apply.” Only one answer is marked; consider ms or keep mc after review.\nNeeds review"
+        },
+        {
+          "id": "domain3_t03_q104",
+          "source_question_number": 104,
+          "domain": "Domain 3",
+          "category": "Critical Incident Management",
+          "type": "ms",
+          "prompt": "The patient tells the athletic trainer that the bleachers collapsed and a small rod penetrated his chest; then the patient pulled it out. The patient feels stabbing pain and pressure. What steps are part of the accepted technique to treat a sucking chest wound? Choose all that apply.",
+          "rationale": "",
+          "choices": [
+            "Apply a gauze pad dressing on the wound.",
+            "Apply tape to hold the gauze in place.",
+            "Apply an airtight dressing over the wound.",
+            "Apply direct pressure to the area.",
+            "Seal three sides of the dressing."
+          ],
+          "answer": [2, 4]
+        },
+        {
+          "id": "domain3_t03_q105",
+          "source_question_number": 105,
+          "domain": "Domain 3",
+          "category": "Critical Incident Management",
+          "type": "ms",
+          "prompt": "Read the patient scenario. Which complications are now involved? Choose all that apply.",
+          "rationale": "",
+          "context_title": "Patient Scenario",
+          "supporting_text": "\nThe patient tells the athletic trainer that the bleachers collapsed and a small rod penetrated the chest; then the patient pulled it out. The patient feels stabbing pain and pressure.\nThe patient has the following signs and symptoms:\n     -Low blood pressure\n     -Decreased breath sounds on the side of the sucking chest wound\n     -Distended neck veins\n     -Altered level of consciousness\n     -Deviation of the trachea opposite to the sucking chest wound",
+          "choices": ["Blood clot at the wound site", "Shock", "Tension pneumothorax", "Internal bleeding", "Cardiac tamponade"],
+          "answer": [0, 2]
+        },
+        {
+          "id": "domain3_t03_q106",
+          "source_question_number": 106,
+          "domain": "Domain 3",
+          "category": "Critical Incident Management",
+          "type": "ms",
+          "prompt": "Read the patient scenario. What additional measures would the athletic trainer take to treat the complications the patient has suffered? Choose all that apply.",
+          "rationale": "",
+          "context_title": "Patient Scenario",
+          "supporting_text": "\nThe patient tells the athletic trainer that the bleachers collapsed and a small rod penetrated the chest; then the patient pulled it out. The patient feels stabbing pain and pressure.\nThe patient has the following signs and symptoms:\n    -Low blood pressure\n    -Decreased breath sounds on the side of the sucking chest wound\n    -Distended neck veins\n    -Altered level of consciousness\n    -Deviation of the trachea opposite to the sucking chest wound",
+          "choices": ["Apply oxygen.", "Partially remove the wound dressing.", "Insert a chest tube.", "Insert an endotracheal tube.", "Elevate the patient’s head."],
+          "answer": [0, 1]
+        },
+        {
+          "id": "domain3_t03_q107",
+          "source_question_number": 107,
+          "domain": "Domain 3",
+          "category": "Critical Incident Management",
+          "type": "dd",
+          "prompt": "Read the information. Drag the flow rate needed to deliver the proper amount of oxygen.",
+          "rationale": "",
+          "context_title": "Patient Information",
+          "supporting_text": "The patient tells the athletic trainer that the bleachers collapsed and a small rod penetrated the chest; then the patient pulled it out. The athletic trainer is reviewing the pulse oximeter.\nNormal | 95% to 100% | Drop spot 1\nMild hypoxia | 91% to 95% | Drop spot 2\nMild-moderate hypoxia | 88% to 90% | Drop spot 3\nModerate hypoxia | 86% to 90% | Drop spot 4\nSevere hypoxia | <85% | Drop spot 5",
+          "dd": {
+            "tokens": ["None needed", "15 L/min or higher", "10 to 15 L/min", "6 to 10 L/min", "1 to 6 L/min"],
+            "zones": [
+              {
+                "id": "drop_spot_1",
+                "label": "Drop spot 1",
+                "accept": "None needed"
+              },
+              {
+                "id": "drop_spot_5",
+                "label": "Drop spot 5",
+                "accept": "15 L/min or higher"
+              },
+              {
+                "id": "drop_spot_4",
+                "label": "Drop spot 4",
+                "accept": "10 to 15 L/min"
+              },
+              {
+                "id": "drop_spot_3",
+                "label": "Drop spot 3",
+                "accept": "6 to 10 L/min"
+              },
+              {
+                "id": "drop_spot_2",
+                "label": "Drop spot 2",
+                "accept": "1 to 6 L/min"
+              }
+            ],
+            "table": {
+              "column_headers": ["Range", "Percentage of Oxygen Saturation", "Flow rate"],
+              "rows": [
+                [
+                  "Normal",
+                  "95% to 100%",
+                  {
+                    "zoneId": "drop_spot_1"
+                  }
+                ],
+                [
+                  "Mild hypoxia",
+                  "91% to 95%",
+                  {
+                    "zoneId": "drop_spot_2"
+                  }
+                ],
+                [
+                  "Mild-moderate hypoxia",
+                  "88% to 90%",
+                  {
+                    "zoneId": "drop_spot_3"
+                  }
+                ],
+                [
+                  "Moderate hypoxia",
+                  "86% to 90%",
+                  {
+                    "zoneId": "drop_spot_4"
+                  }
+                ],
+                [
+                  "Severe hypoxia",
+                  "<85%",
+                  {
+                    "zoneId": "drop_spot_5"
+                  }
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "id": "domain3_t03_q108",
+          "source_question_number": 108,
+          "domain": "Domain 3",
+          "category": "Critical Incident Management",
+          "type": "dd",
+          "prompt": "Read the information. Drag the best device to deliver the proper amount of oxygen.",
+          "rationale": "",
+          "context_title": "Patient Information",
+          "supporting_text": "The patient tells the athletic trainer that the bleachers collapsed and a small rod penetrated the chest; then the patient pulled it out. The athletic trainer is reviewing the pulse oximeter.\nNormal | 95% to 100% | None needed | Drop spot 1\nMild hypoxia | 91% to 95% | 1 to 6 L/min | Drop spot 2\nMild-moderate hypoxia | 88% to 90% | 6 to 10 L/min | Drop spot 3\nModerate hypoxia | 86% to 90% | 10 to 15 L/min | Drop spot 4",
+          "dd": {
+            "tokens": ["None needed", "Non-rebreather mask or bag-valve mask", "Simple oxygen mask", "Nasal cannula"],
+            "zones": [
+              {
+                "id": "drop_spot_1",
+                "label": "Drop spot 1",
+                "accept": "None needed"
+              },
+              {
+                "id": "drop_spot_4",
+                "label": "Drop spot 4",
+                "accept": "Non-rebreather mask or bag-valve mask"
+              },
+              {
+                "id": "drop_spot_3",
+                "label": "Drop spot 3",
+                "accept": "Simple oxygen mask"
+              },
+              {
+                "id": "drop_spot_2",
+                "label": "Drop spot 2",
+                "accept": "Nasal cannula"
+              }
+            ],
+            "table": {
+              "column_headers": ["Range", "Percentage of Oxygen Saturation", "Flow rate", "Best device to deliver the oxygen"],
+              "rows": [
+                [
+                  "Normal",
+                  "95% to 100%",
+                  "None needed",
+                  {
+                    "zoneId": "drop_spot_1"
+                  }
+                ],
+                [
+                  "Mild hypoxia",
+                  "91% to 95%",
+                  "1 to 6 L/min",
+                  {
+                    "zoneId": "drop_spot_2"
+                  }
+                ],
+                [
+                  "Mild-moderate hypoxia",
+                  "88% to 90%",
+                  "6 to 10 L/min",
+                  {
+                    "zoneId": "drop_spot_3"
+                  }
+                ],
+                [
+                  "Moderate hypoxia",
+                  "86% to 90%",
+                  "10 to 15 L/min",
+                  {
+                    "zoneId": "drop_spot_4"
+                  }
+                ],
+                ["Severe hypoxia", "<85%", "15 L/min or higher", "Non-rebreather mask or bag-valve mask"]
+              ]
+            }
+          }
+        },
+        {
+          "id": "domain3_t03_q109",
+          "source_question_number": 109,
+          "domain": "Domain 3",
+          "category": "Critical Incident Management",
+          "type": "dd",
+          "prompt": "The patient tells the athletic trainer that the bleachers collapsed and a small rod penetrated the chest; then the patient pulled it out. The athletic trainer decides the patient needs high-flow supplemental oxygen. Place the items in the correct order.",
+          "rationale": "",
+          "context_title": "Patient Scenario",
+          "dd": {
+            "tokens": [
+              "Ensure the regulator is firmly connected to the oxygen tank.",
+              "Ensure the oxygen tank is secure and not in danger of tipping over.",
+              "Check the oxygen tank level by validating that at least 1,500 psi remains in the tank.",
+              "Attach the tube to the regulator.",
+              "Turn on the oxygen tank and adjust the knob on the regulator.",
+              "Adjust the flow meter to the desired oxygen flow rate.",
+              "Attach the appropriate device to the non-rebreather mask.",
+              "Monitor oxygen levels using a pulse oximeter and adjust the oxygen flow as necessary."
+            ],
+            "zones": [
+              {
+                "id": "step_1",
+                "label": "Step 1",
+                "accept": "Ensure the regulator is firmly connected to the oxygen tank."
+              },
+              {
+                "id": "step_2",
+                "label": "Step 2",
+                "accept": "Ensure the oxygen tank is secure and not in danger of tipping over."
+              },
+              {
+                "id": "step_3",
+                "label": "Step 3",
+                "accept": "Check the oxygen tank level by validating that at least 1,500 psi remains in the tank."
+              },
+              {
+                "id": "step_4",
+                "label": "Step 4",
+                "accept": "Attach the tube to the regulator."
+              },
+              {
+                "id": "step_5",
+                "label": "Step 5",
+                "accept": "Turn on the oxygen tank and adjust the knob on the regulator."
+              },
+              {
+                "id": "step_6",
+                "label": "Step 6",
+                "accept": "Adjust the flow meter to the desired oxygen flow rate."
+              },
+              {
+                "id": "step_7",
+                "label": "Step 7",
+                "accept": "Attach the appropriate device to the non-rebreather mask."
+              },
+              {
+                "id": "step_8",
+                "label": "Step 8",
+                "accept": "Monitor oxygen levels using a pulse oximeter and adjust the oxygen flow as necessary."
+              }
+            ],
+            "table": {
+              "column_headers": ["Order", "Action"],
+              "rows": [
+                [
+                  "1",
+                  {
+                    "zoneId": "step_1"
+                  }
+                ],
+                [
+                  "2",
+                  {
+                    "zoneId": "step_2"
+                  }
+                ],
+                [
+                  "3",
+                  {
+                    "zoneId": "step_3"
+                  }
+                ],
+                [
+                  "4",
+                  {
+                    "zoneId": "step_4"
+                  }
+                ],
+                [
+                  "5",
+                  {
+                    "zoneId": "step_5"
+                  }
+                ],
+                [
+                  "6",
+                  {
+                    "zoneId": "step_6"
+                  }
+                ],
+                [
+                  "7",
+                  {
+                    "zoneId": "step_7"
+                  }
+                ],
+                [
+                  "8",
+                  {
+                    "zoneId": "step_8"
+                  }
+                ]
+              ]
+            }
+          }
+        }
+      ],
+      "rationale": ""
     }
   ],
   "metadata": {
-    "source_numbered_questions_found": 97,
-    "standalone_questions": 73,
+    "source_numbered_questions_found": 109,
+    "standalone_questions": 85,
     "testlet_questions": 24,
     "testlets": 3,
-    "embedded_images_identified_in_workbook": 0,
+    "embedded_images_identified_in_workbook": 7,
     "missing_answer_keys": null,
-    "note": "Updated from the verified Domain 2 Excel spreadsheet. Domain 2 testlet scenarios are stored once at the testlet level. Image placeholder objects were added for image-needed rows.",
-    "generated_at": "2026-06-15T14:34:23",
-    "total_numbered_questions_found": 256,
-    "domains_included": ["Domain 1", "Domain 2"],
+    "note": "Updated from the verified Domain 3 conversion spreadsheet. Domain 3 testlet scenarios are stored once at the testlet level. Image placeholder objects were added for image-needed rows. Hot spot questions include temporary xPct/yPct coordinates until final image placement is reviewed.",
+    "generated_at": "2026-06-16T00:00:00",
+    "total_numbered_questions_found": 365,
+    "domains_included": ["Domain 1", "Domain 2", "Domain 3"],
     "domain_1_question_count": 97,
     "domain_2_question_count": 159,
+    "domain_3_question_count": 109,
     "domain_2_standalone_questions": 112,
     "domain_2_testlet_questions": 47,
     "domain_2_testlets": 4,
     "domain_2_image_placeholders": [1, 8, 16, 17, 20, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 151],
-    "domain_2_image_placeholders_without_ids": [123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 151]
+    "domain_2_image_placeholders_without_ids": [123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 151],
+    "domain_3_standalone_questions": 85,
+    "domain_3_testlet_questions": 24,
+    "domain_3_testlets": 3,
+    "domain_3_image_placeholders": [87, 88, 92, 94, 96, 97, 98],
+    "domain_3_image_placeholders_without_ids": [87, 88, 92, 94, 96, 97, 98],
+    "domain_3_hotspot_questions": [88, 97, 98],
+    "domain_3_hotspot_questions_with_temporary_coordinates": [88, 97, 98],
+    "domain_3_table_or_drop_zone_review_questions": [86, 94, 107, 108, 109]
   }
 }

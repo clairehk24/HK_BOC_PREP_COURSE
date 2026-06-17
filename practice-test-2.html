@@ -12,7 +12,7 @@
         --background: #f5f7fa;
         --surface: #ffffff;
         --text: #102a43;
-        --muted: #7b8794;
+        --muted: #52606d;
         --border: #d9e2ec;
         --radius: 12px;
         --radius-sm: 8px;
@@ -28,6 +28,20 @@
       }
       html {
         scroll-behavior: smooth;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          transition-duration: 0.01ms !important;
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+        }
       }
 
       body {
@@ -49,6 +63,46 @@
       a:hover,
       a:focus {
         color: var(--secondary);
+      }
+
+      a:focus-visible,
+      button:focus-visible,
+      select:focus-visible,
+      input:focus-visible,
+      .token:focus-visible,
+      .slot:focus-visible,
+      .hsCircle:focus-visible {
+        outline: 3px solid var(--primary);
+        outline-offset: 3px;
+      }
+
+      .skip-link {
+        position: absolute;
+        left: 16px;
+        top: -48px;
+        z-index: 1001;
+        background: var(--primary);
+        color: var(--surface);
+        padding: 10px 14px;
+        border-radius: var(--radius-sm);
+        font-weight: 700;
+      }
+
+      .skip-link:focus {
+        top: 16px;
+        color: var(--surface);
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
       }
 
       button,
@@ -326,6 +380,64 @@
         font-size: 0.9rem;
       }
 
+      .question-image-actions {
+        margin-top: 10px;
+        display: flex;
+        gap: 8px;
+      }
+
+      .question-image-actions button {
+        padding: 8px 12px;
+        font-size: 0.88rem;
+      }
+
+      .image-viewer-backdrop {
+        position: fixed;
+        inset: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        background: rgba(16, 42, 67, 0.82);
+        z-index: 1000;
+      }
+
+      .image-viewer-backdrop.open {
+        display: flex;
+      }
+
+      .image-viewer-panel {
+        max-width: min(92vw, 1200px);
+        max-height: 92vh;
+        display: grid;
+        gap: 10px;
+        justify-items: end;
+      }
+
+      .image-viewer-panel img {
+        max-width: 100%;
+        max-height: calc(92vh - 56px);
+        height: auto;
+        width: auto;
+        display: block;
+        border-radius: var(--radius-sm);
+        background: var(--surface);
+        box-shadow: 0 18px 36px rgba(16, 42, 67, 0.3);
+      }
+
+      .image-viewer-close {
+        border-color: rgba(255, 255, 255, 0.5);
+        background: rgba(255, 255, 255, 0.12);
+        color: #ffffff;
+      }
+
+      .image-viewer-close:hover,
+      .image-viewer-close:focus {
+        border-color: #ffffff;
+        background: rgba(255, 255, 255, 0.2);
+        color: #ffffff;
+      }
+
       .answers {
         display: grid;
         gap: 10px;
@@ -399,6 +511,22 @@
         font-weight: 700;
         font-size: 0.92rem;
         line-height: 1.2;
+      }
+
+      .token.selected-token {
+        border-color: var(--secondary);
+        background: var(--accent);
+      }
+
+      .slot-token {
+        display: inline-flex;
+        align-items: center;
+        padding: 4px 8px;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        background: var(--surface);
+        color: var(--primary);
+        font-weight: 700;
       }
 
       .drop-zones {
@@ -559,26 +687,26 @@
     </style>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <div class="site-header-inner">
         <div class="site-title">BOC Exam Prep Course</div>
-        <div class="site-subtitle">Practice Test 2, wrong stack review, timers, and randomized study sets</div>
       </div>
     </header>
 
-    <main class="container">
+    <main id="main-content" class="container">
       <section class="page-intro section">
         <a class="button-secondary-link" href="index.html">Back to Home</a>
         <h1 style="margin-top: 20px">Practice Test 2</h1>
-        <p>Use this page to complete Practice Test 2. Questions are randomized from the Practice Test 2 question bank without domain filtering.</p>
+        <p>Choose the number of questions you want to answer, then click “Start / Next” to begin Practice Test 2.</p>
         <p>
-          This practice test page uses your uploaded Practice Test 2 question data and keeps the core study features, including wrong stack review, timers, multi-select scoring, drag-and-drop items,
-          hot spot items, and focused testlets.
+          Use “Submit” to check each answer. Missed or partially correct questions are saved in the Wrong Stack, where you can retry them later. Use the stopwatch to time your full session or each
+          individual question.
         </p>
       </section>
 
       <section class="card-panel section">
-        <div class="pill-row">
+        <div class="pill-row" aria-label="Practice test summary" aria-live="polite">
           <span class="pill" id="pill-total">Total: 0</span>
           <span class="pill" id="pill-filtered">In set: 0</span>
           <span class="pill" id="pill-score">Score: 0.0%</span>
@@ -597,7 +725,7 @@
                 <select id="questionCountSel"></select>
               </div>
 
-              <div id="studySetNote" class="section-text"></div>
+              <div id="studySetNote" class="section-text" aria-live="polite"></div>
 
               <div class="button-row">
                 <button id="btnRetryWrong" type="button" class="secondary">Retry Wrong Stack</button>
@@ -611,21 +739,21 @@
             </div>
           </section>
 
-          <section class="card-panel">
-            <h2 class="section-title">Stopwatch</h2>
+          <section class="card-panel stopwatch-panel" aria-labelledby="stopwatch-title">
+            <h2 id="stopwatch-title" class="section-title">Stopwatch</h2>
 
             <div class="controls">
-              <div class="timerBox">
+              <div class="timerBox" role="group" aria-label="Stopwatch timers">
                 <div>
                   <div class="muted">Session stopwatch</div>
-                  <div class="timerBig" id="sessionTime">00:00</div>
+                  <div class="timerBig" id="sessionTime" role="timer" aria-live="off" aria-label="Session stopwatch time">00:00</div>
                 </div>
 
                 <div class="timerSeparator"></div>
 
                 <div>
                   <div class="muted">Current question time</div>
-                  <div class="timerBig" id="questionTime">00:00</div>
+                  <div class="timerBig" id="questionTime" role="timer" aria-live="off" aria-label="Current question time">00:00</div>
                 </div>
               </div>
 
@@ -638,20 +766,21 @@
           </section>
         </div>
 
-        <aside class="card-panel">
-          <h2 class="section-title">Wrong Stack</h2>
+        <aside class="card-panel" aria-labelledby="wrong-stack-title">
+          <h2 id="wrong-stack-title" class="section-title">Wrong Stack</h2>
           <div class="stats">
-            <div id="wrongList" class="muted">None yet.</div>
+            <div id="wrongList" class="muted" aria-live="polite">None yet.</div>
             <div class="muted">Saved locally in this browser using localStorage.</div>
           </div>
         </aside>
       </section>
 
-      <section class="card-panel section">
-        <div id="qMeta" class="muted"></div>
-        <div id="qText" class="question-text">Choose one or more domains and a question count, then click “Start / Next” below the question area.</div>
+      <section class="card-panel section" aria-labelledby="question-heading">
+        <h2 id="question-heading" class="sr-only">Practice test question</h2>
+        <div id="qMeta" class="muted" aria-live="polite"></div>
+        <div id="qText" class="question-text" tabindex="-1">Choose a question count, then click “Start / Next” below the question area.</div>
         <div id="qUI"></div>
-        <div id="feedback" class="feedback" style="display: none"></div>
+        <div id="feedback" class="feedback" style="display: none" role="status" aria-live="polite" aria-atomic="true"></div>
 
         <div class="question-footer">
           <button id="btnNext" type="button" class="primary">Start / Next</button>
@@ -749,7 +878,7 @@
 
       function init() {
         questionCountSel.innerHTML = buildQuestionCountOptions();
-        questionCountSel.value = String(Math.min(QUESTIONS.length, 35));
+        questionCountSel.value = String(Math.min(QUESTIONS.length, 25));
 
         pillTotal.textContent = `Total: ${QUESTIONS.length}`;
 
@@ -799,12 +928,10 @@
 
       function buildQuestionCountOptions() {
         const options = [];
-        for (let i = 5; i <= QUESTIONS.length; i += 5) {
+        for (let i = 25; i < QUESTIONS.length; i += 25) {
           options.push(`<option value="${i}">${i}</option>`);
         }
-        if (!options.length || QUESTIONS.length % 5 !== 0) {
-          options.push(`<option value="${QUESTIONS.length}">${QUESTIONS.length}</option>`);
-        }
+        options.push(`<option value="all">All</option>`);
         return options.join("");
       }
 
@@ -998,6 +1125,60 @@
         return ok / total;
       }
 
+      let imageViewer = null;
+
+      function ensureImageViewer() {
+        if (imageViewer) return imageViewer;
+
+        const backdrop = document.createElement("div");
+        backdrop.className = "image-viewer-backdrop";
+        backdrop.setAttribute("role", "dialog");
+        backdrop.setAttribute("aria-modal", "true");
+        backdrop.setAttribute("aria-label", "Enlarged question image");
+
+        const panel = document.createElement("div");
+        panel.className = "image-viewer-panel";
+
+        const closeBtn = document.createElement("button");
+        closeBtn.className = "image-viewer-close";
+        closeBtn.type = "button";
+        closeBtn.textContent = "Close";
+        closeBtn.setAttribute("aria-label", "Close enlarged image");
+
+        const img = document.createElement("img");
+        img.alt = "";
+
+        function closeViewer() {
+          backdrop.classList.remove("open");
+          img.removeAttribute("src");
+        }
+
+        closeBtn.addEventListener("click", closeViewer);
+        backdrop.addEventListener("click", (e) => {
+          if (e.target === backdrop) closeViewer();
+        });
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape" && backdrop.classList.contains("open")) closeViewer();
+        });
+
+        panel.appendChild(closeBtn);
+        panel.appendChild(img);
+        backdrop.appendChild(panel);
+        document.body.appendChild(backdrop);
+
+        imageViewer = {
+          backdrop,
+          img,
+          open(src, alt) {
+            img.src = src;
+            img.alt = alt || "Enlarged question image";
+            backdrop.classList.add("open");
+            closeBtn.focus();
+          },
+        };
+        return imageViewer;
+      }
+
       function renderQuestionImage(q, targetEl) {
         const imgObj = q.image || q.scenarioImage || null;
         if (!imgObj || !imgObj.src) return;
@@ -1010,6 +1191,20 @@
         img.alt = imgObj.alt || "Question image";
         if (imgObj.width) img.style.width = imgObj.width;
         wrap.appendChild(img);
+
+        const actions = document.createElement("div");
+        actions.className = "question-image-actions";
+
+        const enlargeBtn = document.createElement("button");
+        enlargeBtn.type = "button";
+        enlargeBtn.className = "secondary";
+        enlargeBtn.textContent = "Enlarge image";
+        enlargeBtn.addEventListener("click", () => {
+          ensureImageViewer().open(imgObj.src, imgObj.alt || "Question image");
+        });
+
+        actions.appendChild(enlargeBtn);
+        wrap.appendChild(actions);
 
         if (imgObj.id) {
           const cap = document.createElement("figcaption");
@@ -1024,6 +1219,8 @@
       function renderMC(q) {
         const wrap = document.createElement("div");
         wrap.className = "answers";
+        wrap.setAttribute("role", "group");
+        wrap.setAttribute("aria-label", "Answer choices");
         q.choices.forEach((choice, idx) => {
           const div = document.createElement("label");
           div.className = "answer";
@@ -1052,6 +1249,8 @@
       function renderMS(q) {
         const wrap = document.createElement("div");
         wrap.className = "answers";
+        wrap.setAttribute("role", "group");
+        wrap.setAttribute("aria-label", "Answer choices");
         q.choices.forEach((choice, idx) => {
           const div = document.createElement("label");
           div.className = "answer";
@@ -1112,14 +1311,25 @@
         const bank = document.createElement("div");
         bank.className = "dd-bank";
         const placements = new Map();
+        let selectedDragToken = "";
 
         function makeToken(text) {
           const t = document.createElement("div");
           t.className = "token";
           t.textContent = text;
           t.draggable = true;
+          t.tabIndex = 0;
+          t.setAttribute("role", "button");
+          t.setAttribute("aria-label", `Select ${text} for drag and drop`);
           t.addEventListener("dragstart", (e) => {
             e.dataTransfer.setData("text/plain", text);
+          });
+          t.addEventListener("keydown", (e) => {
+            if (e.key !== "Enter" && e.key !== " ") return;
+            e.preventDefault();
+            selectedDragToken = text;
+            bank.querySelectorAll(".token").forEach((tokenEl) => tokenEl.classList.remove("selected-token"));
+            t.classList.add("selected-token");
           });
           return t;
         }
@@ -1142,6 +1352,9 @@
           const slot = document.createElement("div");
           slot.className = "slot";
           slot.textContent = "Drop here";
+          slot.tabIndex = 0;
+          slot.setAttribute("role", "button");
+          slot.setAttribute("aria-label", `${z.label}: drop slot. Press Enter or Space to place the selected item. Press Delete to clear.`);
 
           slot.addEventListener("dragover", (e) => {
             e.preventDefault();
@@ -1152,11 +1365,7 @@
             slot.classList.remove("over");
           });
 
-          slot.addEventListener("drop", (e) => {
-            e.preventDefault();
-            slot.classList.remove("over");
-
-            const tokenText = e.dataTransfer.getData("text/plain");
+          function placeTokenInSlot(tokenText) {
             if (!tokenText) return;
 
             // Remove token from any other zone first
@@ -1169,12 +1378,33 @@
             placements.set(z.label, tokenText);
             slot.textContent = tokenText;
             slot.style.color = "var(--primary)";
-          });
+            slot.setAttribute("aria-label", `${z.label}: ${tokenText} placed. Press Delete to clear.`);
+          }
 
-          slot.addEventListener("click", () => {
+          function clearSlot() {
             placements.delete(z.label);
             slot.textContent = "Drop here";
             slot.style.color = "var(--muted)";
+            slot.setAttribute("aria-label", `${z.label}: drop slot. Press Enter or Space to place the selected item. Press Delete to clear.`);
+          }
+
+          slot.addEventListener("drop", (e) => {
+            e.preventDefault();
+            slot.classList.remove("over");
+            placeTokenInSlot(e.dataTransfer.getData("text/plain"));
+          });
+
+          slot.addEventListener("click", clearSlot);
+
+          slot.addEventListener("keydown", (e) => {
+            if (e.key === "Delete" || e.key === "Backspace") {
+              e.preventDefault();
+              clearSlot();
+              return;
+            }
+            if (e.key !== "Enter" && e.key !== " ") return;
+            e.preventDefault();
+            placeTokenInSlot(selectedDragToken);
           });
 
           zone.appendChild(left);
@@ -1226,6 +1456,9 @@
 
         const circle = document.createElement("div");
         circle.className = "hsCircle";
+        circle.tabIndex = 0;
+        circle.setAttribute("role", "application");
+        circle.setAttribute("aria-label", "Hot spot marker. Use arrow keys to move. Hold Shift for larger moves.");
         overlay.appendChild(circle);
 
         const hintRow = document.createElement("div");
@@ -1271,6 +1504,23 @@
 
         setCirclePct(50, 50);
         btnCenter.addEventListener("click", () => setCirclePct(50, 50));
+
+        circle.addEventListener("keydown", (e) => {
+          const step = e.shiftKey ? 5 : 1;
+          if (e.key === "ArrowLeft") {
+            e.preventDefault();
+            setCirclePct(circlePos.xPct - step, circlePos.yPct);
+          } else if (e.key === "ArrowRight") {
+            e.preventDefault();
+            setCirclePct(circlePos.xPct + step, circlePos.yPct);
+          } else if (e.key === "ArrowUp") {
+            e.preventDefault();
+            setCirclePct(circlePos.xPct, circlePos.yPct - step);
+          } else if (e.key === "ArrowDown") {
+            e.preventDefault();
+            setCirclePct(circlePos.xPct, circlePos.yPct + step);
+          }
+        });
 
         let dragging = false;
 
@@ -1425,6 +1675,8 @@
         function renderSubMC(sq, index) {
           const wrap = document.createElement("div");
           wrap.className = "answers";
+          wrap.setAttribute("role", "group");
+          wrap.setAttribute("aria-label", "Answer choices");
 
           sq.choices.forEach((choice, idx) => {
             const div = document.createElement("label");
@@ -1453,6 +1705,8 @@
         function renderSubMS(sq, index) {
           const wrap = document.createElement("div");
           wrap.className = "answers";
+          wrap.setAttribute("role", "group");
+          wrap.setAttribute("aria-label", "Answer choices");
 
           sq.choices.forEach((choice, idx) => {
             const div = document.createElement("label");

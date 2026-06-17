@@ -401,11 +401,11 @@
     {
       "id": "pt1_q038",
       "type": "mc",
-      "prompt": "Which condition is pictured here?\nInsert:\n\\P 09.02 ID 701322\\",
+      "prompt": "Which condition is pictured here?",
       "rationale": "",
       "image": {
         "id": "701322",
-        "src": "",
+        "src": "images/Practice Test 1/701321.jpg",
         "alt": ""
       },
       "choices": ["Corneal abrasion", "Subconjunctival hemorrhage", "Conjunctivitis", "Detached retina", "Hyphema"],
@@ -414,11 +414,11 @@
     {
       "id": "pt1_q039",
       "type": "mc",
-      "prompt": "Which condition is shown in this X-ray?\nInsert:\n\\P 09.03 ID 701324\\",
+      "prompt": "Which condition is shown in this X-ray?",
       "rationale": "",
       "image": {
         "id": "701324",
-        "src": "",
+        "src": "images/Practice Test 1/0349P_0359.jpg",
         "alt": ""
       },
       "choices": ["Spondylolysis", "Spondylitis", "Spondylolisthesis", "Spondyloarthritis", "Spondylofasciitis"],
@@ -547,11 +547,11 @@
     {
       "id": "pt1_q053",
       "type": "mc",
-      "prompt": "For which nerve pathology does the photograph demonstrate the active upper-limb tension test?\nInsert:\n\\P 09.04 ID 701325\\ \\qq ID: Please add arrow. Xqq\\",
+      "prompt": "For which nerve pathology does the photograph demonstrate the active upper-limb tension test?\\",
       "rationale": "",
       "image": {
         "id": "701325",
-        "src": "",
+        "src": "images\\Practice Test 1\\0349P_0226.jpg",
         "alt": ""
       },
       "choices": ["Ulnar nerve", "Median nerve", "Radial nerve", "Musculoskeletal nerve", "Deltoid nerve"],
@@ -576,11 +576,11 @@
     {
       "id": "pt1_q056",
       "type": "mc",
-      "prompt": "Which special test is pictured here?\nInsert:\n\\P 09.05 ID 701326\\",
+      "prompt": "Which special test is pictured here?",
       "rationale": "",
       "image": {
         "id": "701326",
-        "src": "",
+        "src": "images/Practice Test 1/701326.png",
         "alt": ""
       },
       "choices": ["Oppenheim test", "Ticklish foot test", "Babinski test", "Hoover test", "Cremasteric test"],
@@ -1075,8 +1075,8 @@
           "prompt": "When performing percussion testing on the abdomen, what is the proper order? Place the number in the circle on the abdomen, with 1 being the first percussion and 13 being the last.\nCorrect order is 1-2-3-4-5-6-7-11-10-9-8-12-13",
           "rationale": "",
           "image": {
-            "id": "",
-            "src": "",
+            "id": "701327",
+            "src": "images\\Practice Test 1\\0859P_0043.jpg",
             "alt": ""
           },
           "dd": {
@@ -1152,8 +1152,8 @@
           "prompt": "Click on the area of the extremity where the head of the stethoscope should be placed while taking blood pressure.",
           "rationale": "",
           "image": {
-            "id": "",
-            "src": "",
+            "id": "701328",
+            "src": "images\\Practice Test 1\\0547S_0032.jpg",
             "alt": ""
           },
           "dd": {

@@ -7,13 +7,7 @@
       "type": "mc",
       "prompt": "Which strength training program uses three sets of 10 repetitions for the foundation of the program?",
       "rationale": "",
-      "choices": [
-        "DeLorme-Watkins protocol",
-        "DAPRE",
-        "Periodization",
-        "General adaptation system",
-        "Plyometrics"
-      ],
+      "choices": ["DeLorme-Watkins protocol", "DAPRE", "Periodization", "General adaptation system", "Plyometrics"],
       "answer": 0
     },
     {
@@ -35,13 +29,7 @@
       "type": "mc",
       "prompt": "Which of the following documents should be in a patient’s medical record?",
       "rationale": "",
-      "choices": [
-        "Daily treatment logs",
-        "Equipment checkout",
-        "Informed consents",
-        "NCAA drug usage chart",
-        "Patient’s medical password to online records"
-      ],
+      "choices": ["Daily treatment logs", "Equipment checkout", "Informed consents", "NCAA drug usage chart", "Patient’s medical password to online records"],
       "answer": 2
     },
     {
@@ -63,13 +51,7 @@
       "type": "mc",
       "prompt": "Which of the following is a risk for a patient with diabetes who exercises?",
       "rationale": "",
-      "choices": [
-        "Stroke",
-        "Loss of vision",
-        "Low VO2 levels",
-        "Kidney disease",
-        "Autonomic dysfunction"
-      ],
+      "choices": ["Stroke", "Loss of vision", "Low VO2 levels", "Kidney disease", "Autonomic dysfunction"],
       "answer": 4
     },
     {
@@ -77,12 +59,7 @@
       "type": "mc",
       "prompt": "A 50-year-old patient presents with lateral hip pain and difficulty in maintaining a level pelvis during gait. Examination reveals tenderness over the gluteus medius and a positive Trendelenburg test. What is the most likely diagnosis?",
       "rationale": "",
-      "choices": [
-        "Trochanteric bursitis",
-        "Iliotibial band syndrome",
-        "Osteoarthritis of the hip",
-        "Gluteus medius insufficiency"
-      ],
+      "choices": ["Trochanteric bursitis", "Iliotibial band syndrome", "Osteoarthritis of the hip", "Gluteus medius insufficiency"],
       "answer": 3
     },
     {
@@ -90,12 +67,7 @@
       "type": "mc",
       "prompt": "A 22-year-old female lacrosse player is struck in the face with a ball during a game. They now report pain and swelling over the upper lip and cheek. Examination reveals tenderness over the maxillary region, pain with biting, malocclusion, and bruising under the eyes. What is the most likely diagnosis?",
       "rationale": "",
-      "choices": [
-        "Maxilla fracture",
-        "Mandibular fracture",
-        "Nasal fracture",
-        "Orbital fracture"
-      ],
+      "choices": ["Maxilla fracture", "Mandibular fracture", "Nasal fracture", "Orbital fracture"],
       "answer": 0
     },
     {
@@ -103,13 +75,7 @@
       "type": "mc",
       "prompt": "Which of the following is an adverse effect of ephedrine?",
       "rationale": "",
-      "choices": [
-        "Psychiatric symptoms",
-        "Enlarged testicles",
-        "Insomnia",
-        "Body rash",
-        "Sensation of skin crawling"
-      ],
+      "choices": ["Psychiatric symptoms", "Enlarged testicles", "Insomnia", "Body rash", "Sensation of skin crawling"],
       "answer": 0
     },
     {
@@ -117,13 +83,7 @@
       "type": "mc",
       "prompt": "What is the cause of scapular winging when the scapula moves inferiorly and laterally when the shoulder is abducted?",
       "rationale": "",
-      "choices": [
-        "Superior labrum anterior and posterior lesion",
-        "Long thoracic nerve impingement",
-        "Levator scapula weakness",
-        "Spinal accessory nerve palsy",
-        "Serratus anterior palsy"
-      ],
+      "choices": ["Superior labrum anterior and posterior lesion", "Long thoracic nerve impingement", "Levator scapula weakness", "Spinal accessory nerve palsy", "Serratus anterior palsy"],
       "answer": 3
     },
     {
@@ -159,13 +119,7 @@
       "type": "mc",
       "prompt": "Which of the following diseases or conditions requires the standard precaution that the athletic trainer wear a HEPA mask covering the nose and mouth?",
       "rationale": "",
-      "choices": [
-        "HIV",
-        "AIDS",
-        "Hepatitis A",
-        "Hepatitis B",
-        "Tuberculosis"
-      ],
+      "choices": ["HIV", "AIDS", "Hepatitis A", "Hepatitis B", "Tuberculosis"],
       "answer": 4
     },
     {
@@ -215,13 +169,7 @@
       "type": "mc",
       "prompt": "What is an adverse effect of using growth hormones?",
       "rationale": "",
-      "choices": [
-        "Prematurely closing growth plates",
-        "Insulin resistance",
-        "Diabetes",
-        "Liver cancer",
-        "Marfan syndrome"
-      ],
+      "choices": ["Prematurely closing growth plates", "Insulin resistance", "Diabetes", "Liver cancer", "Marfan syndrome"],
       "answer": 1
     },
     {
@@ -229,12 +177,7 @@
       "type": "mc",
       "prompt": "A 16-year-old soccer player collides with another player during a game, striking their head on the ground. They report a headache, dizziness, and difficulty concentrating. Examination reveals a normal Glasgow Coma Scale score but a positive result on the Maddocks questions and symptom checklist. What is the most likely diagnosis?",
       "rationale": "",
-      "choices": [
-        "Skull fracture",
-        "Concussion",
-        "Intracranial hemorrhage",
-        "Second-impact syndrome"
-      ],
+      "choices": ["Skull fracture", "Concussion", "Intracranial hemorrhage", "Second-impact syndrome"],
       "answer": 1
     },
     {
@@ -298,13 +241,7 @@
       "type": "mc",
       "prompt": "How much fluid replacement should an athlete drink to equal one pound of sweat lost?",
       "rationale": "",
-      "choices": [
-        "One 12-ounce glass of fluid",
-        "One 16-ounce glass of fluid",
-        "One 18-ounce glass of fluid",
-        "One 24-ounce glass of fluid",
-        "One 32-ounce glass of fluid"
-      ],
+      "choices": ["One 12-ounce glass of fluid", "One 16-ounce glass of fluid", "One 18-ounce glass of fluid", "One 24-ounce glass of fluid", "One 32-ounce glass of fluid"],
       "answer": 1
     },
     {
@@ -312,13 +249,7 @@
       "type": "mc",
       "prompt": "Which of the following is a cause for a student-athlete to be immediately referred to a licensed mental health care professional for potential suicide risk?",
       "rationale": "",
-      "choices": [
-        "Alcohol abuse",
-        "Obsessive-compulsive disorder",
-        "Expressions of hopelessness",
-        "Phobias",
-        "Basic anxiety"
-      ],
+      "choices": ["Alcohol abuse", "Obsessive-compulsive disorder", "Expressions of hopelessness", "Phobias", "Basic anxiety"],
       "answer": 2
     },
     {
@@ -326,13 +257,7 @@
       "type": "mc",
       "prompt": "Which document and detailed plan is created and must be followed closely to protect health care professionals from spreading infections to patients?",
       "rationale": "",
-      "choices": [
-        "Personal protective equipment",
-        "Standard precautions",
-        "Exposure control plan",
-        "Infectious disease plan",
-        "Occupational medicine plan"
-      ],
+      "choices": ["Personal protective equipment", "Standard precautions", "Exposure control plan", "Infectious disease plan", "Occupational medicine plan"],
       "answer": 2
     },
     {
@@ -340,13 +265,7 @@
       "type": "mc",
       "prompt": "Environmental policies are important in athletic training to ensure proper preventive action and emergency care. Which of the following environmental policies would have the use of a sling psychrometer as a relevant action?",
       "rationale": "",
-      "choices": [
-        "Lightning policy",
-        "Cold exposure policy",
-        "Heat exposure policy",
-        "Tornado policy",
-        "High winds policy"
-      ],
+      "choices": ["Lightning policy", "Cold exposure policy", "Heat exposure policy", "Tornado policy", "High winds policy"],
       "answer": 2
     },
     {
@@ -354,13 +273,7 @@
       "type": "mc",
       "prompt": "According to the scope of practice, who is considered the final determination regarding the skills one can administer as an athletic trainer?",
       "rationale": "",
-      "choices": [
-        "School district",
-        "State law",
-        "National Athletic Trainers’ Association",
-        "Commission on Accreditation of AT Education",
-        "Board of Certification"
-      ],
+      "choices": ["School district", "State law", "National Athletic Trainers’ Association", "Commission on Accreditation of AT Education", "Board of Certification"],
       "answer": 1
     },
     {
@@ -382,13 +295,7 @@
       "type": "mc",
       "prompt": "Legal action against athletic trainers can create challenges for the professional. Which emergency action is not standard to prevent litigation in the case of a catastrophic injury situation?",
       "rationale": "",
-      "choices": [
-        "Communication plan",
-        "Post-critical incident plan",
-        "Pre-critical incident plan",
-        "Educational and skills practice plan",
-        "Administrative reporting plan"
-      ],
+      "choices": ["Communication plan", "Post-critical incident plan", "Pre-critical incident plan", "Educational and skills practice plan", "Administrative reporting plan"],
       "answer": 4
     },
     {
@@ -396,13 +303,7 @@
       "type": "mc",
       "prompt": "Triage is a fundamental task in emergency care when more than one patient is involved. Understanding coding is important to expedite care and allow patients the best outcomes. Which universal color code is used for those patients who could survive with medical attention when injuries are potentially life-threatening but can wait?",
       "rationale": "",
-      "choices": [
-        "Black",
-        "Red",
-        "Green",
-        "Yellow",
-        "Orange"
-      ],
+      "choices": ["Black", "Red", "Green", "Yellow", "Orange"],
       "answer": 3
     },
     {
@@ -410,13 +311,7 @@
       "type": "mc",
       "prompt": "Disinfection of surfaces is an important practice in athletic training and rehabilitation facilities. Policy should indicate which disinfectants are used. Which of the following household bleach solutions are recommended for decontaminating blood spills?",
       "rationale": "",
-      "choices": [
-        "1:100",
-        "1:1000",
-        "1:10",
-        "No dilution",
-        "1:50"
-      ],
+      "choices": ["1:100", "1:1000", "1:10", "No dilution", "1:50"],
       "answer": 2
     },
     {
@@ -424,13 +319,7 @@
       "type": "mc",
       "prompt": "Which of the following emergency interventions are athletic trainers permitted to administer all when medical assessment deems necessary? Choose all that apply.",
       "rationale": "",
-      "choices": [
-        "Administration of AED",
-        "Injection of corticosteroids",
-        "Stabilization of the c-spine",
-        "Treatment for psychogenic shock",
-        "Application of a tourniquet"
-      ],
+      "choices": ["Administration of AED", "Injection of corticosteroids", "Stabilization of the c-spine", "Treatment for psychogenic shock", "Application of a tourniquet"],
       "answer": 0
     },
     {
@@ -438,13 +327,7 @@
       "type": "mc",
       "prompt": "Which of the following policies would include the integration of an SCAT6 Assessment?",
       "rationale": "",
-      "choices": [
-        "Anaphylaxis emergency policy",
-        "Diabetic emergency",
-        "Concussion management policy",
-        "Environmental heat",
-        "Cardiac emergency"
-      ],
+      "choices": ["Anaphylaxis emergency policy", "Diabetic emergency", "Concussion management policy", "Environmental heat", "Cardiac emergency"],
       "answer": 2
     },
     {
@@ -452,13 +335,7 @@
       "type": "mc",
       "prompt": "In facility design, it is important to have a clear view of as many areas of the athletic training facility as possible. However, it is not always possible to do so. Which would be the most important area to have direct vision of your office area for safety reasons?",
       "rationale": "",
-      "choices": [
-        "Hydrotherapy area",
-        "Doctor’s office",
-        "Storage room",
-        "Taping area",
-        "Rehabilitation area"
-      ],
+      "choices": ["Hydrotherapy area", "Doctor’s office", "Storage room", "Taping area", "Rehabilitation area"],
       "answer": 0
     },
     {
@@ -466,13 +343,7 @@
       "type": "mc",
       "prompt": "In training facility design, it is important to have signage. Which of the following signs needs to be in the training facility?",
       "rationale": "",
-      "choices": [
-        "Ground fault interrupter (GFI) outlets",
-        "How to use the whirlpool",
-        "Location of the office",
-        "Location of the private examination room",
-        "Location of the AED"
-      ],
+      "choices": ["Ground fault interrupter (GFI) outlets", "How to use the whirlpool", "Location of the office", "Location of the private examination room", "Location of the AED"],
       "answer": 4
     },
     {
@@ -480,13 +351,7 @@
       "type": "mc",
       "prompt": "At what age is peak strength most likely attained in untrained males and females?",
       "rationale": "",
-      "choices": [
-        "Males at 20 and females at 18",
-        "Males at 18 and females at 16",
-        "Males between 20 and 30 and females by 20",
-        "Males by 20 and females between 20 and 30",
-        "Both sexes by 21"
-      ],
+      "choices": ["Males at 20 and females at 18", "Males at 18 and females at 16", "Males between 20 and 30 and females by 20", "Males by 20 and females between 20 and 30", "Both sexes by 21"],
       "answer": 2
     },
     {
@@ -494,13 +359,7 @@
       "type": "mc",
       "prompt": "What is the best way to determine maturation of pediatric patients?",
       "rationale": "",
-      "choices": [
-        "Age",
-        "Puberty",
-        "Height and weight",
-        "Skeletal maturity",
-        "Behavior"
-      ],
+      "choices": ["Age", "Puberty", "Height and weight", "Skeletal maturity", "Behavior"],
       "answer": 1
     },
     {
@@ -508,13 +367,7 @@
       "type": "mc",
       "prompt": "Which form of stretching has been found to improve running performance?",
       "rationale": "",
-      "choices": [
-        "Ballistic",
-        "Dynamic",
-        "PNF",
-        "Static",
-        "Stretch tolerance"
-      ],
+      "choices": ["Ballistic", "Dynamic", "PNF", "Static", "Stretch tolerance"],
       "answer": 1
     },
     {
@@ -536,13 +389,7 @@
       "type": "mc",
       "prompt": "Of the following, which is most likely to cause an increased frequency of muscle twitches to potentially cause muscle cramps?",
       "rationale": "",
-      "choices": [
-        "Diuretics",
-        "Exercise",
-        "Not stretching before lifting weights",
-        "A high-fiber diet",
-        "Hot tub"
-      ],
+      "choices": ["Diuretics", "Exercise", "Not stretching before lifting weights", "A high-fiber diet", "Hot tub"],
       "answer": 0
     },
     {
@@ -578,13 +425,7 @@
       "type": "mc",
       "prompt": "Which of the following is most likely to contribute to hypothermia?",
       "rationale": "",
-      "choices": [
-        "Alcohol",
-        "Heart rate",
-        "Gender",
-        "Height",
-        "Obesity"
-      ],
+      "choices": ["Alcohol", "Heart rate", "Gender", "Height", "Obesity"],
       "answer": 0
     },
     {
@@ -592,13 +433,7 @@
       "type": "mc",
       "prompt": "Which ribs are most often impacted by costochondritis?",
       "rationale": "",
-      "choices": [
-        "C1–C4",
-        "C2–C5",
-        "T1–T4",
-        "T2–T5",
-        "T6–T8"
-      ],
+      "choices": ["C1–C4", "C2–C5", "T1–T4", "T2–T5", "T6–T8"],
       "answer": 3
     },
     {
@@ -606,13 +441,7 @@
       "type": "mc",
       "prompt": "For patients who are injured athletes, what is the best diet while they are recovering?",
       "rationale": "",
-      "choices": [
-        "A low-carbohydrate diet",
-        "A diet high in calcium and protein",
-        "A diet lower in calories",
-        "A diet high in vitamin C",
-        "A balanced diet"
-      ],
+      "choices": ["A low-carbohydrate diet", "A diet high in calcium and protein", "A diet lower in calories", "A diet high in vitamin C", "A balanced diet"],
       "answer": 4
     },
     {
@@ -634,13 +463,7 @@
       "type": "mc",
       "prompt": "Which of the following documents should be in a patient’s medical record?",
       "rationale": "",
-      "choices": [
-        "Daily treatment logs",
-        "Equipment checkout",
-        "Informed consents",
-        "NCAA drug usage chart",
-        "Patient’s medical password to online records"
-      ],
+      "choices": ["Daily treatment logs", "Equipment checkout", "Informed consents", "NCAA drug usage chart", "Patient’s medical password to online records"],
       "answer": 2
     },
     {
@@ -648,13 +471,7 @@
       "type": "mc",
       "prompt": "Which insurance plan covers active and retired military members?",
       "rationale": "",
-      "choices": [
-        "Medicaid",
-        "Primary insurance",
-        "Tricare",
-        "Preferred provider organization",
-        "Workers’ compensation"
-      ],
+      "choices": ["Medicaid", "Primary insurance", "Tricare", "Preferred provider organization", "Workers’ compensation"],
       "answer": 2
     },
     {
@@ -690,13 +507,7 @@
       "type": "mc",
       "prompt": "Which of the following conditions would show a decreased red reflex?",
       "rationale": "",
-      "choices": [
-        "Hyphema",
-        "Cataracts",
-        "Pooling of blood under the eyes",
-        "Corneal abrasion",
-        "Corneal foreign body"
-      ],
+      "choices": ["Hyphema", "Cataracts", "Pooling of blood under the eyes", "Corneal abrasion", "Corneal foreign body"],
       "answer": 0
     },
     {
@@ -732,13 +543,7 @@
       "type": "mc",
       "prompt": "Which of the following is a contraindication for shortwave diathermy?",
       "rationale": "",
-      "choices": [
-        "A flat metal strip fixation",
-        "Use over a hemorrhage",
-        "Use over a chronic inflammation",
-        "Use on a person with type 1 diabetes",
-        "Use on someone with high cholesterol"
-      ],
+      "choices": ["A flat metal strip fixation", "Use over a hemorrhage", "Use over a chronic inflammation", "Use on a person with type 1 diabetes", "Use on someone with high cholesterol"],
       "answer": 1
     },
     {
@@ -746,13 +551,7 @@
       "type": "mc",
       "prompt": "Which of the following is an indication for using intermittent compression?",
       "rationale": "",
-      "choices": [
-        "Deep vein thrombosis",
-        "Lymphedema",
-        "Ischemic vascular disease",
-        "Peripheral vascular disease",
-        "Pulmonary edema"
-      ],
+      "choices": ["Deep vein thrombosis", "Lymphedema", "Ischemic vascular disease", "Peripheral vascular disease", "Pulmonary edema"],
       "answer": 1
     },
     {
@@ -760,13 +559,7 @@
       "type": "mc",
       "prompt": "During the preparticipation physical examination, a peak expiratory flow meter is used to provide a baseline assessment for those with asthma. When checking a patient’s peak expiratory flow before their daily participation, what peak expiratory flow would restrict activity?",
       "rationale": "",
-      "choices": [
-        "95% of their baseline",
-        "90% of their baseline",
-        "Between 85% and 90% of their baseline",
-        "Between 50% and 79% of their baseline",
-        "Between 80% and 90% of their baseline"
-      ],
+      "choices": ["95% of their baseline", "90% of their baseline", "Between 85% and 90% of their baseline", "Between 50% and 79% of their baseline", "Between 80% and 90% of their baseline"],
       "answer": 3
     },
     {
@@ -774,13 +567,7 @@
       "type": "mc",
       "prompt": "When using lumbar traction, what is the duration of the treatment for a disk protrusion?",
       "rationale": "",
-      "choices": [
-        "<10 minutes",
-        "10 minutes",
-        "15 minutes",
-        "15 to 20 minutes",
-        "20 minutes"
-      ],
+      "choices": ["<10 minutes", "10 minutes", "15 minutes", "15 to 20 minutes", "20 minutes"],
       "answer": 0
     },
     {
@@ -802,13 +589,7 @@
       "type": "mc",
       "prompt": "Which of the following is the normal response for the deep tendon reflex of the tibialis posterior?",
       "rationale": "",
-      "choices": [
-        "Plantar flexion",
-        "Plantar flexion with inversion",
-        "Inversion",
-        "Dorsiflexion",
-        "Dorsiflexion with eversion"
-      ],
+      "choices": ["Plantar flexion", "Plantar flexion with inversion", "Inversion", "Dorsiflexion", "Dorsiflexion with eversion"],
       "answer": 1
     },
     {
@@ -858,12 +639,7 @@
       "type": "mc",
       "prompt": "Which of the following are the chemicals responsible for vascular permeability?",
       "rationale": "",
-      "choices": [
-        "Histamine, prostaglandins, serotonin",
-        "Prostaglandins, factor VIII, serotonin",
-        "Serotonin, histamine, factor VIII",
-        "Histamine, fibrinolysin, serotonin"
-      ],
+      "choices": ["Histamine, prostaglandins, serotonin", "Prostaglandins, factor VIII, serotonin", "Serotonin, histamine, factor VIII", "Histamine, fibrinolysin, serotonin"],
       "answer": 0
     },
     {
@@ -871,13 +647,7 @@
       "type": "mc",
       "prompt": "Which of the following conditions has a genetic component?",
       "rationale": "",
-      "choices": [
-        "Torticollis",
-        "Substance abuse",
-        "Meningitis",
-        "Hypothyroidism",
-        "Eczema"
-      ],
+      "choices": ["Torticollis", "Substance abuse", "Meningitis", "Hypothyroidism", "Eczema"],
       "answer": 1
     },
     {
@@ -885,13 +655,7 @@
       "type": "mc",
       "prompt": "Which exposed body part is most likely to lose body heat more quickly?",
       "rationale": "",
-      "choices": [
-        "Head",
-        "Neck",
-        "Face",
-        "Hands",
-        "Palms of hands"
-      ],
+      "choices": ["Head", "Neck", "Face", "Hands", "Palms of hands"],
       "answer": 0
     },
     {
@@ -927,13 +691,7 @@
       "type": "mc",
       "prompt": "Which of the following conditions results from compression of the tibial nerve in the ankle?",
       "rationale": "",
-      "choices": [
-        "Tarsal tunnel syndrome",
-        "Morton neuroma",
-        "Plantar fasciitis",
-        "Achilles tendinitis",
-        "Metatarsalgia"
-      ],
+      "choices": ["Tarsal tunnel syndrome", "Morton neuroma", "Plantar fasciitis", "Achilles tendinitis", "Metatarsalgia"],
       "answer": 0
     },
     {
@@ -941,13 +699,7 @@
       "type": "mc",
       "prompt": "Which of the following is the best initial management for a suspected cervical spine injury?",
       "rationale": "",
-      "choices": [
-        "Range of motion testing",
-        "Remove helmet immediately",
-        "Sit the athlete upright",
-        "Stabilize the head and neck in the position found",
-        "Apply ice to the cervical spine"
-      ],
+      "choices": ["Range of motion testing", "Remove helmet immediately", "Sit the athlete upright", "Stabilize the head and neck in the position found", "Apply ice to the cervical spine"],
       "answer": 3
     },
     {
@@ -969,13 +721,7 @@
       "type": "mc",
       "prompt": "Which position in boy’s and men’s lacrosse requires a throat and check protector at the high school and collegiate level?",
       "rationale": "",
-      "choices": [
-        "Forward",
-        "Midfielder",
-        "Defense",
-        "Goalie",
-        "Those with previous neck injuries"
-      ],
+      "choices": ["Forward", "Midfielder", "Defense", "Goalie", "Those with previous neck injuries"],
       "answer": 3
     },
     {
@@ -983,13 +729,7 @@
       "type": "mc",
       "prompt": "An industrial worker is being seen for his upper arm. The patient reports feeling a popping sensation when he reached out to catch a heavy box that fell from a shelf overhead. When you perform a manual muscle test, you notice a “Popeye” deformity. Which muscle has the patient most likely ruptured?",
       "rationale": "",
-      "choices": [
-        "Fracture of the mandible",
-        "Long head of the biceps rupture",
-        "Anterior dislocation of the shoulder",
-        "Fracture of the zygomatic arch",
-        "Rupture of the globe of the eye"
-      ],
+      "choices": ["Fracture of the mandible", "Long head of the biceps rupture", "Anterior dislocation of the shoulder", "Fracture of the zygomatic arch", "Rupture of the globe of the eye"],
       "answer": 1
     },
     {
@@ -1039,13 +779,7 @@
       "type": "mc",
       "prompt": "Crowing is an abnormal vital sign. What is a possible cause of crowing?",
       "rationale": "",
-      "choices": [
-        "Asthma",
-        "Foreign object in the throat",
-        "Enlarged tonsils",
-        "Cardiac issues",
-        "Spasms of the larynx"
-      ],
+      "choices": ["Asthma", "Foreign object in the throat", "Enlarged tonsils", "Cardiac issues", "Spasms of the larynx"],
       "answer": 4
     },
     {
@@ -1053,13 +787,7 @@
       "type": "mc",
       "prompt": "Which specific muscle is being tested by the strength test demonstrated below?",
       "rationale": "",
-      "choices": [
-        "Internal obliques",
-        "External obliques",
-        "Transverse abdominis",
-        "Quadratus lumborum",
-        "Rectus abdominis"
-      ],
+      "choices": ["Internal obliques", "External obliques", "Transverse abdominis", "Quadratus lumborum", "Rectus abdominis"],
       "answer": 3,
       "review_status": "image_needed_or_confirm_no_image_701376"
     },
@@ -1068,13 +796,7 @@
       "type": "mc",
       "prompt": "A hip pointer injury elicits pain when the patient coughs, sneezes, or laughs. Which muscles have been affected?",
       "rationale": "",
-      "choices": [
-        "Sartorius and rectus femoris",
-        "Vastus lateralis and rectus femoris",
-        "Iliotibial band and abdominal muscles",
-        "Abdominal muscles",
-        "Obturator internus and externus"
-      ],
+      "choices": ["Sartorius and rectus femoris", "Vastus lateralis and rectus femoris", "Iliotibial band and abdominal muscles", "Abdominal muscles", "Obturator internus and externus"],
       "answer": 3
     },
     {
@@ -1082,13 +804,7 @@
       "type": "mc",
       "prompt": "What injury has a patient who presents with a Lichtenberg figure likely sustained?",
       "rationale": "",
-      "choices": [
-        "Hypoglycemia",
-        "Concussion",
-        "Heat-related illness",
-        "Sickle cell anemia",
-        "Lightning strike"
-      ],
+      "choices": ["Hypoglycemia", "Concussion", "Heat-related illness", "Sickle cell anemia", "Lightning strike"],
       "answer": 4
     },
     {
@@ -1096,12 +812,7 @@
       "type": "mc",
       "prompt": "Children, particularly boys, can develop knee pain from excessive or repetitive jumping or excessive loading to the knee. What is this condition called?",
       "rationale": "",
-      "choices": [
-        "Osteoarthritis",
-        "Osgood-Schlatter’s disease",
-        "Turner syndrome",
-        "Fracture"
-      ],
+      "choices": ["Osteoarthritis", "Osgood-Schlatter’s disease", "Turner syndrome", "Fracture"],
       "answer": 1
     },
     {
@@ -1109,13 +820,7 @@
       "type": "mc",
       "prompt": "Which of the following is the best way to reposition a meniscus that restricts the jaw opening?",
       "rationale": "",
-      "choices": [
-        "Surgery",
-        "Traction",
-        "Joint distraction",
-        "Passive stretching",
-        "Massage"
-      ],
+      "choices": ["Surgery", "Traction", "Joint distraction", "Passive stretching", "Massage"],
       "answer": 2
     },
     {
@@ -1123,13 +828,7 @@
       "type": "mc",
       "prompt": "What is the primary method for developing both speed and agility?",
       "rationale": "",
-      "choices": [
-        "Proper mechanics",
-        "Doing build-up running",
-        "Increasing strength of the hamstring muscle group",
-        "Resistance training while running",
-        "Improving the first step"
-      ],
+      "choices": ["Proper mechanics", "Doing build-up running", "Increasing strength of the hamstring muscle group", "Resistance training while running", "Improving the first step"],
       "answer": 0
     },
     {
@@ -1151,12 +850,7 @@
       "type": "mc",
       "prompt": "An athletic trainer determines that a patient has a possible SLAP tear of the right shoulder that is 4 weeks old. Which shoulder motion places the greatest stress on the labrum?",
       "rationale": "",
-      "choices": [
-        "Shoulder flexion",
-        "Shoulder abduction",
-        "Shoulder external rotation",
-        "Combined shoulder abduction and external rotation"
-      ],
+      "choices": ["Shoulder flexion", "Shoulder abduction", "Shoulder external rotation", "Combined shoulder abduction and external rotation"],
       "answer": 3
     },
     {
@@ -1206,12 +900,7 @@
       "type": "mc",
       "prompt": "A soccer player injures his knee after planting and twisting it. You suspect a possible medial meniscal tear. If that is the case, how will the end-feel present clinically?",
       "rationale": "",
-      "choices": [
-        "Hard",
-        "Capsular",
-        "Soft-tissue approximation",
-        "Springy"
-      ],
+      "choices": ["Hard", "Capsular", "Soft-tissue approximation", "Springy"],
       "answer": 3
     },
     {
@@ -1233,12 +922,7 @@
       "type": "mc",
       "prompt": "A patient reports having moderate difficulty and pain below the kneecap when going down the stairs and mild difficulty with some knee pain when going up the stairs. Which muscle is likely the cause of the problem?",
       "rationale": "",
-      "choices": [
-        "Hamstrings",
-        "Gluteus maximus",
-        "Gluteus medius and gluteus minimus",
-        "Quadriceps"
-      ],
+      "choices": ["Hamstrings", "Gluteus maximus", "Gluteus medius and gluteus minimus", "Quadriceps"],
       "answer": 3
     },
     {
@@ -1246,12 +930,7 @@
       "type": "mc",
       "prompt": "What is hallux valgus often associated with?",
       "rationale": "",
-      "choices": [
-        "Lordosis",
-        "Hyperextended knees",
-        "Excessive pronation",
-        "Morton’s toe"
-      ],
+      "choices": ["Lordosis", "Hyperextended knees", "Excessive pronation", "Morton’s toe"],
       "answer": 2
     },
     {
@@ -1273,12 +952,7 @@
       "type": "mc",
       "prompt": "During excessive thoracic kyphosis, a person’s shoulders will be rounded. Which stretch is the most appropriate to address the muscle tightness?",
       "rationale": "",
-      "choices": [
-        "Pectoral door stretch",
-        "Cat-camel yoga stretch",
-        "first rib self-mobilization with belt",
-        "Serratus anterior bear hugs"
-      ],
+      "choices": ["Pectoral door stretch", "Cat-camel yoga stretch", "first rib self-mobilization with belt", "Serratus anterior bear hugs"],
       "answer": 0
     },
     {
@@ -1286,13 +960,7 @@
       "type": "mc",
       "prompt": "Which medication is best when using iontophoresis for reducing oedema?",
       "rationale": "",
-      "choices": [
-        "Salicylate",
-        "Acetic acid",
-        "Chlorine",
-        "Magnesium sulfate",
-        "Dexamethasone"
-      ],
+      "choices": ["Salicylate", "Acetic acid", "Chlorine", "Magnesium sulfate", "Dexamethasone"],
       "answer": 3
     },
     {
@@ -1300,12 +968,7 @@
       "type": "mc",
       "prompt": "Which artery is often torn with skull fractures, leading to an epidural hematoma?",
       "rationale": "",
-      "choices": [
-        "Vertebral artery",
-        "Carotid artery",
-        "Middle meningeal artery",
-        "Basilar artery"
-      ],
+      "choices": ["Vertebral artery", "Carotid artery", "Middle meningeal artery", "Basilar artery"],
       "answer": 2
     },
     {
@@ -1313,12 +976,7 @@
       "type": "mc",
       "prompt": "Which of the following are considered pathological reflexes for assessing upper motor neuron lesions?",
       "rationale": "",
-      "choices": [
-        "Babinski and Chaddock reflexes",
-        "Knee jerk and ankle reflexes",
-        "Triceps reflex and Hoffman sign",
-        "Moro reflex and Galant reflex"
-      ],
+      "choices": ["Babinski and Chaddock reflexes", "Knee jerk and ankle reflexes", "Triceps reflex and Hoffman sign", "Moro reflex and Galant reflex"],
       "answer": 0
     },
     {
@@ -1326,12 +984,7 @@
       "type": "mc",
       "prompt": "Which of the following tests are used to establish an athlete’s level of consciousness?",
       "rationale": "",
-      "choices": [
-        "SAC test",
-        "BESS test",
-        "Glasgow Coma Scale",
-        "Percussion test"
-      ],
+      "choices": ["SAC test", "BESS test", "Glasgow Coma Scale", "Percussion test"],
       "answer": 2
     },
     {
@@ -1352,12 +1005,7 @@
       "type": "mc",
       "prompt": "Besides a direct blow to the lower abdomen, the bladder can be injured secondary to what injury?",
       "rationale": "",
-      "choices": [
-        "Dislocated hip",
-        "Dislocated symphysis pubis",
-        "Fractured pelvis",
-        "Fractured coccyx"
-      ],
+      "choices": ["Dislocated hip", "Dislocated symphysis pubis", "Fractured pelvis", "Fractured coccyx"],
       "answer": 2
     },
     {
@@ -1365,12 +1013,7 @@
       "type": "mc",
       "prompt": "Which of the following signs and symptoms should cause you to suspect internal bleeding?",
       "rationale": "",
-      "choices": [
-        "Muscular rigidity",
-        "High blood pressure",
-        "Slow bounding pulse",
-        "Deep, rhythmic respirations"
-      ],
+      "choices": ["Muscular rigidity", "High blood pressure", "Slow bounding pulse", "Deep, rhythmic respirations"],
       "answer": 0
     },
     {
@@ -1378,12 +1021,7 @@
       "type": "mc",
       "prompt": "Which of the following conditions involves swelling due to an accumulation of fluid within the membrane surrounding the testicle?",
       "rationale": "",
-      "choices": [
-        "Hydrocele",
-        "Varicocele",
-        "Spermatic cord torsion",
-        "Epididymitis"
-      ],
+      "choices": ["Hydrocele", "Varicocele", "Spermatic cord torsion", "Epididymitis"],
       "answer": 0
     },
     {
@@ -1391,17 +1029,8 @@
       "type": "ms",
       "prompt": "Which signs would require an immediate referral following blunt abdominal trauma? Choose all that apply.",
       "rationale": "",
-      "choices": [
-        "Rebound tenderness",
-        "Hematuria",
-        "Persistent vomiting",
-        "Light sensitivity"
-      ],
-      "answer": [
-        0,
-        1,
-        2
-      ]
+      "choices": ["Rebound tenderness", "Hematuria", "Persistent vomiting", "Light sensitivity"],
+      "answer": [0, 1, 2]
     },
     {
       "id": "pt2_t01",
@@ -1414,16 +1043,8 @@
           "type": "ms",
           "prompt": "The athletic trainer moves the patient’s arm to 90° abduction, 90° horizontal adduction, and glenohumeral internal rotation. Which of the following tests describes this motion? Choose all that apply.",
           "rationale": "",
-          "choices": [
-            "Hawkins-Kennedy",
-            "Yergason’s",
-            "Speed’s",
-            "Neer’s"
-          ],
-          "answer": [
-            0,
-            3
-          ]
+          "choices": ["Hawkins-Kennedy", "Yergason’s", "Speed’s", "Neer’s"],
+          "answer": [0, 3]
         },
         {
           "id": "pt2_t01_q103",
@@ -1437,11 +1058,7 @@
             "Midthorax anterior to plumb line",
             "Manubrium posterior to the plumb line"
           ],
-          "answer": [
-            0,
-            1,
-            3
-          ]
+          "answer": [0, 1, 3]
         },
         {
           "id": "pt2_t01_q104",
@@ -1455,12 +1072,7 @@
             "Use an upper-body ergometer.",
             "Stretch the anterior thoracic musculature."
           ],
-          "answer": [
-            1,
-            2,
-            3,
-            4
-          ]
+          "answer": [1, 2, 3, 4]
         },
         {
           "id": "pt2_t01_q105",
@@ -1495,16 +1107,7 @@
             "Kneeling in a counterclockwise circular motion on a slide board",
             "Kneeling abduction and adduction motion on a slide board"
           ],
-          "answer": [
-            0,
-            2,
-            3,
-            4,
-            5,
-            6,
-            8,
-            9
-          ]
+          "answer": [0, 2, 3, 4, 5, 6, 8, 9]
         },
         {
           "id": "pt2_t01_q107",
@@ -1520,14 +1123,7 @@
             "Patient tests negative on impingement tests.",
             "Patient has a normal pain-free rehabilitative workout."
           ],
-          "answer": [
-            0,
-            1,
-            2,
-            4,
-            5,
-            6
-          ]
+          "answer": [0, 1, 2, 4, 5, 6]
         }
       ],
       "rationale": ""
@@ -1596,23 +1192,8 @@
           "type": "ms",
           "prompt": "The athletic trainer has set up pre-participation physical examinations for 18- to 21-year-old athletes. As athletes move through the examination stations, the athletic trainer needs to demonstrate competency in a variety of areas.\nWhich of the following items found in a physical or health history form would be recognized as a concern for further investigation? Choose all that apply.",
           "rationale": "",
-          "choices": [
-            "Hemoglobinuria",
-            "Absent testicle",
-            "History of repeated episodes of diarrhea",
-            "Controlled diabetes",
-            "Furuncles",
-            "Blood pressure 160/70 mmHg",
-            "Anemia"
-          ],
-          "answer": [
-            0,
-            1,
-            2,
-            4,
-            5,
-            6
-          ]
+          "choices": ["Hemoglobinuria", "Absent testicle", "History of repeated episodes of diarrhea", "Controlled diabetes", "Furuncles", "Blood pressure 160/70 mmHg", "Anemia"],
+          "answer": [0, 1, 2, 4, 5, 6]
         }
       ],
       "rationale": ""
@@ -1637,10 +1218,7 @@
             "Confirmed with the parent",
             "Review with the athletic administration"
           ],
-          "answer": [
-            0,
-            5
-          ]
+          "answer": [0, 5]
         },
         {
           "id": "pt2_t03_q114",
@@ -1654,12 +1232,7 @@
             "Can limited participation be allowed while treatment is being completed?",
             "Can the athlete afford testing to determine medical eligibility?"
           ],
-          "answer": [
-            0,
-            1,
-            2,
-            3
-          ]
+          "answer": [0, 1, 2, 3]
         },
         {
           "id": "pt2_t03_q115",
@@ -1686,10 +1259,7 @@
             "For those with a personal or family history of cardiac issues",
             "For those with high cholesterol"
           ],
-          "answer": [
-            2,
-            5
-          ]
+          "answer": [2, 5]
         },
         {
           "id": "pt2_t03_q117",
@@ -1705,13 +1275,7 @@
             "Snellen test",
             "Urinalysis"
           ],
-          "answer": [
-            0,
-            1,
-            3,
-            4,
-            5
-          ]
+          "answer": [0, 1, 3, 4, 5]
         }
       ],
       "rationale": ""
@@ -1735,12 +1299,7 @@
             "Have you been partying lately?",
             "Do you have diabetes?"
           ],
-          "answer": [
-            0,
-            1,
-            2,
-            3
-          ]
+          "answer": [0, 1, 2, 3]
         },
         {
           "id": "pt2_t04_q119",
@@ -1757,13 +1316,7 @@
             "Have you ever felt guilty about your substance use?",
             "Have you ever felt like alcohol makes you happy?"
           ],
-          "answer": [
-            0,
-            1,
-            3,
-            4,
-            6
-          ]
+          "answer": [0, 1, 3, 4, 6]
         },
         {
           "id": "pt2_t04_q120",
@@ -1780,13 +1333,7 @@
             "Participation in Alcoholics Anonymous",
             "Treatment of comorbid conditions"
           ],
-          "answer": [
-            0,
-            2,
-            4,
-            5,
-            6
-          ]
+          "answer": [0, 2, 4, 5, 6]
         },
         {
           "id": "pt2_t04_q121",
@@ -1801,11 +1348,7 @@
             "Physical injury to self",
             "Difficulty in engaging in quiet activities"
           ],
-          "answer": [
-            1,
-            3,
-            4
-          ]
+          "answer": [1, 3, 4]
         },
         {
           "id": "pt2_t04_q122",
@@ -1820,12 +1363,7 @@
             "Difficulty in following through on a goal",
             "Falls (especially in older adults or the elderly)"
           ],
-          "answer": [
-            0,
-            1,
-            3,
-            5
-          ]
+          "answer": [0, 1, 3, 5]
         },
         {
           "id": "pt2_t04_q123",
@@ -1840,11 +1378,7 @@
             "A nurse practitioner",
             "A certified drug and alcohol abuse counselor"
           ],
-          "answer": [
-            0,
-            2,
-            5
-          ]
+          "answer": [0, 2, 5]
         }
       ],
       "rationale": ""
@@ -1872,13 +1406,7 @@
             "What are your signs of illness or injury?",
             "What are your symptoms of illness or injury?"
           ],
-          "answer": [
-            0,
-            1,
-            2,
-            8,
-            9
-          ]
+          "answer": [0, 1, 2, 8, 9]
         },
         {
           "id": "pt2_t05_q125",
@@ -1894,11 +1422,7 @@
             "Need for isolation",
             "Inability to control one’s thoughts"
           ],
-          "answer": [
-            0,
-            3,
-            4
-          ]
+          "answer": [0, 3, 4]
         },
         {
           "id": "pt2_t05_q126",
@@ -1916,11 +1440,7 @@
             "Physical medicine and rehabilitation specialist",
             "Counselor"
           ],
-          "answer": [
-            0,
-            1,
-            8
-          ]
+          "answer": [0, 1, 8]
         },
         {
           "id": "pt2_t05_q127",
@@ -1935,13 +1455,7 @@
             "Manage post-competition emotions",
             "Keep a positive outlook"
           ],
-          "answer": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ]
+          "answer": [1, 2, 3, 4, 5]
         },
         {
           "id": "pt2_t05_q128",
@@ -1955,12 +1469,7 @@
             "Use an autonomy-supportive coaching style",
             "Begin practices earlier, but for shorter durations of time"
           ],
-          "answer": [
-            0,
-            1,
-            2,
-            3
-          ]
+          "answer": [0, 1, 2, 3]
         }
       ],
       "rationale": ""
@@ -1992,64 +1501,24 @@
           "type": "ms",
           "prompt": "What items might cause a headache? Choose all that apply.",
           "rationale": "",
-          "choices": [
-            "Hunger",
-            "Caffeine",
-            "Steroids",
-            "Temporomandibular joint pain",
-            "A cavity in a tooth",
-            "Hypertension",
-            "Tonsillitis"
-          ],
-          "answer": [
-            0,
-            1,
-            2,
-            3,
-            5
-          ]
+          "choices": ["Hunger", "Caffeine", "Steroids", "Temporomandibular joint pain", "A cavity in a tooth", "Hypertension", "Tonsillitis"],
+          "answer": [0, 1, 2, 3, 5]
         },
         {
           "id": "pt2_t06_q131",
           "type": "ms",
           "prompt": "What are some risk factors for headaches? Choose all that apply.",
           "rationale": "",
-          "choices": [
-            "Deviated septum",
-            "High altitudes",
-            "Tight-fitting goggles",
-            "Tonsillitis",
-            "Cold exposure",
-            "A tight-fitting helmet",
-            "Sleep apnea",
-            "Strenuous activity"
-          ],
-          "answer": [
-            1,
-            2,
-            4,
-            5,
-            7
-          ]
+          "choices": ["Deviated septum", "High altitudes", "Tight-fitting goggles", "Tonsillitis", "Cold exposure", "A tight-fitting helmet", "Sleep apnea", "Strenuous activity"],
+          "answer": [1, 2, 4, 5, 7]
         },
         {
           "id": "pt2_t06_q132",
           "type": "ms",
           "prompt": "Which of the following warrants referral to a physician for headaches? Choose all that apply.",
           "rationale": "",
-          "choices": [
-            "Lethargy, fever, and malaise",
-            "Thunderclap-type headache",
-            "Vertigo",
-            "Autoimmune disease",
-            "Does not resolve with NSAIDS",
-            "Photophobia"
-          ],
-          "answer": [
-            0,
-            1,
-            3
-          ]
+          "choices": ["Lethargy, fever, and malaise", "Thunderclap-type headache", "Vertigo", "Autoimmune disease", "Does not resolve with NSAIDS", "Photophobia"],
+          "answer": [0, 1, 3]
         }
       ],
       "rationale": ""
@@ -2075,74 +1544,31 @@
             "Determine the location of pain",
             "Determine the history of drug abuse"
           ],
-          "answer": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            6,
-            7
-          ]
+          "answer": [0, 1, 2, 3, 4, 6, 7]
         },
         {
           "id": "pt2_t07_q134",
           "type": "ms",
           "prompt": "Read the patient information. Which areas of the body should the athletic trainer visually inspect? Choose all that apply.\nPatient Information: The patient has shared the following information:\n(+) No physical trauma\n(+) Some pain in the periumbilical area, but not defined\n(-) Mental health or drug use issues\n(+) Lack of desire to eat\n(+) Nausea\n(+) Feels warmer than normal",
           "rationale": "",
-          "choices": [
-            "Muscle tone of the hip",
-            "Throat",
-            "Skin",
-            "Hair",
-            "Capillary refill",
-            "Muscle tone of the abdomen"
-          ],
-          "answer": [
-            0,
-            1,
-            2,
-            4,
-            5
-          ]
+          "choices": ["Muscle tone of the hip", "Throat", "Skin", "Hair", "Capillary refill", "Muscle tone of the abdomen"],
+          "answer": [0, 1, 2, 4, 5]
         },
         {
           "id": "pt2_t07_q135",
           "type": "ms",
           "prompt": "Read the visual inspection. Which analysis should the athletic trainer do at this point? Choose all that apply.\nVisual Inspection: The visual inspection reveals the following:\n(-) Muscle tone is normal\n(+) Patient feels more comfortable with knees and hips flexed\n(-) Throat\n(-) Skin",
           "rationale": "",
-          "choices": [
-            "Abdominal quadrant analysis",
-            "Dunphy’s sign",
-            "Rovsing’s sign",
-            "Abdominal auscultation",
-            "Abdominal circumference measurement"
-          ],
-          "answer": [
-            0,
-            1,
-            2,
-            3
-          ]
+          "choices": ["Abdominal quadrant analysis", "Dunphy’s sign", "Rovsing’s sign", "Abdominal auscultation", "Abdominal circumference measurement"],
+          "answer": [0, 1, 2, 3]
         },
         {
           "id": "pt2_t07_q136",
           "type": "ms",
           "prompt": "Read the patient assessment. Which of the following injuries or illnesses should be suspected based on the signs and symptoms provided? Choose all that apply.\nPatient Assessment: The patient assessment reveals the following information:\n(+) McBurney’s point\n(+)Dunphy’s sign\n(+) Rovsing’s sign\n(-) Throat visual",
           "rationale": "",
-          "choices": [
-            "Urinary tract infection",
-            "Pancreatitis",
-            "Kidney infection",
-            "Peritonitis",
-            "Ovarian cyst",
-            "Appendicitis",
-            "Piriformis syndrome"
-          ],
-          "answer": [
-            3,
-            5
-          ]
+          "choices": ["Urinary tract infection", "Pancreatitis", "Kidney infection", "Peritonitis", "Ovarian cyst", "Appendicitis", "Piriformis syndrome"],
+          "answer": [3, 5]
         },
         {
           "id": "pt2_t07_q137",
@@ -2159,13 +1585,7 @@
             "Take body temperature",
             "Check breathing rate"
           ],
-          "answer": [
-            0,
-            1,
-            2,
-            6,
-            7
-          ]
+          "answer": [0, 1, 2, 6, 7]
         }
       ],
       "rationale": ""
@@ -2181,23 +1601,8 @@
           "type": "ms",
           "prompt": "Which of the following are the proper materials to select to cast an ankle fracture? Choose all that apply.",
           "rationale": "",
-          "choices": [
-            "a.",
-            "e.",
-            "h.",
-            "b.",
-            "f.",
-            "c.",
-            "g.",
-            "d."
-          ],
-          "answer": [
-            0,
-            1,
-            3,
-            5,
-            7
-          ],
+          "choices": ["a.", "e.", "h.", "b.", "f.", "c.", "g.", "d."],
+          "answer": [0, 1, 3, 5, 7],
           "image": {
             "id": "",
             "src": "images/Practice Test 2/pt2_image_005.png",
@@ -2209,16 +1614,8 @@
           "type": "ms",
           "prompt": "The athletic trainer is to create a cast out of fiberglass that is a non-weight-bearing short leg cast. Which of the following is a proper non-weight-bearing short leg cast? Choose all that apply.",
           "rationale": "",
-          "choices": [
-            "a.",
-            "c.",
-            "b.",
-            "d."
-          ],
-          "answer": [
-            0,
-            3
-          ],
+          "choices": ["a.", "c.", "b.", "d."],
+          "answer": [0, 3],
           "image": {
             "id": "",
             "src": "images/Practice Test 2/pt2_image_006.png",
@@ -2250,15 +1647,7 @@
           "type": "mc",
           "prompt": "Looking at the photo, what kind of skin infection do you suspect?",
           "rationale": "",
-          "choices": [
-            "Tinea corporis",
-            "Molluscum contagiosum",
-            "Measles",
-            "Folliculitis",
-            "Impetigo",
-            "Herpes",
-            "Shingles"
-          ],
+          "choices": ["Tinea corporis", "Molluscum contagiosum", "Measles", "Folliculitis", "Impetigo", "Herpes", "Shingles"],
           "answer": 5,
           "image": {
             "id": "",
@@ -2271,21 +1660,8 @@
           "type": "ms",
           "prompt": "What signs and symptoms would the athletic trainer look for in a patient to distinguish between herpes and another skin infection? Choose all that apply.",
           "rationale": "",
-          "choices": [
-            "Burning or stinging pain",
-            "Enlarged lymph nodes",
-            "Peeling skin",
-            "Itching",
-            "Potentially a fever",
-            "Clusters of vesicles with erythematous",
-            "No signs or symptoms"
-          ],
-          "answer": [
-            0,
-            3,
-            4,
-            5
-          ]
+          "choices": ["Burning or stinging pain", "Enlarged lymph nodes", "Peeling skin", "Itching", "Potentially a fever", "Clusters of vesicles with erythematous", "No signs or symptoms"],
+          "answer": [0, 3, 4, 5]
         },
         {
           "id": "pt2_t09_q143",
@@ -2304,15 +1680,7 @@
             "How the patient was infected",
             "Have the physician cosign when possible"
           ],
-          "answer": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            9
-          ]
+          "answer": [0, 1, 2, 3, 4, 5, 9]
         },
         {
           "id": "pt2_t09_q144",
@@ -2326,10 +1694,7 @@
             "Hospital-strength disinfectant approved by the Occupational Safety and Health Administration (OSHA)",
             "Disinfectants approved by the Environmental Protection Agency (EPA)"
           ],
-          "answer": [
-            0,
-            4
-          ]
+          "answer": [0, 4]
         },
         {
           "id": "pt2_t09_q145",
@@ -2344,10 +1709,7 @@
             "The athlete has to shower post-practice.",
             "The mats and equipment must be disinfected daily."
           ],
-          "answer": [
-            0,
-            2
-          ]
+          "answer": [0, 2]
         }
       ],
       "rationale": ""
@@ -2372,11 +1734,7 @@
             "Low-level laser (LLLT)",
             "Low-intensity pulsed ultrasound (LIPUS)"
           ],
-          "answer": [
-            3,
-            5,
-            6
-          ]
+          "answer": [3, 5, 6]
         },
         {
           "id": "pt2_t10_q147",
@@ -2392,31 +1750,15 @@
             "Research indicates significantly better fibroblast stimulation than low-level lasers",
             "Research indicates fewer contraindications"
           ],
-          "answer": [
-            0,
-            2,
-            4,
-            5
-          ]
+          "answer": [0, 2, 4, 5]
         },
         {
           "id": "pt2_t10_q148",
           "type": "ms",
           "prompt": "The patient is two weeks post-injury with sufficient wound healing. What is the best way to warm the finger and hand before therapeutic rehabilitation? Choose all that apply.",
           "rationale": "",
-          "choices": [
-            "Paraffin bath using a dipping technique",
-            "Fluidotherapy",
-            "Infrared heat lamp",
-            "Ultrasound in water",
-            "Ultrasound with gel",
-            "Warm whirlpool",
-            "Moist heat pack"
-          ],
-          "answer": [
-            3,
-            5
-          ]
+          "choices": ["Paraffin bath using a dipping technique", "Fluidotherapy", "Infrared heat lamp", "Ultrasound in water", "Ultrasound with gel", "Warm whirlpool", "Moist heat pack"],
+          "answer": [3, 5]
         },
         {
           "id": "pt2_t10_q149",
@@ -2445,19 +1787,8 @@
           "type": "ms",
           "prompt": "In the absence of a paraffin bath, a warm whirlpool was selected. What contraindications prevent the use of this thermotherapy five days post-emergency department visit? Choose all that apply.",
           "rationale": "",
-          "choices": [
-            "Medically unstable coronary heart disease",
-            "Diminished sensation",
-            "Poor circulation",
-            "Open wound",
-            "Subacute ligament sprain",
-            "Muscle spasm",
-            "Infection"
-          ],
-          "answer": [
-            3,
-            6
-          ]
+          "choices": ["Medically unstable coronary heart disease", "Diminished sensation", "Poor circulation", "Open wound", "Subacute ligament sprain", "Muscle spasm", "Infection"],
+          "answer": [3, 6]
         }
       ],
       "rationale": ""
@@ -2491,11 +1822,7 @@
             "The patient is pregnant.",
             "The patient is unconscious."
           ],
-          "answer": [
-            2,
-            3,
-            4
-          ]
+          "answer": [2, 3, 4]
         },
         {
           "id": "pt2_t11_q154",
@@ -2522,12 +1849,7 @@
             "Kneel at the side of the patient parallel to the patient.",
             "Kneel at the side of the patient perpendicular to the patient."
           ],
-          "answer": [
-            1,
-            2,
-            4,
-            6
-          ]
+          "answer": [1, 2, 4, 6]
         },
         {
           "id": "pt2_t11_q156",
@@ -2541,11 +1863,7 @@
             "Make sure the depth of compression is 1.5 to 2 inches.",
             "Make sure each compression is distinctive in an attempt to remove the object."
           ],
-          "answer": [
-            1,
-            3,
-            4
-          ]
+          "answer": [1, 3, 4]
         },
         {
           "id": "pt2_t11_q157",
@@ -2562,19 +1880,188 @@
             "Check pulses in extremities.",
             "Take a blood pressure reading."
           ],
-          "answer": [
-            0,
-            1,
-            2
-          ]
+          "answer": [0, 1, 2]
         }
       ],
       "rationale": ""
+    },
+    {
+      "id": "pt2_q158",
+      "type": "mc",
+      "prompt": "Which of the following is an agency from which a clinic- or hospital-based sports medicine program should consider obtaining accreditation during program development?",
+      "rationale": "",
+      "choices": [
+        "CARF International",
+        "Joint Commission",
+        "Joint Review Committee on Accreditation of Health Care Organizations (JRCAHO)",
+        "Board of Certification (BOC)",
+        "National Athletic Trainers’ Associations (NATA)"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "pt2_q159",
+      "type": "mc",
+      "prompt": "What is a plan for expressing the organization’s intended behavior relative to a specific program subfunction?",
+      "rationale": "",
+      "choices": ["Process", "Procedure", "Policy", "Value statement", "Vision statement"],
+      "answer": 2
+    },
+    {
+      "id": "pt2_q160",
+      "type": "mc",
+      "prompt": "What is the budget process that requires the manager to justify every expense without reference to previous spending patterns?",
+      "rationale": "",
+      "choices": ["Spending-reduction budgeting", "Fixed budgeting", "Spending-ceiling budgeting", "Zero-based budgeting", "Line-item budgeting"],
+      "answer": 3
+    },
+    {
+      "id": "pt2_q161",
+      "type": "mc",
+      "prompt": "What are the items in a budget that involve renovations, additions, or modifications to facilities?",
+      "rationale": "",
+      "choices": ["Expendable improvements", "Strategic supplies", "Capital improvements", "Strategic improvements", "Facility master plans"],
+      "answer": 2
+    },
+    {
+      "id": "pt2_q162",
+      "type": "mc",
+      "prompt": "Which of the following is critical to increase efficiency in a sports medicine program’s budgeting process?",
+      "rationale": "",
+      "choices": ["Needs assessment", "Inventory management", "Bid sheets", "Funding allocation", "Spending allocation"],
+      "answer": 1
+    },
+    {
+      "id": "pt2_q163",
+      "type": "mc",
+      "prompt": "What is one of the main tasks in operating a successful for-profit sports medicine program?",
+      "rationale": "",
+      "choices": [
+        "Charging high fees to solicit revenue for cash flow",
+        "Planning and implementing a marketing strategy",
+        "Copying the strategies used by nearby providers",
+        "Remaining open for services 24 hours a day",
+        "Hiring only new graduates to keep overhead personnel costs minimized"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "pt2_q164",
+      "type": "mc",
+      "prompt": "What is the government regulation that requires educational institutions to receive formal written consent from students before educational records are released to a third party?",
+      "rationale": "",
+      "choices": [
+        "Federal Education Records Privacy Act (FERPA)",
+        "Health Insurance Portability and Privacy Act (HIPAA)",
+        "Health Insurance Portability and Accountability Act (HIPAA)",
+        "Medical Records Act (MRA)",
+        "OCR Title IX"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "pt2_q165",
+      "type": "mc",
+      "prompt": "What are the physician directions provided in writing to an athletic trainer to outline interventions in the absence of a physician?",
+      "rationale": "",
+      "choices": ["A standing order", "A referral", "Rehabilitation protocol", "Emergency action planning", "Legal practice for athletic trainers"],
+      "answer": 0
+    },
+    {
+      "id": "pt2_q166",
+      "type": "mc",
+      "prompt": "Which type of medical insurance system eliminates the need for an institution to file insurance claim forms?",
+      "rationale": "",
+      "choices": ["Primary coverage", "Secondary coverage", "Third-party reimbursement", "Self-insured", "Personal insurance"],
+      "answer": 3
+    },
+    {
+      "id": "pt2_q167",
+      "type": "mc",
+      "prompt": "In what group is a health care provider participating, if it involves a health insurance plan in which the provider receives a fixed fee for services rendered to the members of a specific group?",
+      "rationale": "",
+      "choices": ["An HMO", "A PPO", "A POS", "An IPA", "An EPO"],
+      "answer": 0
+    },
+    {
+      "id": "pt2_q168",
+      "type": "mc",
+      "prompt": "What is the term for liability-generating conduct associated with an adverse outcome of patient treatment?",
+      "rationale": "",
+      "choices": ["Liability", "Malpractice", "Negligence", "Breach of contract", "Tort"],
+      "answer": 1
+    },
+    {
+      "id": "pt2_q169",
+      "type": "mc",
+      "prompt": "What does the policy that addresses the support needed by patients and their families, friends, roommates, and teammates following a traumatic life encounter refer to?",
+      "rationale": "",
+      "choices": ["Counseling", "Health service assistance", "Sport psychology", "Crisis intervention", "An emergency action plan"],
+      "answer": 3
+    },
+    {
+      "id": "pt2_q170",
+      "type": "mc",
+      "prompt": "Under what grounds is a drug test conducted when an individual displays signs of drug use?",
+      "rationale": "",
+      "choices": ["Reasonable suspect", "Plain-sight provision", "Approximate suspicion", "Reasonable suspicion", "Suspect provision"],
+      "answer": 3
+    },
+    {
+      "id": "pt2_q171",
+      "type": "mc",
+      "prompt": "Which of the following is most true regarding emergency action plans?",
+      "rationale": "",
+      "choices": [
+        "The written plan should be as short as possible.",
+        "Parents should always be in charge of enacting an emergency action plan at a high school event.",
+        "Coaches should not be trained in CPR and the use of an AED.",
+        "An emergency action plan can be copied from those of other schools to save time in developing one.",
+        "Emergency action plans should be venue-specific."
+      ],
+      "answer": 4
+    },
+    {
+      "id": "pt2_q172",
+      "type": "mc",
+      "prompt": "Which of these statements about the glycemic index of foods is correct?",
+      "rationale": "",
+      "choices": [
+        "Low glycemic–index foods include less protein and fiber than high glycemic–index foods.",
+        "The glycemic index of foods was initially developed to help athletes.",
+        "High glycemic–index foods may help endurance athletes perform better by sustaining their energy during long bouts of exercise.",
+        "High glycemic–index foods are best consumed immediately after exercise to rapidly refuel muscles."
+      ],
+      "answer": 3
+    },
+    {
+      "id": "pt2_q173",
+      "type": "mc",
+      "prompt": "Which group of athletes has the highest risk of developing iron-deficiency anemia?",
+      "rationale": "",
+      "choices": ["Teenage athletes, especially girls who are growing quickly", "Men who run marathons", "Sprinters", "Vegetarians who eat iron-enriched breakfast cereal"],
+      "answer": 0
+    },
+    {
+      "id": "pt2_q174",
+      "type": "mc",
+      "prompt": "As one ages, what generally shows a decrease in the number?",
+      "rationale": "",
+      "choices": ["Type I muscle fibers", "Type II muscle fibers", "Type IIa muscle fibers", "Type IIb muscle fibers"],
+      "answer": 0
+    },
+    {
+      "id": "pt2_q175",
+      "type": "mc",
+      "prompt": "What among the following would be an example of the inability of the hamstring to perform a ROM past 120° of knee flexion during a hamstring curl?",
+      "rationale": "",
+      "choices": ["Passive insufficiency", "Active insufficiency", "Tight hamstrings", "Passive extensibility"],
+      "answer": 1
     }
   ],
   "metadata": {
-    "source_numbered_questions_found": 157,
-    "top_level_json_items": 112,
+    "source_numbered_questions_found": 175,
+    "top_level_json_items": 130,
     "focused_testlets": 11,
     "subquestions_inside_testlets": 56,
     "embedded_images_extracted": 7,

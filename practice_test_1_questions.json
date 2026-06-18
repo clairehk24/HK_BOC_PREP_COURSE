@@ -1933,10 +1933,204 @@
         }
       ],
       "rationale": ""
+    },
+    {
+      "id": "pt1_q154",
+      "type": "mc",
+      "prompt": "What is the concept that helps to explain how bone develops its shape from forces that are exerted upon it?",
+      "rationale": "",
+      "choices": ["Levers", "Wolff’s law", "Epiphyseal plates", "Osteoporosis"],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q155",
+      "type": "mc",
+      "prompt": "When you stretch a muscle, if you release the stretch force and the muscle returns to its original length, which property is the muscle performing?",
+      "rationale": "",
+      "choices": ["Excitability", "Elasticity", "Extensibility", "Contractility"],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q156",
+      "type": "mc",
+      "prompt": "To avoid fracture, which of the following is the proper hand position stressed during the application of cardiopulmonary resuscitation?",
+      "rationale": "",
+      "choices": ["Manubrium of the sternum", "Body of the sternum", "Xiphoid of the sternum", "Medial end of the clavicle"],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q157",
+      "type": "mc",
+      "prompt": "Which of the following statements is accurate about a graded exercise test?",
+      "rationale": "",
+      "choices": [
+        "With ECG, it is the first choice for evaluating myocardial ischemia in individuals with a normal resting ECG and the ability to exercise.",
+        "It is considered an invasive procedure.",
+        "It should be performed in individuals with an intermediate risk of CAD.",
+        "If a lower rate–pressure product occurs during the onset of ischemia, this is always indicative of disease progression."
+      ],
+      "answer": 0
+    },
+    {
+      "id": "pt1_q158",
+      "type": "mc",
+      "prompt": "Which of the following is a tool to monitor how hard the patient perceives he is working during a GXT?",
+      "rationale": "",
+      "choices": ["Angina scale", "Rate–pressure product", "Dyspnea scale", "RPE"],
+      "answer": 3
+    },
+    {
+      "id": "pt1_q159",
+      "type": "mc",
+      "prompt": "Which of the following is not a site where enterally delivered drugs are typically absorbed?",
+      "rationale": "",
+      "choices": ["Oral mucosa", "Stomach", "Small intestine", "Skin"],
+      "answer": 3
+    },
+    {
+      "id": "pt1_q160",
+      "type": "mc",
+      "prompt": "Which is not a site where the majority of drugs are absorbed in the body?",
+      "rationale": "",
+      "choices": ["Oral mucosa", "Stomach", "Small intestine", "Large intestine"],
+      "answer": 3
+    },
+    {
+      "id": "pt1_q161",
+      "type": "mc",
+      "prompt": "Which of the following statements is true?",
+      "rationale": "",
+      "choices": [
+        "Blood pressure is the product of cardiac output and stroke volume.",
+        "Systolic pressure normally decreases in response to increasing exercise intensities because of a reduction in the total peripheral resistance.",
+        "Systolic pressure that increases more than 10 mmHg in response to an increased workload is an indication for terminating a graded exercise test.",
+        "An exaggerated blood pressure response during a graded exercise test in a normotensive person indicates an increased risk for developing hypertension."
+      ],
+      "answer": 3
+    },
+    {
+      "id": "pt1_q162",
+      "type": "mc",
+      "prompt": "Of which is the 6 min walk test an important indicator?",
+      "rationale": "",
+      "choices": ["Quadriceps strength", "Balance and gait", "Inspiratory threshold", "Ventilatory threshold"],
+      "answer": 0
+    },
+    {
+      "id": "pt1_q163",
+      "type": "mc",
+      "prompt": "What is the primary purpose of universal precautions?",
+      "rationale": "",
+      "choices": [
+        "Reduce the spread of HIV from Africa to the United States",
+        "Reduce the risk of contracting an infectious disease",
+        "Reduce the spread of tuberculosis among urban dwellers",
+        "Reduce the spread of HIV from mother to child"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q164",
+      "type": "mc",
+      "prompt": "Which of the following is a mode of transmission for HIV?",
+      "rationale": "",
+      "choices": ["Insect bite", "Saliva", "Sweat", "Breast milk"],
+      "answer": 3
+    },
+    {
+      "id": "pt1_q165",
+      "type": "mc",
+      "prompt": "Which group has the highest likelihood of suffering a spinal cord injury?",
+      "rationale": "",
+      "choices": ["Older females", "Older males", "Younger females", "Younger males"],
+      "answer": 3
+    },
+    {
+      "id": "pt1_q166",
+      "type": "ms",
+      "prompt": "Which of the following are typical symptoms of someone suffering from an acute stroke?",
+      "rationale": "",
+      "choices": ["Numbness or weakness of the face, arm, or leg", "Confusion, speech problems, and cognitive defects", "Normal vision", "Impaired coordination and walking"],
+      "answer": [0, 1, 3]
+    },
+    {
+      "id": "pt1_q167",
+      "type": "mc",
+      "prompt": "Why are children at a greater risk for heat-related illness?",
+      "rationale": "",
+      "choices": ["They sweat more.", "They have higher subcutaneous fat stores.", "They have a reduced capacity to evaporate sweat.", "They have higher breathing rates."],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q168",
+      "type": "mc",
+      "prompt": "What is the respiratory rate during sub-maximum exercise of children compared to adults?",
+      "rationale": "",
+      "choices": ["The same", "Marked by a higher rate and shallow breathing response", "Marked by a lower rate", "Marked by a deeper breathing response"],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q169",
+      "type": "mc",
+      "prompt": "Which of the following do resistance training prescriptions for children not use?",
+      "rationale": "",
+      "choices": ["Lower resistance and lower repetitions", "Higher resistance and lower repetitions", "Lower resistance and higher repetitions", "Higher resistance and higher repetitions"],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q170",
+      "type": "ms",
+      "prompt": "Apart from the physical benefits, what are the important potential benefits of a community-based exercise program?",
+      "rationale": "",
+      "choices": ["Higher adherence", "Social reinforcement", "Lower cost"],
+      "answer": [0, 1, 2]
+    },
+    {
+      "id": "pt1_q171",
+      "type": "mc",
+      "prompt": "Which of the following is considered the “gold standard” assessment for depression?",
+      "rationale": "",
+      "choices": ["Self-report questionnaires", "Cognitive-behavioral therapy", "Clinical interview by a trained mental health professional", "Asking the patient if he is depressed"],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q172",
+      "type": "mc",
+      "prompt": "Which of the following is not a symptom of anxiety?",
+      "rationale": "",
+      "choices": ["Restlessness", "Irritability", "Sleep disturbance", "Suicidal ideations"],
+      "answer": 3
+    },
+    {
+      "id": "pt1_q173",
+      "type": "mc",
+      "prompt": "Which of the following is a chromosomal condition caused by the presence of all or part of an extra 21st chromosome?",
+      "rationale": "",
+      "choices": ["Fragile X syndrome", "Down syndrome", "Prader-Willi syndrome", "None of the above"],
+      "answer": 1
+    },
+    {
+      "id": "pt1_q174",
+      "type": "mc",
+      "prompt": "In patients, which of the following conditions are skeletal muscle hypotonia and joint laxity often present, which is why it is important to avoid hyperextension and hyperflexion?",
+      "rationale": "",
+      "choices": ["Fragile X syndrome", "Fetal alcohol syndrome", "Down syndrome", "Fetal anoxia"],
+      "answer": 2
+    },
+    {
+      "id": "pt1_q175",
+      "type": "mc",
+      "prompt": "What is the type of leadership that involves the simple exchange of one thing for another in a relationship between two people?",
+      "rationale": "",
+      "choices": ["Transformational", "Counterpower", "Influential", "Transactional", "Counteractional"],
+      "answer": 3
     }
   ],
   "metadata": {
-    "source_numbered_questions_found": 153,
+    "source_numbered_questions_found": 175,
+    "top_level_json_items": 125,
+    "focused_testlets": 10,
+    "subquestions_inside_testlets": 60,
     "embedded_images_extracted": 24,
     "note": "Draft conversion preserving source wording where parsed. Items marked needs review require domain/image/hotspot/matching setup before use.",
     "domain_filtering": "removed_for_full_practice_test"

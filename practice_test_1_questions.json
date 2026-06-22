@@ -406,7 +406,7 @@
       "image": {
         "id": "701322",
         "src": "images/Practice Test 1/701321.jpg",
-        "alt": ""
+        "alt": "Clinical photograph of an eye condition."
       },
       "choices": ["Corneal abrasion", "Subconjunctival hemorrhage", "Conjunctivitis", "Detached retina", "Hyphema"],
       "answer": 4
@@ -419,7 +419,7 @@
       "image": {
         "id": "701324",
         "src": "images/Practice Test 1/0349P_0359.jpg",
-        "alt": ""
+        "alt": "X-ray image of the spine."
       },
       "choices": ["Spondylolysis", "Spondylitis", "Spondylolisthesis", "Spondyloarthritis", "Spondylofasciitis"],
       "answer": 2
@@ -522,8 +522,8 @@
       "rationale": "",
       "image": {
         "id": "",
-        "src": "",
-        "alt": ""
+        "src": "images\\Practice Test 1\\E9036_701323.jpg",
+        "alt": "Cervical spine image for question 50."
       },
       "choices": ["Spinal stenosis", "Osteophytes", "Fracture or dislocation of the cervical vertebra", "Disc herniation compressing nerve root", "Transient neuropraxia"],
       "answer": 3
@@ -552,7 +552,7 @@
       "image": {
         "id": "701325",
         "src": "images\\Practice Test 1\\0349P_0226.jpg",
-        "alt": ""
+        "alt": "Photograph demonstrating an upper-limb tension test."
       },
       "choices": ["Ulnar nerve", "Median nerve", "Radial nerve", "Musculoskeletal nerve", "Deltoid nerve"],
       "answer": 0
@@ -581,7 +581,7 @@
       "image": {
         "id": "701326",
         "src": "images/Practice Test 1/701326.png",
-        "alt": ""
+        "alt": "Photograph of a lower-extremity neurologic special test."
       },
       "choices": ["Oppenheim test", "Ticklish foot test", "Babinski test", "Hoover test", "Cremasteric test"],
       "answer": 2
@@ -675,8 +675,7 @@
             "right": "Synthetic sutures"
           }
         ]
-      },
-      "review_status": "matching_type_needs_html_support_or_conversion"
+      }
     },
     {
       "id": "pt1_q066",
@@ -739,8 +738,7 @@
             "right": "Subcuticular"
           }
         ]
-      },
-      "review_status": "matching_type_needs_html_support_or_conversion"
+      }
     },
     {
       "id": "pt1_q071",
@@ -949,8 +947,7 @@
             "right": "Microinvalidations"
           }
         ]
-      },
-      "review_status": "matching_type_needs_html_support_or_conversion"
+      }
     },
     {
       "id": "pt1_testlet_01",
@@ -1047,8 +1044,7 @@
                 "accept": "Reassess pulse, movement, and sensation."
               }
             ]
-          },
-          "review_status": "testlet subquestion type needs manual setup"
+          }
         }
       ],
       "rationale": ""
@@ -1084,8 +1080,7 @@
                 "right": "Hemoptysis"
               }
             ]
-          },
-          "review_status": "matching_type_needs_html_support_or_conversion"
+          }
         },
         {
           "id": "pt1_t02_q100",
@@ -1108,8 +1103,7 @@
                 "right": "Telangiectasias"
               }
             ]
-          },
-          "review_status": "matching_type_needs_html_support_or_conversion"
+          }
         },
         {
           "id": "pt1_t02_q101",
@@ -1167,12 +1161,12 @@
             "site_5": "num_2",
             "site_6": "num_1",
             "site_7": "num_7",
-            "site_8": "num_11",
+            "site_8": "num_8",
             "site_9": "num_13",
-            "site_10": "num_8",
-            "site_11": "num_9",
+            "site_10": "num_11",
+            "site_11": "num_10",
             "site_12": "num_12",
-            "site_13": "num_10"
+            "site_13": "num_9"
           },
           "tolerancePct": 5
         },
@@ -1191,13 +1185,15 @@
           "rationale": "",
           "hs": {
             "imageSrc": "images\\Practice Test 1\\0547S_0032.jpg",
-            "answer": {
-              "xPct": 49.2,
-              "yPct": 57.4
-            },
-            "tolerancePct": 6
-          },
-          "review_status": "image_or_hotspot_needs_manual_setup"
+            "answers": [
+              {
+                "xPct": 49.2,
+                "yPct": 57.4
+              }
+            ],
+            "tolerancePct": 6,
+            "requiredCorrect": 1
+          }
         },
         {
           "id": "pt1_t02_q105",
@@ -1227,8 +1223,7 @@
                 "right": "Abrupt mottling"
               }
             ]
-          },
-          "review_status": "matching_type_needs_html_support_or_conversion"
+          }
         },
         {
           "id": "pt1_t02_q106",
@@ -1327,8 +1322,7 @@
                 "accept": "Superficial posterior compartment"
               }
             ]
-          },
-          "review_status": "testlet subquestion type needs manual setup"
+          }
         },
         {
           "id": "pt1_t03_q111",
@@ -1445,8 +1439,7 @@
                 "right": "Backward walking"
               }
             ]
-          },
-          "review_status": "matching_type_needs_html_support_or_conversion"
+          }
         },
         {
           "id": "pt1_t04_q119",
@@ -1558,8 +1551,7 @@
                 "right": "Biphasic current"
               }
             ]
-          },
-          "review_status": "matching_type_needs_html_support_or_conversion"
+          }
         },
         {
           "id": "pt1_t05_q122",
@@ -1568,11 +1560,14 @@
           "rationale": "",
           "hs": {
             "imageSrc": "images\\Practice Test 1\\0547S_0032.jpg",
-            "answer": {
-              "xPct": 44.9,
-              "yPct": 79.5
-            },
-            "tolerancePct": 6
+            "answers": [
+              {
+                "xPct": 44.9,
+                "yPct": 79.5
+              }
+            ],
+            "tolerancePct": 6,
+            "requiredCorrect": 1
           }
         },
         {
@@ -1582,11 +1577,14 @@
           "rationale": "",
           "hs": {
             "imageSrc": "images\\Practice Test 1\\0547S_0032.jpg",
-            "answer": {
-              "xPct": 51.6,
-              "yPct": 42.9
-            },
-            "tolerancePct": 6
+            "answers": [
+              {
+                "xPct": 51.6,
+                "yPct": 42.9
+              }
+            ],
+            "tolerancePct": 6,
+            "requiredCorrect": 1
           }
         },
         {
@@ -1668,8 +1666,7 @@
                 "right": "Remodeling"
               }
             ]
-          },
-          "review_status": "matching_type_needs_html_support_or_conversion"
+          }
         },
         {
           "id": "pt1_t06_q130",
@@ -1746,8 +1743,7 @@
                 "right": "Friction"
               }
             ]
-          },
-          "review_status": "matching_type_needs_html_support_or_conversion"
+          }
         }
       ],
       "rationale": ""
@@ -1848,8 +1844,7 @@
                 "right": "Side-lying bridge (plank)"
               }
             ]
-          },
-          "review_status": "matching_type_needs_html_support_or_conversion"
+          }
         },
         {
           "id": "pt1_t07_q138",
@@ -1876,8 +1871,7 @@
                 "accept": "Elastic tape"
               }
             ]
-          },
-          "review_status": "testlet subquestion type needs manual setup"
+          }
         }
       ],
       "rationale": ""
@@ -1944,8 +1938,7 @@
                 "right": "Neutral in wrist flexion-extension with slight ulnar deviation and neutral forearm supination-pronation"
               }
             ]
-          },
-          "review_status": "matching_type_needs_html_support_or_conversion"
+          }
         },
         {
           "id": "pt1_t05_q142",
@@ -2056,7 +2049,43 @@
           "type": "ms",
           "prompt": "The patient needs both open- and closed-chain activities. Select the exercises that represent open-chain activities around the hip and abdomen. Choose all that apply.",
           "rationale": "",
-          "choices": ["a.", "d.", "b.", "e.", "c."],
+          "choices": [
+            {
+              "label": "A.",
+              "image": {
+                "src": "images\\Practice Test 1\\0756P_0034.jpg",
+                "alt": "Answer choice A image"
+              }
+            },
+            {
+              "label": "D.",
+              "image": {
+                "src": "images\\Practice Test 1\\0756P_0229.jpg",
+                "alt": "Answer choice D image"
+              }
+            },
+            {
+              "label": "B.",
+              "image": {
+                "src": "images\\Practice Test 1\\0756P_0050.jpg",
+                "alt": "Answer choice B image"
+              }
+            },
+            {
+              "label": "E.",
+              "image": {
+                "src": "images\\Practice Test 1\\0757P_1445.jpg",
+                "alt": "Answer choice E image"
+              }
+            },
+            {
+              "label": "C.",
+              "image": {
+                "src": "images\\Practice Test 1\\0756P_0021.jpg",
+                "alt": "Answer choice C image"
+              }
+            }
+          ],
           "answer": [1, 2, 4]
         },
         {
@@ -2064,6 +2093,11 @@
           "type": "ms",
           "prompt": "The patient has been performing planks. As you observe her planks, what area(s) need correction for proper form? Choose all that apply.",
           "rationale": "",
+          "image": {
+            "id": "",
+            "src": "images\\Practice Test 1\\513069_incorrectplank_ch7.jpg",
+            "alt": "Patient performing an incorrect plank."
+          },
           "choices": [
             "Improve head position to align with the trunk.",
             "Distribute equal pressure on elbows and toes.",
@@ -2105,8 +2139,7 @@
                 "right": "Quadratus lumborum and obliques"
               }
             ]
-          },
-          "review_status": "matching_type_needs_html_support_or_conversion"
+          }
         }
       ],
       "rationale": ""
@@ -2140,8 +2173,8 @@
           "rationale": "",
           "image": {
             "id": "",
-            "src": "",
-            "alt": ""
+            "src": "images\\Practice Test 1\\597746.jpg",
+            "alt": "Diagnostic imaging example for question 150."
           },
           "choices": ["X-ray", "CT scan", "Bone scan"],
           "answer": 0
@@ -2153,8 +2186,8 @@
           "rationale": "",
           "image": {
             "id": "",
-            "src": "",
-            "alt": ""
+            "src": "images\\Practice Test 1\\597750.jpg",
+            "alt": "Diagnostic imaging example for question 151."
           },
           "choices": ["X-ray", "CT scan", "Bone scan"],
           "answer": 1
@@ -2166,8 +2199,8 @@
           "rationale": "",
           "image": {
             "id": "",
-            "src": "",
-            "alt": ""
+            "src": "images\\Practice Test 1\\597751.jpg",
+            "alt": "Diagnostic imaging example for question 152."
           },
           "choices": ["X-ray", "CT scan", "Bone scan"],
           "answer": 1
@@ -2179,8 +2212,8 @@
           "rationale": "",
           "image": {
             "id": "",
-            "src": "",
-            "alt": ""
+            "src": "images\\Practice Test 1\\597749.jpg",
+            "alt": "Diagnostic imaging example for question 153."
           },
           "choices": ["X-ray", "CT scan", "Bone scan"],
           "answer": 2
@@ -2265,7 +2298,7 @@
     {
       "id": "pt1_q162",
       "type": "mc",
-      "prompt": "Of which is the 6 min walk test an important indicator?",
+      "prompt": "Which of the following is the 6 min walk test an important indicator?",
       "rationale": "",
       "choices": ["Quadriceps strength", "Balance and gait", "Inspiratory threshold", "Ventilatory threshold"],
       "answer": 0
@@ -2386,153 +2419,233 @@
     "focused_testlets": 10,
     "subquestions_inside_testlets": 60,
     "embedded_images_extracted": 24,
-    "note": "Draft conversion preserving source wording where parsed. Items marked needs review require domain/image/hotspot/matching setup before use.",
-    "domain_filtering": "removed_for_full_practice_test"
+    "distinct_image_references": 37,
+    "note": "Finalized practice test JSON after manual review of answers, images, hotspot, matching, and drag-and-drop items.",
+    "domain_filtering": "removed_for_full_practice_test",
+    "image_manifest_scope": "distinct image references currently used by questions"
   },
   "image_manifest": [
     {
-      "embedded_image_index": 1,
-      "docx_media_name": "word/media/image5.png",
-      "extracted_filename": "pt1_image_001.png",
-      "path": "/mnt/data/practice_test_1_images/pt1_image_001.png"
+      "image_index": 1,
+      "src": "images/Practice Test 1/0349P_0359.jpg",
+      "used_by": ["pt1_q039"],
+      "usage_types": ["question_image"]
     },
     {
-      "embedded_image_index": 2,
-      "docx_media_name": "word/media/image6.png",
-      "extracted_filename": "pt1_image_002.png",
-      "path": "/mnt/data/practice_test_1_images/pt1_image_002.png"
+      "image_index": 2,
+      "src": "images/Practice Test 1/0859P_0043.jpg",
+      "used_by": ["pt1_t02_q102"],
+      "usage_types": ["question_image"]
     },
     {
-      "embedded_image_index": 3,
-      "docx_media_name": "word/media/image7.png",
-      "extracted_filename": "pt1_image_003.png",
-      "path": "/mnt/data/practice_test_1_images/pt1_image_003.png"
+      "image_index": 3,
+      "src": "images/Practice Test 1/1369915805.jpg",
+      "used_by": ["pt1_t08_q139"],
+      "usage_types": ["question_image"]
     },
     {
-      "embedded_image_index": 4,
-      "docx_media_name": "word/media/image14.png",
-      "extracted_filename": "pt1_image_004.png",
-      "path": "/mnt/data/practice_test_1_images/pt1_image_004.png"
+      "image_index": 4,
+      "src": "images/Practice Test 1/701321.jpg",
+      "used_by": ["pt1_q038"],
+      "usage_types": ["question_image"]
     },
     {
-      "embedded_image_index": 5,
-      "docx_media_name": "word/media/image8.png",
-      "extracted_filename": "pt1_image_005.png",
-      "path": "/mnt/data/practice_test_1_images/pt1_image_005.png"
+      "image_index": 5,
+      "src": "images/Practice Test 1/701326.png",
+      "used_by": ["pt1_q056"],
+      "usage_types": ["question_image"]
     },
     {
-      "embedded_image_index": 6,
-      "docx_media_name": "word/media/image9.png",
-      "extracted_filename": "pt1_image_006.png",
-      "path": "/mnt/data/practice_test_1_images/pt1_image_006.png"
+      "image_index": 6,
+      "src": "images\\Practice Test 1\\0257P_H6K_0646.jpg",
+      "used_by": ["pt1_t05_q142"],
+      "usage_types": ["hotspot_image"]
     },
     {
-      "embedded_image_index": 7,
-      "docx_media_name": "word/media/image10.png",
-      "extracted_filename": "pt1_image_007.png",
-      "path": "/mnt/data/practice_test_1_images/pt1_image_007.png"
+      "image_index": 7,
+      "src": "images\\Practice Test 1\\0349P_0226.jpg",
+      "used_by": ["pt1_q053"],
+      "usage_types": ["question_image"]
     },
     {
-      "embedded_image_index": 8,
-      "docx_media_name": "word/media/image11.png",
-      "extracted_filename": "pt1_image_008.png",
-      "path": "/mnt/data/practice_test_1_images/pt1_image_008.png"
+      "image_index": 8,
+      "src": "images\\Practice Test 1\\0351P_0335.jpg",
+      "used_by": ["pt1_t08_q143 (A.)", "pt1_t08_q144 (A.)"],
+      "usage_types": ["choice_image"]
     },
     {
-      "embedded_image_index": 9,
-      "docx_media_name": "word/media/image12.png",
-      "extracted_filename": "pt1_image_009.png",
-      "path": "/mnt/data/practice_test_1_images/pt1_image_009.png"
+      "image_index": 9,
+      "src": "images\\Practice Test 1\\0351P_0337.jpg",
+      "used_by": ["pt1_t08_q143 (B.)", "pt1_t08_q144 (B.)"],
+      "usage_types": ["choice_image"]
     },
     {
-      "embedded_image_index": 10,
-      "docx_media_name": "word/media/image13.png",
-      "extracted_filename": "pt1_image_010.png",
-      "path": "/mnt/data/practice_test_1_images/pt1_image_010.png"
+      "image_index": 10,
+      "src": "images\\Practice Test 1\\0351P_0338.jpg",
+      "used_by": ["pt1_t08_q143 (C.)", "pt1_t08_q144 (C.)"],
+      "usage_types": ["choice_image"]
     },
     {
-      "embedded_image_index": 11,
-      "docx_media_name": "word/media/image15.png",
-      "extracted_filename": "pt1_image_011.png",
-      "path": "/mnt/data/practice_test_1_images/pt1_image_011.png"
+      "image_index": 11,
+      "src": "images\\Practice Test 1\\0351P_0339.jpg",
+      "used_by": ["pt1_t08_q143 (D.)", "pt1_t08_q144 (D.)"],
+      "usage_types": ["choice_image"]
     },
     {
-      "embedded_image_index": 12,
-      "docx_media_name": "word/media/image16.png",
-      "extracted_filename": "pt1_image_012.png",
-      "path": "/mnt/data/practice_test_1_images/pt1_image_012.png"
+      "image_index": 12,
+      "src": "images\\Practice Test 1\\0547S_0032.jpg",
+      "used_by": ["pt1_t02_q104", "pt1_t05_q122", "pt1_t05_q123", "pt1_t05_q132"],
+      "usage_types": ["hotspot_image"]
     },
     {
-      "embedded_image_index": 13,
-      "docx_media_name": "word/media/image17.png",
-      "extracted_filename": "pt1_image_013.png",
-      "path": "/mnt/data/practice_test_1_images/pt1_image_013.png"
+      "image_index": 13,
+      "src": "images\\Practice Test 1\\0756P_0021.jpg",
+      "used_by": ["pt1_t09_q145 (C.)"],
+      "usage_types": ["choice_image"]
     },
     {
-      "embedded_image_index": 14,
-      "docx_media_name": "word/media/image18.png",
-      "extracted_filename": "pt1_image_014.png",
-      "path": "/mnt/data/practice_test_1_images/pt1_image_014.png"
+      "image_index": 14,
+      "src": "images\\Practice Test 1\\0756P_0034.jpg",
+      "used_by": ["pt1_t09_q145 (A.)"],
+      "usage_types": ["choice_image"]
     },
     {
-      "embedded_image_index": 15,
-      "docx_media_name": "word/media/image19.png",
-      "extracted_filename": "pt1_image_015.png",
-      "path": "/mnt/data/practice_test_1_images/pt1_image_015.png"
+      "image_index": 15,
+      "src": "images\\Practice Test 1\\0756P_0050.jpg",
+      "used_by": ["pt1_t09_q145 (B.)"],
+      "usage_types": ["choice_image"]
     },
     {
-      "embedded_image_index": 16,
-      "docx_media_name": "word/media/image20.png",
-      "extracted_filename": "pt1_image_016.png",
-      "path": "/mnt/data/practice_test_1_images/pt1_image_016.png"
+      "image_index": 16,
+      "src": "images\\Practice Test 1\\0756P_0229.jpg",
+      "used_by": ["pt1_t09_q145 (D.)"],
+      "usage_types": ["choice_image"]
     },
     {
-      "embedded_image_index": 17,
-      "docx_media_name": "word/media/image21.png",
-      "extracted_filename": "pt1_image_017.png",
-      "path": "/mnt/data/practice_test_1_images/pt1_image_017.png"
+      "image_index": 17,
+      "src": "images\\Practice Test 1\\0757P_1445.jpg",
+      "used_by": ["pt1_t09_q145 (E.)"],
+      "usage_types": ["choice_image"]
     },
     {
-      "embedded_image_index": 18,
-      "docx_media_name": "word/media/image22.png",
-      "extracted_filename": "pt1_image_018.png",
-      "path": "/mnt/data/practice_test_1_images/pt1_image_018.png"
+      "image_index": 18,
+      "src": "images\\Practice Test 1\\0786P_1322.jpg",
+      "used_by": ["pt1_t07_q135 (C.)"],
+      "usage_types": ["choice_image"]
     },
     {
-      "embedded_image_index": 19,
-      "docx_media_name": "word/media/image23.png",
-      "extracted_filename": "pt1_image_019.png",
-      "path": "/mnt/data/practice_test_1_images/pt1_image_019.png"
+      "image_index": 19,
+      "src": "images\\Practice Test 1\\0961P_0044.jpg",
+      "used_by": ["pt1_t04_q119 (D.)"],
+      "usage_types": ["choice_image"]
     },
     {
-      "embedded_image_index": 20,
-      "docx_media_name": "word/media/image24.png",
-      "extracted_filename": "pt1_image_020.png",
-      "path": "/mnt/data/practice_test_1_images/pt1_image_020.png"
+      "image_index": 20,
+      "src": "images\\Practice Test 1\\513051_hipgoniometer_ch7.jpg",
+      "used_by": ["pt1_t07_q135 (A.)"],
+      "usage_types": ["choice_image"]
     },
     {
-      "embedded_image_index": 21,
-      "docx_media_name": "word/media/image1.png",
-      "extracted_filename": "pt1_image_021.png",
-      "path": "/mnt/data/practice_test_1_images/pt1_image_021.png"
+      "image_index": 21,
+      "src": "images\\Practice Test 1\\513052_hipplumbline_ch7.jpg",
+      "used_by": ["pt1_t07_q135 (B.)"],
+      "usage_types": ["choice_image"]
     },
     {
-      "embedded_image_index": 22,
-      "docx_media_name": "word/media/image2.png",
-      "extracted_filename": "pt1_image_022.png",
-      "path": "/mnt/data/practice_test_1_images/pt1_image_022.png"
+      "image_index": 22,
+      "src": "images\\Practice Test 1\\513054_fingersathip_ch7.jpg",
+      "used_by": ["pt1_t07_q135 (D.)"],
+      "usage_types": ["choice_image"]
     },
     {
-      "embedded_image_index": 23,
-      "docx_media_name": "word/media/image3.png",
-      "extracted_filename": "pt1_image_023.png",
-      "path": "/mnt/data/practice_test_1_images/pt1_image_023.png"
+      "image_index": 23,
+      "src": "images\\Practice Test 1\\513069_incorrectplank_ch7.jpg",
+      "used_by": ["pt1_t09_q146"],
+      "usage_types": ["question_image"]
     },
     {
-      "embedded_image_index": 24,
-      "docx_media_name": "word/media/image4.png",
-      "extracted_filename": "pt1_image_024.png",
-      "path": "/mnt/data/practice_test_1_images/pt1_image_024.png"
+      "image_index": 24,
+      "src": "images\\Practice Test 1\\597746.jpg",
+      "used_by": ["pt1_t10_q150"],
+      "usage_types": ["question_image"]
+    },
+    {
+      "image_index": 25,
+      "src": "images\\Practice Test 1\\597749.jpg",
+      "used_by": ["pt1_t10_q153"],
+      "usage_types": ["question_image"]
+    },
+    {
+      "image_index": 26,
+      "src": "images\\Practice Test 1\\597750.jpg",
+      "used_by": ["pt1_t10_q151"],
+      "usage_types": ["question_image"]
+    },
+    {
+      "image_index": 27,
+      "src": "images\\Practice Test 1\\597751.jpg",
+      "used_by": ["pt1_t10_q152"],
+      "usage_types": ["question_image"]
+    },
+    {
+      "image_index": 28,
+      "src": "images\\Practice Test 1\\701330.jpg",
+      "used_by": ["pt1_t04_q119 (A.)"],
+      "usage_types": ["choice_image"]
+    },
+    {
+      "image_index": 29,
+      "src": "images\\Practice Test 1\\701331.jpg",
+      "used_by": ["pt1_t04_q119 (B.)"],
+      "usage_types": ["choice_image"]
+    },
+    {
+      "image_index": 30,
+      "src": "images\\Practice Test 1\\701332.jpg",
+      "used_by": ["pt1_t04_q119 (C.)"],
+      "usage_types": ["choice_image"]
+    },
+    {
+      "image_index": 31,
+      "src": "images\\Practice Test 1\\701334.jpg",
+      "used_by": ["pt1_t04_q119 (E.)"],
+      "usage_types": ["choice_image"]
+    },
+    {
+      "image_index": 32,
+      "src": "images\\Practice Test 1\\E9036_701323.jpg",
+      "used_by": ["pt1_q050"],
+      "usage_types": ["question_image"]
+    },
+    {
+      "image_index": 33,
+      "src": "images\\Practice Test 1\\E9036_701329.jpg",
+      "used_by": ["pt1_t03_q110"],
+      "usage_types": ["question_image"]
+    },
+    {
+      "image_index": 34,
+      "src": "images\\Practice Test 1\\E9036_701335.jpg",
+      "used_by": ["pt1_t05_q121 (1.)"],
+      "usage_types": ["matching_image_left"]
+    },
+    {
+      "image_index": 35,
+      "src": "images\\Practice Test 1\\E9036_701336.jpg",
+      "used_by": ["pt1_t05_q121 (2.)"],
+      "usage_types": ["matching_image_left"]
+    },
+    {
+      "image_index": 36,
+      "src": "images\\Practice Test 1\\E9036_701337.jpg",
+      "used_by": ["pt1_t05_q121 (3.)"],
+      "usage_types": ["matching_image_left"]
+    },
+    {
+      "image_index": 37,
+      "src": "images\\Practice Test 1\\E9036_701338.jpg",
+      "used_by": ["pt1_t05_q121 (4.)"],
+      "usage_types": ["matching_image_left"]
     }
   ]
 }

@@ -3,22 +3,52 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet" />
     <title>BOC Exam Prep Course | Practice Test 2</title>
     <style>
       :root {
-        --primary: #243b53;
-        --secondary: #486581;
-        --accent: #bcccdc;
-        --background: #f5f7fa;
-        --surface: #ffffff;
-        --text: #102a43;
-        --muted: #52606d;
-        --border: #d9e2ec;
-        --radius: 12px;
-        --radius-sm: 8px;
-        --shadow: 0 4px 12px rgba(16, 42, 67, 0.08);
-        --max-width: 1100px;
-        --transition: 0.25s ease;
+        /* Brand palette (provided reference) */
+        --bg-main: #eae7dd;
+        --bg-resource: #ffffff;
+        --panel: #fcfcfc;
+        --panel-2: #f8f9fa;
+        --text: #454545;
+        --muted: #555555;
+        --accent: #2a4d7a;
+        --border-soft: rgba(0, 0, 0, 0.1);
+
+        /* Derived from accent, for hover / active states */
+        --accent-deep: #1c3552;
+        --accent-tint: #e4e9f0;
+
+        /* Functional feedback colors (not part of the supplied palette) */
+        --ok: #3a6b4a;
+        --ok-tint: #e8f0ea;
+        --bad: #a8432c;
+        --bad-tint: #fbe9e2;
+
+        /* Type */
+        --font-display: "Space Grotesk", "Avenir Next", sans-serif;
+        --font-body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+        --font-mono: "IBM Plex Mono", "Courier New", monospace;
+
+        /* Layout */
+        --radius: 14px;
+        --radius-sm: 9px;
+        --shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 12px 28px -10px rgba(0, 0, 0, 0.1);
+        --max-width: 1280px;
+        --sidebar-width: 300px;
+        --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+        /* Legacy aliases used by the Practice Test scripts */
+        --primary: var(--accent);
+        --secondary: var(--accent-deep);
+        --background: var(--panel-2);
+        --surface: var(--panel);
+        --border: var(--border-soft);
       }
 
       * {
@@ -34,19 +64,14 @@
         html {
           scroll-behavior: auto;
         }
-
-        *,
-        *::before,
-        *::after {
-          transition-duration: 0.01ms !important;
-          animation-duration: 0.01ms !important;
-          animation-iteration-count: 1 !important;
+        * {
+          transition: none !important;
         }
       }
 
       body {
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: var(--background);
+        font-family: var(--font-body);
+        background-color: var(--bg-resource);
         color: var(--text);
         line-height: 1.6;
         min-height: 100vh;
@@ -55,54 +80,19 @@
       }
 
       a {
-        color: var(--primary);
+        color: var(--accent);
         text-decoration: none;
         transition: color var(--transition);
       }
-
       a:hover,
       a:focus {
-        color: var(--secondary);
+        color: var(--accent-deep);
       }
 
-      a:focus-visible,
-      button:focus-visible,
-      select:focus-visible,
-      input:focus-visible,
-      .token:focus-visible,
-      .slot:focus-visible,
-      .hsCircle:focus-visible {
-        outline: 3px solid var(--primary);
-        outline-offset: 3px;
-      }
-
-      .skip-link {
-        position: absolute;
-        left: 16px;
-        top: -48px;
-        z-index: 1001;
-        background: var(--primary);
-        color: var(--surface);
-        padding: 10px 14px;
-        border-radius: var(--radius-sm);
-        font-weight: 700;
-      }
-
-      .skip-link:focus {
-        top: 16px;
-        color: var(--surface);
-      }
-
-      .sr-only {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
+      :focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 2px;
+        border-radius: 4px;
       }
 
       button,
@@ -114,246 +104,210 @@
 
       button {
         cursor: pointer;
-        border: 1px solid var(--primary);
+        border: 1px solid var(--accent);
         border-radius: var(--radius-sm);
-        padding: 12px 18px;
-        font-size: 0.98rem;
-        font-weight: 700;
+        padding: 11px 16px;
+        font-size: 0.92rem;
+        font-weight: 600;
+        font-family: var(--font-body);
         transition: all var(--transition);
-        background-color: var(--surface);
-        color: var(--primary);
+        background-color: var(--panel);
+        color: var(--accent);
       }
-
       button:hover,
-      button:focus {
-        border-color: var(--secondary);
+      button:focus-visible {
+        border-color: var(--accent-deep);
+        color: var(--accent-deep);
       }
-
       button.primary {
-        background-color: var(--primary);
-        color: var(--surface);
-        border-color: var(--primary);
-      }
-
-      button.primary:hover,
-      button.primary:focus {
-        background-color: var(--secondary);
-        border-color: var(--secondary);
-        color: var(--surface);
-      }
-
-      button.secondary {
-        background-color: var(--surface);
-        color: var(--primary);
-        border-color: var(--border);
-      }
-
-      button.secondary:hover,
-      button.secondary:focus {
         background-color: var(--accent);
-        border-color: var(--secondary);
+        color: var(--panel);
+        border-color: var(--accent);
+        padding: 13px 22px;
+        font-size: 0.98rem;
       }
-
+      button.primary:hover,
+      button.primary:focus-visible {
+        background-color: var(--accent-deep);
+        border-color: var(--accent-deep);
+        color: var(--panel);
+      }
+      button.secondary {
+        background-color: var(--panel);
+        color: var(--accent);
+        border-color: var(--border-soft);
+      }
+      button.secondary:hover,
+      button.secondary:focus-visible {
+        background-color: var(--accent-tint);
+        border-color: var(--accent);
+        color: var(--accent);
+      }
       button:disabled {
-        opacity: 0.55;
+        opacity: 0.5;
         cursor: not-allowed;
       }
 
       select {
         width: 100%;
-        padding: 10px 12px;
+        padding: 9px 10px;
         border-radius: var(--radius-sm);
-        border: 1px solid var(--border);
-        background: var(--surface);
+        border: 1px solid var(--border-soft);
+        background: var(--panel);
         color: var(--text);
-        font-size: 0.98rem;
+        font-size: 0.92rem;
+        font-family: var(--font-body);
       }
 
-      .domain-checkbox-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        gap: 10px;
-      }
-
-      .domain-check {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        padding: 10px 12px;
-        border: 1px solid var(--border);
-        border-radius: var(--radius-sm);
-        background: var(--surface);
-        color: var(--text);
-      }
-
-      .domain-check input {
-        margin: 0;
-      }
+      /* ---------- Header ---------- */
 
       .site-header {
-        background-color: var(--surface);
-        border-bottom: 1px solid var(--border);
-        padding: 20px;
+        background-color: var(--bg-resource);
+        border-bottom: 1px solid var(--border-soft);
+        padding: 16px 20px;
       }
-
       .site-header-inner {
         max-width: var(--max-width);
         margin: 0 auto;
       }
-
-      .site-title {
-        font-size: 1.9rem;
-        font-weight: 700;
-        color: var(--primary);
+      .eyebrow {
+        font-family: var(--font-mono);
+        font-size: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent);
       }
-
-      .site-subtitle {
-        margin-top: 6px;
-        color: var(--muted);
-        font-size: 1rem;
+      .site-title {
+        font-family: var(--font-display);
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-top: 2px;
+        color: var(--text);
       }
 
       .container {
-        width: 90%;
+        width: 92%;
         max-width: var(--max-width);
         margin: 0 auto;
-        padding: 40px 20px 60px;
+        padding: 22px 20px 50px;
         flex: 1;
       }
 
-      .section {
-        margin-bottom: 28px;
+      /* ---------- Page bar (replaces the old long intro block) ---------- */
+
+      .page-bar {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px 20px;
+        margin-bottom: 16px;
+      }
+      .page-bar-left {
+        display: flex;
+        align-items: baseline;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--muted);
+      }
+      .back-link:hover,
+      .back-link:focus-visible {
+        color: var(--accent-deep);
+      }
+      .page-bar h1 {
+        font-family: var(--font-display);
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: var(--accent-deep);
+      }
+
+      .help-disclosure {
+        font-size: 0.85rem;
+      }
+      .help-disclosure summary {
+        cursor: pointer;
+        font-weight: 600;
+        color: var(--accent);
+        list-style: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .help-disclosure summary::-webkit-details-marker {
+        display: none;
+      }
+      .help-disclosure summary .chev {
+        transition: transform var(--transition);
+      }
+      .help-disclosure[open] summary .chev {
+        transform: rotate(90deg);
+      }
+      .help-disclosure summary:hover,
+      .help-disclosure summary:focus-visible {
+        color: var(--accent-deep);
+      }
+      .help-disclosure-body {
+        margin-top: 10px;
+        padding: 14px 16px;
+        border: 1px solid var(--border-soft);
+        border-radius: var(--radius-sm);
+        background: var(--panel);
+        color: var(--muted);
+        max-width: 760px;
+      }
+      .help-disclosure-body p {
+        margin-bottom: 8px;
+      }
+      .help-disclosure-body p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* ---------- Main two-column layout ---------- */
+
+      .quiz-layout {
+        display: grid;
+        grid-template-columns: 1fr var(--sidebar-width);
+        gap: 20px;
+        align-items: start;
       }
 
       .card-panel {
-        background-color: var(--surface);
-        border: 1px solid var(--border);
+        background-color: var(--panel);
+        border: 1px solid var(--border-soft);
         border-radius: var(--radius);
         box-shadow: var(--shadow);
-        padding: 28px;
-      }
-
-      .page-intro h1 {
-        font-size: 2.2rem;
-        color: var(--primary);
-        margin-bottom: 12px;
-      }
-
-      .page-intro p {
-        color: var(--muted);
-        max-width: 820px;
-        margin-bottom: 10px;
-      }
-
-      .button-secondary-link {
-        display: inline-block;
-        padding: 12px 20px;
-        background-color: var(--surface);
-        color: var(--primary);
-        border: 1px solid var(--border);
-        border-radius: var(--radius-sm);
-        font-weight: 700;
-        transition: all var(--transition);
-      }
-
-      .button-secondary-link:hover,
-      .button-secondary-link:focus {
-        background-color: var(--accent);
-        border-color: var(--secondary);
-        color: var(--primary);
+        padding: 22px;
       }
 
       .section-title {
-        font-size: 1.35rem;
-        color: var(--primary);
-        margin-bottom: 12px;
+        font-family: var(--font-display);
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: var(--text);
       }
 
       .section-text,
       .muted {
         color: var(--muted);
-        font-size: 0.98rem;
+        font-size: 0.93rem;
       }
 
-      .pill-row,
-      .toolbar-group,
-      .timerRow,
-      .testletNav,
-      .hsHintRow {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        align-items: center;
-      }
+      /* ---------- Question panel ---------- */
 
-      .pill {
-        display: inline-block;
-        font-size: 0.92rem;
-        padding: 8px 12px;
-        border-radius: 999px;
-        background: var(--surface);
-        border: 1px solid var(--border);
-        color: var(--primary);
-        font-weight: 700;
-      }
-
-      .top-grid {
-        display: grid;
-        grid-template-columns: 1.15fr 0.85fr;
-        gap: 20px;
-        align-items: start;
-      }
-
-      .left-stack {
-        display: grid;
-        gap: 20px;
-      }
-
-      .controls {
-        display: grid;
-        gap: 14px;
-      }
-
-      .control-group label {
-        display: block;
-        font-size: 0.95rem;
-        color: var(--primary);
-        font-weight: 700;
-        margin-bottom: 6px;
-      }
-
-      .button-row {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-      }
-
-      .timerBox {
-        border: 1px solid var(--border);
-        background: var(--background);
-        border-radius: var(--radius);
-        padding: 12px 14px;
-        display: flex;
-        gap: 16px;
-        align-items: center;
-        flex-wrap: wrap;
-      }
-
-      .timerSeparator {
-        width: 1px;
-        height: 36px;
-        background: var(--border);
-      }
-
-      .timerBig {
-        font-weight: 800;
-        font-size: 1.1rem;
-        letter-spacing: 0.3px;
-        color: var(--primary);
+      .qPanel {
+        min-height: 320px;
       }
 
       .question-text {
-        font-size: 1.1rem;
+        font-size: 1.12rem;
         margin: 12px 0 14px;
         white-space: pre-wrap;
         color: var(--text);
@@ -361,33 +315,48 @@
 
       .question-image-wrap {
         margin: 12px 0 16px;
-        border: 1px solid var(--border);
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: fit-content;
+        max-width: 100%;
+        border: 1px solid var(--border-soft);
         border-radius: var(--radius);
-        background: var(--surface);
+        background: var(--panel);
         padding: 12px;
       }
-
       .question-image-wrap img {
+        width: min(320px, 33vw);
         max-width: 100%;
         height: auto;
-        margin: 0 auto;
+        margin: 0;
+        display: block;
         border-radius: var(--radius-sm);
       }
-
-      .question-image-caption {
-        margin-top: 8px;
-        color: var(--muted);
-        font-size: 0.9rem;
-      }
-
       .question-image-actions {
         margin-top: 10px;
         display: flex;
         gap: 8px;
       }
-
       .question-image-actions button {
         padding: 8px 12px;
+        font-size: 0.85rem;
+      }
+      .question-image-placeholder {
+        min-height: 220px;
+        border: 2px dashed var(--border-soft);
+        border-radius: var(--radius-sm);
+        background: linear-gradient(135deg, var(--accent-tint), var(--panel-2));
+        display: grid;
+        place-items: center;
+        padding: 20px;
+        text-align: center;
+        color: var(--muted);
+        font-weight: 600;
+      }
+      .question-image-caption {
+        margin-top: 8px;
+        color: var(--muted);
         font-size: 0.88rem;
       }
 
@@ -398,14 +367,12 @@
         align-items: center;
         justify-content: center;
         padding: 24px;
-        background: rgba(16, 42, 67, 0.82);
+        background: rgba(0, 0, 0, 0.82);
         z-index: 1000;
       }
-
       .image-viewer-backdrop.open {
         display: flex;
       }
-
       .image-viewer-panel {
         max-width: min(92vw, 1200px);
         max-height: 92vh;
@@ -413,7 +380,6 @@
         gap: 10px;
         justify-items: end;
       }
-
       .image-viewer-panel img {
         max-width: 100%;
         max-height: calc(92vh - 56px);
@@ -421,18 +387,16 @@
         width: auto;
         display: block;
         border-radius: var(--radius-sm);
-        background: var(--surface);
-        box-shadow: 0 18px 36px rgba(16, 42, 67, 0.3);
+        background: var(--panel);
+        box-shadow: 0 18px 36px rgba(0, 0, 0, 0.3);
       }
-
       .image-viewer-close {
         border-color: rgba(255, 255, 255, 0.5);
         background: rgba(255, 255, 255, 0.12);
         color: #ffffff;
       }
-
       .image-viewer-close:hover,
-      .image-viewer-close:focus {
+      .image-viewer-close:focus-visible {
         border-color: #ffffff;
         background: rgba(255, 255, 255, 0.2);
         color: #ffffff;
@@ -442,54 +406,95 @@
         display: grid;
         gap: 10px;
       }
-
       .answer {
         padding: 12px 14px;
         border-radius: var(--radius-sm);
-        border: 1px solid var(--border);
-        background: var(--surface);
+        border: 1px solid var(--border-soft);
+        background: var(--panel);
+        transition:
+          border-color var(--transition),
+          background var(--transition);
       }
-
+      .answer:has(input:checked) {
+        border-color: var(--accent);
+        background: var(--accent-tint);
+      }
       .answer input {
-        margin-right: 8px;
+        margin: 4px 0 0;
+        accent-color: var(--accent);
+      }
+      .answer-row {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 10px;
+        align-items: start;
+      }
+      .answer-body {
+        display: grid;
+        gap: 10px;
+      }
+      .answer-choice-label {
+        font-weight: 700;
+        color: var(--accent);
+      }
+      .answer-copy {
+        display: grid;
+        gap: 4px;
+      }
+      .answer-image-wrap {
+        display: grid;
+        gap: 8px;
+      }
+      .answer-image {
+        width: min(280px, 100%);
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: var(--radius-sm);
+        border: 1px solid var(--border-soft);
+        background: var(--panel-2);
+      }
+      .answer-image-actions {
+        display: flex;
+        gap: 8px;
+      }
+      .answer-image-actions button {
+        padding: 8px 12px;
+        font-size: 0.88rem;
       }
 
       .feedback {
         margin-top: 14px;
-        padding: 14px;
+        padding: 14px 16px;
         border-radius: var(--radius-sm);
-        border: 1px solid var(--border);
-        background: var(--background);
+        border: 1px solid var(--border-soft);
+        border-left: 4px solid var(--border-soft);
+        background: var(--panel-2);
+      }
+      .feedback.ok {
+        border-color: var(--ok);
+        border-left-color: var(--ok);
+        background: var(--ok-tint);
+      }
+      .feedback.bad {
+        border-color: var(--bad);
+        border-left-color: var(--bad);
+        background: var(--bad-tint);
       }
 
-      .ok {
-        border-color: #b7d9c0;
-        background: #f2faf4;
-      }
-
-      .bad {
-        border-color: #e7c1c1;
-        background: #fff6f6;
-      }
-
-      .stats {
-        display: grid;
-        gap: 10px;
-        font-size: 0.95rem;
-      }
-
-      -wrap,
-      .hsWrap {
-        display: grid;
-        gap: 12px;
+      .question-footer {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 18px;
+        padding-top: 18px;
+        border-top: 1px solid var(--border-soft);
       }
 
       .dd-wrap,
       .hsWrap {
         display: grid;
-        gap: 10px;
+        gap: 12px;
       }
-
       .question-context + .dd-wrap,
       .question-context + .matching-wrap,
       .question-context + .answers,
@@ -498,147 +503,92 @@
       .question-image-wrap + .answers {
         margin-top: 12px;
       }
-
       .dd-bank {
         display: flex;
         gap: 8px;
         flex-wrap: wrap;
         padding: 10px;
-        border: 1px dashed var(--border);
+        border: 1px dashed var(--border-soft);
         border-radius: var(--radius);
-        background: var(--background);
+        background: var(--panel-2);
       }
-
       .token {
-        padding: 6px 10px;
-        border: 1px solid var(--border);
+        padding: 6px 11px;
+        border: 1px solid var(--border-soft);
         border-radius: 999px;
-        background: var(--surface);
+        background: var(--panel);
         cursor: grab;
         user-select: none;
-        color: var(--primary);
-        font-weight: 700;
-        font-size: 0.92rem;
+        color: var(--accent);
+        font-weight: 600;
+        font-size: 0.9rem;
         line-height: 1.2;
       }
-
       .token.selected-token {
-        border-color: var(--secondary);
-        background: var(--accent);
+        border-color: var(--accent);
+        background: var(--accent-tint);
       }
-
-      .slot-token {
-        display: inline-flex;
-        align-items: center;
-        padding: 4px 8px;
-        border: 1px solid var(--border);
-        border-radius: 999px;
-        background: var(--surface);
-        color: var(--primary);
-        font-weight: 700;
-      }
-
       .drop-zones {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 8px 12px;
       }
-
-      .zone {
-        display: grid;
-        grid-template-columns: 36px 1fr;
-        gap: 8px;
-        align-items: center;
-        border: 1px solid var(--border);
-        border-radius: 10px;
-        padding: 8px 10px;
-        background: var(--surface);
-        min-height: 44px;
-      }
-
-      .zone .label {
-        font-weight: 700;
-        color: var(--primary);
-        text-align: center;
-      }
-
-      .zone .slot {
-        min-width: 0;
-        min-height: 30px;
-        border: 1px dashed var(--border);
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 5px 8px;
-        background: var(--background);
-        color: var(--muted);
-        font-size: 0.9rem;
-        line-height: 1.2;
-      }
-
       .dd-table {
         width: 100%;
         border-collapse: collapse;
-        font-size: 0.95rem;
+        background: var(--panel);
+        border: 1px solid var(--border-soft);
+        border-radius: var(--radius);
+        overflow: hidden;
       }
-
       .dd-table th,
       .dd-table td {
-        border: 1px solid var(--border);
+        border: 1px solid var(--border-soft);
         padding: 10px;
         text-align: left;
         vertical-align: top;
       }
-
       .dd-table th {
-        background: var(--accent);
-        color: var(--primary);
+        background: var(--panel-2);
+        color: var(--accent);
         font-weight: 700;
+        font-family: var(--font-display);
       }
-
       .dd-table .slot-cell {
         min-width: 150px;
       }
 
       .question-context {
         padding: 14px;
-        border: 1px solid var(--border);
+        border: 1px solid var(--border-soft);
         border-radius: var(--radius);
-        background: var(--background);
+        background: var(--panel-2);
         color: var(--text);
         white-space: pre-wrap;
       }
-
       .question-context-title {
         font-weight: 700;
-        color: var(--primary);
+        color: var(--accent);
         margin-bottom: 6px;
       }
-
       .question-context-rich {
         white-space: normal;
       }
-
       .patient-report-rich {
         display: grid;
         gap: 10px;
       }
-
       .patient-report-rich p {
         margin: 0;
       }
-
       .patient-report-rich .section-title {
         font-weight: 700;
       }
-
       .patient-report-rich .report-table {
         border-collapse: collapse;
         width: max-content;
         max-width: 100%;
       }
-
       .patient-report-rich .report-table th,
       .patient-report-rich .report-table td {
         padding: 2px 18px 2px 0;
@@ -646,17 +596,14 @@
         vertical-align: top;
         border: 0;
       }
-
       .patient-report-rich .report-table th {
         font-weight: 700;
         text-decoration: underline;
       }
-
       .patient-report-rich mark {
-        background: var(--accent);
+        background: var(--accent-tint);
         padding: 0 2px;
       }
-
       .patient-report-rich del {
         text-decoration: line-through;
       }
@@ -665,54 +612,84 @@
         display: grid;
         gap: 12px;
       }
-
       .matching-list {
         display: grid;
         gap: 10px;
       }
-
       .matching-row {
         display: grid;
         grid-template-columns: minmax(220px, 1fr) minmax(220px, 1fr);
         gap: 10px;
         align-items: center;
       }
-
       .matching-prompt {
         display: grid;
         gap: 10px;
         padding: 12px 14px;
-        border: 1px solid var(--border);
+        border: 1px solid var(--border-soft);
         border-radius: var(--radius-sm);
-        background: var(--background);
+        background: var(--panel);
       }
 
-      .matching-prompt img {
-        max-width: 100%;
-        height: auto;
-        border-radius: var(--radius-sm);
+      .zone {
+        display: grid;
+        grid-template-columns: 36px 1fr;
+        gap: 8px;
+        align-items: center;
+        border: 1px solid var(--border-soft);
+        border-radius: 10px;
+        padding: 8px 10px;
+        background: var(--panel);
+        min-height: 44px;
       }
-
+      .zone .label {
+        font-weight: 700;
+        color: var(--accent);
+        text-align: center;
+      }
+      .zone .slot,
+      .dd-table .slot {
+        min-width: 0;
+        min-height: 30px;
+        border: 1px dashed var(--border-soft);
+        border-radius: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 5px 8px;
+        background: var(--panel-2);
+        color: var(--muted);
+        font-size: 0.9rem;
+        line-height: 1.2;
+      }
+      .slot-token {
+        display: inline-flex;
+        align-items: center;
+        padding: 4px 9px;
+        border: 1px solid var(--border-soft);
+        border-radius: 999px;
+        background: var(--panel);
+        color: var(--accent);
+        font-weight: 600;
+      }
       .slot.over {
         border-style: solid;
-        border-color: var(--secondary);
+        border-color: var(--accent-deep);
       }
-
       @media (max-width: 900px) {
         .drop-zones {
-          grid-template-columns: 1fr;
-        }
-
-        .matching-row {
           grid-template-columns: 1fr;
         }
       }
 
       .scenario {
         padding: 14px;
-        border: 1px solid var(--border);
+        border: 1px solid var(--border-soft);
         border-radius: var(--radius);
-        background: var(--background);
+        background: var(--panel-2);
+        white-space: pre-wrap;
       }
 
       .hsStage {
@@ -720,161 +697,425 @@
         width: 100%;
         max-width: 680px;
         aspect-ratio: 4 / 3;
-        border: 1px solid var(--border);
+        border: 1px solid var(--border-soft);
         border-radius: var(--radius);
         overflow: hidden;
-        background: var(--surface);
+        background: var(--panel);
       }
-
       .hsStage img {
         width: 100%;
         height: 100%;
         object-fit: contain;
         display: block;
       }
-
       .hsOverlay {
         position: absolute;
         inset: 0;
       }
-
       .hsCircle {
         position: absolute;
-        width: 32px;
-        height: 32px;
+        width: 46px;
+        height: 46px;
         border-radius: 999px;
-        border: 2px solid var(--primary);
+        border: 3px solid var(--accent);
         background: rgba(255, 255, 255, 0.25);
         transform: translate(-50%, -50%);
         left: 50%;
         top: 50%;
         cursor: grab;
       }
-
       .hsCircle.dragging {
         cursor: grabbing;
+        border-color: var(--accent-deep);
+      }
+      .hsHintRow {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+      }
+      .hsSmallBtn {
+        padding: 10px 12px;
+        border-radius: var(--radius-sm);
+      }
+      .testletNav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
       }
 
+      /* ---------- Sidebar ---------- */
+
+      .sidebar {
+        display: grid;
+        gap: 14px;
+      }
+
+      .sidebar .card-panel {
+        padding: 16px;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        font-family: var(--font-mono);
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+        padding: 9px 12px;
+        border-radius: var(--radius-sm);
+        background: var(--panel-2);
+        border: 1px solid var(--border-soft);
+        color: var(--text);
+        width: 100%;
+      }
+      #pill-score {
+        border-color: var(--accent);
+        color: var(--accent);
+        background: var(--accent-tint);
+      }
+      #pill-wrong {
+        border-color: var(--bad);
+        color: var(--bad);
+        background: var(--bad-tint);
+      }
+
+      .timerBox {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+      }
+      .timerBox > div:first-child,
+      .timerBox > div:nth-child(3) {
+        flex: 1;
+      }
+      .timerSeparator {
+        width: 1px;
+        height: 30px;
+        background: var(--border-soft);
+      }
+      .timerBig {
+        font-family: var(--font-mono);
+        font-weight: 600;
+        font-size: 1.05rem;
+        letter-spacing: 0.02em;
+        color: var(--accent);
+      }
+      .timer-buttons {
+        display: flex;
+        gap: 6px;
+        margin-top: 12px;
+      }
+      .timer-buttons button {
+        flex: 1;
+        padding: 8px 6px;
+        font-size: 0.82rem;
+      }
+
+      .sidebar > .card-panel > .section-title {
+        margin-bottom: 12px;
+      }
+
+      .disclosure-card {
+        background-color: var(--panel);
+        border: 1px solid var(--border-soft);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        padding: 18px;
+      }
+      .disclosure-card summary {
+        cursor: pointer;
+        font-family: var(--font-display);
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: var(--text);
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .disclosure-card summary::-webkit-details-marker {
+        display: none;
+      }
+      .disclosure-card summary .chev {
+        transition: transform var(--transition);
+        color: var(--muted);
+        flex-shrink: 0;
+      }
+      .disclosure-card[open] summary .chev {
+        transform: rotate(90deg);
+      }
+      .disclosure-card > summary + * {
+        margin-top: 14px;
+      }
+
+      .filters-panel {
+        margin-bottom: 20px;
+      }
+      .filters-controls-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px 24px;
+        align-items: flex-end;
+        margin-top: 16px;
+      }
+      .filters-controls-row .control-block {
+        margin-top: 0;
+        max-width: 240px;
+        flex: 1 1 200px;
+      }
+      .filters-controls-row .button-row {
+        margin-top: 0;
+        flex: 0 0 auto;
+      }
+
+      .domain-checkbox-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 8px;
+        max-height: 280px;
+        overflow-y: auto;
+        padding-right: 4px;
+      }
+      .domain-check {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        padding: 7px 10px;
+        border: 1px solid var(--border-soft);
+        border-radius: 999px;
+        background: var(--panel-2);
+        color: var(--text);
+        font-size: 0.85rem;
+        transition:
+          border-color var(--transition),
+          background var(--transition);
+      }
+      .domain-check:has(input:checked) {
+        border-color: var(--accent);
+        background: var(--accent-tint);
+      }
+      .domain-check input {
+        margin: 0;
+        accent-color: var(--accent);
+        flex-shrink: 0;
+      }
+
+      .control-block {
+        margin-top: 14px;
+      }
+      .control-block label {
+        display: block;
+        font-size: 0.78rem;
+        color: var(--accent);
+        font-weight: 600;
+        margin-bottom: 6px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .button-row {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-top: 14px;
+      }
+      .button-row button {
+        flex: 1;
+        font-size: 0.85rem;
+        padding: 9px 10px;
+      }
+
+      #wrongList {
+        max-height: 240px;
+        overflow-y: auto;
+      }
+
+      /* ---------- Footer ---------- */
+
+      .site-footer {
+        border-top: 1px solid var(--border-soft);
+        padding: 18px 20px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.86rem;
+      }
+      .footer-link {
+        font-weight: 600;
+        color: var(--accent);
+      }
+      .footer-link:hover,
+      .footer-link:focus-visible {
+        color: var(--accent-deep);
+      }
+
+      /* ---------- Responsive ---------- */
+
+      @media (max-width: 980px) {
+        .quiz-layout {
+          grid-template-columns: 1fr;
+        }
+        .page-bar h1 {
+          font-size: 1.25rem;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .site-title {
+          font-size: 1.1rem;
+        }
+        .card-panel {
+          padding: 18px;
+        }
+        .question-footer {
+          justify-content: stretch;
+        }
+        .question-footer button {
+          width: 100%;
+        }
+        .domain-checkbox-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* ---------- Practice test compatibility ---------- */
+      .skip-link {
+        position: absolute;
+        left: 16px;
+        top: -48px;
+        z-index: 1001;
+        background: var(--accent);
+        color: var(--panel);
+        padding: 10px 14px;
+        border-radius: var(--radius-sm);
+        font-weight: 700;
+      }
+      .skip-link:focus {
+        top: 16px;
+        color: var(--panel);
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+      .answer input {
+        accent-color: var(--accent);
+      }
+      .ok {
+        border-color: var(--ok);
+        border-left-color: var(--ok);
+        background: var(--ok-tint);
+      }
+      .bad {
+        border-color: var(--bad);
+        border-left-color: var(--bad);
+        background: var(--bad-tint);
+      }
       .hotspot-wrap {
         position: relative;
         display: inline-block;
         width: 100%;
         max-width: 340px;
       }
-
       .hotspot-image {
         width: 100%;
         height: auto;
         object-fit: contain;
         display: block;
+        border-radius: var(--radius-sm);
       }
-
       .hotspot-overlay {
         position: absolute;
         inset: 0;
       }
-
       .hotspot-marker,
       .drop-zone {
         position: absolute;
         transform: translate(-50%, -50%);
       }
-
       .hotspot-marker {
         width: 18px;
         height: 18px;
-        border: 2px solid red;
+        border: 2px solid var(--bad);
         border-radius: 50%;
         pointer-events: none;
       }
-
       .hotspot-user-marker {
         pointer-events: auto;
-        cursor: pointer;
+        cursor: grab;
       }
-
       .hotspot-click-marker {
         width: 32px;
         height: 32px;
-        border: 2px solid #2563eb;
+        border: 2px solid var(--accent);
         border-radius: 50%;
-        background: rgba(37, 99, 235, 0.15);
+        background: rgba(42, 77, 122, 0.16);
       }
-
       .hotspot-tools {
         display: grid;
         gap: 8px;
       }
-
       .hotspot-tool-row {
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
         align-items: center;
       }
-
+      .ddHotspotMarker {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 0.9rem;
+        color: var(--accent);
+        background: rgba(255, 255, 255, 0.92);
+        cursor: pointer;
+        user-select: none;
+      }
+      .ddHotspotMarker.filled {
+        background: rgba(228, 233, 240, 0.96);
+      }
       .coords-output {
-        font-family: Consolas, "Courier New", monospace;
-        font-size: 0.92rem;
+        font-family: var(--font-mono);
+        font-size: 0.88rem;
         margin-top: 8px;
         white-space: pre-wrap;
+        color: var(--muted);
       }
-
-      .hsSmallBtn {
-        padding: 10px 12px;
+      .matching-row.matching-row--narrow-left {
+        grid-template-columns: minmax(120px, 0.6fr) minmax(280px, 1.4fr);
+      }
+      .matching-prompt img {
+        max-width: 100%;
+        height: auto;
         border-radius: var(--radius-sm);
       }
-
-      .question-footer {
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 18px;
-        padding-top: 18px;
-        border-top: 1px solid var(--border);
-      }
-      .dd .site-footer {
-        background-color: var(--surface);
-        border-top: 1px solid var(--border);
-        padding: 18px 20px;
-        text-align: center;
-        color: var(--muted);
+      .stats {
+        display: grid;
+        gap: 10px;
         font-size: 0.95rem;
       }
-
-      .footer-link {
-        font-weight: 600;
-        color: var(--primary);
+      .question-image-wrap {
+        display: inline-flex;
       }
-
-      @media (max-width: 900px) {
-        .top-grid {
-          grid-template-columns: 1fr;
-        }
-        .page-intro h1 {
-          font-size: 1.9rem;
-        }
-        .zone {
-          grid-template-columns: 1fr;
-        }
-        .zone .slot {
-          min-width: 100%;
-        }
+      .question-image-wrap img {
+        width: min(320px, 33vw);
       }
-
       @media (max-width: 600px) {
-        .site-title {
-          font-size: 1.5rem;
-        }
-        .card-panel {
-          padding: 22px;
-        }
-        .timerSeparator {
-          display: none;
-        }
-        .question-footer {
-          justify-content: stretch;
-        }
-        .question-footer button {
+        .question-image-wrap img {
           width: 100%;
         }
       }
@@ -884,99 +1125,120 @@
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <div class="site-header-inner">
+        <div class="eyebrow">Athletic Training · BOC Exam Prep</div>
         <div class="site-title">BOC Exam Prep Course</div>
       </div>
     </header>
 
     <main id="main-content" class="container">
-      <section class="page-intro section">
-        <a class="button-secondary-link" href="index.html">Back to Home</a>
-        <h1 style="margin-top: 20px">Practice Test 2</h1>
-        <p>Choose the number of questions you want to answer, then click “Start / Next” to begin Practice Test 2.</p>
-        <p>
-          Use “Submit” to check each answer. Missed or partially correct questions are saved in the Wrong Stack, where you can retry them later. Use the stopwatch to time your full session or each
-          individual question.
-        </p>
-      </section>
-
-      <section class="card-panel section">
-        <div class="pill-row" aria-label="Practice test summary" aria-live="polite">
-          <span class="pill" id="pill-total">Total: 0</span>
-          <span class="pill" id="pill-filtered">In set: 0</span>
-          <span class="pill" id="pill-score">Score: 0.0%</span>
-          <span class="pill" id="pill-wrong">Wrong stack: 0</span>
-        </div>
-      </section>
-
-      <section class="top-grid section">
-        <div class="left-stack">
-          <section class="card-panel">
-            <h2 class="section-title">Study Controls</h2>
-
-            <div class="controls">
-              <div class="control-group">
-                <label for="questionCountSel">Number of questions</label>
-                <select id="questionCountSel"></select>
-              </div>
-
-              <div id="studySetNote" class="section-text" aria-live="polite"></div>
-
-              <div class="button-row">
-                <button id="btnRetryWrong" type="button" class="secondary">Retry Wrong Stack</button>
-                <button id="btnResetAttempts" type="button" class="secondary">Reset Attempt Data</button>
-              </div>
-
-              <p class="section-text">Questions are presented in source order from the full practice test bank. Saved attempts and partial credit are tracked locally in this browser for review.</p>
-            </div>
-          </section>
-
-          <section class="card-panel stopwatch-panel" aria-labelledby="stopwatch-title">
-            <h2 id="stopwatch-title" class="section-title">Stopwatch</h2>
-
-            <div class="controls">
-              <div class="timerBox" role="group" aria-label="Stopwatch timers">
-                <div>
-                  <div class="muted">Session stopwatch</div>
-                  <div class="timerBig" id="sessionTime" role="timer" aria-live="off" aria-label="Session stopwatch time">00:00</div>
-                </div>
-
-                <div class="timerSeparator"></div>
-
-                <div>
-                  <div class="muted">Current question time</div>
-                  <div class="timerBig" id="questionTime" role="timer" aria-live="off" aria-label="Current question time">00:00</div>
-                </div>
-              </div>
-
-              <div class="button-row">
-                <button id="btnTimerStart" type="button" class="secondary">Start</button>
-                <button id="btnTimerPause" type="button" class="secondary">Pause</button>
-                <button id="btnTimerReset" type="button" class="secondary">Reset</button>
-              </div>
-            </div>
-          </section>
+      <div class="page-bar">
+        <div class="page-bar-left">
+          <a class="back-link" href="index.html">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M19 12H5M11 18l-6-6 6-6" />
+            </svg>
+            Back to Home
+          </a>
+          <h1>Practice Test 2</h1>
         </div>
 
-        <aside class="card-panel" aria-labelledby="wrong-stack-title">
-          <h2 id="wrong-stack-title" class="section-title">Wrong Stack</h2>
-          <div class="stats">
-            <div id="wrongList" class="muted" aria-live="polite">None yet.</div>
-            <div class="muted">Saved locally in this browser using localStorage.</div>
+        <details class="help-disclosure">
+          <summary>
+            How this works
+            <svg class="chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </summary>
+          <div class="help-disclosure-body">
+            <p>Choose the number of questions you want to answer, then click “Start / Next” to begin Practice Test 2.</p>
+            <p>
+              Use “Submit” to check each answer. Missed or partially correct questions are saved in the Wrong Stack, where you can retry them later. Use the stopwatch to time your full session or each
+              individual question.
+            </p>
           </div>
-        </aside>
-      </section>
+        </details>
+      </div>
 
-      <section class="card-panel section" aria-labelledby="question-heading">
-        <h2 id="question-heading" class="sr-only">Practice test question</h2>
-        <div id="qMeta" class="muted" aria-live="polite"></div>
-        <div id="qText" class="question-text" tabindex="-1">Choose a question count, then click “Start / Next” below the question area.</div>
-        <div id="qUI"></div>
-        <div id="feedback" class="feedback" style="display: none" role="status" aria-live="polite" aria-atomic="true"></div>
+      <details class="card-panel disclosure-card filters-panel" open>
+        <summary>
+          Question Count &amp; Study Controls
+          <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 18l6-6-6-6" />
+          </svg>
+        </summary>
 
-        <div class="question-footer">
-          <button id="btnNext" type="button" class="primary">Start / Next</button>
+        <div class="filters-controls-row">
+          <div class="control-block">
+            <label for="questionCountSel">Number of questions</label>
+            <select id="questionCountSel"></select>
+          </div>
+
+          <div class="button-row">
+            <button id="btnRetryWrong" type="button" class="secondary">Retry Wrong Stack</button>
+            <button id="btnResetAttempts" type="button" class="secondary">Reset Attempts</button>
+          </div>
         </div>
-      </section>
+
+        <div id="studySetNote" class="section-text control-block" aria-live="polite"></div>
+      </details>
+
+      <div class="quiz-layout">
+        <section class="card-panel qPanel" aria-labelledby="question-heading">
+          <h2 id="question-heading" class="sr-only">Practice test question</h2>
+          <div id="qMeta" class="muted" aria-live="polite"></div>
+          <div id="qText" class="question-text" tabindex="-1">Choose a question count, then click “Start / Next” below the question area.</div>
+          <div id="qUI"></div>
+          <div id="feedback" class="feedback" style="display: none" role="status" aria-live="polite" aria-atomic="true"></div>
+
+          <div class="question-footer">
+            <button id="btnNext" type="button" class="primary">Start / Next</button>
+          </div>
+        </section>
+
+        <aside class="sidebar">
+          <div class="card-panel">
+            <div class="stats-grid" aria-label="Practice test summary" aria-live="polite">
+              <span class="pill" id="pill-total">Total: 0</span>
+              <span class="pill" id="pill-filtered">In set: 0</span>
+              <span class="pill" id="pill-score">Score: 0.0%</span>
+              <span class="pill" id="pill-wrong">Wrong stack: 0</span>
+            </div>
+          </div>
+
+          <div class="card-panel">
+            <div class="section-title">Stopwatch</div>
+            <div class="timerBox" role="group" aria-label="Stopwatch timers">
+              <div>
+                <div class="muted">Session</div>
+                <div class="timerBig" id="sessionTime" role="timer" aria-live="off" aria-label="Session stopwatch time">00:00</div>
+              </div>
+              <div class="timerSeparator"></div>
+              <div>
+                <div class="muted">This question</div>
+                <div class="timerBig" id="questionTime" role="timer" aria-live="off" aria-label="Current question time">00:00</div>
+              </div>
+            </div>
+            <div class="timer-buttons">
+              <button id="btnTimerStart" type="button" class="secondary">Start</button>
+              <button id="btnTimerPause" type="button" class="secondary">Pause</button>
+              <button id="btnTimerReset" type="button" class="secondary">Reset</button>
+            </div>
+          </div>
+
+          <details class="card-panel disclosure-card">
+            <summary>
+              Wrong Stack
+              <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </summary>
+            <div class="stats">
+              <div id="wrongList" class="muted" aria-live="polite">None yet.</div>
+              <div class="muted">Saved locally in this browser using localStorage.</div>
+            </div>
+          </details>
+        </aside>
+      </div>
     </main>
 
     <footer class="site-footer">

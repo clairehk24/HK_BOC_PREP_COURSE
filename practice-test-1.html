@@ -337,7 +337,7 @@
         white-space: pre-wrap;
         color: var(--text);
       }
-      
+
       .question-image-wrap {
         margin: 12px 0 16px;
         display: inline-flex;
@@ -523,6 +523,15 @@
         gap: 10px;
       }
 
+      .question-context + .dd-wrap,
+      .question-context + .matching-wrap,
+      .question-context + .answers,
+      .question-image-wrap + .dd-wrap,
+      .question-image-wrap + .matching-wrap,
+      .question-image-wrap + .answers {
+        margin-top: 12px;
+      }
+
       .dd-bank {
         display: flex;
         gap: 8px;
@@ -564,8 +573,8 @@
 
       .drop-zones {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 8px 12px;
+        grid-template-columns: 1fr;
+        gap: 8px;
       }
 
       .zone {
@@ -625,6 +634,66 @@
         min-width: 150px;
       }
 
+      .question-context {
+        padding: 14px;
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        background: var(--background);
+        color: var(--text);
+        white-space: pre-wrap;
+      }
+
+      .question-context-title {
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 6px;
+      }
+
+      .question-context-rich {
+        white-space: normal;
+      }
+
+      .patient-report-rich {
+        display: grid;
+        gap: 10px;
+      }
+
+      .patient-report-rich p {
+        margin: 0;
+      }
+
+      .patient-report-rich .section-title {
+        font-weight: 700;
+      }
+
+      .patient-report-rich .report-table {
+        border-collapse: collapse;
+        width: max-content;
+        max-width: 100%;
+      }
+
+      .patient-report-rich .report-table th,
+      .patient-report-rich .report-table td {
+        padding: 2px 18px 2px 0;
+        text-align: left;
+        vertical-align: top;
+        border: 0;
+      }
+
+      .patient-report-rich .report-table th {
+        font-weight: 700;
+        text-decoration: underline;
+      }
+
+      .patient-report-rich mark {
+        background: var(--accent);
+        padding: 0 2px;
+      }
+
+      .patient-report-rich del {
+        text-decoration: line-through;
+      }
+
       .matching-wrap {
         display: grid;
         gap: 12px;
@@ -640,6 +709,10 @@
         grid-template-columns: minmax(220px, 1fr) minmax(220px, 1fr);
         gap: 10px;
         align-items: center;
+      }
+
+      .matching-row.matching-row--narrow-left {
+        grid-template-columns: minmax(120px, 0.6fr) minmax(280px, 1.4fr);
       }
 
       .matching-prompt {
@@ -698,10 +771,10 @@
 
       .hsCircle {
         position: absolute;
-        width: 46px;
-        height: 46px;
+        width: 32px;
+        height: 32px;
         border-radius: 999px;
-        border: 3px solid var(--primary);
+        border: 2px solid var(--primary);
         background: rgba(255, 255, 255, 0.25);
         transform: translate(-50%, -50%);
         left: 50%;
@@ -711,6 +784,87 @@
 
       .hsCircle.dragging {
         cursor: grabbing;
+      }
+
+      .ddHotspotMarker {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 0.9rem;
+        color: var(--primary);
+        background: rgba(255, 255, 255, 0.92);
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .ddHotspotMarker.filled {
+        background: rgba(188, 204, 220, 0.96);
+      }
+
+      .hotspot-wrap {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        max-width: 340px;
+      }
+
+      .hotspot-image {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+      }
+
+      .hotspot-overlay {
+        position: absolute;
+        inset: 0;
+      }
+
+      .hotspot-marker,
+      .drop-zone {
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+
+      .hotspot-marker {
+        width: 18px;
+        height: 18px;
+        border: 2px solid red;
+        border-radius: 50%;
+        pointer-events: none;
+      }
+
+      .hotspot-user-marker {
+        pointer-events: auto;
+        cursor: grab;
+      }
+
+      .hotspot-click-marker {
+        width: 32px;
+        height: 32px;
+        border: 2px solid var(--primary);
+        border-radius: 50%;
+        background: rgba(37, 99, 235, 0.16);
+      }
+
+      .hotspot-tools {
+        display: grid;
+        gap: 8px;
+      }
+
+      .hotspot-tool-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+      }
+
+      .coords-output {
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 0.92rem;
+        margin-top: 8px;
+        white-space: pre-wrap;
       }
 
       .hsSmallBtn {
@@ -819,9 +973,7 @@
                 <button id="btnResetAttempts" type="button" class="secondary">Reset Attempt Data</button>
               </div>
 
-              <p class="section-text">
-                Questions are presented in source order from the full practice test bank. Saved attempts and partial credit are tracked locally in this browser for review.
-              </p>
+              <p class="section-text">Questions are presented in source order from the full practice test bank. Saved attempts and partial credit are tracked locally in this browser for review.</p>
             </div>
           </section>
 
@@ -1105,10 +1257,7 @@
         const validIds = new Set(QUESTIONS.map((q) => q.id));
         state.queue = Array.isArray(saved.queue) ? saved.queue.filter((id) => validIds.has(id)) : [];
 
-        const currentQuestion =
-          typeof saved.currentQuestionId === "string" && validIds.has(saved.currentQuestionId)
-            ? QUESTIONS.find((q) => q.id === saved.currentQuestionId) || null
-            : null;
+        const currentQuestion = typeof saved.currentQuestionId === "string" && validIds.has(saved.currentQuestionId) ? QUESTIONS.find((q) => q.id === saved.currentQuestionId) || null : null;
 
         if (currentQuestion) {
           state.testlet = currentQuestion.type === "ft" ? normalizeTestletProgress(currentQuestion, saved.testlet) : null;
@@ -1163,14 +1312,16 @@
         <span class="pill">Mode: ${state.mode === "wrong" ? "Retry Wrong" : "Practice Test"}</span>
       `;
 
-        qText.textContent = q.type === "ft" ? q.title || "Focused testlet" : q.prompt;
+        if (q.type === "ft") qText.textContent = q.title || "Focused testlet";
+        else qText.innerHTML = formatPromptHtml(q.prompt);
         qUI.innerHTML = "";
-        renderQuestionImage(q, qUI);
+        appendQuestionContext(q, qUI);
 
         if (q.type === "mc") renderMC(q);
         if (q.type === "ms") renderMS(q);
         if (q.type === "match") renderMatch(q);
         if (q.type === "dd") renderDD(q);
+        if (q.type === "dd_hotspot") renderDDHotspot(q);
         if (q.type === "hs") renderHS(q);
         if (q.type === "ft") renderFT(q);
 
@@ -1321,6 +1472,40 @@
         return ok / total;
       }
 
+      function distancePct(a, b) {
+        if (!a || !b) return Infinity;
+        const dx = Number(a.xPct) - Number(b.xPct);
+        const dy = Number(a.yPct) - Number(b.yPct);
+        return Math.sqrt(dx * dx + dy * dy);
+      }
+
+      function checkMultiHotspot(userClicks, answers, tolerancePct, requiredCorrect) {
+        const matchedAnswerIndexes = new Set();
+        let correctMatches = 0;
+
+        for (const click of userClicks) {
+          let bestMatchIndex = -1;
+          let bestDistance = Infinity;
+
+          answers.forEach((answer, index) => {
+            if (matchedAnswerIndexes.has(index)) return;
+
+            const distance = distancePct(click, answer);
+            if (distance <= tolerancePct && distance < bestDistance) {
+              bestDistance = distance;
+              bestMatchIndex = index;
+            }
+          });
+
+          if (bestMatchIndex !== -1) {
+            matchedAnswerIndexes.add(bestMatchIndex);
+            correctMatches++;
+          }
+        }
+
+        return correctMatches >= requiredCorrect;
+      }
+
       let imageViewer = null;
 
       function ensureImageViewer() {
@@ -1410,6 +1595,26 @@
         }
 
         targetEl.appendChild(wrap);
+      }
+
+      function appendQuestionContext(q, targetEl) {
+        const rawHtmlContext = typeof q.supporting_html === "string" ? q.supporting_html.trim() : "";
+        const contextText = typeof q.supporting_text === "string" ? q.supporting_text.trim() : "";
+        const shouldRenderInlineImage = q.type !== "dd_hotspot";
+        if (!rawHtmlContext && !contextText && !(shouldRenderInlineImage && (q.image || q.scenarioImage))) return;
+
+        if (rawHtmlContext || contextText) {
+          const box = document.createElement("div");
+          box.className = "question-context";
+          const title = (q && typeof q.context_title === "string" && q.context_title.trim()) || "Additional Information";
+          const body = rawHtmlContext ? `<div class="question-context-rich">${rawHtmlContext}</div>` : `<div>${formatPromptHtml(contextText)}</div>`;
+          box.innerHTML = `<div class="question-context-title">${title}</div>${body}`;
+          targetEl.appendChild(box);
+        }
+
+        if (shouldRenderInlineImage) {
+          renderQuestionImage(q, targetEl);
+        }
       }
 
       function normalizeChoice(choice) {
@@ -1662,8 +1867,7 @@
         }
 
         const pairs = Array.isArray(matching.pairs) ? matching.pairs : [];
-        const options =
-          Array.isArray(matching.options) && matching.options.length ? matching.options.slice() : Array.from(new Set(pairs.map((pair) => pair.right)));
+        const options = Array.isArray(matching.options) && matching.options.length ? matching.options.slice() : Array.from(new Set(pairs.map((pair) => pair.right)));
 
         if (!pairs.length || !options.length) {
           const warn = document.createElement("div");
@@ -1680,6 +1884,7 @@
         pairs.forEach((pair, idx) => {
           const row = document.createElement("div");
           row.className = "matching-row";
+          if (q.id === "pt1_t04_q118") row.classList.add("matching-row--narrow-left");
 
           const prompt = document.createElement("div");
           prompt.className = "matching-prompt";
@@ -1861,153 +2066,531 @@
         targetEl.appendChild(wrap);
       }
 
-      function renderHS(q) {
+      function renderDDHotspot(q, targetEl = qUI, onSubmit = null) {
+        const wrap = document.createElement("div");
+        wrap.className = "dd-wrap";
+
+        const bank = document.createElement("div");
+        bank.className = "dd-bank";
+
+        const items = Array.isArray(q.dragItems) ? q.dragItems.slice() : [];
+        const zones = Array.isArray(q.dropZones) ? q.dropZones.slice() : [];
+        const answers = q.answer || {};
+        const itemById = new Map(items.map((item) => [item.id, item]));
+        const placements = new Map();
+        let selectedItemId = "";
+
+        function refreshTokenSelection() {
+          bank.querySelectorAll(".token").forEach((tokenEl) => {
+            tokenEl.classList.toggle("selected-token", tokenEl.dataset.itemId === selectedItemId);
+          });
+        }
+
+        function makeToken(item) {
+          const token = document.createElement("div");
+          token.className = "token";
+          token.textContent = item.label;
+          token.tabIndex = 0;
+          token.dataset.itemId = item.id;
+          token.setAttribute("role", "button");
+          token.setAttribute("aria-label", `Select ${item.label}`);
+
+          function selectToken() {
+            selectedItemId = item.id;
+            refreshTokenSelection();
+          }
+
+          token.addEventListener("click", selectToken);
+          token.addEventListener("keydown", (e) => {
+            if (e.key !== "Enter" && e.key !== " ") return;
+            e.preventDefault();
+            selectToken();
+          });
+
+          return token;
+        }
+
+        shuffle(items).forEach((item) => bank.appendChild(makeToken(item)));
+
+        const hotspotWrap = document.createElement("div");
+        hotspotWrap.className = "hotspot-wrap";
+
+        const img = document.createElement("img");
+        img.alt = q.image?.alt || "Drag and drop hotspot image";
+        img.src = q.image?.src || "";
+        img.className = "hotspot-image";
+        hotspotWrap.appendChild(img);
+
+        const overlay = document.createElement("div");
+        overlay.className = "hotspot-overlay";
+        hotspotWrap.appendChild(overlay);
+
+        const clickedMarker = document.createElement("div");
+        clickedMarker.className = "hotspot-marker hotspot-click-marker";
+        clickedMarker.style.display = "none";
+        overlay.appendChild(clickedMarker);
+
+        const tools = document.createElement("div");
+        tools.className = "hotspot-tools";
+
+        const toolRow = document.createElement("div");
+        toolRow.className = "hotspot-tool-row";
+
+        const btnToggleCalibration = document.createElement("button");
+        btnToggleCalibration.type = "button";
+        btnToggleCalibration.className = "secondary";
+        btnToggleCalibration.textContent = "Enable calibration clicks";
+
+        const btnCopyCoords = document.createElement("button");
+        btnCopyCoords.type = "button";
+        btnCopyCoords.className = "secondary";
+        btnCopyCoords.textContent = "Copy coords";
+        btnCopyCoords.disabled = true;
+
+        toolRow.appendChild(btnToggleCalibration);
+        toolRow.appendChild(btnCopyCoords);
+
+        const output = document.createElement("p");
+        output.className = "coords-output muted";
+        output.textContent = "Calibration off. Enable calibration clicks to capture xPct and yPct from the rendered image.";
+
+        tools.appendChild(toolRow);
+        tools.appendChild(output);
+
+        let calibrationActive = false;
+        let lastCoordText = "";
+
+        function setCalibrationActive(active) {
+          calibrationActive = active;
+          overlay.style.pointerEvents = active ? "none" : "auto";
+          btnToggleCalibration.textContent = active ? "Disable calibration clicks" : "Enable calibration clicks";
+          output.textContent = active
+            ? lastCoordText || 'Click the center of a printed circle to capture `"xPct"` and `"yPct"`.'
+            : "Calibration off. Enable calibration clicks to capture xPct and yPct from the rendered image.";
+        }
+
+        btnToggleCalibration.addEventListener("click", () => {
+          setCalibrationActive(!calibrationActive);
+        });
+
+        btnCopyCoords.addEventListener("click", async () => {
+          if (!lastCoordText) return;
+          try {
+            await navigator.clipboard.writeText(lastCoordText);
+            btnCopyCoords.textContent = "Copied";
+            setTimeout(() => {
+              btnCopyCoords.textContent = "Copy coords";
+            }, 1200);
+          } catch {
+            output.textContent = `${lastCoordText} (copy failed; select manually)`;
+          }
+        });
+
+        img.addEventListener("click", (event) => {
+          if (!calibrationActive) return;
+
+          const rect = img.getBoundingClientRect();
+          const x = event.clientX - rect.left;
+          const y = event.clientY - rect.top;
+          const xPct = (x / rect.width) * 100;
+          const yPct = (y / rect.height) * 100;
+
+          lastCoordText = `"xPct": ${xPct.toFixed(2)}, "yPct": ${yPct.toFixed(2)}`;
+          output.textContent = lastCoordText;
+          btnCopyCoords.disabled = false;
+          console.log({
+            xPct: Number(xPct.toFixed(2)),
+            yPct: Number(yPct.toFixed(2)),
+          });
+
+          clickedMarker.style.display = "block";
+          clickedMarker.style.left = `${xPct.toFixed(2)}%`;
+          clickedMarker.style.top = `${yPct.toFixed(2)}%`;
+        });
+
+        function updateMarker(marker, zoneId) {
+          const item = itemById.get(placements.get(zoneId) || "");
+          marker.textContent = item ? item.label : "";
+          marker.classList.toggle("filled", Boolean(item));
+          marker.setAttribute(
+            "aria-label",
+            item
+              ? `Drop zone ${zoneId}: ${item.label} placed. Click to clear or replace it with the selected number.`
+              : `Drop zone ${zoneId}: empty. Select a number, then activate this spot to place it.`,
+          );
+        }
+
+        zones.forEach((zone) => {
+          const preview = document.createElement("div");
+          preview.className = "hotspot-marker";
+          preview.style.left = `${zone.xPct}%`;
+          preview.style.top = `${zone.yPct}%`;
+          overlay.appendChild(preview);
+
+          const marker = document.createElement("div");
+          marker.className = "hsCircle ddHotspotMarker drop-zone";
+          marker.dataset.zoneId = zone.id;
+          marker.style.left = `${zone.xPct}%`;
+          marker.style.top = `${zone.yPct}%`;
+          marker.tabIndex = 0;
+          marker.setAttribute("role", "button");
+
+          function clearPlacement() {
+            placements.delete(zone.id);
+            updateMarker(marker, zone.id);
+          }
+
+          function placeSelected() {
+            if (!selectedItemId) {
+              clearPlacement();
+              return;
+            }
+
+            for (const [placedZoneId, placedItemId] of placements.entries()) {
+              if (placedItemId === selectedItemId) {
+                placements.delete(placedZoneId);
+                const prevMarker = overlay.querySelector(`[data-zone-id="${placedZoneId}"]`);
+                if (prevMarker) updateMarker(prevMarker, placedZoneId);
+              }
+            }
+
+            placements.set(zone.id, selectedItemId);
+            updateMarker(marker, zone.id);
+          }
+
+          marker.addEventListener("click", placeSelected);
+          marker.addEventListener("keydown", (e) => {
+            if (e.key === "Delete" || e.key === "Backspace") {
+              e.preventDefault();
+              clearPlacement();
+              return;
+            }
+            if (e.key !== "Enter" && e.key !== " ") return;
+            e.preventDefault();
+            placeSelected();
+          });
+
+          updateMarker(marker, zone.id);
+          overlay.appendChild(marker);
+        });
+
+        const hint = document.createElement("div");
+        hint.className = "muted";
+        hint.textContent = "Select a number, then click a circle to place it. Press Delete on a circle to clear it. Use calibration mode to click the image and capture corrected percentages.";
+
+        const btn = document.createElement("button");
+        btn.className = "primary";
+        btn.textContent = "Submit";
+        btn.addEventListener("click", () => {
+          const missing = zones.some((zone) => !placements.get(zone.id));
+          if (missing) return;
+
+          let ok = 0;
+          zones.forEach((zone) => {
+            if (placements.get(zone.id) === answers[zone.id]) ok++;
+          });
+          const score01 = ok / Math.max(1, zones.length);
+
+          if (onSubmit) onSubmit(score01);
+          else {
+            recordAttempt(q.id, score01, computeQuestionTimeMs());
+            showFeedback(score01, q.rationale, score01 < 1 ? "Partial credit enabled for drag-and-drop hotspot." : undefined);
+            renderSummaryPills();
+            renderWrongStack();
+          }
+        });
+
+        wrap.appendChild(bank);
+        wrap.appendChild(hotspotWrap);
+        wrap.appendChild(tools);
+        wrap.appendChild(hint);
+        wrap.appendChild(btn);
+        targetEl.appendChild(wrap);
+      }
+
+      function renderHS(q, targetEl = qUI, onSubmit = null) {
         const hs = q.hs || {};
         const wrap = document.createElement("div");
         wrap.className = "hsWrap";
 
-        const stage = document.createElement("div");
-        stage.className = "hsStage";
+        const hotspotWrap = document.createElement("div");
+        hotspotWrap.className = "hotspot-wrap";
 
         const img = document.createElement("img");
         img.alt = "Hot spot image";
         img.src = hs.imageSrc || "";
-        stage.appendChild(img);
+        img.className = "hotspot-image";
+        hotspotWrap.appendChild(img);
 
         const overlay = document.createElement("div");
-        overlay.className = "hsOverlay";
-        stage.appendChild(overlay);
+        overlay.className = "hotspot-overlay";
+        hotspotWrap.appendChild(overlay);
 
-        const circle = document.createElement("div");
-        circle.className = "hsCircle";
-        circle.tabIndex = 0;
-        circle.setAttribute("role", "application");
-        circle.setAttribute("aria-label", "Hot spot marker. Use arrow keys to move. Hold Shift for larger moves.");
-        overlay.appendChild(circle);
-
-        const hintRow = document.createElement("div");
-        hintRow.className = "hsHintRow";
+        const isMulti = Array.isArray(hs.answers);
+        const answerList = isMulti ? hs.answers.slice() : hs.answer ? [hs.answer] : [];
+        const requiredCorrect = Math.max(1, Number.isFinite(Number(hs.requiredCorrect)) ? Number(hs.requiredCorrect) : answerList.length || 1);
+        const tolerancePct = Number(hs.tolerancePct ?? 6);
 
         const posPill = document.createElement("span");
         posPill.className = "pill";
-        posPill.textContent = "circle: x=50.0%, y=50.0%";
 
         const tolPill = document.createElement("span");
         tolPill.className = "pill";
-        tolPill.textContent = `tolerance: ${Number(hs.tolerancePct ?? 6).toFixed(1)}%`;
-
-        const btnCenter = document.createElement("button");
-        btnCenter.className = "secondary hsSmallBtn";
-        btnCenter.textContent = "Center circle";
-        btnCenter.type = "button";
-
-        hintRow.appendChild(posPill);
-        hintRow.appendChild(tolPill);
-        hintRow.appendChild(btnCenter);
+        tolPill.textContent = `tolerance: ${tolerancePct.toFixed(1)}%`;
 
         const btnSubmit = document.createElement("button");
         btnSubmit.className = "primary";
         btnSubmit.textContent = "Submit";
         btnSubmit.type = "button";
 
-        wrap.appendChild(stage);
-        wrap.appendChild(hintRow);
-        wrap.appendChild(btnSubmit);
+        const btnReset = document.createElement("button");
+        btnReset.className = "secondary hsSmallBtn";
+        btnReset.type = "button";
 
-        qUI.appendChild(wrap);
+        const hintRow = document.createElement("div");
+        hintRow.className = "hsHintRow";
+        hintRow.appendChild(posPill);
+        hintRow.appendChild(tolPill);
+        hintRow.appendChild(btnReset);
+
+        const coordsOutput = document.createElement("pre");
+        coordsOutput.className = "coords-output";
+        coordsOutput.textContent = "";
+
+        wrap.appendChild(hotspotWrap);
+        wrap.appendChild(hintRow);
+        wrap.appendChild(coordsOutput);
+        wrap.appendChild(btnSubmit);
+        targetEl.appendChild(wrap);
 
         let circlePos = { xPct: 50, yPct: 50 };
+        const selectedPoints = isMulti ? Array.from({ length: requiredCorrect }, (_, i) => ({ xPct: clampPct(((i + 1) * 100) / (requiredCorrect + 1)), yPct: 50 })) : [];
+        const multiMarkers = [];
+        let draggingMarker = null;
+        let dragIndex = -1;
+        let dragMoved = false;
+
+        function updatePosPill() {
+          if (isMulti) {
+            posPill.textContent = `selected: ${selectedPoints.length}/${requiredCorrect}`;
+          } else {
+            posPill.textContent = `circle: x=${circlePos.xPct.toFixed(1)}%, y=${circlePos.yPct.toFixed(1)}%`;
+          }
+          updateCoordsOutput();
+        }
+
+        function updateCoordsOutput() {
+          const lines = [];
+          if (isMulti) {
+            selectedPoints.forEach((point, index) => {
+              lines.push(`${index + 1}: x=${point.xPct.toFixed(2)}%, y=${point.yPct.toFixed(2)}%`);
+            });
+            if (!selectedPoints.length) lines.push("No markers placed.");
+          } else {
+            lines.push(`x=${circlePos.xPct.toFixed(2)}%, y=${circlePos.yPct.toFixed(2)}%`);
+          }
+          coordsOutput.textContent = lines.join("\n");
+        }
 
         function setCirclePct(xPct, yPct) {
           circlePos.xPct = clampPct(xPct);
           circlePos.yPct = clampPct(yPct);
           circle.style.left = circlePos.xPct + "%";
           circle.style.top = circlePos.yPct + "%";
-          posPill.textContent = `circle: x=${circlePos.xPct.toFixed(1)}%, y=${circlePos.yPct.toFixed(1)}%`;
+          updatePosPill();
         }
 
-        setCirclePct(50, 50);
-        btnCenter.addEventListener("click", () => setCirclePct(50, 50));
-
-        circle.addEventListener("keydown", (e) => {
-          const step = e.shiftKey ? 5 : 1;
-          if (e.key === "ArrowLeft") {
-            e.preventDefault();
-            setCirclePct(circlePos.xPct - step, circlePos.yPct);
-          } else if (e.key === "ArrowRight") {
-            e.preventDefault();
-            setCirclePct(circlePos.xPct + step, circlePos.yPct);
-          } else if (e.key === "ArrowUp") {
-            e.preventDefault();
-            setCirclePct(circlePos.xPct, circlePos.yPct - step);
-          } else if (e.key === "ArrowDown") {
-            e.preventDefault();
-            setCirclePct(circlePos.xPct, circlePos.yPct + step);
-          }
-        });
-
-        let dragging = false;
-
         function clientToPct(clientX, clientY) {
-          const r = stage.getBoundingClientRect();
+          const r = img.getBoundingClientRect();
           const xPx = clientX - r.left;
           const yPx = clientY - r.top;
           return { xPct: (xPx / r.width) * 100, yPct: (yPx / r.height) * 100 };
         }
 
-        circle.addEventListener("pointerdown", (e) => {
-          dragging = true;
-          circle.classList.add("dragging");
-          circle.setPointerCapture?.(e.pointerId);
+        function clearMultiMarker(index) {
+          selectedPoints.splice(index, 1);
+          renderMultiMarkers();
+        }
+
+        function renderMultiMarkers() {
+          multiMarkers.forEach((marker) => marker.remove());
+          multiMarkers.length = 0;
+
+          selectedPoints.forEach((point, index) => {
+            const marker = document.createElement("div");
+            marker.className = "hotspot-marker hotspot-user-marker hotspot-click-marker";
+            marker.style.left = `${point.xPct}%`;
+            marker.style.top = `${point.yPct}%`;
+            marker.setAttribute("role", "button");
+            marker.setAttribute("aria-label", `Selected hotspot ${index + 1}. Drag to move or click to remove.`);
+
+            marker.addEventListener("pointerdown", (e) => {
+              e.stopPropagation();
+              draggingMarker = marker;
+              dragIndex = index;
+              dragMoved = false;
+              marker.setPointerCapture?.(e.pointerId);
+            });
+
+            marker.addEventListener("click", (e) => {
+              if (dragMoved) return;
+              e.stopPropagation();
+              clearMultiMarker(index);
+            });
+
+            overlay.appendChild(marker);
+            multiMarkers.push(marker);
+          });
+
+          updatePosPill();
+        }
+
+        function addMultiPoint(point) {
+          if (selectedPoints.length >= requiredCorrect) selectedPoints.pop();
+          selectedPoints.push({ xPct: clampPct(point.xPct), yPct: clampPct(point.yPct) });
+          renderMultiMarkers();
+        }
+
+        if (isMulti) {
+          posPill.textContent = `selected: ${selectedPoints.length}/${requiredCorrect}`;
+          btnReset.textContent = "Clear all";
+          btnReset.addEventListener("click", () => {
+            selectedPoints.length = 0;
+            renderMultiMarkers();
+          });
+          renderMultiMarkers();
+        } else {
+          const circle = document.createElement("div");
+          circle.className = "hsCircle";
+          circle.tabIndex = 0;
+          circle.setAttribute("role", "application");
+          circle.setAttribute("aria-label", "Hot spot marker. Use arrow keys to move. Hold Shift for larger moves.");
+          overlay.appendChild(circle);
+          posPill.textContent = "circle: x=50.0%, y=50.0%";
+          btnReset.textContent = "Center circle";
+          btnReset.addEventListener("click", () => setCirclePct(50, 50));
+
+          circle.addEventListener("keydown", (e) => {
+            const step = e.shiftKey ? 5 : 1;
+            if (e.key === "ArrowLeft") {
+              e.preventDefault();
+              setCirclePct(circlePos.xPct - step, circlePos.yPct);
+            } else if (e.key === "ArrowRight") {
+              e.preventDefault();
+              setCirclePct(circlePos.xPct + step, circlePos.yPct);
+            } else if (e.key === "ArrowUp") {
+              e.preventDefault();
+              setCirclePct(circlePos.xPct, circlePos.yPct - step);
+            } else if (e.key === "ArrowDown") {
+              e.preventDefault();
+              setCirclePct(circlePos.xPct, circlePos.yPct + step);
+            }
+          });
+
+          let dragging = false;
+          circle.addEventListener("pointerdown", (e) => {
+            dragging = true;
+            circle.classList.add("dragging");
+            circle.setPointerCapture?.(e.pointerId);
+          });
+
+          overlay.addEventListener("pointermove", (e) => {
+            if (!dragging) return;
+            const p = clientToPct(e.clientX, e.clientY);
+            setCirclePct(p.xPct, p.yPct);
+          });
+
+          overlay.addEventListener("pointerup", () => {
+            dragging = false;
+            circle.classList.remove("dragging");
+          });
+
+          overlay.addEventListener("pointercancel", () => {
+            dragging = false;
+            circle.classList.remove("dragging");
+          });
+
+          setCirclePct(50, 50);
+        }
+
+        overlay.addEventListener("click", (e) => {
+          if (!isMulti) return;
+          if (e.target.closest(".hotspot-user-marker")) return;
+          const point = clientToPct(e.clientX, e.clientY);
+          addMultiPoint(point);
         });
 
         overlay.addEventListener("pointermove", (e) => {
-          if (!dragging) return;
-          const p = clientToPct(e.clientX, e.clientY);
-          setCirclePct(p.xPct, p.yPct);
+          if (!draggingMarker) return;
+          dragMoved = true;
+          const point = clientToPct(e.clientX, e.clientY);
+          selectedPoints[dragIndex] = { xPct: clampPct(point.xPct), yPct: clampPct(point.yPct) };
+          renderMultiMarkers();
         });
 
         overlay.addEventListener("pointerup", () => {
-          dragging = false;
-          circle.classList.remove("dragging");
+          if (draggingMarker) {
+            draggingMarker = null;
+            dragIndex = -1;
+          }
         });
 
         overlay.addEventListener("pointercancel", () => {
-          dragging = false;
-          circle.classList.remove("dragging");
+          if (draggingMarker) {
+            draggingMarker = null;
+            dragIndex = -1;
+          }
         });
 
-        btnSubmit.addEventListener("click", () => {
+        const submitMulti = () => {
+          const points = selectedPoints.slice();
+          const answers = answerList.slice();
+          const isCorrect = checkMultiHotspot(points, answers, tolerancePct, requiredCorrect);
+          const score01 = isCorrect ? 1 : 0;
+          const extra = isCorrect
+            ? undefined
+            : selectedPoints.length < requiredCorrect
+              ? `Place ${requiredCorrect} hotspot${requiredCorrect === 1 ? "" : "s"} before submitting.`
+              : "One or more markers are outside tolerance. Try repositioning and submit again.";
+
+          if (onSubmit) onSubmit(score01);
+          else {
+            recordAttempt(q.id, score01, computeQuestionTimeMs());
+            showFeedback(score01, q.rationale, extra);
+            renderSummaryPills();
+            renderWrongStack();
+          }
+        };
+
+        const submitSingle = () => {
           const ans = hs.answer || null;
           if (!ans) {
-            showFeedback(0, "This hotspot item does not have a correct answer set.", "Add hs.answer { xPct, yPct } in the question data.");
+            if (onSubmit) onSubmit(0);
+            else showFeedback(0, "This hotspot item does not have a correct answer set.", "Add hs.answer { xPct, yPct } in the question data.");
             return;
           }
 
-          const tolPct = Number(hs.tolerancePct ?? 6);
-          const r = stage.getBoundingClientRect();
-          const minDim = Math.min(r.width, r.height);
+          const isCorrect = distancePct(circlePos, ans) <= tolerancePct;
+          const score01 = isCorrect ? 1 : 0;
+          const extra = isCorrect ? undefined : "Your circle is outside the tolerance. Try repositioning and submit again.";
 
-          const dxPx = ((circlePos.xPct - ans.xPct) / 100) * r.width;
-          const dyPx = ((circlePos.yPct - ans.yPct) / 100) * r.height;
-          const distPx = Math.hypot(dxPx, dyPx);
-          const tolPx = (tolPct / 100) * minDim;
+          if (onSubmit) onSubmit(score01);
+          else {
+            recordAttempt(q.id, score01, computeQuestionTimeMs());
+            showFeedback(score01, q.rationale, extra);
+            renderSummaryPills();
+            renderWrongStack();
+          }
+        };
 
-          const score01 = distPx <= tolPx ? 1 : 0;
-          recordAttempt(q.id, score01, computeQuestionTimeMs());
-
-          const extra = score01 ? undefined : "Your circle is outside the tolerance. Try repositioning and submit again.";
-          showFeedback(score01, q.rationale, extra);
-          renderSummaryPills();
-          renderWrongStack();
+        btnSubmit.addEventListener("click", () => {
+          if (isMulti) submitMulti();
+          else submitSingle();
         });
       }
 
       function renderFT(q) {
-        state.testlet =
-          state.testlet && q.id === state.currentQuestion?.id
-            ? state.testlet
-            : { qIndex: 0, subScores: new Array(q.questions.length).fill(null) };
+        state.testlet = state.testlet && q.id === state.currentQuestion?.id ? state.testlet : { qIndex: 0, subScores: new Array(q.questions.length).fill(null) };
 
         const container = document.createElement("div");
         container.className = "dd-wrap";
@@ -2083,15 +2666,17 @@
 
           const prompt = document.createElement("div");
           prompt.className = "question-text";
-          prompt.textContent = sq.prompt;
+          prompt.innerHTML = formatPromptHtml(sq.prompt);
 
           subArea.appendChild(prompt);
-          renderQuestionImage(sq, subArea);
+          appendQuestionContext(sq, subArea);
 
           if (sq.type === "mc") renderSubMC(sq, i);
           else if (sq.type === "ms") renderSubMS(sq, i);
           else if (sq.type === "dd") renderSubDD(sq, i);
+          else if (sq.type === "dd_hotspot") renderSubDDHotspot(sq, i);
           else if (sq.type === "match") renderSubMatch(sq, i);
+          else if (sq.type === "hs") renderSubHS(sq, i);
           else {
             const warn = document.createElement("div");
             warn.className = "muted";
@@ -2174,6 +2759,15 @@
           });
         }
 
+        function renderSubDDHotspot(sq, index) {
+          renderDDHotspot(sq, subArea, (score01) => {
+            state.testlet.subScores[index] = score01;
+            showSubFeedback(score01, sq.rationale, score01 < 1 ? "Partial credit enabled for drag-and-drop hotspot." : undefined);
+            updateNav();
+            saveProgress();
+          });
+        }
+
         function renderSubMatch(sq, index) {
           renderMatch(
             sq,
@@ -2186,6 +2780,16 @@
             },
             `ft_match_${index}`,
           );
+        }
+
+        function renderSubHS(sq, index) {
+          renderHS(sq, subArea, (score01) => {
+            state.testlet.subScores[index] = score01;
+            const extra = score01 < 1 ? "Try repositioning the circle and submit again." : undefined;
+            showSubFeedback(score01, sq.rationale, extra);
+            updateNav();
+            saveProgress();
+          });
         }
 
         btnPrev.addEventListener("click", () => {
@@ -2225,6 +2829,7 @@
             ms: "Multi-select",
             match: "Matching",
             dd: "Drag-and-drop",
+            dd_hotspot: "Drag-and-drop hot spot",
             hs: "Hot spot",
             ft: "Focused testlet",
           }[type] || type
@@ -2299,6 +2904,12 @@
 
       function escapeHtml(str) {
         return String(str).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;");
+      }
+
+      function formatPromptHtml(str) {
+        return escapeHtml(str)
+          .replace(/&lt;(em|i)&gt;([\s\S]*?)&lt;\/\1&gt;/gi, "<em>$2</em>")
+          .replace(/&lt;(strong|b)&gt;([\s\S]*?)&lt;\/\1&gt;/gi, "<strong>$2</strong>");
       }
 
       function escapeHtmlAttr(str) {

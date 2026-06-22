@@ -1063,8 +1063,10 @@
         {
           "id": "pt2_t01_q104",
           "type": "ms",
-          "prompt": "Read the patient information. Given this information, the athletic trainer must decide on the rehabilitation progression. What instructions and actions should be part of the initial phase of rehabilitation? Choose all that apply.\nPatient Information: The athletic trainer now has the following information:\n(+) Hawkins-Kennedy test\n(+)Forward head\n(+)Kyphosis\n(+)Hypomobile thoracic spine\n(+) Weak posterior thoracic musculature\n(+) Tight anterior thoracic musculature\n(+) Pain in the subacromial space when the arm is overhead",
+          "prompt": "Read the patient information. Given this information, the athletic trainer must decide on the rehabilitation progression. What instructions and actions should be part of the initial phase of rehabilitation? Choose all that apply.",
           "rationale": "",
+          "context_title": "Patient Information",
+          "supporting_text": "The athletic trainer now has the following information:\n(+) Hawkins-Kennedy test\n(+)Forward head\n(+)Kyphosis\n(+)Hypomobile thoracic spine\n(+) Weak posterior thoracic musculature\n(+) Tight anterior thoracic musculature\n(+) Pain in the subacromial space when the arm is overhead",
           "choices": [
             "Place the athlete in a sling.",
             "Avoid lying on the injured shoulder.",
@@ -1148,8 +1150,9 @@
         {
           "id": "pt2_t02_q109",
           "type": "dd",
-          "prompt": "Read the additional information. Then drag the label for each artery to the appropriate place on the line drawing. Use the pulses only once.\nAdditional Information: The athletic trainer has set up pre-participation physical examinations for 18- to 21-year-old athletes. As athletes move through the examination stations, the athletic trainer needs to demonstrate competency in a variety of areas.\nAt one station, the athletic trainer must check each athlete’s pulse at the following arteries.\nPosterior tibial → __________A________\nBrachial → __________D________\nFemoral → _______C___________\nUlnar → ________B__________\nCarotid → ______E____________\nSuperficial temporal → _______F___________\nRadial → ________G__________\nDorsalis pedis → ________H__________\nExternal maxillary → Hotspot 5",
+          "prompt": "Read the additional information. Then drag the label for each artery to the appropriate place on the line drawing. Use the pulses only once.",
           "rationale": "",
+          "supporting_text": "The athletic trainer has set up pre-participation physical examinations for 18- to 21-year-old athletes. As athletes move through the examination stations, the athletic trainer needs to demonstrate competency in a variety of areas.\nAt one station, the athletic trainer must check each athlete’s pulse at the following arteries.\nPosterior tibial → __________A________\nBrachial → __________D________\nFemoral → _______C___________\nUlnar → ________B__________\nCarotid → ______E____________\nSuperficial temporal → _______F___________\nRadial → ________G__________\nDorsalis pedis → ________H__________\nExternal maxillary → Hotspot 5",
           "dd": {
             "tokens": [],
             "zones": []
@@ -1304,8 +1307,10 @@
         {
           "id": "pt2_t04_q119",
           "type": "ms",
-          "prompt": "Read the patient’s history. What questions would you ask related to the cut, annoyed, guilty, and eye (CAGE) mnemonic? Choose all that apply.\nPatient History: The history of the patient reveals the following:\nThe patient failed her class exam.\nHer boyfriend wants to take a break.\nShe cannot play because of an ankle sprain.\nThe patient is defensive but admits to drinking.",
+          "prompt": "Read the patient’s history. What questions would you ask related to the cut, annoyed, guilty, and eye (CAGE) mnemonic? Choose all that apply.",
           "rationale": "",
+          "context_title": "Patient History",
+          "supporting_text": "The history of the patient reveals the following:\nThe patient failed her class exam.\nHer boyfriend wants to take a break.\nShe cannot play because of an ankle sprain.\nThe patient is defensive but admits to drinking.",
           "choices": [
             "Have you ever used a nightcap to help you sleep in the evening?",
             "Have you ever felt angry or annoyed when someone asks or confronts you about your alcohol use?",
@@ -1411,8 +1416,10 @@
         {
           "id": "pt2_t05_q125",
           "type": "ms",
-          "prompt": "Read the patient’s history. What are the keys to determining if a patient has burned out using the Maslach Burnout Inventory? Choose all that apply.\nPatient History: The history reveals the patient is experiencing the following:\nChronic fatigue, with emotional exhaustion\nA hard time sleeping and has lost some weight\nLow self-esteem and low motivation for sport\nA hard time concentrating",
+          "prompt": "Read the patient’s history. What are the keys to determining if a patient has burned out using the Maslach Burnout Inventory? Choose all that apply.",
           "rationale": "",
+          "context_title": "Patient History",
+          "supporting_text": "The history reveals the patient is experiencing the following:\nChronic fatigue, with emotional exhaustion\nA hard time sleeping and has lost some weight\nLow self-esteem and low motivation for sport\nA hard time concentrating",
           "choices": [
             "Emotional exhaustion",
             "External focus on other things",
@@ -1549,24 +1556,30 @@
         {
           "id": "pt2_t07_q134",
           "type": "ms",
-          "prompt": "Read the patient information. Which areas of the body should the athletic trainer visually inspect? Choose all that apply.\nPatient Information: The patient has shared the following information:\n(+) No physical trauma\n(+) Some pain in the periumbilical area, but not defined\n(-) Mental health or drug use issues\n(+) Lack of desire to eat\n(+) Nausea\n(+) Feels warmer than normal",
+          "prompt": "Read the patient information. Which areas of the body should the athletic trainer visually inspect? Choose all that apply.",
           "rationale": "",
+          "context_title": "Patient Information",
+          "supporting_text": "The patient has shared the following information:\n(+) No physical trauma\n(+) Some pain in the periumbilical area, but not defined\n(-) Mental health or drug use issues\n(+) Lack of desire to eat\n(+) Nausea\n(+) Feels warmer than normal",
           "choices": ["Muscle tone of the hip", "Throat", "Skin", "Hair", "Capillary refill", "Muscle tone of the abdomen"],
           "answer": [0, 1, 2, 4, 5]
         },
         {
           "id": "pt2_t07_q135",
           "type": "ms",
-          "prompt": "Read the visual inspection. Which analysis should the athletic trainer do at this point? Choose all that apply.\nVisual Inspection: The visual inspection reveals the following:\n(-) Muscle tone is normal\n(+) Patient feels more comfortable with knees and hips flexed\n(-) Throat\n(-) Skin",
+          "prompt": "Read the visual inspection. Which analysis should the athletic trainer do at this point? Choose all that apply.",
           "rationale": "",
+          "context_title": "Visual Inspection",
+          "supporting_text": "The visual inspection reveals the following:\n(-) Muscle tone is normal\n(+) Patient feels more comfortable with knees and hips flexed\n(-) Throat\n(-) Skin",
           "choices": ["Abdominal quadrant analysis", "Dunphy’s sign", "Rovsing’s sign", "Abdominal auscultation", "Abdominal circumference measurement"],
           "answer": [0, 1, 2, 3]
         },
         {
           "id": "pt2_t07_q136",
           "type": "ms",
-          "prompt": "Read the patient assessment. Which of the following injuries or illnesses should be suspected based on the signs and symptoms provided? Choose all that apply.\nPatient Assessment: The patient assessment reveals the following information:\n(+) McBurney’s point\n(+)Dunphy’s sign\n(+) Rovsing’s sign\n(-) Throat visual",
+          "prompt": "Read the patient assessment. Which of the following injuries or illnesses should be suspected based on the signs and symptoms provided? Choose all that apply.",
           "rationale": "",
+          "context_title": "Patient Assessment",
+          "supporting_text": "The patient assessment reveals the following information:\n(+) McBurney’s point\n(+)Dunphy’s sign\n(+) Rovsing’s sign\n(-) Throat visual",
           "choices": ["Urinary tract infection", "Pancreatitis", "Kidney infection", "Peritonitis", "Ovarian cyst", "Appendicitis", "Piriformis syndrome"],
           "answer": [3, 5]
         },

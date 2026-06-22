@@ -568,6 +568,62 @@
         line-height: 1.2;
       }
 
+      .dd-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.95rem;
+      }
+
+      .dd-table th,
+      .dd-table td {
+        border: 1px solid var(--border);
+        padding: 10px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      .dd-table th {
+        background: var(--accent);
+        color: var(--primary);
+        font-weight: 700;
+      }
+
+      .dd-table .slot-cell {
+        min-width: 150px;
+      }
+
+      .matching-wrap {
+        display: grid;
+        gap: 12px;
+      }
+
+      .matching-list {
+        display: grid;
+        gap: 10px;
+      }
+
+      .matching-row {
+        display: grid;
+        grid-template-columns: minmax(220px, 1fr) minmax(220px, 1fr);
+        gap: 10px;
+        align-items: center;
+      }
+
+      .matching-prompt {
+        display: grid;
+        gap: 10px;
+        padding: 12px 14px;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-sm);
+        background: var(--background);
+      }
+
+      .matching-prompt img {
+        max-width: 100%;
+        height: auto;
+        border-radius: var(--radius-sm);
+      }
+
       .slot.over {
         border-style: solid;
         border-color: var(--secondary);
@@ -575,6 +631,10 @@
 
       @media (max-width: 900px) {
         .drop-zones {
+          grid-template-columns: 1fr;
+        }
+
+        .matching-row {
           grid-template-columns: 1fr;
         }
       }
@@ -733,8 +793,7 @@
               </div>
 
               <p class="section-text">
-                Question order is randomized from the full practice test bank. Items are considered mastered once they reach 100%, and mastered items are then excluded. Partial credit is applied to
-                multi-select and drag-and-drop items.
+                Questions are presented in source order from the full practice test bank. Saved attempts and partial credit are tracked locally in this browser for review.
               </p>
             </div>
           </section>
@@ -816,6 +875,7 @@
       }
 
       const STORAGE_KEY_ATTEMPTS = "quiz_attempts_v1";
+      const STORAGE_KEY_PROGRESS = "practice_test_2_progress_v1";
 
       function loadJSON(key, fallback) {
         try {
@@ -834,11 +894,23 @@
         } catch {}
       }
 
+      function clearJSON(key) {
+        try {
+          localStorage.removeItem(key);
+        } catch {}
+      }
+
       function loadAttempts() {
         return loadJSON(STORAGE_KEY_ATTEMPTS, {});
       }
       function saveAttempts(a) {
         saveJSON(STORAGE_KEY_ATTEMPTS, a);
+      }
+      function loadProgress() {
+        return loadJSON(STORAGE_KEY_PROGRESS, null);
+      }
+      function clearProgress() {
+        clearJSON(STORAGE_KEY_PROGRESS);
       }
 
       const state = {
@@ -882,7 +954,10 @@
 
         pillTotal.textContent = `Total: ${QUESTIONS.length}`;
 
-        questionCountSel.addEventListener("change", rebuildQueueFiltered);
+        questionCountSel.addEventListener("change", () => {
+          if (state.mode === "wrong") rebuildQueueWrong();
+          else rebuildQueueFiltered();
+        });
 
         btnNext.addEventListener("click", () => {
           state.mode = "filtered";
@@ -912,7 +987,9 @@
         btnTimerPause.addEventListener("click", pauseTimer);
         btnTimerReset.addEventListener("click", resetTimer);
 
-        rebuildQueueFiltered();
+        if (!restoreProgress()) {
+          rebuildQueueFiltered();
+        }
         renderSummaryPills();
         renderWrongStack();
       }
@@ -936,9 +1013,9 @@
       }
 
       function limitQueue(ids) {
-        const shuffled = shuffle(ids);
+        const ordered = ids.slice();
         const limit = getQuestionLimit();
-        return shuffled.slice(0, Math.min(limit, shuffled.length));
+        return ordered.slice(0, Math.min(limit, ordered.length));
       }
       function updateStudySetNote(availableCount, finalCount, modeLabel) {
         const requestedCount = getQuestionLimit();
@@ -956,7 +1033,74 @@
         studySetNote.textContent = `${modeLabel}: ${finalCount} question${finalCount === 1 ? "" : "s"} selected.`;
       }
       function getFilteredQuestions() {
-        return QUESTIONS.filter((q) => !isMastered(q.id));
+        return QUESTIONS.slice();
+      }
+
+      function saveProgress() {
+        saveJSON(STORAGE_KEY_PROGRESS, {
+          mode: state.mode,
+          queue: state.queue.slice(),
+          currentQuestionId: state.currentQuestion ? state.currentQuestion.id : null,
+          questionCountValue: String(questionCountSel.value || ""),
+          testlet:
+            state.testlet && state.currentQuestion && state.currentQuestion.type === "ft"
+              ? {
+                  parentId: state.currentQuestion.id,
+                  qIndex: state.testlet.qIndex,
+                  subScores: Array.isArray(state.testlet.subScores) ? state.testlet.subScores.slice() : [],
+                }
+              : null,
+        });
+      }
+
+      function normalizeTestletProgress(q, savedTestlet) {
+        if (!savedTestlet || savedTestlet.parentId !== q.id || !Array.isArray(savedTestlet.subScores)) return null;
+        return {
+          qIndex: Math.max(0, Math.min(q.questions.length - 1, Number(savedTestlet.qIndex) || 0)),
+          subScores: q.questions.map((_, idx) => {
+            const score = savedTestlet.subScores[idx];
+            return typeof score === "number" ? clamp01(score) : null;
+          }),
+        };
+      }
+
+      function restoreProgress() {
+        const saved = loadProgress();
+        if (!saved || typeof saved !== "object") return false;
+
+        const allowedCounts = new Set(Array.from(questionCountSel.options).map((option) => option.value));
+        if (allowedCounts.has(String(saved.questionCountValue || ""))) {
+          questionCountSel.value = String(saved.questionCountValue);
+        }
+
+        state.mode = saved.mode === "wrong" ? "wrong" : "filtered";
+
+        const validIds = new Set(QUESTIONS.map((q) => q.id));
+        state.queue = Array.isArray(saved.queue) ? saved.queue.filter((id) => validIds.has(id)) : [];
+
+        const currentQuestion =
+          typeof saved.currentQuestionId === "string" && validIds.has(saved.currentQuestionId)
+            ? QUESTIONS.find((q) => q.id === saved.currentQuestionId) || null
+            : null;
+
+        if (currentQuestion) {
+          state.testlet = currentQuestion.type === "ft" ? normalizeTestletProgress(currentQuestion, saved.testlet) : null;
+          renderQuestion(currentQuestion);
+          return true;
+        }
+
+        state.currentQuestion = null;
+        state.testlet = null;
+
+        if (state.queue.length === 0) {
+          if (state.mode === "wrong") rebuildQueueWrong();
+          else rebuildQueueFiltered();
+        } else {
+          clearQuestionUI('Saved progress restored. Click "Start / Next" to continue.');
+          saveProgress();
+        }
+
+        return true;
       }
 
       function rebuildQueueFiltered() {
@@ -966,6 +1110,7 @@
         pillFiltered.textContent = `In set: ${state.queue.length}`;
         renderSummaryPills();
         renderWrongStack();
+        saveProgress();
       }
       function rebuildQueueWrong() {
         const wrongIds = Object.entries(state.attempts)
@@ -978,6 +1123,33 @@
         pillFiltered.textContent = `In set: ${state.queue.length}`;
         renderSummaryPills();
         renderWrongStack();
+        saveProgress();
+      }
+
+      function renderQuestion(q) {
+        state.currentQuestion = q;
+        state.questionStartTs = Date.now();
+        timer.questionMs = 0;
+
+        qMeta.innerHTML = `
+        <span class="pill">Type: ${labelType(q.type)}</span>
+        <span class="pill">Mode: ${state.mode === "wrong" ? "Retry Wrong" : "Practice Test"}</span>
+      `;
+
+        qText.textContent = q.type === "ft" ? q.title || "Focused testlet" : q.prompt;
+        qUI.innerHTML = "";
+        renderQuestionImage(q, qUI);
+
+        if (q.type === "mc") renderMC(q);
+        if (q.type === "ms") renderMS(q);
+        if (q.type === "match") renderMatch(q);
+        if (q.type === "dd") renderDD(q);
+        if (q.type === "hs") renderHS(q);
+        if (q.type === "ft") renderFT(q);
+
+        renderSummaryPills();
+        renderWrongStack();
+        saveProgress();
       }
 
       function serveNext() {
@@ -997,33 +1169,14 @@
               : "No remaining questions in the current question-count filter (or you mastered them all).";
           renderSummaryPills();
           renderWrongStack();
+          clearProgress();
           return;
         }
 
         const nextId = state.queue.shift();
         const q = QUESTIONS.find((x) => x.id === nextId);
-        state.currentQuestion = q;
-        state.questionStartTs = Date.now();
-        timer.questionMs = 0;
         state.testlet = null;
-
-        qMeta.innerHTML = `
-        <span class="pill">Type: ${labelType(q.type)}</span>
-        <span class="pill">Mode: ${state.mode === "wrong" ? "Retry Wrong" : "Practice Test"}</span>
-      `;
-
-        qText.textContent = q.type === "ft" ? q.title || "Focused testlet" : q.prompt;
-        qUI.innerHTML = "";
-        renderQuestionImage(q, qUI);
-
-        if (q.type === "mc") renderMC(q);
-        if (q.type === "ms") renderMS(q);
-        if (q.type === "dd") renderDD(q);
-        if (q.type === "hs") renderHS(q);
-        if (q.type === "ft") renderFT(q);
-
-        renderSummaryPills();
-        renderWrongStack();
+        renderQuestion(q);
       }
 
       function clearQuestionUI(message) {
@@ -1125,6 +1278,22 @@
         return ok / total;
       }
 
+      function normalizeMatchKey(value) {
+        return String(value || "")
+          .trim()
+          .toLowerCase()
+          .replaceAll(/\s+/g, " ");
+      }
+
+      function scoreMatching(selections, zones) {
+        const total = Math.max(1, zones.length);
+        let ok = 0;
+        zones.forEach((zone) => {
+          if (normalizeMatchKey(selections.get(zone.id)) === normalizeMatchKey(zone.accept)) ok++;
+        });
+        return ok / total;
+      }
+
       let imageViewer = null;
 
       function ensureImageViewer() {
@@ -1216,6 +1385,51 @@
         targetEl.appendChild(wrap);
       }
 
+      function normalizeMatchingPrompt(promptValue) {
+        if (promptValue && typeof promptValue === "object" && !Array.isArray(promptValue)) return promptValue;
+        return { text: promptValue == null ? "" : String(promptValue) };
+      }
+
+      function appendMatchingPromptContent(targetEl, promptValue, idx) {
+        const promptObj = normalizeMatchingPrompt(promptValue);
+
+        if (promptObj.label) {
+          const label = document.createElement("div");
+          label.style.fontWeight = "700";
+          label.textContent = promptObj.label;
+          targetEl.appendChild(label);
+        }
+
+        if (typeof promptObj.text === "string" && promptObj.text) {
+          const text = document.createElement("div");
+          text.textContent = promptObj.text;
+          targetEl.appendChild(text);
+        }
+
+        if (promptObj.image && promptObj.image.src) {
+          const img = document.createElement("img");
+          img.src = promptObj.image.src;
+          img.alt = promptObj.image.alt || `Matching prompt ${idx + 1} image`;
+          targetEl.appendChild(img);
+
+          const actions = document.createElement("div");
+          actions.className = "question-image-actions";
+
+          const enlargeBtn = document.createElement("button");
+          enlargeBtn.type = "button";
+          enlargeBtn.className = "secondary";
+          enlargeBtn.textContent = "Enlarge image";
+          enlargeBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            ensureImageViewer().open(img.src, img.alt);
+          });
+
+          actions.appendChild(enlargeBtn);
+          targetEl.appendChild(actions);
+        }
+      }
+
       function renderMC(q) {
         const wrap = document.createElement("div");
         wrap.className = "answers";
@@ -1277,7 +1491,144 @@
         qUI.appendChild(btn);
       }
 
-      function renderManualSetupNotice(q, message) {
+      function renderMatch(q, targetEl = qUI, onSubmit = null, namePrefix = "match") {
+        const matching = q.matching || {};
+        const wrap = document.createElement("div");
+        wrap.className = "matching-wrap";
+
+        if (matching.table && Array.isArray(matching.zones) && matching.zones.length) {
+          const selections = new Map();
+          const options = Array.isArray(matching.options) ? matching.options.slice() : Array.from(new Set(matching.zones.map((z) => z.accept)));
+
+          const table = document.createElement("table");
+          table.className = "dd-table";
+
+          if (Array.isArray(matching.table.column_headers) && matching.table.column_headers.length) {
+            const thead = document.createElement("thead");
+            const tr = document.createElement("tr");
+            matching.table.column_headers.forEach((header) => {
+              const th = document.createElement("th");
+              th.textContent = header;
+              tr.appendChild(th);
+            });
+            thead.appendChild(tr);
+            table.appendChild(thead);
+          }
+
+          const tbody = document.createElement("tbody");
+          (matching.table.rows || []).forEach((row) => {
+            const tr = document.createElement("tr");
+            row.forEach((cell) => {
+              const td = document.createElement("td");
+              if (cell && typeof cell === "object" && cell.zoneId) {
+                const zone = matching.zones.find((z) => z.id === cell.zoneId);
+                const select = document.createElement("select");
+                select.setAttribute("aria-label", zone ? `Select match for ${zone.label || zone.id}` : "Select match");
+                select.innerHTML = `<option value="">Select match</option>`;
+                options.forEach((optionValue) => {
+                  const option = document.createElement("option");
+                  option.value = optionValue;
+                  option.textContent = optionValue;
+                  select.appendChild(option);
+                });
+                select.addEventListener("change", () => {
+                  selections.set(zone.id, select.value);
+                });
+                td.appendChild(select);
+              } else if (cell && typeof cell === "object" && typeof cell.text === "string") {
+                td.textContent = cell.text;
+              } else {
+                td.textContent = cell == null ? "" : String(cell);
+              }
+              tr.appendChild(td);
+            });
+            tbody.appendChild(tr);
+          });
+          table.appendChild(tbody);
+          wrap.appendChild(table);
+
+          const btn = document.createElement("button");
+          btn.className = "primary";
+          btn.textContent = "Submit";
+          btn.addEventListener("click", () => {
+            const missing = matching.zones.some((zone) => !selections.get(zone.id));
+            if (missing) return;
+            const score01 = scoreMatching(selections, matching.zones);
+            if (onSubmit) onSubmit(score01);
+            else {
+              recordAttempt(q.id, score01, computeQuestionTimeMs());
+              showFeedback(score01, q.rationale, score01 < 1 ? "Partial credit enabled for matching." : undefined);
+              renderSummaryPills();
+              renderWrongStack();
+            }
+          });
+          wrap.appendChild(btn);
+          targetEl.appendChild(wrap);
+          return;
+        }
+
+        const pairs = Array.isArray(matching.pairs) ? matching.pairs : [];
+        const options =
+          Array.isArray(matching.options) && matching.options.length ? matching.options.slice() : Array.from(new Set(pairs.map((pair) => pair.right)));
+
+        if (!pairs.length || !options.length) {
+          renderManualSetupNotice(q, "This matching question is missing its answer pairs or dropdown options.");
+          return;
+        }
+
+        const selections = new Map();
+        const list = document.createElement("div");
+        list.className = "matching-list";
+
+        pairs.forEach((pair, idx) => {
+          const row = document.createElement("div");
+          row.className = "matching-row";
+
+          const prompt = document.createElement("div");
+          prompt.className = "matching-prompt";
+          appendMatchingPromptContent(prompt, pair.left, idx);
+
+          const select = document.createElement("select");
+          select.name = `${namePrefix}_${idx}`;
+          select.innerHTML = `<option value="">Select match</option>`;
+          options.forEach((optionValue) => {
+            const option = document.createElement("option");
+            option.value = optionValue;
+            option.textContent = optionValue;
+            select.appendChild(option);
+          });
+          select.addEventListener("change", () => {
+            selections.set(String(idx), select.value);
+          });
+
+          row.appendChild(prompt);
+          row.appendChild(select);
+          list.appendChild(row);
+        });
+
+        const btn = document.createElement("button");
+        btn.className = "primary";
+        btn.textContent = "Submit";
+        btn.addEventListener("click", () => {
+          const missing = pairs.some((_, idx) => !selections.get(String(idx)));
+          if (missing) return;
+          const zones = pairs.map((pair, idx) => ({ id: String(idx), accept: pair.right }));
+          const score01 = scoreMatching(selections, zones);
+          if (onSubmit) onSubmit(score01);
+          else {
+            recordAttempt(q.id, score01, computeQuestionTimeMs());
+            showFeedback(score01, q.rationale, score01 < 1 ? "Partial credit enabled for matching." : undefined);
+            renderSummaryPills();
+            renderWrongStack();
+          }
+        });
+
+        wrap.appendChild(list);
+        wrap.appendChild(btn);
+        targetEl.appendChild(wrap);
+      }
+
+      function renderManualSetupNotice(q, message, targetEl = qUI) {
         const wrap = document.createElement("div");
         wrap.className = "dd-wrap";
         renderQuestionImage(q, wrap);
@@ -1297,12 +1648,12 @@
 
         wrap.appendChild(notice);
         wrap.appendChild(details);
-        qUI.appendChild(wrap);
+        targetEl.appendChild(wrap);
       }
 
-      function renderDD(q) {
+      function renderDD(q, targetEl = qUI, onSubmit = null) {
         if (!q.dd || !Array.isArray(q.dd.tokens) || !Array.isArray(q.dd.zones) || q.dd.tokens.length === 0 || q.dd.zones.length === 0) {
-          renderManualSetupNotice(q, "This drag/drop, matching, or hot-spot-style item was flagged during conversion and needs manual setup before scoring can be enabled.");
+          renderManualSetupNotice(q, "This drag/drop, matching, or hot-spot-style item was flagged during conversion and needs manual setup before scoring can be enabled.", targetEl);
           return;
         }
         const wrap = document.createElement("div");
@@ -1424,17 +1775,20 @@
           if (missing) return;
 
           const score01 = scoreDragDrop(placements, q.dd.zones);
-          recordAttempt(q.id, score01, computeQuestionTimeMs());
-          showFeedback(score01, q.rationale, score01 < 1 ? "Partial credit enabled for drag-and-drop." : undefined);
-          renderSummaryPills();
-          renderWrongStack();
+          if (onSubmit) onSubmit(score01);
+          else {
+            recordAttempt(q.id, score01, computeQuestionTimeMs());
+            showFeedback(score01, q.rationale, score01 < 1 ? "Partial credit enabled for drag-and-drop." : undefined);
+            renderSummaryPills();
+            renderWrongStack();
+          }
         });
 
         wrap.appendChild(bank);
         wrap.appendChild(zonesWrap);
         wrap.appendChild(hint);
         wrap.appendChild(btn);
-        qUI.appendChild(wrap);
+        targetEl.appendChild(wrap);
       }
 
       function renderHS(q) {
@@ -1580,7 +1934,10 @@
       }
 
       function renderFT(q) {
-        state.testlet = { qIndex: 0, subScores: new Array(q.questions.length).fill(null) };
+        state.testlet =
+          state.testlet && q.id === state.currentQuestion?.id
+            ? state.testlet
+            : { qIndex: 0, subScores: new Array(q.questions.length).fill(null) };
 
         const container = document.createElement("div");
         container.className = "dd-wrap";
@@ -1631,6 +1988,7 @@
           btnPrev.disabled = i === 0;
           btnNextSub.disabled = i >= q.questions.length - 1;
           btnFinish.disabled = state.testlet.subScores.some((s) => s === null);
+          saveProgress();
         }
 
         function showSubFeedback(score01, rationale, extra) {
@@ -1662,6 +2020,8 @@
 
           if (sq.type === "mc") renderSubMC(sq, i);
           else if (sq.type === "ms") renderSubMS(sq, i);
+          else if (sq.type === "dd") renderSubDD(sq, i);
+          else if (sq.type === "match") renderSubMatch(sq, i);
           else {
             const warn = document.createElement("div");
             warn.className = "muted";
@@ -1695,6 +2055,7 @@
             state.testlet.subScores[index] = score01;
             showSubFeedback(score01, sq.rationale);
             updateNav();
+            saveProgress();
           });
 
           subArea.appendChild(wrap);
@@ -1726,6 +2087,7 @@
             state.testlet.subScores[index] = score01;
             showSubFeedback(score01, sq.rationale, score01 < 1 ? "Partial credit enabled for multi-select." : undefined);
             updateNav();
+            saveProgress();
           });
 
           subArea.appendChild(wrap);
@@ -1733,10 +2095,34 @@
           subArea.appendChild(btnSubmit);
         }
 
+        function renderSubDD(sq, index) {
+          renderDD(sq, subArea, (score01) => {
+            state.testlet.subScores[index] = score01;
+            showSubFeedback(score01, sq.rationale, score01 < 1 ? "Partial credit enabled for drag-and-drop." : undefined);
+            updateNav();
+            saveProgress();
+          });
+        }
+
+        function renderSubMatch(sq, index) {
+          renderMatch(
+            sq,
+            subArea,
+            (score01) => {
+              state.testlet.subScores[index] = score01;
+              showSubFeedback(score01, sq.rationale, score01 < 1 ? "Partial credit enabled for matching." : undefined);
+              updateNav();
+              saveProgress();
+            },
+            `ft_match_${index}`,
+          );
+        }
+
         btnPrev.addEventListener("click", () => {
           if (state.testlet.qIndex > 0) {
             state.testlet.qIndex -= 1;
             renderSubQuestion();
+            saveProgress();
           }
         });
 
@@ -1744,6 +2130,7 @@
           if (state.testlet.qIndex < q.questions.length - 1) {
             state.testlet.qIndex += 1;
             renderSubQuestion();
+            saveProgress();
           }
         });
 
@@ -1751,9 +2138,11 @@
           const scores = state.testlet.subScores;
           const avg = scores.reduce((s, v) => s + v, 0) / Math.max(1, scores.length);
           recordAttempt(q.id, avg, computeQuestionTimeMs());
+          state.testlet = null;
           showFeedback(avg, "Focused testlet scored as the average of its associated question scores.", avg < 1 ? "Mastery requires 100% overall." : "Testlet complete.");
           renderSummaryPills();
           renderWrongStack();
+          saveProgress();
         });
 
         renderSubQuestion();
@@ -1764,6 +2153,7 @@
           {
             mc: "Multiple choice",
             ms: "Multi-select",
+            match: "Matching",
             dd: "Drag-and-drop",
             hs: "Hot spot",
             ft: "Focused testlet",
@@ -1833,8 +2223,12 @@
       }
 
       function shuffle(arr) {
-        // Return array in order (not randomized) for review mode
-        return arr.slice();
+        const copy = arr.slice();
+        for (let i = copy.length - 1; i > 0; i -= 1) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [copy[i], copy[j]] = [copy[j], copy[i]];
+        }
+        return copy;
       }
 
       function escapeHtml(str) {

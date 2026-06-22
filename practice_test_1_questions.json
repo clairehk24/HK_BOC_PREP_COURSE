@@ -1,4 +1,4 @@
-{
+﻿{
   "version": "1.1",
   "source": "Practice Test 1.docx",
   "questions": [
@@ -21,7 +21,7 @@
       "type": "mc",
       "prompt": "Which nerve root listed has a reflex response attributed to them?",
       "rationale": "",
-      "choices": ["C1–C2", "C3–C4", "C5–C6", "C7–C8", "C8–T1"],
+      "choices": ["C1â€“C2", "C3â€“C4", "C5â€“C6", "C7â€“C8", "C8â€“T1"],
       "answer": 2
     },
     {
@@ -140,7 +140,7 @@
       "choices": [
         "Splenomegaly",
         "Corneal abrasion and head laceration",
-        "Guillain-Barré syndrome and testicular torsion",
+        "Guillain-BarreÌ syndrome and testicular torsion",
         "Sickle cell trait collapse and sexually transmitted diseases",
         "Stroke and coronavirus"
       ],
@@ -271,7 +271,7 @@
       "type": "mc",
       "prompt": "At what temperature should medications be stored to maintain potency and safety?",
       "rationale": "",
-      "choices": ["55 to 75 °F", "60 to 85 °F", "65 to 75 °F", "65 to 80 °F"],
+      "choices": ["55 to 75 Â°F", "60 to 85 Â°F", "65 to 75 Â°F", "65 to 80 Â°F"],
       "answer": 3
     },
     {
@@ -279,13 +279,13 @@
       "type": "mc",
       "prompt": "Which of the following diagnoses is considered an autoimmune condition?",
       "rationale": "",
-      "choices": ["Amenorrhea", "Fibromyalgia", "Neoplastic disease", "Pleurisy", "Celiac disease (Correct)"],
+      "choices": ["Amenorrhea", "Fibromyalgia", "Neoplastic disease", "Pleurisy", "Celiac disease"],
       "answer": 4
     },
     {
       "id": "pt1_q027",
       "type": "mc",
-      "prompt": "Which action best reflects the athletic trainer’s professional responsibility in patient education?",
+      "prompt": "Which action best reflects the athletic trainerâ€™s professional responsibility in patient education?",
       "rationale": "",
       "choices": [
         "Providing medical advice that is not within the scope of practice if the athletic trainer knows the information is true",
@@ -303,7 +303,7 @@
       "choices": [
         "Consulting with the supervising physician for a new sign or symptom of concern",
         "Leaving a computer or laptop screen open to a patient's chart unattended while performing manual intervention on a patient",
-        "Discussing a patient’s positive progress with another patient",
+        "Discussing a patientâ€™s positive progress with another patient",
         "Sharing patient information with the coach when the athlete asked for information to be kept confidential"
       ],
       "answer": [1, 2, 3]
@@ -375,7 +375,7 @@
       "rationale": "",
       "choices": [
         "Memory problems (e.g., appointments, deadlines)",
-        "Restless, fidgety, or always “on the go”",
+        "Restless, fidgety, or always â€œon the goâ€",
         "Difficulty in paying attention, especially to details",
         "Problems concentrating on instructions",
         "Failure to follow directions"
@@ -443,7 +443,7 @@
     {
       "id": "pt1_q042",
       "type": "mc",
-      "prompt": "A 16-year-old rugby player falls directly onto the ball during a tackle and immediately struggles to breathe, describing a sensation of being “winded.” They appear panicked but have normal chest rise and no visible signs of significant trauma. After a few minutes, their breathing begins to normalize, and they can speak clearly again. What is the most likely diagnosis?",
+      "prompt": "A 16-year-old rugby player falls directly onto the ball during a tackle and immediately struggles to breathe, describing a sensation of being â€œwinded.â€ They appear panicked but have normal chest rise and no visible signs of significant trauma. After a few minutes, their breathing begins to normalize, and they can speak clearly again. What is the most likely diagnosis?",
       "rationale": "",
       "choices": ["Solar plexus injury", "Abdominal muscle contusion", "Pneumothorax", "Rib fracture"],
       "answer": 0
@@ -453,7 +453,7 @@
       "type": "mc",
       "prompt": "The dermatome of which nerve root would be identified by a sensory test over the lateral upper arm (deltoid patch)?",
       "rationale": "",
-      "choices": ["C3–C4", "C4–C5", "C5–C6", "C6–C7", "C8–T1"],
+      "choices": ["C3â€“C4", "C4â€“C5", "C5â€“C6", "C6â€“C7", "C8â€“T1"],
       "answer": 1
     },
     {
@@ -533,7 +533,7 @@
       "type": "mc",
       "prompt": "Apart from the upper trunk, which nerve roots are involved in most brachial plexus injuries?",
       "rationale": "",
-      "choices": ["C5–T1", "C4–C8", "C6–T2", "C3–C8", "C4–T1"],
+      "choices": ["C5â€“T1", "C4â€“C8", "C6â€“T2", "C3â€“C8", "C4â€“T1"],
       "answer": 0
     },
     {
@@ -591,7 +591,7 @@
       "type": "mc",
       "prompt": "What are darkened patches of skin indicating an underlying collagen disease affecting connective tissue called?",
       "rationale": "",
-      "choices": ["Vitiligo", "Psoriasis", "Acanthosis nigricans", "Scleroderma", "Café au lait spots"],
+      "choices": ["Vitiligo", "Psoriasis", "Acanthosis nigricans", "Scleroderma", "CafÃ© au lait spots"],
       "answer": 4
     },
     {
@@ -637,7 +637,7 @@
     {
       "id": "pt1_q063",
       "type": "mc",
-      "prompt": "A patient comes into the clinic with point tenderness at the calcaneus. The pain is worse with the first few steps in the morning and after running for long distances. What condition is most likely the cause of the patient’s symptoms?",
+      "prompt": "A patient comes into the clinic with point tenderness at the calcaneus. The pain is worse with the first few steps in the morning and after running for long distances. What condition is most likely the cause of the patientâ€™s symptoms?",
       "rationale": "",
       "choices": ["Metatarsalgia", "Plantar fasciitis", "Achilles tendinitis", "Heel spur syndrome", "Tarsal tunnel syndrome"],
       "answer": 1
@@ -653,25 +653,26 @@
     {
       "id": "pt1_q065",
       "type": "match",
-      "prompt": "Match the suture type to its best description.",
+      "prompt": "Match each description to the correct suture type.",
       "rationale": "",
       "matching": {
+        "options": ["Absorbable sutures", "Nonabsorbable sutures", "Natural sutures", "Synthetic sutures"],
         "pairs": [
           {
-            "left": "Absorbable sutures",
-            "right": "Degrade and are eventually eliminated by either inflammatory reactions or hydrolysis"
+            "left": "Degrade and are eventually eliminated by either inflammatory reactions or hydrolysis",
+            "right": "Absorbable sutures"
           },
           {
-            "left": "Nonabsorbable sutures",
-            "right": "Weaken but are permanent"
+            "left": "Weaken but are permanent",
+            "right": "Nonabsorbable sutures"
           },
           {
-            "left": "Natural sutures",
-            "right": "Biological in origin and cause a more intense inflammatory reaction"
+            "left": "Biological in origin and cause a more intense inflammatory reaction",
+            "right": "Natural sutures"
           },
           {
-            "left": "Synthetic sutures",
-            "right": "Made from polymers and do not cause an inflammatory reaction"
+            "left": "Made from polymers and do not cause an inflammatory reaction",
+            "right": "Synthetic sutures"
           }
         ]
       },
@@ -852,7 +853,7 @@
     {
       "id": "pt1_q084",
       "type": "mc",
-      "prompt": "Which condition is a rectal temperature of 94.3°F (34.6°C) a sign of?",
+      "prompt": "Which condition is a rectal temperature of 94.3Â°F (34.6Â°C) a sign of?",
       "rationale": "",
       "choices": ["Hyperthermia", "Hypothermia", "Heat exhaustion", "Heat stroke", "Frostnip"],
       "answer": 1
@@ -929,10 +930,24 @@
     {
       "id": "pt1_q093",
       "type": "match",
-      "prompt": "Match the type of microaggression with its definition.\nMicroinsults: Insensitive or rude remarks that convey contempt for the target\nMicroassaults: Verbal, nonverbal, implicit, or explicit discriminatory behavior such as sexism or racism\nMicroinvalidations: Comments dismissive of the feelings or experiences of the person being addressed or denying one’s own biases toward a social group.\nTestlet Questions",
+      "prompt": "Match the type of microaggression with its definition.",
       "rationale": "",
       "matching": {
-        "pairs": []
+        "options": ["Microinsults", "Microassaults", "Microinvalidations"],
+        "pairs": [
+          {
+            "left": "Insensitive or rude remarks that convey contempt for the target",
+            "right": "Microinsults"
+          },
+          {
+            "left": "Verbal, nonverbal, implicit, or explicit discriminatory behavior such as sexism or racism",
+            "right": "Microassaults"
+          },
+          {
+            "left": "Comments dismissive of the feelings or experiences of the person being addressed or denying one's own biases toward a social group.",
+            "right": "Microinvalidations"
+          }
+        ]
       },
       "review_status": "matching_type_needs_html_support_or_conversion"
     },
@@ -940,7 +955,7 @@
       "id": "pt1_testlet_01",
       "type": "ft",
       "title": "Testlet 1",
-      "scenario": "Please use the following information to answer questions in this testlet.\nA men’s basketball player comes into the clinic holding his hand and lower arm. He is in obvious pain, with blood dripping off his fingertips, and his forearm has a 45° deformity.",
+      "scenario": "Please use the following information to answer questions in this testlet.\nA menâ€™s basketball player comes into the clinic holding his hand and lower arm. He is in obvious pain, with blood dripping off his fingertips, and his forearm has a 45Â° deformity.",
       "questions": [
         {
           "id": "pt1_t01_q094",
@@ -1080,59 +1095,59 @@
             "alt": ""
           },
           "dd": {
-            "tokens": ["→ Oval 1", "→ Oval 2", "→ Oval 3", "→ Oval 4", "→ Oval 5", "→ Oval 6", "→ Oval 7", "→ Oval 11", "→ Oval 10", "→ Oval 9", "→ Oval 8", "→ Oval 12", "→ Oval 13"],
+            "tokens": ["â†’ Oval 1", "â†’ Oval 2", "â†’ Oval 3", "â†’ Oval 4", "â†’ Oval 5", "â†’ Oval 6", "â†’ Oval 7", "â†’ Oval 11", "â†’ Oval 10", "â†’ Oval 9", "â†’ Oval 8", "â†’ Oval 12", "â†’ Oval 13"],
             "zones": [
               {
                 "label": "1",
-                "accept": "→ Oval 1"
+                "accept": "â†’ Oval 1"
               },
               {
                 "label": "2",
-                "accept": "→ Oval 2"
+                "accept": "â†’ Oval 2"
               },
               {
                 "label": "3",
-                "accept": "→ Oval 3"
+                "accept": "â†’ Oval 3"
               },
               {
                 "label": "4",
-                "accept": "→ Oval 4"
+                "accept": "â†’ Oval 4"
               },
               {
                 "label": "5",
-                "accept": "→ Oval 5"
+                "accept": "â†’ Oval 5"
               },
               {
                 "label": "6",
-                "accept": "→ Oval 6"
+                "accept": "â†’ Oval 6"
               },
               {
                 "label": "7",
-                "accept": "→ Oval 7"
+                "accept": "â†’ Oval 7"
               },
               {
                 "label": "8",
-                "accept": "→ Oval 11"
+                "accept": "â†’ Oval 11"
               },
               {
                 "label": "9",
-                "accept": "→ Oval 10"
+                "accept": "â†’ Oval 10"
               },
               {
                 "label": "10",
-                "accept": "→ Oval 9"
+                "accept": "â†’ Oval 9"
               },
               {
                 "label": "11",
-                "accept": "→ Oval 8"
+                "accept": "â†’ Oval 8"
               },
               {
                 "label": "12",
-                "accept": "→ Oval 12"
+                "accept": "â†’ Oval 12"
               },
               {
                 "label": "13",
-                "accept": "→ Oval 13"
+                "accept": "â†’ Oval 13"
               }
             ]
           },
@@ -1141,7 +1156,7 @@
         {
           "id": "pt1_t02_q103",
           "type": "ms",
-          "prompt": "At this point, the athletic trainer decides to take the patient’s blood pressure. What are the contraindications to taking blood pressure in a particular extremity? Choose all that apply.",
+          "prompt": "At this point, the athletic trainer decides to take the patientâ€™s blood pressure. What are the contraindications to taking blood pressure in a particular extremity? Choose all that apply.",
           "rationale": "",
           "choices": ["Mastectomy", "Central lines", "Ports", "Infection", "Injury to that extremity"],
           "answer": [0, 1, 2, 4]
@@ -1276,10 +1291,10 @@
           "prompt": "The athletic trainer does a range of motion assessment. Which motions should be assessed? Choose all that apply.\nAROM",
           "rationale": "",
           "choices": [
-            "Dorsiflexion (difficult to perform fully, is painful, reduced approximately 15°)",
-            "Plantar flexion (full and unrestricted, approximately 45°)",
-            "Inversion (full and unrestricted, 35°)",
-            "Eversion (full and unrestricted, 35°)",
+            "Dorsiflexion (difficult to perform fully, is painful, reduced approximately 15Â°)",
+            "Plantar flexion (full and unrestricted, approximately 45Â°)",
+            "Inversion (full and unrestricted, 35Â°)",
+            "Eversion (full and unrestricted, 35Â°)",
             "Great toe extension",
             "Great toe flexion"
           ],
@@ -1291,10 +1306,10 @@
           "prompt": "The athletic trainer does a range of motion assessment. Which motions should be assessed? Choose all that apply.\nPROM",
           "rationale": "",
           "choices": [
-            "Dorsiflexion (passive overpressure gains an additional 5°)",
+            "Dorsiflexion (passive overpressure gains an additional 5Â°)",
             "Plantar flexion (passive overpressure causes significant pain)",
-            "Inversion (passive overpressure gains an additional 3°)",
-            "Eversion (passive overpressure gains an additional 4°)",
+            "Inversion (passive overpressure gains an additional 3Â°)",
+            "Eversion (passive overpressure gains an additional 4Â°)",
             "Great toe extension",
             "Great toe flexion"
           ],
@@ -1318,7 +1333,7 @@
         {
           "id": "pt1_t03_q114",
           "type": "ms",
-          "prompt": "What is the athletic trainer’s differential diagnosis of this athlete’s injury? Please identify those injuries or conditions that you believe are a result of your examination. Choose all that apply.\nPatient Information: The following information has been provided:\nAROM\nDorsiflexion (Passive overpressure gains an additional 5°.)\nPlantar flexion (Passive overpressure causes significant pain.)\nInversion (Passive overpressure gains an additional 3°.)\nEversion (Passive overpressure gains an additional 4°.)\nPROM\nDorsiflexion (The patient tested 3-/5; fair-.)\nPlantar flexion (The patient tested 4/5; good.)\nInversion (The patient tested 4/5; good.)\nEversion (The patient tested 4/5; good.)",
+          "prompt": "What is the athletic trainerâ€™s differential diagnosis of this athleteâ€™s injury? Please identify those injuries or conditions that you believe are a result of your examination. Choose all that apply.\nPatient Information: The following information has been provided:\nAROM\nDorsiflexion (Passive overpressure gains an additional 5Â°.)\nPlantar flexion (Passive overpressure causes significant pain.)\nInversion (Passive overpressure gains an additional 3Â°.)\nEversion (Passive overpressure gains an additional 4Â°.)\nPROM\nDorsiflexion (The patient tested 3-/5; fair-.)\nPlantar flexion (The patient tested 4/5; good.)\nInversion (The patient tested 4/5; good.)\nEversion (The patient tested 4/5; good.)",
           "rationale": "",
           "choices": [
             "Deep vein thrombosis",
@@ -1406,7 +1421,7 @@
       "id": "pt1_testlet_05",
       "type": "ft",
       "title": "Testlet 5",
-      "scenario": "Please use the following information to answer the questions in this testlet.\nA patient has recently had hand surgery, and the incision is not healing as quickly as the physician would like. The patient is in no pain. The patient’s incision is on the volar surface of the hand, midway between the metacarpal heads and the wrist.",
+      "scenario": "Please use the following information to answer the questions in this testlet.\nA patient has recently had hand surgery, and the incision is not healing as quickly as the physician would like. The patient is in no pain. The patientâ€™s incision is on the volar surface of the hand, midway between the metacarpal heads and the wrist.",
       "questions": [
         {
           "id": "pt1_t05_q120",
@@ -1429,7 +1444,7 @@
         {
           "id": "pt1_t05_q122",
           "type": "dd",
-          "prompt": "The patient’s incision, indicated by the black line, is on the volar surface of the hand, midway between the metacarpal heads and the wrist. Click on the area where the active high voltage stimulation (HVS) electrode pad should be on this patient.",
+          "prompt": "The patientâ€™s incision, indicated by the black line, is on the volar surface of the hand, midway between the metacarpal heads and the wrist. Click on the area where the active high voltage stimulation (HVS) electrode pad should be on this patient.",
           "rationale": "",
           "image": {
             "id": "",
@@ -1480,7 +1495,7 @@
           "type": "ms",
           "prompt": "What are the tests that specifically test for lateral epicondylitis? Choose all that apply.",
           "rationale": "",
-          "choices": ["Rotary drawer test", "Cozen’s test", "Golfer’s elbow test", "Mill’s test", "Wartenberg’s Sign", "Third finger extension test"],
+          "choices": ["Rotary drawer test", "Cozen’s test", "Golfer's elbow test", "Mill’s test", "Wartenberg’s Sign", "Third finger extension test"],
           "answer": [1, 3, 5]
         },
         {
@@ -1510,7 +1525,7 @@
           "type": "ms",
           "prompt": "Conservative treatment has not helped this patient, and the physician determines that surgical intervention has the best chance for returning the patient to her previous level of competitiveness. What is the primary focus of immediate postoperative management for lateral epicondylitis surgery? Choose all that apply.",
           "rationale": "",
-          "choices": ["Immobilize in a posterior splint", "Isometric wrist extension", "Range of motion allowed from 45° to 120°", "Wound healing", "Isometric wrist flexion", "Compression"],
+          "choices": ["Immobilize in a posterior splint", "Isometric wrist extension", "Range of motion allowed from 45Â° to 120Â°", "Wound healing", "Isometric wrist flexion", "Compression"],
           "answer": [0, 3]
         },
         {
@@ -1545,7 +1560,7 @@
           "type": "mc",
           "prompt": "Read the patient information\nThe athletic trainer is suspicious that there is an underlying issue that may be a cause for referral to the physician. Given the signs and symptoms, what would the athletic trainer suspect is occurring? Choose all that apply.\nPatient Information: A week into the rehabilitation process, the patient begins to have the following signs and symptoms:\n(+) Increased pain that is disproportionate to the injury\n(+) Pain even with light touch\n(+) Decreased range of motion\n(+) Redness of upper extremity\n(+) Excessive sweating\n(+) Decreased distal pulses",
           "rationale": "",
-          "choices": ["Raynaud’s phenomenon", "Exertional rhabdomyolysis", "Complex regional pain syndrome", "Fibromyalgia", "Blood clot"],
+          "choices": ["Raynaudâ€™s phenomenon", "Exertional rhabdomyolysis", "Complex regional pain syndrome", "Fibromyalgia", "Blood clot"],
           "answer": 2
         },
         {
@@ -1612,13 +1627,13 @@
         {
           "id": "pt1_t07_q134",
           "type": "ms",
-          "prompt": "This patient has an antalgic gait. What signs would the athletic trainer likely see when evaluating this patient’s gait? Choose all that apply.",
+          "prompt": "This patient has an antalgic gait. What signs would the athletic trainer likely see when evaluating this patientâ€™s gait? Choose all that apply.",
           "rationale": "",
           "choices": [
             "Body weight is shifted over the unaffected hip.",
             "The velocity of walking and cadence are decreased.",
-            "Patient’s affected-side foot is plantar flexed.",
-            "Patient’s affected-side knee is flexed.",
+            "Patientâ€™s affected-side foot is plantar flexed.",
+            "Patientâ€™s affected-side knee is flexed.",
             "Stance phase on the affected leg is shorter.",
             "Swing phase of the unaffected leg is shorter."
           ],
@@ -1673,7 +1688,7 @@
         {
           "id": "pt1_t07_q138",
           "type": "dd",
-          "prompt": "The patient is ready to return to full-contact play, and the athletic trainer needs to create a protective thermoplastic pad to prevent reinjury. Place the layers in the order in which they would be applied to the hip, starting with the bottom layer. Choose only those that apply.\nSpray adherent → 1. ____________\nSelf-adhesive large doughnut → 2. ____________\nHard shell → 3. ____________\nElastic tape → 4. ____________\nSelf-adhesive small doughnut",
+          "prompt": "The patient is ready to return to full-contact play, and the athletic trainer needs to create a protective thermoplastic pad to prevent reinjury. Place the layers in the order in which they would be applied to the hip, starting with the bottom layer. Choose only those that apply.\nSpray adherent â†’ 1. ____________\nSelf-adhesive large doughnut â†’ 2. ____________\nHard shell â†’ 3. ____________\nElastic tape â†’ 4. ____________\nSelf-adhesive small doughnut",
           "rationale": "",
           "dd": {
             "tokens": [],
@@ -1727,7 +1742,7 @@
             "pairs": [
               {
                 "left": "Distal radioulnar anteroposterior (AP) and posteroanterior (PA) glides",
-                "right": "10° forearm supination"
+                "right": "10Â° forearm supination"
               },
               {
                 "left": "Radiocarpal and ulnocarpal joint",
@@ -1752,7 +1767,7 @@
         {
           "id": "pt1_t08_q142",
           "type": "ms",
-          "prompt": "Click on the areas to indicate the placement of the athletic trainer’s hands on this patient to perform wrist traction.",
+          "prompt": "Click on the areas to indicate the placement of the athletic trainerâ€™s hands on this patient to perform wrist traction.",
           "rationale": "",
           "image": {
             "id": "",
@@ -1814,8 +1829,8 @@
             "Improve head position to align with the trunk.",
             "Distribute equal pressure on elbows and toes.",
             "Align hips with back.",
-            "Keep elbows at a 90° angle.",
-            "Keep the feet at a 45° angle."
+            "Keep elbows at a 90Â° angle.",
+            "Keep the feet at a 45Â° angle."
           ],
           "answer": [0, 1, 2]
         },
@@ -1939,7 +1954,7 @@
       "type": "mc",
       "prompt": "What is the concept that helps to explain how bone develops its shape from forces that are exerted upon it?",
       "rationale": "",
-      "choices": ["Levers", "Wolff’s law", "Epiphyseal plates", "Osteoporosis"],
+      "choices": ["Levers", "Wolffâ€™s law", "Epiphyseal plates", "Osteoporosis"],
       "answer": 1
     },
     {
@@ -1967,7 +1982,7 @@
         "With ECG, it is the first choice for evaluating myocardial ischemia in individuals with a normal resting ECG and the ability to exercise.",
         "It is considered an invasive procedure.",
         "It should be performed in individuals with an intermediate risk of CAD.",
-        "If a lower rate–pressure product occurs during the onset of ischemia, this is always indicative of disease progression."
+        "If a lower rateâ€“pressure product occurs during the onset of ischemia, this is always indicative of disease progression."
       ],
       "answer": 0
     },
@@ -1976,7 +1991,7 @@
       "type": "mc",
       "prompt": "Which of the following is a tool to monitor how hard the patient perceives he is working during a GXT?",
       "rationale": "",
-      "choices": ["Angina scale", "Rate–pressure product", "Dyspnea scale", "RPE"],
+      "choices": ["Angina scale", "Rateâ€“pressure product", "Dyspnea scale", "RPE"],
       "answer": 3
     },
     {
@@ -2088,7 +2103,7 @@
     {
       "id": "pt1_q171",
       "type": "mc",
-      "prompt": "Which of the following is considered the “gold standard” assessment for depression?",
+      "prompt": "Which of the following is considered the â€œgold standardâ€ assessment for depression?",
       "rationale": "",
       "choices": ["Self-report questionnaires", "Cognitive-behavioral therapy", "Clinical interview by a trained mental health professional", "Asking the patient if he is depressed"],
       "answer": 2
@@ -2282,3 +2297,4 @@
     }
   ]
 }
+

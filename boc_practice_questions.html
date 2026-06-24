@@ -1535,6 +1535,14 @@
         return ok / total;
       }
 
+      function shouldUseColumnFill(zones, requestedColumns, explicitFill) {
+        if (explicitFill === "column") return true;
+        if (explicitFill === "row") return false;
+        if (requestedColumns !== 2 || !Array.isArray(zones) || zones.length <= requestedColumns) return false;
+
+        return zones.every((zone, index) => String(zone.label || "").trim() === String(index + 1));
+      }
+
       function getQuestionContextText(q) {
         const raw = typeof q.supporting_text === "string" ? q.supporting_text.trim() : "";
         if (!raw) return "";
@@ -2045,6 +2053,15 @@
         } else {
           zonesWrap = document.createElement("div");
           zonesWrap.className = "drop-zones";
+          const requestedColumns = Math.max(1, Number(q.dd.columns) || 2);
+          if (requestedColumns !== 2) {
+            zonesWrap.style.gridTemplateColumns = `repeat(${requestedColumns}, 1fr)`;
+          }
+          if (shouldUseColumnFill(zones, requestedColumns, q.dd.fill)) {
+            const rowCount = Math.ceil(zones.length / requestedColumns);
+            zonesWrap.style.gridAutoFlow = "column";
+            zonesWrap.style.gridTemplateRows = `repeat(${rowCount}, auto)`;
+          }
           zones.forEach((z) => zonesWrap.appendChild(buildZoneCard(z)));
         }
 
@@ -2219,7 +2236,7 @@
         stage.className = "hsStage";
 
         const img = document.createElement("img");
-        img.alt = "Hot spot image";
+        img.alt = hs.alt || "Hot spot image";
         img.src = hs.imageSrc || "";
         stage.appendChild(img);
 
@@ -2242,7 +2259,7 @@
 
         const posPill = document.createElement("span");
         posPill.className = "pill";
-        posPill.textContent = "circle: x=50.0%, y=50.0%";
+        posPill.textContent = "Drag the circle to the correct location.";
 
         const tolPill = document.createElement("span");
         tolPill.className = "pill";
@@ -2275,7 +2292,7 @@
           circlePos.yPct = clampPct(yPct);
           circle.style.left = circlePos.xPct + "%";
           circle.style.top = circlePos.yPct + "%";
-          posPill.textContent = `circle: x=${circlePos.xPct.toFixed(1)}%, y=${circlePos.yPct.toFixed(1)}%`;
+          posPill.textContent = "Drag the circle to the correct location.";
           circle.setAttribute("aria-valuenow", String(Math.round(circlePos.xPct)));
           circle.setAttribute("aria-valuetext", `x ${circlePos.xPct.toFixed(1)}%, y ${circlePos.yPct.toFixed(1)}%`);
         }

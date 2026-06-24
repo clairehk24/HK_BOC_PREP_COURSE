@@ -1088,13 +1088,6 @@
       .ddHotspotMarker.filled {
         background: rgba(228, 233, 240, 0.96);
       }
-      .coords-output {
-        font-family: var(--font-mono);
-        font-size: 0.88rem;
-        margin-top: 8px;
-        white-space: pre-wrap;
-        color: var(--muted);
-      }
       .matching-row.matching-row--narrow-left {
         grid-template-columns: minmax(120px, 0.6fr) minmax(280px, 1.4fr);
       }
@@ -1259,13 +1252,54 @@
             throw new Error("practice_test_2_questions.json missing { questions: [...] }");
           }
 
-          QUESTIONS = data.questions;
+          QUESTIONS = patchQuestionData(data.questions);
           init();
         } catch (err) {
           console.error("Failed to load practice_test_2_questions.json", err);
           const qText = document.getElementById("qText");
           if (qText) qText.textContent = "Error: could not load practice_test_2_questions.json. Keep this HTML file in the same folder as practice_test_2_questions.json.";
         }
+      }
+
+      function patchQuestionData(questions) {
+        return questions.map((q) => {
+          if (q.id !== "pt2_t03" || !Array.isArray(q.questions)) return q;
+
+          return {
+            ...q,
+            questions: q.questions.map((sq) => {
+              if (sq.id !== "pt2_t03_q115") return sq;
+
+              const { dd, ...rest } = sq;
+              return {
+                ...rest,
+                type: "match",
+                prompt: "During the musculoskeletal pre-participation physical examination screening, match each structure or function with the movement or position the physician is assessing.",
+                matching: {
+                  options: [
+                    "Patient stands facing the examiner",
+                    "Duck walking",
+                    "Patient stands with their back to the examiner",
+                    "Knees straight, and they touch their toes",
+                    "Abduction of the shoulder to 90°",
+                    "Total external rotation of the arms",
+                    "Shoulder shrug",
+                  ],
+                  pairs: [
+                    { left: "Acromioclavicular joints", right: "Patient stands facing the examiner" },
+                    { left: "Knee, hip, and ankle motion", right: "Duck walking" },
+                    { left: "Scoliosis and hip range of motion", right: "Patient stands with their back to the examiner" },
+                    { left: "Flexibility of the hamstrings and lower back", right: "Knees straight, and they touch their toes" },
+                    { left: "Strength of deltoid", right: "Abduction of the shoulder to 90°" },
+                    { left: "Range of motion at the shoulder", right: "Total external rotation of the arms" },
+                    { left: "Strength of trapezius", right: "Shoulder shrug" },
+                  ],
+                },
+                review_status: "converted_to_match",
+              };
+            }),
+          };
+        });
       }
 
       const STORAGE_KEY_ATTEMPTS = "quiz_attempts_v1";
@@ -1669,6 +1703,14 @@
         return ok / total;
       }
 
+      function shouldUseColumnFill(zones, requestedColumns, explicitFill) {
+        if (explicitFill === "column") return true;
+        if (explicitFill === "row") return false;
+        if (requestedColumns !== 2 || !Array.isArray(zones) || zones.length <= requestedColumns) return false;
+
+        return zones.every((zone, index) => String(zone.label || "").trim() === String(index + 1));
+      }
+
       function normalizeMatchKey(value) {
         return String(value || "")
           .trim()
@@ -1824,7 +1866,9 @@
           targetEl.appendChild(box);
         }
 
-        renderQuestionImage(q, targetEl);
+        if (!(q.type === "dd" && q.dd && q.dd.imagePlacement === "between")) {
+          renderQuestionImage(q, targetEl);
+        }
       }
 
       function normalizeMatchingPrompt(promptValue) {
@@ -1872,6 +1916,77 @@
         }
       }
 
+      function normalizeChoice(choice) {
+        if (choice && typeof choice === "object" && !Array.isArray(choice)) return choice;
+        return { text: choice == null ? "" : String(choice) };
+      }
+
+      function appendChoiceContent(labelEl, inputType, inputName, idx, choice) {
+        const input = document.createElement("input");
+        input.type = inputType;
+        if (inputName) input.name = inputName;
+        input.value = String(idx);
+
+        const row = document.createElement("div");
+        row.className = "answer-row";
+        row.appendChild(input);
+
+        const body = document.createElement("div");
+        body.className = "answer-body";
+
+        const choiceObj = normalizeChoice(choice);
+        const copy = document.createElement("div");
+        copy.className = "answer-copy";
+
+        if (choiceObj.label) {
+          const choiceLabel = document.createElement("span");
+          choiceLabel.className = "answer-choice-label";
+          choiceLabel.textContent = choiceObj.label;
+          copy.appendChild(choiceLabel);
+        }
+
+        if (typeof choiceObj.text === "string" && choiceObj.text) {
+          const text = document.createElement("span");
+          text.textContent = choiceObj.text;
+          copy.appendChild(text);
+        }
+
+        if (copy.childNodes.length) {
+          body.appendChild(copy);
+        }
+
+        if (choiceObj.image && choiceObj.image.src) {
+          const imageWrap = document.createElement("div");
+          imageWrap.className = "answer-image-wrap";
+
+          const img = document.createElement("img");
+          img.className = "answer-image";
+          img.src = choiceObj.image.src;
+          img.alt = choiceObj.image.alt || choiceObj.label || `Answer choice ${idx + 1} image`;
+          imageWrap.appendChild(img);
+
+          const actions = document.createElement("div");
+          actions.className = "answer-image-actions";
+
+          const enlargeBtn = document.createElement("button");
+          enlargeBtn.type = "button";
+          enlargeBtn.className = "secondary";
+          enlargeBtn.textContent = "Enlarge image";
+          enlargeBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            ensureImageViewer().open(img.src, img.alt);
+          });
+
+          actions.appendChild(enlargeBtn);
+          imageWrap.appendChild(actions);
+          body.appendChild(imageWrap);
+        }
+
+        row.appendChild(body);
+        labelEl.appendChild(row);
+      }
+
       function renderMC(q) {
         const wrap = document.createElement("div");
         wrap.className = "answers";
@@ -1880,7 +1995,7 @@
         q.choices.forEach((choice, idx) => {
           const div = document.createElement("label");
           div.className = "answer";
-          div.innerHTML = `<input type="radio" name="mc" value="${idx}" /> ${escapeHtml(choice)}`;
+          appendChoiceContent(div, "radio", "mc", idx, choice);
           wrap.appendChild(div);
         });
 
@@ -1910,7 +2025,7 @@
         q.choices.forEach((choice, idx) => {
           const div = document.createElement("label");
           div.className = "answer";
-          div.innerHTML = `<input type="checkbox" value="${idx}" /> ${escapeHtml(choice)}`;
+          appendChoiceContent(div, "checkbox", null, idx, choice);
           wrap.appendChild(div);
         });
 
@@ -2130,8 +2245,19 @@
         const shuffledTokens = shuffle(q.dd.tokens);
         shuffledTokens.forEach((token) => bank.appendChild(makeToken(token)));
 
+        const renderImageBetween = q.dd && q.dd.imagePlacement === "between";
+
         const zonesWrap = document.createElement("div");
         zonesWrap.className = "drop-zones";
+        const requestedColumns = Math.max(1, Number(q.dd.columns) || 2);
+        if (requestedColumns !== 2) {
+          zonesWrap.style.gridTemplateColumns = `repeat(${requestedColumns}, 1fr)`;
+        }
+        if (shouldUseColumnFill(q.dd.zones, requestedColumns, q.dd.fill)) {
+          const rowCount = Math.ceil(q.dd.zones.length / requestedColumns);
+          zonesWrap.style.gridAutoFlow = "column";
+          zonesWrap.style.gridTemplateRows = `repeat(${rowCount}, auto)`;
+        }
 
         q.dd.zones.forEach((z) => {
           const zone = document.createElement("div");
@@ -2226,6 +2352,9 @@
         });
 
         wrap.appendChild(bank);
+        if (renderImageBetween) {
+          renderQuestionImage(q, wrap);
+        }
         wrap.appendChild(zonesWrap);
         wrap.appendChild(hint);
         wrap.appendChild(btn);
@@ -2241,7 +2370,7 @@
         hotspotWrap.className = "hotspot-wrap";
 
         const img = document.createElement("img");
-        img.alt = "Hot spot image";
+        img.alt = hs.alt || "Hot spot image";
         img.src = hs.imageSrc || "";
         img.className = "hotspot-image";
         hotspotWrap.appendChild(img);
@@ -2279,10 +2408,6 @@
 
         wrap.appendChild(hotspotWrap);
         wrap.appendChild(hintRow);
-        const coordsOutput = document.createElement("pre");
-        coordsOutput.className = "coords-output";
-        coordsOutput.textContent = "";
-        wrap.appendChild(coordsOutput);
         wrap.appendChild(btnSubmit);
         targetEl.appendChild(wrap);
 
@@ -2297,22 +2422,8 @@
           if (isMulti) {
             posPill.textContent = `selected: ${selectedPoints.length}/${requiredCorrect}`;
           } else {
-            posPill.textContent = `circle: x=${circlePos.xPct.toFixed(1)}%, y=${circlePos.yPct.toFixed(1)}%`;
+            posPill.textContent = "Drag the circle to the correct location.";
           }
-          updateCoordsOutput();
-        }
-
-        function updateCoordsOutput() {
-          const lines = [];
-          if (isMulti) {
-            selectedPoints.forEach((point, index) => {
-              lines.push(`${index + 1}: x=${point.xPct.toFixed(2)}%, y=${point.yPct.toFixed(2)}%`);
-            });
-            if (!selectedPoints.length) lines.push("No markers placed.");
-          } else {
-            lines.push(`x=${circlePos.xPct.toFixed(2)}%, y=${circlePos.yPct.toFixed(2)}%`);
-          }
-          coordsOutput.textContent = lines.join("\n");
         }
 
         function setCirclePct(xPct, yPct) {
@@ -2389,7 +2500,7 @@
           circle.setAttribute("role", "application");
           circle.setAttribute("aria-label", "Hot spot marker. Use arrow keys to move. Hold Shift for larger moves.");
           overlay.appendChild(circle);
-          posPill.textContent = "circle: x=50.0%, y=50.0%";
+          posPill.textContent = "Drag the circle to the correct location.";
           btnReset.textContent = "Center circle";
           btnReset.addEventListener("click", () => setCirclePct(50, 50));
 
@@ -2596,6 +2707,7 @@
           if (sq.type === "mc") renderSubMC(sq, i);
           else if (sq.type === "ms") renderSubMS(sq, i);
           else if (sq.type === "dd") renderSubDD(sq, i);
+          else if (sq.type === "hs") renderSubHS(sq, i);
           else if (sq.type === "match") renderSubMatch(sq, i);
           else {
             const warn = document.createElement("div");
@@ -2616,7 +2728,7 @@
           sq.choices.forEach((choice, idx) => {
             const div = document.createElement("label");
             div.className = "answer";
-            div.innerHTML = `<input type="radio" name="ft_mc_${index}" value="${idx}" /> ${escapeHtml(choice)}`;
+            appendChoiceContent(div, "radio", `ft_mc_${index}`, idx, choice);
             wrap.appendChild(div);
           });
 
@@ -2647,7 +2759,7 @@
           sq.choices.forEach((choice, idx) => {
             const div = document.createElement("label");
             div.className = "answer";
-            div.innerHTML = `<input type="checkbox" value="${idx}" /> ${escapeHtml(choice)}`;
+            appendChoiceContent(div, "checkbox", null, idx, choice);
             wrap.appendChild(div);
           });
 
@@ -2674,6 +2786,15 @@
           renderDD(sq, subArea, (score01) => {
             state.testlet.subScores[index] = score01;
             showSubFeedback(score01, sq.rationale, score01 < 1 ? "Partial credit enabled for drag-and-drop." : undefined);
+            updateNav();
+            saveProgress();
+          });
+        }
+
+        function renderSubHS(sq, index) {
+          renderHS(sq, subArea, (score01) => {
+            state.testlet.subScores[index] = score01;
+            showSubFeedback(score01, sq.rationale, score01 < 1 ? "Try repositioning the hotspot and submit again." : undefined);
             updateNav();
             saveProgress();
           });

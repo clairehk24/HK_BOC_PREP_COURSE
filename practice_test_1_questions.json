@@ -1,4 +1,4 @@
-﻿{
+{
   "version": "1.1",
   "source": "Practice Test 1.docx",
   "questions": [
@@ -1185,6 +1185,7 @@
           "rationale": "",
           "hs": {
             "imageSrc": "images\\Practice Test 1\\0547S_0032.jpg",
+            "alt": "Front view of a shirtless man standing with one arm slightly away from the body and the palm facing forward, used for hotspot placement on the upper extremity.",
             "answers": [
               {
                 "xPct": 49.2,
@@ -1560,6 +1561,7 @@
           "rationale": "",
           "hs": {
             "imageSrc": "images\\Practice Test 1\\0547S_0032.jpg",
+            "alt": "Front view of a shirtless man standing with one arm slightly away from the body and the palm facing forward, used for hotspot placement on the upper extremity.",
             "answers": [
               {
                 "xPct": 44.9,
@@ -1577,6 +1579,7 @@
           "rationale": "",
           "hs": {
             "imageSrc": "images\\Practice Test 1\\0547S_0032.jpg",
+            "alt": "Front view of a shirtless man standing with one arm slightly away from the body and the palm facing forward, used for hotspot placement on the upper extremity.",
             "answers": [
               {
                 "xPct": 51.6,
@@ -1701,6 +1704,7 @@
           "rationale": "",
           "hs": {
             "imageSrc": "images\\Practice Test 1\\0547S_0032.jpg",
+            "alt": "Front view of a shirtless man standing with one arm slightly away from the body and the palm facing forward, used for hotspot placement on the upper extremity.",
             "answers": [
               {
                 "xPct": 47.29,
@@ -1947,6 +1951,7 @@
           "rationale": "",
           "hs": {
             "imageSrc": "images\\Practice Test 1\\0257P_H6K_0646.jpg",
+            "alt": "Close-up of a hand and wrist held in a claw-like position, used for hotspot placement of hand positions during wrist traction.",
             "answers": [
               {
                 "xPct": 16.94,

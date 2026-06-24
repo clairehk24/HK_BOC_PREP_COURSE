@@ -1671,6 +1671,14 @@
         return ok / total;
       }
 
+      function shouldUseColumnFill(zones, requestedColumns, explicitFill) {
+        if (explicitFill === "column") return true;
+        if (explicitFill === "row") return false;
+        if (requestedColumns !== 2 || !Array.isArray(zones) || zones.length <= requestedColumns) return false;
+
+        return zones.every((zone, index) => String(zone.label || "").trim() === String(index + 1));
+      }
+
       function normalizeMatchKey(value) {
         return String(value || "")
           .trim()
@@ -2181,6 +2189,15 @@
 
         const zonesWrap = document.createElement("div");
         zonesWrap.className = "drop-zones";
+        const requestedColumns = Math.max(1, Number(q.dd.columns) || 2);
+        if (requestedColumns !== 2) {
+          zonesWrap.style.gridTemplateColumns = `repeat(${requestedColumns}, 1fr)`;
+        }
+        if (shouldUseColumnFill(q.dd.zones, requestedColumns, q.dd.fill)) {
+          const rowCount = Math.ceil(q.dd.zones.length / requestedColumns);
+          zonesWrap.style.gridAutoFlow = "column";
+          zonesWrap.style.gridTemplateRows = `repeat(${rowCount}, auto)`;
+        }
 
         q.dd.zones.forEach((z) => {
           const zone = document.createElement("div");
@@ -2448,7 +2465,7 @@
         hotspotWrap.className = "hotspot-wrap";
 
         const img = document.createElement("img");
-        img.alt = "Hot spot image";
+        img.alt = hs.alt || "Hot spot image";
         img.src = hs.imageSrc || "";
         img.className = "hotspot-image";
         hotspotWrap.appendChild(img);

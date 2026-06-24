@@ -1,4 +1,4 @@
-{
+﻿{
   "version": "1.1",
   "source": "Practice Test 2.docx",
   "questions": [
@@ -13,7 +13,7 @@
     {
       "id": "pt2_q002",
       "type": "mc",
-      "prompt": "A coach has requested information about the status of an athlete’s injury. What should the athletic trainer do with such a request?",
+      "prompt": "A coach has requested information about the status of an athlete's injury. What should the athletic trainer do with such a request?",
       "rationale": "",
       "choices": [
         "Ask the coach for a request in writing for documentation purposes.",
@@ -27,9 +27,9 @@
     {
       "id": "pt2_q003",
       "type": "mc",
-      "prompt": "Which of the following documents should be in a patient’s medical record?",
+      "prompt": "Which of the following documents should be in a patient's medical record?",
       "rationale": "",
-      "choices": ["Daily treatment logs", "Equipment checkout", "Informed consents", "NCAA drug usage chart", "Patient’s medical password to online records"],
+      "choices": ["Daily treatment logs", "Equipment checkout", "Informed consents", "NCAA drug usage chart", "Patient's medical password to online records"],
       "answer": 2
     },
     {
@@ -131,7 +131,7 @@
         "Every year, regardless of whether it has been used",
         "Every two years, regardless of whether it has been used",
         "Every five years, regardless of whether it has been used",
-        "According to the manufacturer’s warranty",
+        "According to the manufacturer's warranty",
         "According to NOCSAE standards"
       ],
       "answer": 3
@@ -200,7 +200,7 @@
       "prompt": "When using the BESS Test, what are patients given a point for doing?",
       "rationale": "",
       "choices": [
-        "Not being able to touch one’s nose",
+        "Not being able to touch one's nose",
         "Not holding their head in hyperextension with eyes closed",
         "Not being able to walk heel to toe",
         "Opening their eyes",
@@ -216,7 +216,7 @@
       "choices": [
         "The patient becomes more careless about their own health.",
         "The patient shows a lack of motivation.",
-        "It lowers the patient’s coping threshold and attention span.",
+        "It lowers the patient's coping threshold and attention span.",
         "The patient has more physical complaints and may have a fake injury.",
         "The patient takes their stress upon others."
       ],
@@ -230,7 +230,7 @@
       "choices": [
         "Place the patient in a quiet environment, lower the lights, and refer to a physician.",
         "Have the patient sit out of practice and games until they can pass the concussion testing standards for return to play.",
-        "Test the patient’s orientation, concentration, memory and do a cranial nerve assessment and then do some exertional testing.",
+        "Test the patient's orientation, concentration, memory and do a cranial nerve assessment and then do some exertional testing.",
         "Call 9-1-1, monitor the vital signs, and begin CPR as needed.",
         "Look for obvious deformities and increased pain, and place ice on the area of impact."
       ],
@@ -273,7 +273,7 @@
       "type": "mc",
       "prompt": "According to the scope of practice, who is considered the final determination regarding the skills one can administer as an athletic trainer?",
       "rationale": "",
-      "choices": ["School district", "State law", "National Athletic Trainers’ Association", "Commission on Accreditation of AT Education", "Board of Certification"],
+      "choices": ["School district", "State law", "National Athletic Trainers' Association", "Commission on Accreditation of AT Education", "Board of Certification"],
       "answer": 1
     },
     {
@@ -285,7 +285,7 @@
         "The level of education a patient has achieved",
         "The physical characteristics of the patient",
         "The age or gender of the patient",
-        "Not understanding or asking about the patient’s values",
+        "Not understanding or asking about the patient's values",
         "The previous reputation that the patient had"
       ],
       "answer": 3
@@ -316,11 +316,11 @@
     },
     {
       "id": "pt2_q031",
-      "type": "mc",
+      "type": "ms",
       "prompt": "Which of the following emergency interventions are athletic trainers permitted to administer all when medical assessment deems necessary? Choose all that apply.",
       "rationale": "",
       "choices": ["Administration of AED", "Injection of corticosteroids", "Stabilization of the c-spine", "Treatment for psychogenic shock", "Application of a tourniquet"],
-      "answer": 0
+      "answer": [0, 2, 3, 4]
     },
     {
       "id": "pt2_q032",
@@ -335,7 +335,7 @@
       "type": "mc",
       "prompt": "In facility design, it is important to have a clear view of as many areas of the athletic training facility as possible. However, it is not always possible to do so. Which would be the most important area to have direct vision of your office area for safety reasons?",
       "rationale": "",
-      "choices": ["Hydrotherapy area", "Doctor’s office", "Storage room", "Taping area", "Rehabilitation area"],
+      "choices": ["Hydrotherapy area", "Doctor's office", "Storage room", "Taping area", "Rehabilitation area"],
       "answer": 0
     },
     {
@@ -373,7 +373,7 @@
     {
       "id": "pt2_q038",
       "type": "mc",
-      "prompt": "A patient is recovering from a stomach virus and needs a diet to prevent the trigger of diarrhea. What substances and foods should be eliminated from the patient’s diet?",
+      "prompt": "A patient is recovering from a stomach virus and needs a diet to prevent the trigger of diarrhea. What substances and foods should be eliminated from the patient's diet?",
       "rationale": "",
       "choices": [
         "Caffeine, fructose, lactose, and sorbitol",
@@ -433,7 +433,7 @@
       "type": "mc",
       "prompt": "Which ribs are most often impacted by costochondritis?",
       "rationale": "",
-      "choices": ["C1–C4", "C2–C5", "T1–T4", "T2–T5", "T6–T8"],
+      "choices": ["C1-C4", "C2-C5", "T1-T4", "T2-T5", "T6-T8"],
       "answer": 3
     },
     {
@@ -461,9 +461,9 @@
     {
       "id": "pt2_q046",
       "type": "mc",
-      "prompt": "Which of the following documents should be in a patient’s medical record?",
+      "prompt": "Which of the following documents should be in a patient's medical record?",
       "rationale": "",
-      "choices": ["Daily treatment logs", "Equipment checkout", "Informed consents", "NCAA drug usage chart", "Patient’s medical password to online records"],
+      "choices": ["Daily treatment logs", "Equipment checkout", "Informed consents", "NCAA drug usage chart", "Patient's medical password to online records"],
       "answer": 2
     },
     {
@@ -471,7 +471,7 @@
       "type": "mc",
       "prompt": "Which insurance plan covers active and retired military members?",
       "rationale": "",
-      "choices": ["Medicaid", "Primary insurance", "Tricare", "Preferred provider organization", "Workers’ compensation"],
+      "choices": ["Medicaid", "Primary insurance", "Tricare", "Preferred provider organization", "Workers' compensation"],
       "answer": 2
     },
     {
@@ -557,7 +557,7 @@
     {
       "id": "pt2_q055",
       "type": "mc",
-      "prompt": "During the preparticipation physical examination, a peak expiratory flow meter is used to provide a baseline assessment for those with asthma. When checking a patient’s peak expiratory flow before their daily participation, what peak expiratory flow would restrict activity?",
+      "prompt": "During the preparticipation physical examination, a peak expiratory flow meter is used to provide a baseline assessment for those with asthma. When checking a patient's peak expiratory flow before their daily participation, what peak expiratory flow would restrict activity?",
       "rationale": "",
       "choices": ["95% of their baseline", "90% of their baseline", "Between 85% and 90% of their baseline", "Between 50% and 79% of their baseline", "Between 80% and 90% of their baseline"],
       "answer": 3
@@ -613,7 +613,7 @@
       "rationale": "",
       "choices": [
         "When the patient is under the age of 18",
-        "When the patient’s life is in danger",
+        "When the patient's life is in danger",
         "When pain is too high for the patient to tolerate",
         "When there is no pulse in the radial pulse",
         "When permission is granted by existing standing orders"
@@ -719,7 +719,7 @@
     {
       "id": "pt2_q070",
       "type": "mc",
-      "prompt": "Which position in boy’s and men’s lacrosse requires a throat and check protector at the high school and collegiate level?",
+      "prompt": "Which position in boy's and men's lacrosse requires a throat and check protector at the high school and collegiate level?",
       "rationale": "",
       "choices": ["Forward", "Midfielder", "Defense", "Goalie", "Those with previous neck injuries"],
       "answer": 3
@@ -727,7 +727,7 @@
     {
       "id": "pt2_q071",
       "type": "mc",
-      "prompt": "An industrial worker is being seen for his upper arm. The patient reports feeling a popping sensation when he reached out to catch a heavy box that fell from a shelf overhead. When you perform a manual muscle test, you notice a “Popeye” deformity. Which muscle has the patient most likely ruptured?",
+      "prompt": "An industrial worker is being seen for his upper arm. The patient reports feeling a popping sensation when he reached out to catch a heavy box that fell from a shelf overhead. When you perform a manual muscle test, you notice a \"Popeye\" deformity. Which muscle has the patient most likely ruptured?",
       "rationale": "",
       "choices": ["Fracture of the mandible", "Long head of the biceps rupture", "Anterior dislocation of the shoulder", "Fracture of the zygomatic arch", "Rupture of the globe of the eye"],
       "answer": 1
@@ -789,7 +789,10 @@
       "rationale": "",
       "choices": ["Internal obliques", "External obliques", "Transverse abdominis", "Quadratus lumborum", "Rectus abdominis"],
       "answer": 3,
-      "review_status": "image_needed_or_confirm_no_image_701376"
+      "image": {
+        "src": "images/Practice Test 2/0350P_0101.jpg",
+        "alt": "Strength test demonstration for identifying the specific muscle being tested."
+      }
     },
     {
       "id": "pt2_q077",
@@ -812,7 +815,7 @@
       "type": "mc",
       "prompt": "Children, particularly boys, can develop knee pain from excessive or repetitive jumping or excessive loading to the knee. What is this condition called?",
       "rationale": "",
-      "choices": ["Osteoarthritis", "Osgood-Schlatter’s disease", "Turner syndrome", "Fracture"],
+      "choices": ["Osteoarthritis", "Osgood-Schlatter's disease", "Turner syndrome", "Fracture"],
       "answer": 1
     },
     {
@@ -930,7 +933,7 @@
       "type": "mc",
       "prompt": "What is hallux valgus often associated with?",
       "rationale": "",
-      "choices": ["Lordosis", "Hyperextended knees", "Excessive pronation", "Morton’s toe"],
+      "choices": ["Lordosis", "Hyperextended knees", "Excessive pronation", "Morton's toe"],
       "answer": 2
     },
     {
@@ -950,7 +953,7 @@
     {
       "id": "pt2_q092",
       "type": "mc",
-      "prompt": "During excessive thoracic kyphosis, a person’s shoulders will be rounded. Which stretch is the most appropriate to address the muscle tightness?",
+      "prompt": "During excessive thoracic kyphosis, a person's shoulders will be rounded. Which stretch is the most appropriate to address the muscle tightness?",
       "rationale": "",
       "choices": ["Pectoral door stretch", "Cat-camel yoga stretch", "first rib self-mobilization with belt", "Serratus anterior bear hugs"],
       "answer": 0
@@ -982,7 +985,7 @@
     {
       "id": "pt2_q096",
       "type": "mc",
-      "prompt": "Which of the following tests are used to establish an athlete’s level of consciousness?",
+      "prompt": "Which of the following tests are used to establish an athlete's level of consciousness?",
       "rationale": "",
       "choices": ["SAC test", "BESS test", "Glasgow Coma Scale", "Percussion test"],
       "answer": 2
@@ -1036,14 +1039,14 @@
       "id": "pt2_t01",
       "type": "ft",
       "title": "Testlet 1",
-      "scenario": "A client comes with a prescription for rehabilitation for a right-shoulder impingement syndrome. The physician asks that the athletic trainer evaluate and treat as needed. The following is the history of this injury:\nIt is insidious in onset after playing tennis.\nIt started about a month prior.\nThe client plays tennis three times per week for at least an hour.\nThe client has no serious health issues.\nThe client does not take any medications.\nThere is a dull ache in the shoulder, especially when the patient sleeps on their side.",
+      "scenario": "A client comes with a prescription for rehabilitation for a right-shoulder impingement syndrome. The physician asks that the athletic trainer evaluate and treat as needed. The following is the history of this injury:\n     -It is insidious in onset after playing tennis.\n     -It started about a month prior.\n     -The client plays tennis three times per week for at least an hour.\n     -The client has no serious health issues.\n     -The client does not take any medications.\n     -There is a dull ache in the shoulder, especially when the patient sleeps on their side.",
       "questions": [
         {
           "id": "pt2_t01_q102",
           "type": "ms",
-          "prompt": "The athletic trainer moves the patient’s arm to 90° abduction, 90° horizontal adduction, and glenohumeral internal rotation. Which of the following tests describes this motion? Choose all that apply.",
+          "prompt": "The athletic trainer moves the patient's arm to 90° abduction, 90° horizontal adduction, and glenohumeral internal rotation. Which of the following tests describes this motion? Choose all that apply.",
           "rationale": "",
-          "choices": ["Hawkins-Kennedy", "Yergason’s", "Speed’s", "Neer’s"],
+          "choices": ["Hawkins-Kennedy", "Yergason's", "Speed's", "Neer's"],
           "answer": [0, 3]
         },
         {
@@ -1066,7 +1069,7 @@
           "prompt": "Read the patient information. Given this information, the athletic trainer must decide on the rehabilitation progression. What instructions and actions should be part of the initial phase of rehabilitation? Choose all that apply.",
           "rationale": "",
           "context_title": "Patient Information",
-          "supporting_text": "The athletic trainer now has the following information:\n(+) Hawkins-Kennedy test\n(+)Forward head\n(+)Kyphosis\n(+)Hypomobile thoracic spine\n(+) Weak posterior thoracic musculature\n(+) Tight anterior thoracic musculature\n(+) Pain in the subacromial space when the arm is overhead",
+          "supporting_text": "The athletic trainer now has the following information:\n     -(+) Hawkins-Kennedy test\n     -(+)Forward head\n     -(+)Kyphosis\n     -(+)Hypomobile thoracic spine\n     -(+) Weak posterior thoracic musculature\n     -(+) Tight anterior thoracic musculature\n     -(+) Pain in the subacromial space when the arm is overhead",
           "choices": [
             "Place the athlete in a sling.",
             "Avoid lying on the injured shoulder.",
@@ -1078,19 +1081,25 @@
         },
         {
           "id": "pt2_t01_q105",
-          "type": "dd",
-          "prompt": "The athletic trainer elects to use shortwave diathermy with this patient. Click on the areas where the capacitive pads should be on this patient.\n*Rectangle 1\n*Rectangle 8",
+          "type": "hs",
+          "prompt": "The athletic trainer elects to use shortwave diathermy with this patient. Click on the areas where the capacitive pads should be on this patient.",
           "rationale": "",
-          "dd": {
-            "tokens": [],
-            "zones": []
-          },
-          "image": {
-            "id": "",
-            "src": "images/Practice Test 2/pt2_image_001.png",
-            "alt": "Question image"
-          },
-          "review_status": "drag_drop_or_hotspot_needs_manual_setup"
+          "hs": {
+            "imageSrc": "images/Practice Test 2/0762P_0453.jpg",
+            "alt": "Side view of a bare upper body and trunk used to identify where capacitive shortwave diathermy pads should be placed.",
+            "answers": [
+              {
+                "xPct": 21.65,
+                "yPct": 56.38
+              },
+              {
+                "xPct": 52.24,
+                "yPct": 58.62
+              }
+            ],
+            "tolerancePct": 5,
+            "requiredCorrect": 2
+          }
         },
         {
           "id": "pt2_t01_q106",
@@ -1139,61 +1148,181 @@
         {
           "id": "pt2_t02_q108",
           "type": "dd",
-          "prompt": "One station in the examination requires the athletic trainer to take the athletes’ blood pressure. What is the correct order of steps to follow to obtain a blood pressure measurement? Drag the list items into the correct order.\nSelect adult cuff.\nInflate bladder to 200 mmHg.\nPlace the stethoscope over the brachial artery at the cubital fossa.\nDeflate bladder at 3 mmHg per second.\nListen to the first sound.\nNote when sound disappears.\nRecord blood pressure.",
+          "prompt": "One station in the examination requires the athletic trainer to take the athletes' blood pressure. What is the correct order of steps to follow to obtain a blood pressure measurement? Drag the list items into the correct order.",
           "rationale": "",
           "dd": {
-            "tokens": [],
-            "zones": []
-          },
-          "review_status": "drag_drop_or_hotspot_needs_manual_setup"
+            "columns": 2,
+            "fill": "column",
+            "tokens": [
+              "Select adult cuff.",
+              "Inflate bladder to 200 mmHg.",
+              "Place the stethoscope over the brachial artery at the cubital fossa.",
+              "Deflate bladder at 3 mmHg per second.",
+              "Listen to the first sound.",
+              "Note when sound disappears.",
+              "Record blood pressure."
+            ],
+            "zones": [
+              {
+                "label": "1",
+                "accept": "Select adult cuff."
+              },
+              {
+                "label": "2",
+                "accept": "Inflate bladder to 200 mmHg."
+              },
+              {
+                "label": "3",
+                "accept": "Place the stethoscope over the brachial artery at the cubital fossa."
+              },
+              {
+                "label": "4",
+                "accept": "Deflate bladder at 3 mmHg per second."
+              },
+              {
+                "label": "5",
+                "accept": "Listen to the first sound."
+              },
+              {
+                "label": "6",
+                "accept": "Note when sound disappears."
+              },
+              {
+                "label": "7",
+                "accept": "Record blood pressure."
+              }
+            ]
+          }
         },
         {
           "id": "pt2_t02_q109",
           "type": "dd",
           "prompt": "Read the additional information. Then drag the label for each artery to the appropriate place on the line drawing. Use the pulses only once.",
           "rationale": "",
-          "supporting_text": "The athletic trainer has set up pre-participation physical examinations for 18- to 21-year-old athletes. As athletes move through the examination stations, the athletic trainer needs to demonstrate competency in a variety of areas.\nAt one station, the athletic trainer must check each athlete’s pulse at the following arteries.\nPosterior tibial → __________A________\nBrachial → __________D________\nFemoral → _______C___________\nUlnar → ________B__________\nCarotid → ______E____________\nSuperficial temporal → _______F___________\nRadial → ________G__________\nDorsalis pedis → ________H__________\nExternal maxillary → Hotspot 5",
+          "supporting_text": "The athletic trainer has set up pre-participation physical examinations for 18- to 21-year-old athletes. As athletes move through the examination stations, the athletic trainer needs to demonstrate competency in a variety of areas.\nAt one station, the athletic trainer must check each athlete's pulse at the following arteries:",
           "dd": {
-            "tokens": [],
-            "zones": []
+            "tokens": ["Posterior tibial", "Brachial", "Femoral", "Ulnar", "Carotid", "Superficial temporal", "Radial", "Dorsalis pedis", "External maxillary"],
+            "zones": [
+              {
+                "label": "A",
+                "accept": "Posterior tibial"
+              },
+              {
+                "label": "B",
+                "accept": "Ulnar"
+              },
+              {
+                "label": "C",
+                "accept": "Femoral"
+              },
+              {
+                "label": "D",
+                "accept": "Brachial"
+              },
+              {
+                "label": "E",
+                "accept": "Carotid"
+              },
+              {
+                "label": "F",
+                "accept": "Superficial temporal"
+              },
+              {
+                "label": "G",
+                "accept": "Radial"
+              },
+              {
+                "label": "H",
+                "accept": "Dorsalis pedis"
+              },
+              {
+                "label": "I",
+                "accept": "External maxillary"
+              }
+            ]
           },
           "image": {
             "id": "",
-            "src": "images/Practice Test 2/pt2_image_002.png",
-            "alt": "Question image"
-          },
-          "review_status": "drag_drop_or_hotspot_needs_manual_setup"
+            "src": "images\\Practice Test 2\\E9036_701378.jpg",
+            "alt": "Anterior body line drawing labeled A through I for pulse-point identification."
+          }
         },
         {
           "id": "pt2_t02_q110",
-          "type": "dd",
-          "prompt": "The athletic trainer has set up pre-participation physical examinations for 18- to 21-year-old athletes. As athletes move through the examination stations, the athletic trainer needs to demonstrate competency in a variety of areas.\nAt one station, the athletic trainer must listen to each athlete’s breath sounds. Where on the back are the six places to listen for breath sounds? Click the six areas on the back.\n*Rectangle 2\n*Rectangle 3\n*Rectangle 4\n*Rectangle 5\n*Rectangle 6\n*Rectangle 7",
+          "type": "hs",
+          "prompt": "The athletic trainer has set up pre-participation physical examinations for 18- to 21-year-old athletes. As athletes move through the examination stations, the athletic trainer needs to demonstrate competency in a variety of areas.\nAt one station, the athletic trainer must listen to each athlete's breath sounds. Where on the back are the six places to listen for breath sounds? Click the six areas on the back.",
           "rationale": "",
-          "dd": {
-            "tokens": [],
-            "zones": []
-          },
-          "image": {
-            "id": "",
-            "src": "images/Practice Test 2/pt2_image_003.png",
-            "alt": "Question image"
-          },
-          "review_status": "drag_drop_or_hotspot_needs_manual_setup"
+          "hs": {
+            "imageSrc": "images/Practice Test 2/0762P_0470.jpg",
+            "alt": "Posterior view of a bare back and shoulders used to identify six breath-sound auscultation points.",
+            "answers": [
+              {
+                "xPct": 35.76,
+                "yPct": 48.22
+              },
+              {
+                "xPct": 67.76,
+                "yPct": 48.03
+              },
+              {
+                "xPct": 33.65,
+                "yPct": 64.51
+              },
+              {
+                "xPct": 69.65,
+                "yPct": 65.09
+              },
+              {
+                "xPct": 34.82,
+                "yPct": 81.77
+              },
+              {
+                "xPct": 68.0,
+                "yPct": 80.61
+              }
+            ],
+            "tolerancePct": 5,
+            "requiredCorrect": 6
+          }
         },
         {
           "id": "pt2_t02_q111",
           "type": "match",
-          "prompt": "During the examinations, the athletic trainer makes general observations of each athlete, including any unusual skin color. Match the skin color with the likely condition.\nBright red—Carbon monoxide poisoning or heatstroke\nPallor—Decreased circulation\nCyanotic—Low oxygen levels\nJaundice—Liver disease\nDark-red pupil—High blood pressure\nWhite translucent, waxy—Frozen skin",
+          "prompt": "During the examinations, the athletic trainer makes general observations of each athlete, including any unusual skin color. Match the skin color with the likely condition.",
           "rationale": "",
           "matching": {
-            "pairs": []
-          },
-          "review_status": "matching_type_needs_html_support_or_conversion"
+            "pairs": [
+              {
+                "left": "Bright red",
+                "right": "Carbon monoxide poisoning or heatstroke"
+              },
+              {
+                "left": "Pallor",
+                "right": "Decreased circulation"
+              },
+              {
+                "left": "Cyanotic",
+                "right": "Low oxygen levels"
+              },
+              {
+                "left": "Jaundice",
+                "right": "Liver disease"
+              },
+              {
+                "left": "Dark-red pupil",
+                "right": "High blood pressure"
+              },
+              {
+                "left": "White translucent, waxy",
+                "right": "Frozen skin"
+              }
+            ]
+          }
         },
         {
           "id": "pt2_t02_q112",
           "type": "ms",
-          "prompt": "The athletic trainer has set up pre-participation physical examinations for 18- to 21-year-old athletes. As athletes move through the examination stations, the athletic trainer needs to demonstrate competency in a variety of areas.\nWhich of the following items found in a physical or health history form would be recognized as a concern for further investigation? Choose all that apply.",
+          "prompt": "Which of the following items found in a physical or health history form would be recognized as a concern for further investigation? Choose all that apply.",
           "rationale": "",
           "choices": ["Hemoglobinuria", "Absent testicle", "History of repeated episodes of diarrhea", "Controlled diabetes", "Furuncles", "Blood pressure 160/70 mmHg", "Anemia"],
           "answer": [0, 1, 2, 4, 5, 6]
@@ -1216,7 +1345,7 @@
             "With the athlete",
             "Once a year",
             "Once every two years",
-            "Once during the athlete’s career",
+            "Once during the athlete's career",
             "Whenever the athlete becomes ill or injured",
             "Confirmed with the parent",
             "Review with the athletic administration"
@@ -1226,7 +1355,7 @@
         {
           "id": "pt2_t03_q114",
           "type": "ms",
-          "prompt": "Occasionally, an abnormality or condition is found that may limit an athlete’s participation or predispose them to further injury. In these cases, which of the following questions should the team physician review when the athlete’s ability to meet the criteria for participation is being determined? Choose all that apply.",
+          "prompt": "Occasionally, an abnormality or condition is found that may limit an athlete's participation or predispose them to further injury. In these cases, which of the following questions should the team physician review when the athlete's ability to meet the criteria for participation is being determined? Choose all that apply.",
           "rationale": "",
           "choices": [
             "Does the condition pose an unacceptable risk or place the athlete at increased risk for further injury?",
@@ -1240,13 +1369,49 @@
         {
           "id": "pt2_t03_q115",
           "type": "dd",
-          "prompt": "During the musculoskeletal pre-participation physical examination screening, what would the physician be looking for during each of the movements given below? Drag the answer to the blank.\nAcromioclavicular joints → 1. Patient stands facing the examiner\nKnee, hip, and ankle motion → 2. Duck walking\nScoliosis and hip range of motion → 3. Patient stands with their back to the examiner\nFlexibility of the hamstrings and lower back → 4. Knees straight, and they touch their toes\nStrength of deltoid → 5. Abduction of the shoulder to 90°\nRange of motion at the shoulder → 6. Total external rotation of the arms\nStrength of trapezius → 7. Shoulder shrug",
+          "prompt": "During the musculoskeletal pre-participation physical examination screening, what would the physician be looking for during each of the movements below? Drag each answer to the correct numbered movement.\n1. Patient stands facing the examiner\n2. Duck walking\n3. Patient stands with their back to the examiner\n4. Knees straight, and they touch their toes\n5. Abduction of the shoulder to 90 degrees\n6. Total external rotation of the arms\n7. Shoulder shrug",
           "rationale": "",
           "dd": {
-            "tokens": [],
-            "zones": []
-          },
-          "review_status": "drag_drop_or_hotspot_needs_manual_setup"
+            "tokens": [
+              "Acromioclavicular joints",
+              "Knee, hip, and ankle motion",
+              "Scoliosis and hip range of motion",
+              "Flexibility of the hamstrings and lower back",
+              "Strength of deltoid",
+              "Range of motion at the shoulder",
+              "Strength of trapezius"
+            ],
+            "zones": [
+              {
+                "label": "1",
+                "accept": "Acromioclavicular joints"
+              },
+              {
+                "label": "2",
+                "accept": "Knee, hip, and ankle motion"
+              },
+              {
+                "label": "3",
+                "accept": "Scoliosis and hip range of motion"
+              },
+              {
+                "label": "4",
+                "accept": "Flexibility of the hamstrings and lower back"
+              },
+              {
+                "label": "5",
+                "accept": "Strength of deltoid"
+              },
+              {
+                "label": "6",
+                "accept": "Range of motion at the shoulder"
+              },
+              {
+                "label": "7",
+                "accept": "Strength of trapezius"
+              }
+            ]
+          }
         },
         {
           "id": "pt2_t03_q116",
@@ -1287,7 +1452,7 @@
       "id": "pt2_t04",
       "type": "ft",
       "title": "Testlet 4",
-      "scenario": "Allison is a junior at Dublin Area High School and is a starter on the girls’ basketball team. Although Allison is not a captain, she is one of the better players, averaging 22 points per game, 10 assists, and 14 rebounds per game. She is a very pleasant young lady, is in the National Honor Society, and is near the top of her class with a 3.92 GPA. Allison would like to study medicine, but does not know what area specifically she would like to focus on. Recently, she suffered from a mild sprained ankle. She missed the game yesterday and is likely to miss the next two games due to her injury. The athletic trainer has cared for all of Allison’s injuries and knows her and her family well. Allison has even done some babysitting for the athletic trainer. Since the injury, she has not been her usual self. Allison has seemed “sad” or depressed, a little more irritable, and does not feel as if she is part of the basketball team since she is not playing. The athletic trainer is not positive but thinks the smell of alcohol has been on or around Allison the day before yesterday and again today.",
+      "scenario": "Allison is a junior at Dublin Area High School and is a starter on the girls' basketball team. Although Allison is not a captain, she is one of the better players, averaging 22 points per game, 10 assists, and 14 rebounds per game. She is a very pleasant young lady, is in the National Honor Society, and is near the top of her class with a 3.92 GPA. Allison would like to study medicine, but does not know what area specifically she would like to focus on. Recently, she suffered from a mild sprained ankle. She missed the game yesterday and is likely to miss the next two games due to her injury. The athletic trainer has cared for all of Allison's injuries and knows her and her family well. Allison has even done some babysitting for the athletic trainer. Since the injury, she has not been her usual self. Allison has seemed \"sad\" or depressed, a little more irritable, and does not feel as if she is part of the basketball team since she is not playing. The athletic trainer is not positive but thinks the smell of alcohol has been on or around Allison the day before yesterday and again today.",
       "questions": [
         {
           "id": "pt2_t04_q118",
@@ -1307,10 +1472,10 @@
         {
           "id": "pt2_t04_q119",
           "type": "ms",
-          "prompt": "Read the patient’s history. What questions would you ask related to the cut, annoyed, guilty, and eye (CAGE) mnemonic? Choose all that apply.",
+          "prompt": "Read the patient's history. What questions would you ask related to the cut, annoyed, guilty, and eye (CAGE) mnemonic? Choose all that apply.",
           "rationale": "",
           "context_title": "Patient History",
-          "supporting_text": "The history of the patient reveals the following:\nThe patient failed her class exam.\nHer boyfriend wants to take a break.\nShe cannot play because of an ankle sprain.\nThe patient is defensive but admits to drinking.",
+          "supporting_text": "The history of the patient reveals the following:\n     -The patient failed her class exam.\n     -Her boyfriend wants to take a break.\n     -She cannot play because of an ankle sprain.\n     -The patient is defensive but admits to drinking.",
           "choices": [
             "Have you ever used a nightcap to help you sleep in the evening?",
             "Have you ever felt angry or annoyed when someone asks or confronts you about your alcohol use?",
@@ -1329,7 +1494,7 @@
           "prompt": "What are the key concepts to have a successful intervention when dealing with someone who is involved in substance abuse? Choose all that apply.",
           "rationale": "",
           "choices": [
-            "The individual’s willingness to find alternative coping strategies to deal with their stress",
+            "The individual's willingness to find alternative coping strategies to deal with their stress",
             "Involvement in treatment by family and friends",
             "Effective detoxification and treatment",
             "Loss of playing privileges",
@@ -1343,12 +1508,12 @@
         {
           "id": "pt2_t04_q121",
           "type": "ms",
-          "prompt": "Several comorbidities may accompany substance abuse. Which of the following are comorbid conditions that may accompany one’s substance abuse? Choose all that apply.",
+          "prompt": "Several comorbidities may accompany substance abuse. Which of the following are comorbid conditions that may accompany one's substance abuse? Choose all that apply.",
           "rationale": "",
           "choices": [
             "Hypotension",
             "Marital or family dysfunction",
-            "Restless, fidgety, or always “on the go”",
+            "Restless, fidgety, or always \"on the go\"",
             "Weakness and fatigue",
             "Physical injury to self",
             "Difficulty in engaging in quiet activities"
@@ -1358,7 +1523,7 @@
         {
           "id": "pt2_t04_q122",
           "type": "ms",
-          "prompt": "Several comorbidities may accompany substance abuse. Which of the following are comorbid conditions that may accompany one’s substance abuse? Choose all that apply.",
+          "prompt": "Several comorbidities may accompany substance abuse. Which of the following are comorbid conditions that may accompany one's substance abuse? Choose all that apply.",
           "rationale": "",
           "choices": [
             "Malnutrition",
@@ -1392,7 +1557,7 @@
       "id": "pt2_t05",
       "type": "ft",
       "title": "Testlet 5",
-      "scenario": "In the athletic trainer’s observation, a young tennis player who is normally very outgoing is no longer engaged with the team. The athletic trainer notices lethargy, loss of weight, and poor performance, and the athlete seems to be going through the motions at practice.",
+      "scenario": "In the athletic trainer's observation, a young tennis player who is normally very outgoing is no longer engaged with the team. The athletic trainer notices lethargy, loss of weight, and poor performance, and the athlete seems to be going through the motions at practice.",
       "questions": [
         {
           "id": "pt2_t05_q124",
@@ -1416,10 +1581,10 @@
         {
           "id": "pt2_t05_q125",
           "type": "ms",
-          "prompt": "Read the patient’s history. What are the keys to determining if a patient has burned out using the Maslach Burnout Inventory? Choose all that apply.",
+          "prompt": "Read the patient's history. What are the keys to determining if a patient has burned out using the Maslach Burnout Inventory? Choose all that apply.",
           "rationale": "",
           "context_title": "Patient History",
-          "supporting_text": "The history reveals the patient is experiencing the following:\nChronic fatigue, with emotional exhaustion\nA hard time sleeping and has lost some weight\nLow self-esteem and low motivation for sport\nA hard time concentrating",
+          "supporting_text": "The history reveals the patient is experiencing the following:\n     -Chronic fatigue, with emotional exhaustion\n     -A hard time sleeping and has lost some weight\n     -Low self-esteem and low motivation for sport\n     -A hard time concentrating",
           "choices": [
             "Emotional exhaustion",
             "External focus on other things",
@@ -1427,7 +1592,7 @@
             "Depersonalization",
             "Low sense of personal accomplishment",
             "Need for isolation",
-            "Inability to control one’s thoughts"
+            "Inability to control one's thoughts"
           ],
           "answer": [0, 3, 4]
         },
@@ -1490,18 +1655,37 @@
         {
           "id": "pt2_t06_q129",
           "type": "dd",
-          "prompt": "Look at the figures and identify the form of headache described by dragging the answer to the correct blank.\nCluster → __________________\nTension → __________________\nSinus → __________________\nMigraine → __________________",
+          "prompt": "Look at the figures and identify the form of headache described by dragging the answer to the correct blank.",
           "rationale": "",
           "dd": {
-            "tokens": [],
-            "zones": []
+            "columns": 4,
+            "imagePlacement": "between",
+            "tokens": ["Sinus", "Cluster", "Tension", "Migraine"],
+            "zones": [
+              {
+                "label": "1",
+                "accept": "Sinus"
+              },
+              {
+                "label": "2",
+                "accept": "Cluster"
+              },
+              {
+                "label": "3",
+                "accept": "Tension"
+              },
+              {
+                "label": "4",
+                "accept": "Migraine"
+              }
+            ]
           },
           "image": {
             "id": "",
-            "src": "images/Practice Test 2/pt2_image_004.png",
-            "alt": "Question image"
-          },
-          "review_status": "drag_drop_or_hotspot_needs_manual_setup"
+            "src": "images/Practice Test 2/E9036_701382.jpg",
+            "alt": "Four headache illustrations with captions describing sinus, cluster, tension, and migraine headache patterns.",
+            "width": "min(1120px, 100%)"
+          }
         },
         {
           "id": "pt2_t06_q130",
@@ -1559,7 +1743,7 @@
           "prompt": "Read the patient information. Which areas of the body should the athletic trainer visually inspect? Choose all that apply.",
           "rationale": "",
           "context_title": "Patient Information",
-          "supporting_text": "The patient has shared the following information:\n(+) No physical trauma\n(+) Some pain in the periumbilical area, but not defined\n(-) Mental health or drug use issues\n(+) Lack of desire to eat\n(+) Nausea\n(+) Feels warmer than normal",
+          "supporting_text": "The patient has shared the following information:\n     -(+) No physical trauma\n     -(+) Some pain in the periumbilical area, but not defined\n     -(-) Mental health or drug use issues\n     -(+) Lack of desire to eat\n     -(+) Nausea\n     -(+) Feels warmer than normal",
           "choices": ["Muscle tone of the hip", "Throat", "Skin", "Hair", "Capillary refill", "Muscle tone of the abdomen"],
           "answer": [0, 1, 2, 4, 5]
         },
@@ -1569,8 +1753,8 @@
           "prompt": "Read the visual inspection. Which analysis should the athletic trainer do at this point? Choose all that apply.",
           "rationale": "",
           "context_title": "Visual Inspection",
-          "supporting_text": "The visual inspection reveals the following:\n(-) Muscle tone is normal\n(+) Patient feels more comfortable with knees and hips flexed\n(-) Throat\n(-) Skin",
-          "choices": ["Abdominal quadrant analysis", "Dunphy’s sign", "Rovsing’s sign", "Abdominal auscultation", "Abdominal circumference measurement"],
+          "supporting_text": "The visual inspection reveals the following:\n     -(-) Muscle tone is normal\n     -(+) Patient feels more comfortable with knees and hips flexed\n     -(-) Throat\n     -(-) Skin",
+          "choices": ["Abdominal quadrant analysis", "Dunphy's sign", "Rovsing's sign", "Abdominal auscultation", "Abdominal circumference measurement"],
           "answer": [0, 1, 2, 3]
         },
         {
@@ -1579,7 +1763,7 @@
           "prompt": "Read the patient assessment. Which of the following injuries or illnesses should be suspected based on the signs and symptoms provided? Choose all that apply.",
           "rationale": "",
           "context_title": "Patient Assessment",
-          "supporting_text": "The patient assessment reveals the following information:\n(+) McBurney’s point\n(+)Dunphy’s sign\n(+) Rovsing’s sign\n(-) Throat visual",
+          "supporting_text": "The patient assessment reveals the following information:\n     -(+) McBurney's point\n     -(+)Dunphy's sign\n     -(+) Rovsing's sign\n     -(-) Throat visual",
           "choices": ["Urinary tract infection", "Pancreatitis", "Kidney infection", "Peritonitis", "Ovarian cyst", "Appendicitis", "Piriformis syndrome"],
           "answer": [3, 5]
         },
@@ -1614,37 +1798,149 @@
           "type": "ms",
           "prompt": "Which of the following are the proper materials to select to cast an ankle fracture? Choose all that apply.",
           "rationale": "",
-          "choices": ["a.", "e.", "h.", "b.", "f.", "c.", "g.", "d."],
-          "answer": [0, 1, 3, 5, 7],
-          "image": {
-            "id": "",
-            "src": "images/Practice Test 2/pt2_image_005.png",
-            "alt": "Question image"
-          }
+          "choices": [
+            {
+              "label": "A.",
+              "image": {
+                "src": "images/Practice Test 2/701383.jpg",
+                "alt": "Roll of white stockinette for cast application."
+              }
+            },
+            {
+              "label": "B.",
+              "image": {
+                "src": "images/Practice Test 2/701384.jpg",
+                "alt": "Roll of white fiberglass casting tape beside a sealed foil package."
+              }
+            },
+            {
+              "label": "C.",
+              "image": {
+                "src": "images/Practice Test 2/701385.jpg",
+                "alt": "Box of 4-inch Scotchcast conformable roll splint next to a folded sheet of padding."
+              }
+            },
+            {
+              "label": "D.",
+              "image": {
+                "src": "images/Practice Test 2/701386.jpg",
+                "alt": "Two small rolls of white undercast padding."
+              }
+            },
+            {
+              "label": "E.",
+              "image": {
+                "src": "images/Practice Test 2/701387.jpg",
+                "alt": "Metal bandage scissors with a blunt tip."
+              }
+            },
+            {
+              "label": "F.",
+              "image": {
+                "src": "images/Practice Test 2/375291.jpg",
+                "alt": "Elastic bandage being wrapped around an ankle and foot."
+              }
+            },
+            {
+              "label": "G.",
+              "image": {
+                "src": "images/Practice Test 2/701389.jpg",
+                "alt": "Tall controlled-ankle-motion walking boot."
+              }
+            },
+            {
+              "label": "H.",
+              "image": {
+                "src": "images/Practice Test 2/701390.jpg",
+                "alt": "Clinician applying a white short leg cast to a patient's lower leg."
+              }
+            }
+          ],
+          "answer": [0, 1, 2, 3, 4]
         },
         {
           "id": "pt2_t08_q139",
           "type": "ms",
           "prompt": "The athletic trainer is to create a cast out of fiberglass that is a non-weight-bearing short leg cast. Which of the following is a proper non-weight-bearing short leg cast? Choose all that apply.",
           "rationale": "",
-          "choices": ["a.", "c.", "b.", "d."],
-          "answer": [0, 3],
-          "image": {
-            "id": "",
-            "src": "images/Practice Test 2/pt2_image_006.png",
-            "alt": "Question image"
-          }
+          "choices": [
+            {
+              "label": "A.",
+              "image": {
+                "src": "images/Practice Test 2/701391.jpg",
+                "alt": "Rigid walking boot with straps extending from foot to below the knee."
+              }
+            },
+            {
+              "label": "B.",
+              "image": {
+                "src": "images/Practice Test 2/701392.jpg",
+                "alt": "White short leg cast extending from below the knee to the foot."
+              }
+            },
+            {
+              "label": "C.",
+              "image": {
+                "src": "images/Practice Test 2/701393.jpg",
+                "alt": "Elevated lower leg wearing a white short leg cast with the knee bent."
+              }
+            },
+            {
+              "label": "D.",
+              "image": {
+                "src": "images/Practice Test 2/0943P_1639.jpg",
+                "alt": "Clinician supporting a patient wearing a bright pink long leg cast extending from foot to above the knee."
+              }
+            }
+          ],
+          "answer": [0, 3]
         },
         {
           "id": "pt2_t08_q140",
           "type": "dd",
-          "prompt": "When removing the cast with an oscillating cast saw, what are the best techniques in order? Drag the list items into the correct order.\nInsert plastic cutting guard.\nPlace the cast saw perpendicular to the surface.\nApply downward pressure until there is decreased resistance.\nMove the cast saw a little more each time, the length of the cast.\nCut a longitudinal line on both sides of the cast.\nOpen the cast with a cast spreader.\nUse bandage scissors to cut through roller bandages and stockinette.",
+          "prompt": "When removing the cast with an oscillating cast saw, what are the best techniques in order? Drag the list items into the correct order.",
           "rationale": "",
           "dd": {
-            "tokens": [],
-            "zones": []
-          },
-          "review_status": "drag_drop_or_hotspot_needs_manual_setup"
+            "tokens": [
+              "Insert plastic cutting guard.",
+              "Place the cast saw perpendicular to the surface.",
+              "Apply downward pressure until there is decreased resistance.",
+              "Move the cast saw a little more each time, the length of the cast.",
+              "Cut a longitudinal line on both sides of the cast.",
+              "Open the cast with a cast spreader.",
+              "Use bandage scissors to cut through roller bandages and stockinette."
+            ],
+            "zones": [
+              {
+                "label": "1",
+                "accept": "Insert plastic cutting guard."
+              },
+              {
+                "label": "2",
+                "accept": "Place the cast saw perpendicular to the surface."
+              },
+              {
+                "label": "3",
+                "accept": "Apply downward pressure until there is decreased resistance."
+              },
+              {
+                "label": "4",
+                "accept": "Move the cast saw a little more each time, the length of the cast."
+              },
+              {
+                "label": "5",
+                "accept": "Cut a longitudinal line on both sides of the cast."
+              },
+              {
+                "label": "6",
+                "accept": "Open the cast with a cast spreader."
+              },
+              {
+                "label": "7",
+                "accept": "Use bandage scissors to cut through roller bandages and stockinette."
+              }
+            ]
+          }
         }
       ],
       "rationale": ""
@@ -1664,8 +1960,8 @@
           "answer": 5,
           "image": {
             "id": "",
-            "src": "images/Practice Test 2/pt2_image_007.png",
-            "alt": "Question image"
+            "src": "images/Practice Test 2/SS2848002.jpg",
+            "alt": "Close-up of grouped pearly skin papules with central umbilication."
           }
         },
         {
@@ -1679,17 +1975,17 @@
         {
           "id": "pt2_t09_q143",
           "type": "ms",
-          "prompt": "When recording verbal physician’s orders for medication, what information should be documented? Choose all that apply.",
+          "prompt": "When recording verbal physician's orders for medication, what information should be documented? Choose all that apply.",
           "rationale": "",
           "choices": [
-            "The patient’s name",
+            "The patient's name",
             "Name of the medication",
-            "The athletic trainer’s signature",
+            "The athletic trainer's signature",
             "Name of physician",
             "Time",
             "Date",
-            "The patient’s medical history",
-            "Physician’s phone number",
+            "The patient's medical history",
+            "Physician's phone number",
             "How the patient was infected",
             "Have the physician cosign when possible"
           ],
@@ -1776,24 +2072,81 @@
         {
           "id": "pt2_t10_q149",
           "type": "dd",
-          "prompt": "Arrange the first six steps of the treatment protocol for the paraffin bath in the appropriate order for a dipping technique. Drag the items into the correct order.\nThe temperature should be checked for an appropriate temperature of 126 °F (52 °C).\nThe patient should wash their hands.\nProvide instructions to the patient.\nGuide the hand into the paraffin, making sure the patient does not contact the bottom.\nHold the hand in the paraffin bath for 2 to 3 seconds.\nRemove the hand from the paraffin bath.",
+          "prompt": "Arrange the first six steps of the treatment protocol for the paraffin bath in the appropriate order for a dipping technique. Drag the items into the correct order.",
           "rationale": "",
           "dd": {
-            "tokens": [],
-            "zones": []
-          },
-          "review_status": "drag_drop_or_hotspot_needs_manual_setup"
+            "tokens": [
+              "The temperature should be checked for an appropriate temperature of 126 °F (52 °C).",
+              "The patient should wash their hands.",
+              "Provide instructions to the patient.",
+              "Guide the hand into the paraffin, making sure the patient does not contact the bottom.",
+              "Hold the hand in the paraffin bath for 2 to 3 seconds.",
+              "Remove the hand from the paraffin bath."
+            ],
+            "zones": [
+              {
+                "label": "1",
+                "accept": "The temperature should be checked for an appropriate temperature of 126 °F (52 °C)."
+              },
+              {
+                "label": "2",
+                "accept": "The patient should wash their hands."
+              },
+              {
+                "label": "3",
+                "accept": "Provide instructions to the patient."
+              },
+              {
+                "label": "4",
+                "accept": "Guide the hand into the paraffin, making sure the patient does not contact the bottom."
+              },
+              {
+                "label": "5",
+                "accept": "Hold the hand in the paraffin bath for 2 to 3 seconds."
+              },
+              {
+                "label": "6",
+                "accept": "Remove the hand from the paraffin bath."
+              }
+            ]
+          }
         },
         {
           "id": "pt2_t10_q150",
           "type": "dd",
-          "prompt": "Arrange the remaining five steps of the treatment protocol for the paraffin bath in the appropriate order for a dipping technique. Drag the items into the correct order.\nRepeat dipping half the number of the designated treatment.\nPlace a plastic bag over the area, followed by an oven mitt or hydrocollator pads.\nCheck the patient’s response after the first 5 minutes.\nLeave it on for 20 to 30 minutes.\nThe temperature should be raised to 212 °F (100 °C) to kill any bacteria.",
+          "prompt": "Arrange the remaining five steps of the treatment protocol for the paraffin bath in the appropriate order for a dipping technique. Drag the items into the correct order.",
           "rationale": "",
           "dd": {
-            "tokens": [],
-            "zones": []
-          },
-          "review_status": "drag_drop_or_hotspot_needs_manual_setup"
+            "tokens": [
+              "Repeat dipping half the number of the designated treatment.",
+              "Place a plastic bag over the area, followed by an oven mitt or hydrocollator pads.",
+              "Check the patient's response after the first 5 minutes.",
+              "Leave it on for 20 to 30 minutes.",
+              "The temperature should be raised to 212 °F (100 °C) to kill any bacteria."
+            ],
+            "zones": [
+              {
+                "label": "1",
+                "accept": "Repeat dipping half the number of the designated treatment."
+              },
+              {
+                "label": "2",
+                "accept": "Place a plastic bag over the area, followed by an oven mitt or hydrocollator pads."
+              },
+              {
+                "label": "3",
+                "accept": "Check the patient's response after the first 5 minutes."
+              },
+              {
+                "label": "4",
+                "accept": "Leave it on for 20 to 30 minutes."
+              },
+              {
+                "label": "5",
+                "accept": "The temperature should be raised to 212 °F (100 °C) to kill any bacteria."
+              }
+            ]
+          }
         },
         {
           "id": "pt2_t10_q151",
@@ -1815,13 +2168,54 @@
         {
           "id": "pt2_t11_q152",
           "type": "dd",
-          "prompt": "What is the correct order in working with this patient? Drag the items into the correct order.\nSee if the scene is safe.\nAsk the patient if they can speak, cough, or if they are choking.\nConfirm they are choking\nHave someone call 9-1-1 and bring the AED\nGive five back blows\nGive five abdominal thrusts\nContinue with five back blows\nContinue with five abdominal thrusts",
+          "prompt": "What is the correct order in working with this patient? Drag the items into the correct order.",
           "rationale": "",
           "dd": {
-            "tokens": [],
-            "zones": []
-          },
-          "review_status": "drag_drop_or_hotspot_needs_manual_setup"
+            "tokens": [
+              "See if the scene is safe.",
+              "Ask the patient if they can speak, cough, or if they are choking.",
+              "Confirm they are choking",
+              "Have someone call 9-1-1 and bring the AED",
+              "Give five back blows",
+              "Give five abdominal thrusts",
+              "Continue with five back blows",
+              "Continue with five abdominal thrusts"
+            ],
+            "zones": [
+              {
+                "label": "1",
+                "accept": "See if the scene is safe."
+              },
+              {
+                "label": "2",
+                "accept": "Ask the patient if they can speak, cough, or if they are choking."
+              },
+              {
+                "label": "3",
+                "accept": "Confirm they are choking"
+              },
+              {
+                "label": "4",
+                "accept": "Have someone call 9-1-1 and bring the AED"
+              },
+              {
+                "label": "5",
+                "accept": "Give five back blows"
+              },
+              {
+                "label": "6",
+                "accept": "Give five abdominal thrusts"
+              },
+              {
+                "label": "7",
+                "accept": "Continue with five back blows"
+              },
+              {
+                "label": "8",
+                "accept": "Continue with five abdominal thrusts"
+              }
+            ]
+          }
         },
         {
           "id": "pt2_t11_q153",
@@ -1840,13 +2234,59 @@
         {
           "id": "pt2_t11_q154",
           "type": "dd",
-          "prompt": "The coach becomes unconscious and slumps to the floor. What are the next steps to supporting an unconscious complete airway obstruction when the person shows no signs of life? Drag the items into the proper order to treat this patient.\nDetermine the level of consciousness.\nRoll the patient to the supine position if necessary.\nOpen the airway.\nLook, listen, and feel for breathing (no air flow).\nGive two rescue breaths (air does not make the chest rise or fall).\nRe-tilt the head.\nGive two rescue breaths (air does not make the chest rise or fall).\nGive five chest compressions.\nCheck the mouth for an obstruction.",
+          "prompt": "The coach becomes unconscious and slumps to the floor. What are the next steps to supporting an unconscious complete airway obstruction when the person shows no signs of life? Drag the items into the proper order to treat this patient.",
           "rationale": "",
           "dd": {
-            "tokens": [],
-            "zones": []
-          },
-          "review_status": "drag_drop_or_hotspot_needs_manual_setup"
+            "tokens": [
+              "Determine the level of consciousness.",
+              "Roll the patient to the supine position if necessary.",
+              "Open the airway.",
+              "Look, listen, and feel for breathing (no air flow).",
+              "Give two rescue breaths (air does not make the chest rise or fall).",
+              "Re-tilt the head.",
+              "Give two rescue breaths (air does not make the chest rise or fall).",
+              "Give five chest compressions.",
+              "Check the mouth for an obstruction."
+            ],
+            "zones": [
+              {
+                "label": "1",
+                "accept": "Determine the level of consciousness."
+              },
+              {
+                "label": "2",
+                "accept": "Roll the patient to the supine position if necessary."
+              },
+              {
+                "label": "3",
+                "accept": "Open the airway."
+              },
+              {
+                "label": "4",
+                "accept": "Look, listen, and feel for breathing (no air flow)."
+              },
+              {
+                "label": "5",
+                "accept": "Give two rescue breaths (air does not make the chest rise or fall)."
+              },
+              {
+                "label": "6",
+                "accept": "Re-tilt the head."
+              },
+              {
+                "label": "7",
+                "accept": "Give two rescue breaths (air does not make the chest rise or fall)."
+              },
+              {
+                "label": "8",
+                "accept": "Give five chest compressions."
+              },
+              {
+                "label": "9",
+                "accept": "Check the mouth for an obstruction."
+              }
+            ]
+          }
         },
         {
           "id": "pt2_t11_q155",
@@ -1908,14 +2348,14 @@
         "Joint Commission",
         "Joint Review Committee on Accreditation of Health Care Organizations (JRCAHO)",
         "Board of Certification (BOC)",
-        "National Athletic Trainers’ Associations (NATA)"
+        "National Athletic Trainers' Associations (NATA)"
       ],
       "answer": 1
     },
     {
       "id": "pt2_q159",
       "type": "mc",
-      "prompt": "What is a plan for expressing the organization’s intended behavior relative to a specific program subfunction?",
+      "prompt": "What is a plan for expressing the organization's intended behavior relative to a specific program subfunction?",
       "rationale": "",
       "choices": ["Process", "Procedure", "Policy", "Value statement", "Vision statement"],
       "answer": 2
@@ -1939,7 +2379,7 @@
     {
       "id": "pt2_q162",
       "type": "mc",
-      "prompt": "Which of the following is critical to increase efficiency in a sports medicine program’s budgeting process?",
+      "prompt": "Which of the following is critical to increase efficiency in a sports medicine program's budgeting process?",
       "rationale": "",
       "choices": ["Needs assessment", "Inventory management", "Bid sheets", "Funding allocation", "Spending allocation"],
       "answer": 1
@@ -2040,10 +2480,10 @@
       "prompt": "Which of these statements about the glycemic index of foods is correct?",
       "rationale": "",
       "choices": [
-        "Low glycemic–index foods include less protein and fiber than high glycemic–index foods.",
+        "Low glycemic-index foods include less protein and fiber than high glycemic-index foods.",
         "The glycemic index of foods was initially developed to help athletes.",
-        "High glycemic–index foods may help endurance athletes perform better by sustaining their energy during long bouts of exercise.",
-        "High glycemic–index foods are best consumed immediately after exercise to rapidly refuel muscles."
+        "High glycemic-index foods may help endurance athletes perform better by sustaining their energy during long bouts of exercise.",
+        "High glycemic-index foods are best consumed immediately after exercise to rapidly refuel muscles."
       ],
       "answer": 3
     },
@@ -2077,53 +2517,121 @@
     "top_level_json_items": 130,
     "focused_testlets": 11,
     "subquestions_inside_testlets": 56,
-    "embedded_images_extracted": 7,
-    "rows_needing_review": 13,
-    "note": "Converted from practice_test_2_review.xlsx. Items with review_status still need manual setup or confirmation before full use.",
-    "domain_filtering": "removed_for_full_practice_test"
+    "embedded_images_extracted": 18,
+    "rows_needing_review": 0,
+    "note": "Finalized practice test JSON after manual review of answers, images, hotspot, matching, and drag-and-drop items.",
+    "domain_filtering": "removed_for_full_practice_test",
+    "distinct_image_references": 18,
+    "image_manifest_scope": "distinct image references currently used by questions"
   },
   "image_manifest": [
     {
-      "image_sequence": 1,
-      "relationship_id": "rId13",
-      "extracted_filename": "pt2_image_001.png",
-      "path": "images/Practice Test 2/pt2_image_001.png"
+      "image_index": 1,
+      "src": "images/Practice Test 2/0350P_0101.jpg",
+      "used_by": ["pt2_q076"],
+      "usage_types": ["question_image"]
     },
     {
-      "image_sequence": 2,
-      "relationship_id": "rId14",
-      "extracted_filename": "pt2_image_002.png",
-      "path": "images/Practice Test 2/pt2_image_002.png"
+      "image_index": 2,
+      "src": "images/Practice Test 2/0762P_0453.jpg",
+      "used_by": ["pt2_t01_q105"],
+      "usage_types": ["hotspot_image"]
     },
     {
-      "image_sequence": 3,
-      "relationship_id": "rId15",
-      "extracted_filename": "pt2_image_003.png",
-      "path": "images/Practice Test 2/pt2_image_003.png"
+      "image_index": 3,
+      "src": "images/Practice Test 2/0762P_0470.jpg",
+      "used_by": ["pt2_t02_q110"],
+      "usage_types": ["hotspot_image"]
     },
     {
-      "image_sequence": 4,
-      "relationship_id": "rId16",
-      "extracted_filename": "pt2_image_004.png",
-      "path": "images/Practice Test 2/pt2_image_004.png"
+      "image_index": 4,
+      "src": "images/Practice Test 2/0943P_1639.jpg",
+      "used_by": ["pt2_t08_q139 (D.)"],
+      "usage_types": ["choice_image"]
     },
     {
-      "image_sequence": 5,
-      "relationship_id": "rId17",
-      "extracted_filename": "pt2_image_005.png",
-      "path": "images/Practice Test 2/pt2_image_005.png"
+      "image_index": 5,
+      "src": "images/Practice Test 2/375291.jpg",
+      "used_by": ["pt2_t08_q138 (F.)"],
+      "usage_types": ["choice_image"]
     },
     {
-      "image_sequence": 6,
-      "relationship_id": "rId18",
-      "extracted_filename": "pt2_image_006.png",
-      "path": "images/Practice Test 2/pt2_image_006.png"
+      "image_index": 6,
+      "src": "images/Practice Test 2/701383.jpg",
+      "used_by": ["pt2_t08_q138 (A.)"],
+      "usage_types": ["choice_image"]
     },
     {
-      "image_sequence": 7,
-      "relationship_id": "rId19",
-      "extracted_filename": "pt2_image_007.png",
-      "path": "images/Practice Test 2/pt2_image_007.png"
+      "image_index": 7,
+      "src": "images/Practice Test 2/701384.jpg",
+      "used_by": ["pt2_t08_q138 (B.)"],
+      "usage_types": ["choice_image"]
+    },
+    {
+      "image_index": 8,
+      "src": "images/Practice Test 2/701385.jpg",
+      "used_by": ["pt2_t08_q138 (C.)"],
+      "usage_types": ["choice_image"]
+    },
+    {
+      "image_index": 9,
+      "src": "images/Practice Test 2/701386.jpg",
+      "used_by": ["pt2_t08_q138 (D.)"],
+      "usage_types": ["choice_image"]
+    },
+    {
+      "image_index": 10,
+      "src": "images/Practice Test 2/701387.jpg",
+      "used_by": ["pt2_t08_q138 (E.)"],
+      "usage_types": ["choice_image"]
+    },
+    {
+      "image_index": 11,
+      "src": "images/Practice Test 2/701389.jpg",
+      "used_by": ["pt2_t08_q138 (G.)"],
+      "usage_types": ["choice_image"]
+    },
+    {
+      "image_index": 12,
+      "src": "images/Practice Test 2/701390.jpg",
+      "used_by": ["pt2_t08_q138 (H.)"],
+      "usage_types": ["choice_image"]
+    },
+    {
+      "image_index": 13,
+      "src": "images/Practice Test 2/701391.jpg",
+      "used_by": ["pt2_t08_q139 (A.)"],
+      "usage_types": ["choice_image"]
+    },
+    {
+      "image_index": 14,
+      "src": "images/Practice Test 2/701392.jpg",
+      "used_by": ["pt2_t08_q139 (B.)"],
+      "usage_types": ["choice_image"]
+    },
+    {
+      "image_index": 15,
+      "src": "images/Practice Test 2/701393.jpg",
+      "used_by": ["pt2_t08_q139 (C.)"],
+      "usage_types": ["choice_image"]
+    },
+    {
+      "image_index": 16,
+      "src": "images/Practice Test 2/E9036_701378.jpg",
+      "used_by": ["pt2_t02_q109"],
+      "usage_types": ["question_image"]
+    },
+    {
+      "image_index": 17,
+      "src": "images/Practice Test 2/E9036_701382.jpg",
+      "used_by": ["pt2_t06_q129"],
+      "usage_types": ["question_image"]
+    },
+    {
+      "image_index": 18,
+      "src": "images/Practice Test 2/SS2848002.jpg",
+      "used_by": ["pt2_t09_q141"],
+      "usage_types": ["question_image"]
     }
   ]
 }

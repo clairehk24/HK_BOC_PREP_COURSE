@@ -51,7 +51,13 @@
       "type": "mc",
       "prompt": "What is an example of a typical psychological construct relevant to sports and athletes and physically active individuals?",
       "rationale": "",
-      "choices": ["Self-sufficiency", "Achievement motivation", "Self-protection", "Imagination", "Self-consciousness"],
+      "choices": [
+        "Self-sufficiency",
+        "Achievement motivation",
+        "Self-protection",
+        "Imagination",
+        "Self-consciousness"
+      ],
       "answer": 1
     },
     {
@@ -79,7 +85,13 @@
       "type": "mc",
       "prompt": "What is the primary goal of altruism in athletic training?",
       "rationale": "",
-      "choices": ["Winning games", "Advancing personal career", "Promoting patient health and well-being", "Reducing costs", "Increasing clinic revenue"],
+      "choices": [
+        "Winning games",
+        "Advancing personal career",
+        "Promoting patient health and well-being",
+        "Reducing costs",
+        "Increasing clinic revenue"
+      ],
       "answer": 2
     },
     {
@@ -90,7 +102,13 @@
       "type": "mc",
       "prompt": "Which consideration for a psychosocial referral of a patient must be met to ensure the effectiveness of the referral?",
       "rationale": "",
-      "choices": ["Social support", "Physical conditioning", "Injury history", "Identification of the psychosocial need and the contributing variables", "Age"],
+      "choices": [
+        "Social support",
+        "Physical conditioning",
+        "Injury history",
+        "Identification of the psychosocial need and the contributing variables",
+        "Age"
+      ],
       "answer": 3
     },
     {
@@ -152,7 +170,13 @@
       "type": "mc",
       "prompt": "In the dynamic model of psychological response and sport injury rehabilitation, what does the interaction of responses start with?",
       "rationale": "",
-      "choices": ["Cognitive responses", "Emotional responses", "Behavioral responses", "Personal factors", "Situational factors"],
+      "choices": [
+        "Cognitive responses",
+        "Emotional responses",
+        "Behavioral responses",
+        "Personal factors",
+        "Situational factors"
+      ],
       "answer": 0
     },
     {
@@ -163,7 +187,13 @@
       "type": "mc",
       "prompt": "Which foods have a low glycemic index (less than 55)?",
       "rationale": "",
-      "choices": ["Popcorn and raisins", "Baked potato and nuts", "Milk and grapefruit", "Watermelon and basmati rice", "Green leafy vegetables and sweet potato"],
+      "choices": [
+        "Popcorn and raisins",
+        "Baked potato and nuts",
+        "Milk and grapefruit",
+        "Watermelon and basmati rice",
+        "Green leafy vegetables and sweet potato"
+      ],
       "answer": 2
     },
     {
@@ -174,7 +204,13 @@
       "type": "mc",
       "prompt": "Which type of social support for the athlete or patient is often overlooked by the athletic trainer?",
       "rationale": "",
-      "choices": ["Informational: educating the athlete or patient about their injury", "Advocacy", "Motivational", "Facilitation with other social agents", "Feedback"],
+      "choices": [
+        "Informational: educating the athlete or patient about their injury",
+        "Advocacy",
+        "Motivational",
+        "Facilitation with other social agents",
+        "Feedback"
+      ],
       "answer": 0
     },
     {
@@ -185,7 +221,13 @@
       "type": "mc",
       "prompt": "Which of the following is based on distraction and increasing the patient’s pain threshold?",
       "rationale": "",
-      "choices": ["Meditation", "Dissociation", "Thought stopping", "Autogenic training", "Desensitization"],
+      "choices": [
+        "Meditation",
+        "Dissociation",
+        "Thought stopping",
+        "Autogenic training",
+        "Desensitization"
+      ],
       "answer": 1
     },
     {
@@ -230,7 +272,13 @@
       "type": "mc",
       "prompt": "Which form of communication is best for interaction because it has the lowest risk of interference?",
       "rationale": "",
-      "choices": ["Telephone calls", "Text message alerts", "Email", "Face-to-face", "Blogs"],
+      "choices": [
+        "Telephone calls",
+        "Text message alerts",
+        "Email",
+        "Face-to-face",
+        "Blogs"
+      ],
       "answer": 3
     },
     {
@@ -309,7 +357,13 @@
       "type": "mc",
       "prompt": "Which state law establishes a certain length of time during which an aggrieved patient may sue a health care provider such as an athletic trainer?",
       "rationale": "",
-      "choices": ["Statute of limitations", "Sovereign immunity", "Assumption of risk", "Good Samaritan immunity", "Comparative negligence"],
+      "choices": [
+        "Statute of limitations",
+        "Sovereign immunity",
+        "Assumption of risk",
+        "Good Samaritan immunity",
+        "Comparative negligence"
+      ],
       "answer": 0
     },
     {
@@ -320,7 +374,13 @@
       "type": "mc",
       "prompt": "What is a legal doctrine that holds that neither the government nor their agents can be held liable for negligent torts?",
       "rationale": "",
-      "choices": ["Statute of limitations", "Sovereign immunity", "Assumption of risk", "Good Samaritan immunity", "Comparative negligence"],
+      "choices": [
+        "Statute of limitations",
+        "Sovereign immunity",
+        "Assumption of risk",
+        "Good Samaritan immunity",
+        "Comparative negligence"
+      ],
       "answer": 1
     },
     {
@@ -331,7 +391,13 @@
       "type": "mc",
       "prompt": "What is a state law that protects health care providers who voluntarily come to the aid of injured persons?",
       "rationale": "",
-      "choices": ["Statute of limitations", "Sovereign immunity", "Assumption of risk", "Good Samaritan immunity", "Comparative negligence"],
+      "choices": [
+        "Statute of limitations",
+        "Sovereign immunity",
+        "Assumption of risk",
+        "Good Samaritan immunity",
+        "Comparative negligence"
+      ],
       "answer": 3
     },
     {
@@ -342,7 +408,13 @@
       "type": "mc",
       "prompt": "What is it called when a patient ignores the prescriptions of their health care provider and it leads to aggravating an injury, thus dividing the liability for an injury between the plaintiff and defendant?",
       "rationale": "",
-      "choices": ["Statute of limitations", "Sovereign immunity", "Assumption of risk", "Good Samaritan immunity", "Comparative negligence"],
+      "choices": [
+        "Statute of limitations",
+        "Sovereign immunity",
+        "Assumption of risk",
+        "Good Samaritan immunity",
+        "Comparative negligence"
+      ],
       "answer": 4
     },
     {
@@ -353,7 +425,13 @@
       "type": "mc",
       "prompt": "To prove negligence on the part of the athletic trainer, what is included?",
       "rationale": "",
-      "choices": ["The athletic trainer’s conduct", "The coach’s conduct", "The emergency medical technician staff’s conduct", "Environmental conditions", "The rehabilitation plan"],
+      "choices": [
+        "The athletic trainer’s conduct",
+        "The coach’s conduct",
+        "The emergency medical technician staff’s conduct",
+        "Environmental conditions",
+        "The rehabilitation plan"
+      ],
       "answer": 0
     },
     {
@@ -364,7 +442,13 @@
       "type": "mc",
       "prompt": "A patient who is 18 years old chooses to participate in athletics against medical advice. Which law, act, or statute gives the patient the legal right to participate?",
       "rationale": "",
-      "choices": ["Good Samaritan statute", "Federal Rehabilitation Act", "Family Education Rights and Privacy Act", "Quality Healthcare Act", "Qualified Health Act"],
+      "choices": [
+        "Good Samaritan statute",
+        "Federal Rehabilitation Act",
+        "Family Education Rights and Privacy Act",
+        "Quality Healthcare Act",
+        "Qualified Health Act"
+      ],
       "answer": 1
     },
     {
@@ -375,7 +459,13 @@
       "type": "mc",
       "prompt": "How often does the National Athletic Trainers’ Association recommend practicing the emergency action plan?",
       "rationale": "",
-      "choices": ["Once before and once during the sport season", "Once a month with various health care providers", "At the beginning of each sport season", "Every month", "At least once a year"],
+      "choices": [
+        "Once before and once during the sport season",
+        "Once a month with various health care providers",
+        "At the beginning of each sport season",
+        "Every month",
+        "At least once a year"
+      ],
       "answer": 4
     },
     {
@@ -386,7 +476,13 @@
       "type": "mc",
       "prompt": "What is having more job responsibilities and obligations than the time to complete them called?",
       "rationale": "",
-      "choices": ["Reality shock", "Role conflict", "Role ambiguity", "Role incompetence", "Role overload"],
+      "choices": [
+        "Reality shock",
+        "Role conflict",
+        "Role ambiguity",
+        "Role incompetence",
+        "Role overload"
+      ],
       "answer": 4
     },
     {
@@ -397,7 +493,13 @@
       "type": "mc",
       "prompt": "What relates to a lack of knowledge or skill or both to perform a set of job expectations adequately and acceptably?",
       "rationale": "",
-      "choices": ["Reality shock", "Role conflict", "Role ambiguity", "Role incompetence", "Role overload"],
+      "choices": [
+        "Reality shock",
+        "Role conflict",
+        "Role ambiguity",
+        "Role incompetence",
+        "Role overload"
+      ],
       "answer": 3
     },
     {
@@ -408,7 +510,13 @@
       "type": "mc",
       "prompt": "When being seen by an athletic trainer, the patient can expect to receive professional behavior and treatment that any similarly trained athletic trainer would provide under the same situation. What is this type of care known as?",
       "rationale": "",
-      "choices": ["Liability", "Licensure", "Certification", "Duty", "Standard of care"],
+      "choices": [
+        "Liability",
+        "Licensure",
+        "Certification",
+        "Duty",
+        "Standard of care"
+      ],
       "answer": 4
     },
     {
@@ -419,7 +527,13 @@
       "type": "mc",
       "prompt": "What is it called when a duty has been breached, resulting in damages to a plaintiff?",
       "rationale": "",
-      "choices": ["Liability", "Malpractice", "Negligence", "Tort", "Cause"],
+      "choices": [
+        "Liability",
+        "Malpractice",
+        "Negligence",
+        "Tort",
+        "Cause"
+      ],
       "answer": 4
     },
     {
@@ -447,7 +561,13 @@
       "type": "mc",
       "prompt": "Athletic trainers are assigned responsibilities that need to be performed when the team physician is not present. What is the document with these responsibilities called?",
       "rationale": "",
-      "choices": ["In limited circumstances, their job description", "Standing orders", "The policy and procedures manual", "Duty of care", "Code of ethics"],
+      "choices": [
+        "In limited circumstances, their job description",
+        "Standing orders",
+        "The policy and procedures manual",
+        "Duty of care",
+        "Code of ethics"
+      ],
       "answer": 1
     },
     {
@@ -492,7 +612,13 @@
       "type": "mc",
       "prompt": "Which of the following is a sociocultural factor for disordered eating?",
       "rationale": "",
-      "choices": ["Age", "Sex", "Biological imbalance", "Personality traits", "Sport type"],
+      "choices": [
+        "Age",
+        "Sex",
+        "Biological imbalance",
+        "Personality traits",
+        "Sport type"
+      ],
       "answer": 4
     },
     {
@@ -503,7 +629,13 @@
       "type": "mc",
       "prompt": "For which of the following sports does NATA neither endorse nor discourage use of helmets or headgear?",
       "rationale": "",
-      "choices": ["Football", "Lacrosse", "Ice hockey", "Baseball", "Soccer"],
+      "choices": [
+        "Football",
+        "Lacrosse",
+        "Ice hockey",
+        "Baseball",
+        "Soccer"
+      ],
       "answer": 4
     },
     {
@@ -565,7 +697,13 @@
       "type": "mc",
       "prompt": "To prevent the spread of infectious disease, what type of cleaning agent should be used on wrestling mats?",
       "rationale": "",
-      "choices": ["Hydrogen peroxide", "Alcohol", "Bleach", "Hospital-grade broad-spectrum disinfectant", "Ultraviolet light"],
+      "choices": [
+        "Hydrogen peroxide",
+        "Alcohol",
+        "Bleach",
+        "Hospital-grade broad-spectrum disinfectant",
+        "Ultraviolet light"
+      ],
       "answer": 3
     },
     {
@@ -627,7 +765,13 @@
       "type": "mc",
       "prompt": "When a dipstick urinalysis shows the pH is lower than 4.6, what conditions should be suspected to be the reason for this?",
       "rationale": "",
-      "choices": ["Kidney disease or pancreatitis", "Dehydration or anemia", "Liver disease or a bowel obstruction", "Pulmonary disease or ketoacidosis", "Stomach ulcer or poor nutrition"],
+      "choices": [
+        "Kidney disease or pancreatitis",
+        "Dehydration or anemia",
+        "Liver disease or a bowel obstruction",
+        "Pulmonary disease or ketoacidosis",
+        "Stomach ulcer or poor nutrition"
+      ],
       "answer": 3
     },
     {
@@ -638,7 +782,13 @@
       "type": "mc",
       "prompt": "What is part of the functional assessment for a concussion?",
       "rationale": "",
-      "choices": ["Forward head posture", "Posture", "Any bleeding or bruising of the head", "Balance and coordination", "A desire to eat or drink"],
+      "choices": [
+        "Forward head posture",
+        "Posture",
+        "Any bleeding or bruising of the head",
+        "Balance and coordination",
+        "A desire to eat or drink"
+      ],
       "answer": 3
     },
     {
@@ -649,7 +799,13 @@
       "type": "mc",
       "prompt": "What is a sign or symptom of an epidural hematoma?",
       "rationale": "",
-      "choices": ["No lucid interval", "Being disoriented", "Appearance of being normal when examined", "Headache that disappears with time", "Bilateral dilated pupil"],
+      "choices": [
+        "No lucid interval",
+        "Being disoriented",
+        "Appearance of being normal when examined",
+        "Headache that disappears with time",
+        "Bilateral dilated pupil"
+      ],
       "answer": 1
     },
     {
@@ -660,7 +816,13 @@
       "type": "mc",
       "prompt": "When, ideally, should baseline balance testing used in concussion screening be performed?",
       "rationale": "",
-      "choices": ["At the end of the previous season", "At the start of the competitive schedule", "Before the start of the preseason", "After a concussion", "After practice"],
+      "choices": [
+        "At the end of the previous season",
+        "At the start of the competitive schedule",
+        "Before the start of the preseason",
+        "After a concussion",
+        "After practice"
+      ],
       "answer": 2
     },
     {
@@ -671,7 +833,13 @@
       "type": "mc",
       "prompt": "What percentage of concussions go unreported until post-practice or post-game?",
       "rationale": "",
-      "choices": ["10% to 15%", "35% to 40%", "50% to 55%", "65% to 70%", "85% to 90%"],
+      "choices": [
+        "10% to 15%",
+        "35% to 40%",
+        "50% to 55%",
+        "65% to 70%",
+        "85% to 90%"
+      ],
       "answer": 4,
       "notes": "Correct answer updated per user: e. 85% to 90%."
     },
@@ -683,7 +851,13 @@
       "type": "mc",
       "prompt": "If a patient cannot raise their eyebrows or forehead, smile, and frown following a blow to the head, which cranial nerve is involved?",
       "rationale": "",
-      "choices": ["Cranial nerve IV (trochlear)", "Cranial nerve V (trigeminal)", "Cranial nerve VI (abducens)", "Cranial nerve VII (facial)", "Cranial nerve VIII (auditory)"],
+      "choices": [
+        "Cranial nerve IV (trochlear)",
+        "Cranial nerve V (trigeminal)",
+        "Cranial nerve VI (abducens)",
+        "Cranial nerve VII (facial)",
+        "Cranial nerve VIII (auditory)"
+      ],
       "answer": 3
     },
     {
@@ -694,7 +868,13 @@
       "type": "mc",
       "prompt": "Which cranial nerve is responsible for regulating pupil size?",
       "rationale": "",
-      "choices": ["Cranial nerve II (optic)", "Cranial nerve III (oculomotor)", "Cranial nerve IV (trochlear)", "Cranial nerve V (trigeminal)", "Cranial nerve VI (abducens)"],
+      "choices": [
+        "Cranial nerve II (optic)",
+        "Cranial nerve III (oculomotor)",
+        "Cranial nerve IV (trochlear)",
+        "Cranial nerve V (trigeminal)",
+        "Cranial nerve VI (abducens)"
+      ],
       "answer": 1
     },
     {
@@ -739,7 +919,13 @@
       "type": "mc",
       "prompt": "According to the BOC Standards of Professional Practice, under whose medical direction is an athletic trainer?",
       "rationale": "",
-      "choices": ["Chiropractor", "Physician", "Nurse", "Physician’s assistant", "Nurse practitioner"],
+      "choices": [
+        "Chiropractor",
+        "Physician",
+        "Nurse",
+        "Physician’s assistant",
+        "Nurse practitioner"
+      ],
       "answer": 1
     },
     {
@@ -767,7 +953,13 @@
       "type": "mc",
       "prompt": "What form of mental health therapy works best for a patient who is highly resistant and has low motivation for intervention?",
       "rationale": "",
-      "choices": ["Long-term therapy, solution focused", "Brief therapy, solution focused", "No therapy", "One-on-one long-term therapy", "Meditation"],
+      "choices": [
+        "Long-term therapy, solution focused",
+        "Brief therapy, solution focused",
+        "No therapy",
+        "One-on-one long-term therapy",
+        "Meditation"
+      ],
       "answer": 1
     },
     {
@@ -778,7 +970,13 @@
       "type": "mc",
       "prompt": "When designing equipment, which factor can help reduce potential injury?",
       "rationale": "",
-      "choices": ["Absorption of energy", "Limitations in the condition of the athlete", "Quality of maintenance", "Use of technique", "Use of high-grade materials"],
+      "choices": [
+        "Absorption of energy",
+        "Limitations in the condition of the athlete",
+        "Quality of maintenance",
+        "Use of technique",
+        "Use of high-grade materials"
+      ],
       "answer": 0
     },
     {
@@ -823,7 +1021,13 @@
       "type": "mc",
       "prompt": "How often should coaches review films of football games to educate athletes regarding their head contact position?",
       "rationale": "",
-      "choices": ["Once a week", "Twice a month", "Once a month", "Once a season", "Twice a season"],
+      "choices": [
+        "Once a week",
+        "Twice a month",
+        "Once a month",
+        "Once a season",
+        "Twice a season"
+      ],
       "answer": 0
     },
     {
@@ -885,7 +1089,13 @@
       "type": "mc",
       "prompt": "How long does it take for the cardiovascular system to return to normal in an athlete who has gone from sea level to high altitude?",
       "rationale": "",
-      "choices": ["Almost immediately", "7 days", "10 to 14 days", "14 to 28 days", "A month or more"],
+      "choices": [
+        "Almost immediately",
+        "7 days",
+        "10 to 14 days",
+        "14 to 28 days",
+        "A month or more"
+      ],
       "answer": 2
     },
     {
@@ -896,7 +1106,13 @@
       "type": "mc",
       "prompt": "Which football position is most likely to have a cervical spine injury resulting from head-down contact?",
       "rationale": "",
-      "choices": ["Running back", "Wide receiver", "Defensive back", "Linebacker", "Defensive lineman"],
+      "choices": [
+        "Running back",
+        "Wide receiver",
+        "Defensive back",
+        "Linebacker",
+        "Defensive lineman"
+      ],
       "answer": 2
     },
     {
@@ -958,7 +1174,13 @@
       "type": "mc",
       "prompt": "Which sport, if any, can an athlete participate in if they have an acute venous thromboembolism and are taking anticoagulants?",
       "rationale": "",
-      "choices": ["No sports", "Football", "Cross country", "Water polo", "Any sport"],
+      "choices": [
+        "No sports",
+        "Football",
+        "Cross country",
+        "Water polo",
+        "Any sport"
+      ],
       "answer": 2
     },
     {
@@ -986,7 +1208,13 @@
       "type": "mc",
       "prompt": "In training room design, it is important to have signage. Which of the following signs need to be in the training room?",
       "rationale": "",
-      "choices": ["Location of ground fault interrupter (GFI) outlets", "How to use the whirlpool", "Location of the office", "Location of the private examination room", "Location of the AED"],
+      "choices": [
+        "Location of ground fault interrupter (GFI) outlets",
+        "How to use the whirlpool",
+        "Location of the office",
+        "Location of the private examination room",
+        "Location of the AED"
+      ],
       "answer": 4
     },
     {
@@ -997,7 +1225,13 @@
       "type": "mc",
       "prompt": "What is the best way to determine the maturation of pediatric patients?",
       "rationale": "",
-      "choices": ["Age", "Puberty", "Height and weight", "Skeletal maturity", "Behavior"],
+      "choices": [
+        "Age",
+        "Puberty",
+        "Height and weight",
+        "Skeletal maturity",
+        "Behavior"
+      ],
       "answer": 1
     },
     {
@@ -1025,7 +1259,12 @@
       "type": "mc",
       "prompt": "An athlete with Down syndrome wishes to participate in soccer. What associated medical condition should be ruled out prior to participation?",
       "rationale": "",
-      "choices": ["Obesity", "Atlantoaxial instability", "Nystagmus", "Deafness"],
+      "choices": [
+        "Obesity",
+        "Atlantoaxial instability",
+        "Nystagmus",
+        "Deafness"
+      ],
       "answer": 1
     },
     {
@@ -1108,7 +1347,10 @@
               }
             ],
             "table": {
-              "column_headers": ["Order", "SCAT6 Step"],
+              "column_headers": [
+                "Order",
+                "SCAT6 Step"
+              ],
               "rows": [
                 [
                   "1",
@@ -1188,7 +1430,12 @@
             "Confusion, posttraumatic amnesia, and photophobia",
             "Delayed recall"
           ],
-          "answer": [1, 2, 4, 5]
+          "answer": [
+            1,
+            2,
+            4,
+            5
+          ]
         },
         {
           "id": "domain1_t01_q076",
@@ -1196,8 +1443,19 @@
           "type": "ms",
           "prompt": "Which of the following are part of the functional assessment for a concussion in an athlete? Choose all that apply.",
           "rationale": "",
-          "choices": ["Memory", "Cognition", "Any bleeding or bruising of the head", "Balance and coordination", "Integrity of cranial nerves"],
-          "answer": [0, 1, 3, 4]
+          "choices": [
+            "Memory",
+            "Cognition",
+            "Any bleeding or bruising of the head",
+            "Balance and coordination",
+            "Integrity of cranial nerves"
+          ],
+          "answer": [
+            0,
+            1,
+            3,
+            4
+          ]
         },
         {
           "id": "domain1_t01_q077",
@@ -1206,7 +1464,14 @@
           "prompt": "When using the Balance Error Scoring System (BESS) Test with this athlete, which are the three phases that should be performed in proper sequence?",
           "rationale": "",
           "dd": {
-            "tokens": ["Single-leg stance", "Tandem stance", "Feet together stance", "Squat stance", "Double-leg stance", "Leg-split stance"],
+            "tokens": [
+              "Single-leg stance",
+              "Tandem stance",
+              "Feet together stance",
+              "Squat stance",
+              "Double-leg stance",
+              "Leg-split stance"
+            ],
             "zones": [
               {
                 "id": "phase_1",
@@ -1225,7 +1490,10 @@
               }
             ],
             "table": {
-              "column_headers": ["BESS Phase", "Stance"],
+              "column_headers": [
+                "BESS Phase",
+                "Stance"
+              ],
               "rows": [
                 [
                   "Phase 1",
@@ -1255,8 +1523,21 @@
           "type": "ms",
           "prompt": "The athletic trainer needs to determine if this athlete has predisposing risk factors for a concussion. Which are the variables that are predisposing risk factors for a concussion? Choose all that apply.",
           "rationale": "",
-          "choices": ["Learning disability", "Age", "Ethnicity", "Alcoholism", "Family history of concussions", "Sex", "Previous concussions"],
-          "answer": [1, 3, 5, 6]
+          "choices": [
+            "Learning disability",
+            "Age",
+            "Ethnicity",
+            "Alcoholism",
+            "Family history of concussions",
+            "Sex",
+            "Previous concussions"
+          ],
+          "answer": [
+            1,
+            3,
+            5,
+            6
+          ]
         },
         {
           "id": "domain1_t01_q079",
@@ -1272,7 +1553,10 @@
             "Look for obvious deformities and for increased pain and place ice on the area of impact.",
             "Test to reset a baseline for future concussion injuries."
           ],
-          "answer": [2, 3]
+          "answer": [
+            2,
+            3
+          ]
         },
         {
           "id": "domain1_t01_q080",
@@ -1280,8 +1564,22 @@
           "type": "ms",
           "prompt": "The athletic trainer needs to determine whether a referral is needed. Which symptoms would indicate the need for an immediate referral, rather than a delayed referral? Choose all that apply.",
           "rationale": "",
-          "choices": ["Amnesia lasting longer than 15 minutes", "Cranial nerve deficits", "Decreased respirations", "Decreasing levels of consciousness", "Increased blood pressure", "Unequal pupils"],
-          "answer": [0, 1, 2, 3, 4, 5]
+          "choices": [
+            "Amnesia lasting longer than 15 minutes",
+            "Cranial nerve deficits",
+            "Decreased respirations",
+            "Decreasing levels of consciousness",
+            "Increased blood pressure",
+            "Unequal pupils"
+          ],
+          "answer": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
         },
         {
           "id": "domain1_t01_q081",
@@ -1334,7 +1632,12 @@
             "Wake up every hour.",
             "Avoid strenuous exercises."
           ],
-          "answer": [0, 2, 3, 7]
+          "answer": [
+            0,
+            2,
+            3,
+            7
+          ]
         },
         {
           "id": "domain1_t01_q083",
@@ -1343,7 +1646,14 @@
           "prompt": "What is the correct order of stages of return from concussion following the cessation of symptoms and return to baseline neurocognitive testing?",
           "rationale": "",
           "dd": {
-            "tokens": ["No activity", "Light aerobic activity", "Sport-specific exercise", "Noncontact drills", "Full-contact drills", "Full return to play"],
+            "tokens": [
+              "No activity",
+              "Light aerobic activity",
+              "Sport-specific exercise",
+              "Noncontact drills",
+              "Full-contact drills",
+              "Full return to play"
+            ],
             "zones": [
               {
                 "id": "stage_1",
@@ -1377,7 +1687,10 @@
               }
             ],
             "table": {
-              "column_headers": ["Stage", "Return-to-Play Activity"],
+              "column_headers": [
+                "Stage",
+                "Return-to-Play Activity"
+              ],
               "rows": [
                 [
                   "1",
@@ -1432,7 +1745,10 @@
             "When pre-injury baselines are normal, increase activity, starting with anaerobic activities, followed by endurance activities and then sport-specific activities and impact activities.",
             "When pre-injury baselines are normal, increase activity, starting with cardiovascular activities and then moving to impact injuries that emulate how the athlete became injured."
           ],
-          "answer": [1, 3]
+          "answer": [
+            1,
+            3
+          ]
         }
       ],
       "rationale": ""
@@ -1451,8 +1767,21 @@
           "type": "ms",
           "prompt": "When speaking with the athlete about their concern, which of the following would be an example of a typical psychological construct relevant to sports and athletes or physically active individuals? Choose all that apply.",
           "rationale": "",
-          "choices": ["Self-efficacy", "Achievement motivation", "Anxiety", "Positive feedback", "Suicide ideation", "Playing time", "Imagery"],
-          "answer": [0, 1, 2, 6]
+          "choices": [
+            "Self-efficacy",
+            "Achievement motivation",
+            "Anxiety",
+            "Positive feedback",
+            "Suicide ideation",
+            "Playing time",
+            "Imagery"
+          ],
+          "answer": [
+            0,
+            1,
+            2,
+            6
+          ]
         },
         {
           "id": "domain1_t02_q086",
@@ -1467,7 +1796,11 @@
             "Parrot back what has been said.",
             "Include a perception check that allows the patient to agree or disagree with you."
           ],
-          "answer": [0, 1, 2]
+          "answer": [
+            0,
+            1,
+            2
+          ]
         },
         {
           "id": "domain1_t02_q087",
@@ -1483,7 +1816,10 @@
             "When the athlete is having a hard time adjusting to the team",
             "When the athletic trainer feels bias concerning this athlete is compromising the athletic trainer’s ability to work positively to resolve the situation"
           ],
-          "answer": [0, 5]
+          "answer": [
+            0,
+            5
+          ]
         },
         {
           "id": "domain1_t02_q088",
@@ -1499,7 +1835,10 @@
             "Insurance",
             "Transportation availability"
           ],
-          "answer": [2, 3]
+          "answer": [
+            2,
+            3
+          ]
         },
         {
           "id": "domain1_t02_q089",
@@ -1515,7 +1854,11 @@
             "Passive oriented",
             "Similar cultural backgrounds"
           ],
-          "answer": [0, 2, 3]
+          "answer": [
+            0,
+            2,
+            3
+          ]
         },
         {
           "id": "domain1_t02_q090",
@@ -1530,7 +1873,11 @@
             "Exploiting the relationship with the soccer player by dating or coercing the soccer player to return before being healed",
             "Clear boundaries of personal relationship between the soccer player and the athletic trainer"
           ],
-          "answer": [1, 2, 3]
+          "answer": [
+            1,
+            2,
+            3
+          ]
         }
       ],
       "rationale": ""
@@ -1587,7 +1934,11 @@
             "Good Samaritan immunity",
             "Whether the policy identifies or restricts attorneys for defense"
           ],
-          "answer": [1, 2, 4]
+          "answer": [
+            1,
+            2,
+            4
+          ]
         },
         {
           "id": "domain1_t03_q093",
@@ -1595,8 +1946,18 @@
           "type": "ms",
           "prompt": "The football player ignores the instructions of the athletic trainer to report worsening symptoms upon returning home after the game, which led to a delay in care of the injury, dividing the liability for an injury between the plaintiff (the mother and the football player) and the defendant (the athletic trainer and the high school). The athletic trainer is also employed by a governmental agency. Which of the following describes this scenario? Choose all that apply.",
           "rationale": "",
-          "choices": ["Statute of limitations", "Good Samaritan immunity", "Sovereign immunity", "Comparative negligence", "Assumption of risk", "Governmental immunity"],
-          "answer": [2, 3]
+          "choices": [
+            "Statute of limitations",
+            "Good Samaritan immunity",
+            "Sovereign immunity",
+            "Comparative negligence",
+            "Assumption of risk",
+            "Governmental immunity"
+          ],
+          "answer": [
+            2,
+            3
+          ]
         },
         {
           "id": "domain1_t03_q094",
@@ -1604,8 +1965,19 @@
           "type": "ms",
           "prompt": "To prove negligence on the part of the athletic trainer, which factors are taken into consideration? Choose all that apply.",
           "rationale": "",
-          "choices": ["The athletic trainer’s conduct", "Conduct by the opposing player who hit the football player in the chest", "Existence of and breach of duty", "Causation", "Damage"],
-          "answer": [0, 1, 3, 4]
+          "choices": [
+            "The athletic trainer’s conduct",
+            "Conduct by the opposing player who hit the football player in the chest",
+            "Existence of and breach of duty",
+            "Causation",
+            "Damage"
+          ],
+          "answer": [
+            0,
+            1,
+            3,
+            4
+          ]
         },
         {
           "id": "domain1_t03_q095",
@@ -1648,7 +2020,13 @@
           "type": "mc",
           "prompt": "Which of the following describes when a duty for care by the athletic trainer has been breached, resulting in damages to the football player?",
           "rationale": "",
-          "choices": ["Liability", "Malpractice", "Negligence", "Tort", "Cause"],
+          "choices": [
+            "Liability",
+            "Malpractice",
+            "Negligence",
+            "Tort",
+            "Cause"
+          ],
           "answer": 4
         },
         {
@@ -1682,7 +2060,13 @@
         "src": "images\\Practice Test Questions\\Domain 2\\701183.jpg",
         "alt": "Domain 2 question 1 image"
       },
-      "choices": ["Lateral epicondylitis", "Cubital tunnel syndrome", "Olecranon bursitis", "Fractured elbow", "Volkmann’s ischemic contracture"],
+      "choices": [
+        "Lateral epicondylitis",
+        "Cubital tunnel syndrome",
+        "Olecranon bursitis",
+        "Fractured elbow",
+        "Volkmann’s ischemic contracture"
+      ],
       "answer": 2
     },
     {
@@ -1693,7 +2077,13 @@
       "type": "mc",
       "prompt": "What possible injury is indicated by an inability to pronate and supinate the forearm with point tenderness over the radial head?",
       "rationale": "",
-      "choices": ["Olecranon fracture", "Little Leaguer’s elbow", "Osteochondritis dissecans", "Medial collateral ligament sprain", "Radial head fracture or dislocation"],
+      "choices": [
+        "Olecranon fracture",
+        "Little Leaguer’s elbow",
+        "Osteochondritis dissecans",
+        "Medial collateral ligament sprain",
+        "Radial head fracture or dislocation"
+      ],
       "answer": 4
     },
     {
@@ -1704,7 +2094,13 @@
       "type": "mc",
       "prompt": "An athlete fell on an outstretched arm during practice and has dislocated their elbow. What is the most common direction of displacement in an elbow (humeroulnar joint) dislocation?",
       "rationale": "",
-      "choices": ["Medial", "Lateral", "Anterior", "Superior", "Posterior"],
+      "choices": [
+        "Medial",
+        "Lateral",
+        "Anterior",
+        "Superior",
+        "Posterior"
+      ],
       "answer": 4
     },
     {
@@ -1715,7 +2111,13 @@
       "type": "mc",
       "prompt": "When doing the radioulnar joint stress test, which ligament is examined for pain and laxity?",
       "rationale": "",
-      "choices": ["Annular ligament", "Medial collateral ligament", "Posterior ulnar collateral ligament", "Lateral collateral ligament", "Anterior ligament"],
+      "choices": [
+        "Annular ligament",
+        "Medial collateral ligament",
+        "Posterior ulnar collateral ligament",
+        "Lateral collateral ligament",
+        "Anterior ligament"
+      ],
       "answer": 0
     },
     {
@@ -1726,7 +2128,13 @@
       "type": "mc",
       "prompt": "What is the normal carrying angle of the elbow?",
       "rationale": "",
-      "choices": ["0° to 5°", "5° to 15°", "15° to 25°", "25° to 30°", "\u003e30°"],
+      "choices": [
+        "0° to 5°",
+        "5° to 15°",
+        "15° to 25°",
+        "25° to 30°",
+        ">30°"
+      ],
       "answer": 1
     },
     {
@@ -1737,7 +2145,13 @@
       "type": "mc",
       "prompt": "A patient has noticed a gradual onset of pain at the medial aspect of the wrist. It is most notable during lifting or when grasping heavy items. Which special test is most likely to be positive?",
       "rationale": "",
-      "choices": ["Trigger finger test", "Finkelstein’s test", "Bunnel-Littler test", "Retinacular test", "Extender tendon test"],
+      "choices": [
+        "Trigger finger test",
+        "Finkelstein’s test",
+        "Bunnel-Littler test",
+        "Retinacular test",
+        "Extender tendon test"
+      ],
       "answer": 1
     },
     {
@@ -1748,7 +2162,13 @@
       "type": "mc",
       "prompt": "Which of the carpal bones is most commonly fractured?",
       "rationale": "",
-      "choices": ["Lunate", "Scaphoid", "Trapezium", "Triquetrum", "Hamate"],
+      "choices": [
+        "Lunate",
+        "Scaphoid",
+        "Trapezium",
+        "Triquetrum",
+        "Hamate"
+      ],
       "answer": 1
     },
     {
@@ -1764,7 +2184,13 @@
         "src": "images\\Practice Test Questions\\Domain 2\\701184.jpg",
         "alt": "Domain 2 question 8 image"
       },
-      "choices": ["Trigger finger test", "Retinacular test", "Bunnel-Littler test", "Compression test", "Finkelstein’s test"],
+      "choices": [
+        "Trigger finger test",
+        "Retinacular test",
+        "Bunnel-Littler test",
+        "Compression test",
+        "Finkelstein’s test"
+      ],
       "answer": 2
     },
     {
@@ -1775,7 +2201,13 @@
       "type": "mc",
       "prompt": "Which nerve is involved in carpal tunnel syndrome?",
       "rationale": "",
-      "choices": ["Radial nerve", "Ulnar nerve", "Musculocutaneous nerve", "Axillary nerve", "Median nerve"],
+      "choices": [
+        "Radial nerve",
+        "Ulnar nerve",
+        "Musculocutaneous nerve",
+        "Axillary nerve",
+        "Median nerve"
+      ],
       "answer": 4
     },
     {
@@ -1786,7 +2218,13 @@
       "type": "mc",
       "prompt": "What is the percentage, on average, that someone is in the stance phase of the walking gait compared to the swing phase of gait?",
       "rationale": "",
-      "choices": ["40% in stance, 60% in swing", "65% in stance, 35% in swing", "35% in stance, 65% in swing", "60% in stance, 40% in swing", "50% in stance, 50% in swing"],
+      "choices": [
+        "40% in stance, 60% in swing",
+        "65% in stance, 35% in swing",
+        "35% in stance, 65% in swing",
+        "60% in stance, 40% in swing",
+        "50% in stance, 50% in swing"
+      ],
       "answer": 3
     },
     {
@@ -1797,7 +2235,13 @@
       "type": "mc",
       "prompt": "What instrument can the athletic trainer use to assess pulmonary function?",
       "rationale": "",
-      "choices": ["V̇O₂ max", "Peak flow meter", "Portable ultrasound", "Respirometer", "Fluoroscope"],
+      "choices": [
+        "V̇O₂ max",
+        "Peak flow meter",
+        "Portable ultrasound",
+        "Respirometer",
+        "Fluoroscope"
+      ],
       "answer": 1
     },
     {
@@ -1825,7 +2269,13 @@
       "type": "mc",
       "prompt": "What is the underlying physiological mechanism of sickle cell anemia?",
       "rationale": "",
-      "choices": ["An individual’s race", "A decrease in circulating red blood cells", "An iron deficiency in diet", "A relative increase in blood plasma volume", "Abnormally shaped red blood cells"],
+      "choices": [
+        "An individual’s race",
+        "A decrease in circulating red blood cells",
+        "An iron deficiency in diet",
+        "A relative increase in blood plasma volume",
+        "Abnormally shaped red blood cells"
+      ],
       "answer": 4
     },
     {
@@ -1836,7 +2286,13 @@
       "type": "mc",
       "prompt": "What valve is an athletic trainer listening to when performing cardiac auscultation within the right second intercostal space at the right sternal border?",
       "rationale": "",
-      "choices": ["Mitral", "Pulmonary", "Aortic", "Tricuspid", "Cardiac"],
+      "choices": [
+        "Mitral",
+        "Pulmonary",
+        "Aortic",
+        "Tricuspid",
+        "Cardiac"
+      ],
       "answer": 2
     },
     {
@@ -1847,7 +2303,13 @@
       "type": "mc",
       "prompt": "What valve is an athletic trainer listening to when performing cardiac auscultation within the fourth intercostal space along the lower left sternal border?",
       "rationale": "",
-      "choices": ["Aortic", "Tricuspid", "Mitral", "Pulmonary", "Cardiac"],
+      "choices": [
+        "Aortic",
+        "Tricuspid",
+        "Mitral",
+        "Pulmonary",
+        "Cardiac"
+      ],
       "answer": 1
     },
     {
@@ -1864,7 +2326,13 @@
         "alt": "Domain 2 question 16 image",
         "width": "150px"
       },
-      "choices": ["Otitis externa", "Otitis media", "Cholesteatoma", "Normal tympanic membrane", "Auricular hematoma"],
+      "choices": [
+        "Otitis externa",
+        "Otitis media",
+        "Cholesteatoma",
+        "Normal tympanic membrane",
+        "Auricular hematoma"
+      ],
       "answer": 0
     },
     {
@@ -1881,7 +2349,13 @@
         "alt": "Domain 2 question 17 image",
         "width": "150px"
       },
-      "choices": ["Otitis externa", "Cholesteatoma", "Otitis media", "Normal tympanic membrane", "Auricular hematoma"],
+      "choices": [
+        "Otitis externa",
+        "Cholesteatoma",
+        "Otitis media",
+        "Normal tympanic membrane",
+        "Auricular hematoma"
+      ],
       "answer": 2
     },
     {
@@ -1892,7 +2366,13 @@
       "type": "mc",
       "prompt": "What part of the eye is composed of a dense white connective tissue that makes up 90% of the outer layer of the eyeball globe?",
       "rationale": "",
-      "choices": ["Choriocapillaris", "Iris", "Sclera", "Macula", "Retina"],
+      "choices": [
+        "Choriocapillaris",
+        "Iris",
+        "Sclera",
+        "Macula",
+        "Retina"
+      ],
       "answer": 2
     },
     {
@@ -1903,7 +2383,13 @@
       "type": "mc",
       "prompt": "Three athletes present in the athletic training facility with complaints of diarrhea, vomiting, nausea, and abdominal cramping one to three hours after eating at a local restaurant. What may be the problem?",
       "rationale": "",
-      "choices": ["Bowel obstruction", "Dysentery", "Parasitic infection", "Food poisoning", "Viral gastroenteritis"],
+      "choices": [
+        "Bowel obstruction",
+        "Dysentery",
+        "Parasitic infection",
+        "Food poisoning",
+        "Viral gastroenteritis"
+      ],
       "answer": 3
     },
     {
@@ -1919,7 +2405,13 @@
         "src": "images\\Practice Test Questions\\Domain 2\\701187.jpg",
         "alt": "Domain 2 question 20 image"
       },
-      "choices": ["Corneal abrasion", "Foreign body in the eye", "Iritis", "Conjunctivitis", "Stye"],
+      "choices": [
+        "Corneal abrasion",
+        "Foreign body in the eye",
+        "Iritis",
+        "Conjunctivitis",
+        "Stye"
+      ],
       "answer": 3
     },
     {
@@ -1947,7 +2439,13 @@
       "type": "mc",
       "prompt": "Which of the following conditions is associated with disproportionate pain, extreme skin sensitivity, a burning sensation, and hyperhidrosis?",
       "rationale": "",
-      "choices": ["Complex regional pain syndrome", "Amyotrophic lateral sclerosis", "Cerebral palsy", "Multiple sclerosis", "Muscular dystrophy"],
+      "choices": [
+        "Complex regional pain syndrome",
+        "Amyotrophic lateral sclerosis",
+        "Cerebral palsy",
+        "Multiple sclerosis",
+        "Muscular dystrophy"
+      ],
       "answer": 0
     },
     {
@@ -1958,7 +2456,13 @@
       "type": "mc",
       "prompt": "Which of the following consequences may occur after a prolonged bout of diarrhea (24 to 36 hours)?",
       "rationale": "",
-      "choices": ["Influenza", "Dehydration", "Loss of appetite", "Weight loss", "Suppressed immune system"],
+      "choices": [
+        "Influenza",
+        "Dehydration",
+        "Loss of appetite",
+        "Weight loss",
+        "Suppressed immune system"
+      ],
       "answer": 1
     },
     {
@@ -1969,7 +2473,13 @@
       "type": "mc",
       "prompt": "Which condition can lead to congenital defects or death to infants if the mother becomes infected within the first trimester?",
       "rationale": "",
-      "choices": ["Hepatitis", "Lyme disease", "Streptococcal infections", "Mumps", "Rubella"],
+      "choices": [
+        "Hepatitis",
+        "Lyme disease",
+        "Streptococcal infections",
+        "Mumps",
+        "Rubella"
+      ],
       "answer": 4
     },
     {
@@ -2014,7 +2524,13 @@
       "type": "mc",
       "prompt": "A patient complains to an athletic trainer of unplanned weight loss, polyuria, and polydipsia. The team physician suspects the patient may be diabetic and orders a blood test. What would confirm the physician’s suspicion this person is a diabetic?",
       "rationale": "",
-      "choices": ["\u003c150 mg/dl", "100 mg/dl", "A1C of 6.2", "\u003e200 mg/dl", "A1C of 5.4"],
+      "choices": [
+        "<150 mg/dl",
+        "100 mg/dl",
+        "A1C of 6.2",
+        ">200 mg/dl",
+        "A1C of 5.4"
+      ],
       "answer": 3
     },
     {
@@ -2025,7 +2541,13 @@
       "type": "mc",
       "prompt": "Which of the following diseases is malignant?",
       "rationale": "",
-      "choices": ["Fibromyalgia", "Lyme disease", "Scleroderma", "Hodgkin’s lymphoma", "Amyotrophic lateral sclerosis"],
+      "choices": [
+        "Fibromyalgia",
+        "Lyme disease",
+        "Scleroderma",
+        "Hodgkin’s lymphoma",
+        "Amyotrophic lateral sclerosis"
+      ],
       "answer": 3
     },
     {
@@ -2036,7 +2558,13 @@
       "type": "mc",
       "prompt": "Which term best describes the end-feel created when two muscles come in contact with each other?",
       "rationale": "",
-      "choices": ["Open", "Firm", "Hard", "Soft", "Boggy"],
+      "choices": [
+        "Open",
+        "Firm",
+        "Hard",
+        "Soft",
+        "Boggy"
+      ],
       "answer": 3
     },
     {
@@ -2047,7 +2575,13 @@
       "type": "mc",
       "prompt": "Which of the following refers to the process by which a patient’s condition is defined through a progressive exclusion of conditions that are inconsistent with the signs and symptoms presented?",
       "rationale": "",
-      "choices": ["Disposition", "Objective assessment", "Subjective assessment", "Differential diagnosis", "Triage"],
+      "choices": [
+        "Disposition",
+        "Objective assessment",
+        "Subjective assessment",
+        "Differential diagnosis",
+        "Triage"
+      ],
       "answer": 3
     },
     {
@@ -2058,7 +2592,13 @@
       "type": "mc",
       "prompt": "Which of the following refers to chronic irritation and excess secretion of synovial fluid within the joint capsule?",
       "rationale": "",
-      "choices": ["Tenosynovitis", "Tendinitis", "Tendinosis", "Synovitis", "Arthritis"],
+      "choices": [
+        "Tenosynovitis",
+        "Tendinitis",
+        "Tendinosis",
+        "Synovitis",
+        "Arthritis"
+      ],
       "answer": 3
     },
     {
@@ -2069,7 +2609,13 @@
       "type": "mc",
       "prompt": "Over which of the following anatomic structures would tightness of the iliotibial band create excessive friction?",
       "rationale": "",
-      "choices": ["Greater trochanter of femur", "Gerdy’s tubercle", "Lateral femoral condyle", "Medial femoral condyle", "Tibial tuberosity"],
+      "choices": [
+        "Greater trochanter of femur",
+        "Gerdy’s tubercle",
+        "Lateral femoral condyle",
+        "Medial femoral condyle",
+        "Tibial tuberosity"
+      ],
       "answer": 2
     },
     {
@@ -2080,7 +2626,14 @@
       "type": "mc",
       "prompt": "Besides performing a valgus and varus knee stress test with the knee straight, at what joint angle should the knee be stressed in a flexed position?",
       "rationale": "",
-      "choices": ["10° to 20°", "15° to 25°", "20° to 30°", "25° to 35°", "30° to 40°", "35° to 45°"],
+      "choices": [
+        "10° to 20°",
+        "15° to 25°",
+        "20° to 30°",
+        "25° to 35°",
+        "30° to 40°",
+        "35° to 45°"
+      ],
       "answer": 2
     },
     {
@@ -2091,7 +2644,12 @@
       "type": "mc",
       "prompt": "Which of the following conditions is associated with a predisposition for patella subluxation?",
       "rationale": "",
-      "choices": ["Abnormally deep femoral groove", "Mild Q-angle", "Hypomobile patella", "Patella alta"],
+      "choices": [
+        "Abnormally deep femoral groove",
+        "Mild Q-angle",
+        "Hypomobile patella",
+        "Patella alta"
+      ],
       "answer": 3
     },
     {
@@ -2102,7 +2660,13 @@
       "type": "mc",
       "prompt": "What test is used to differentiate between the tightness of the iliopsoas muscle and the tightness of the rectus femoris muscle?",
       "rationale": "",
-      "choices": ["Craig test", "Thomas test", "FABER test", "Thompson test", "Trendelenburg test"],
+      "choices": [
+        "Craig test",
+        "Thomas test",
+        "FABER test",
+        "Thompson test",
+        "Trendelenburg test"
+      ],
       "answer": 2
     },
     {
@@ -2113,7 +2677,13 @@
       "type": "mc",
       "prompt": "You are evaluating a 13-year-old boy who presents with pain at the patellar tendon. He reports pain especially when jumping or running. Upon observation, you notice a large bump at the tibial tuberosity. Which condition would the patient most likely present with?",
       "rationale": "",
-      "choices": ["Legg-Calvé-Perthes disease", "Sinding-Larsen-Johannson syndrome", "Osgood-Schlatter’s disease", "Salter-Harris fracture", "Anterior tibial syndrome"],
+      "choices": [
+        "Legg-Calvé-Perthes disease",
+        "Sinding-Larsen-Johannson syndrome",
+        "Osgood-Schlatter’s disease",
+        "Salter-Harris fracture",
+        "Anterior tibial syndrome"
+      ],
       "answer": 2
     },
     {
@@ -2141,7 +2711,13 @@
       "type": "mc",
       "prompt": "Which of the following terms is defined as a lower-extremity alignment that is commonly referred to as “bow-legged”?",
       "rationale": "",
-      "choices": ["Genu varum", "Genu valgum", "Genu recurvatum", "Femoral retroversion", "Femoral anteversion"],
+      "choices": [
+        "Genu varum",
+        "Genu valgum",
+        "Genu recurvatum",
+        "Femoral retroversion",
+        "Femoral anteversion"
+      ],
       "answer": 0
     },
     {
@@ -2152,7 +2728,13 @@
       "type": "mc",
       "prompt": "Which of the following terms properly designates the foot alignment and structure associated with a navicular tuberosity location that is above the Feiss line in a weight-bearing condition?",
       "rationale": "",
-      "choices": ["Pes cavus", "Pes planus", "Tibial torsion", "Plantar flexed first ray", "Equinus deformity"],
+      "choices": [
+        "Pes cavus",
+        "Pes planus",
+        "Tibial torsion",
+        "Plantar flexed first ray",
+        "Equinus deformity"
+      ],
       "answer": 0
     },
     {
@@ -2163,7 +2745,13 @@
       "type": "mc",
       "prompt": "Which of the following has a tendon insertion on the distal phalanx of the finger?",
       "rationale": "",
-      "choices": ["Flexor digitorum superficialis", "Flexor digitorum longus", "Flexor digitorum profundus", "Flexor digitorum brevis", "Flexor digitorum medialis"],
+      "choices": [
+        "Flexor digitorum superficialis",
+        "Flexor digitorum longus",
+        "Flexor digitorum profundus",
+        "Flexor digitorum brevis",
+        "Flexor digitorum medialis"
+      ],
       "answer": 2
     },
     {
@@ -2174,7 +2762,13 @@
       "type": "mc",
       "prompt": "When the sternoclavicular joint is dislocated, which direction of clavicle displacement can present a medical emergency?",
       "rationale": "",
-      "choices": ["Anterior", "Posterior", "Inferior", "Superior", "Anterior superior"],
+      "choices": [
+        "Anterior",
+        "Posterior",
+        "Inferior",
+        "Superior",
+        "Anterior superior"
+      ],
       "answer": 1
     },
     {
@@ -2185,7 +2779,13 @@
       "type": "mc",
       "prompt": "Of which of the following peripheral nerves is the posterior interosseus nerve a branch?",
       "rationale": "",
-      "choices": ["Median", "Ulnar", "Radial", "Axillary", "Lateral"],
+      "choices": [
+        "Median",
+        "Ulnar",
+        "Radial",
+        "Axillary",
+        "Lateral"
+      ],
       "answer": 2
     },
     {
@@ -2196,7 +2796,13 @@
       "type": "mc",
       "prompt": "Which of the following is the correct term for a congenital malformation of the lumbar spine that is associated with an incomplete closure of the laminae?",
       "rationale": "",
-      "choices": ["Spina bifida occulta", "Spondylosis", "Sacralization", "Spondylolisthesis", "Spondylitis"],
+      "choices": [
+        "Spina bifida occulta",
+        "Spondylosis",
+        "Sacralization",
+        "Spondylolisthesis",
+        "Spondylitis"
+      ],
       "answer": 0
     },
     {
@@ -2207,7 +2813,13 @@
       "type": "mc",
       "prompt": "Which of the following correctly designates dermatome pain that is due to nerve root irritation?",
       "rationale": "",
-      "choices": ["Referred pain", "Radicular pain", "Somatic pain", "Shooting pain", "Deferred pain"],
+      "choices": [
+        "Referred pain",
+        "Radicular pain",
+        "Somatic pain",
+        "Shooting pain",
+        "Deferred pain"
+      ],
       "answer": 1
     },
     {
@@ -2218,7 +2830,13 @@
       "type": "mc",
       "prompt": "By what magnitude of anterior displacement of a vertebral body in relation to the adjacent inferior vertebral body is Grade II spondylolisthesis defined? A gymnast you have been working with received x-rays for her frequent low back pain. The images show a 25% to 50% anterior slippage of the lower lumbar vertebrae over the sacrum. What is her diagnosis?",
       "rationale": "",
-      "choices": ["Grade I spondylolisthesis", "Grade II spondylolisthesis", "Grade III spondylolisthesis", "Spondylosis", "Lumbar bulging discs"],
+      "choices": [
+        "Grade I spondylolisthesis",
+        "Grade II spondylolisthesis",
+        "Grade III spondylolisthesis",
+        "Spondylosis",
+        "Lumbar bulging discs"
+      ],
       "answer": 1
     },
     {
@@ -2229,7 +2847,13 @@
       "type": "mc",
       "prompt": "What is the stage of intervertebral disc herniation in which the nucleus pulposus becomes separated from the annulus fibrosis?",
       "rationale": "",
-      "choices": ["Protrusion", "Prolapse", "Nerve compression", "Sequestration", "Herniation"],
+      "choices": [
+        "Protrusion",
+        "Prolapse",
+        "Nerve compression",
+        "Sequestration",
+        "Herniation"
+      ],
       "answer": 3
     },
     {
@@ -2257,7 +2881,13 @@
       "type": "mc",
       "prompt": "Which muscle is the most lateral of the erector spinae muscles?",
       "rationale": "",
-      "choices": ["Rotator dorsi", "Iliocostalis dorsi", "Longissimus dorsi", "Rhomboid major", "Spinalis dorsi"],
+      "choices": [
+        "Rotator dorsi",
+        "Iliocostalis dorsi",
+        "Longissimus dorsi",
+        "Rhomboid major",
+        "Spinalis dorsi"
+      ],
       "answer": 1
     },
     {
@@ -2268,7 +2898,13 @@
       "type": "mc",
       "prompt": "Which special test assesses sciatic nerve pathology with the examiner applying pressure in the popliteal space of the involved lower extremity?",
       "rationale": "",
-      "choices": ["Bowstring test", "Brudzinski test", "Lasegue test", "Hoover test", "Quadrant test"],
+      "choices": [
+        "Bowstring test",
+        "Brudzinski test",
+        "Lasegue test",
+        "Hoover test",
+        "Quadrant test"
+      ],
       "answer": 0
     },
     {
@@ -2279,7 +2915,13 @@
       "type": "mc",
       "prompt": "Which condition involves the softening of and eventual degeneration of the patella’s hyaline cartilage on the lateral articular facet?",
       "rationale": "",
-      "choices": ["Bipartite patella fracture", "Chondromalacia patella", "Sinding-Larsen-Johansson syndrome", "Osgood-Schlatter’s disease", "Patellofemoral stress syndrome"],
+      "choices": [
+        "Bipartite patella fracture",
+        "Chondromalacia patella",
+        "Sinding-Larsen-Johansson syndrome",
+        "Osgood-Schlatter’s disease",
+        "Patellofemoral stress syndrome"
+      ],
       "answer": 1
     },
     {
@@ -2290,7 +2932,13 @@
       "type": "mc",
       "prompt": "Which of the following muscle(s) plays a central role in generating both intra-abdominal pressure and tension within the thoracolumbar fascia?",
       "rationale": "",
-      "choices": ["Transverse abdominis", "Internal oblique", "External oblique", "Multifidus", "Quadratus lumborum"],
+      "choices": [
+        "Transverse abdominis",
+        "Internal oblique",
+        "External oblique",
+        "Multifidus",
+        "Quadratus lumborum"
+      ],
       "answer": 0
     },
     {
@@ -2301,7 +2949,13 @@
       "type": "mc",
       "prompt": "What is the best thermometer for accuracy when assessing core temperature, such as in the case of heat exhaustion?",
       "rationale": "",
-      "choices": ["Oral", "Tympanic", "Rectal", "Axillary", "Temporal"],
+      "choices": [
+        "Oral",
+        "Tympanic",
+        "Rectal",
+        "Axillary",
+        "Temporal"
+      ],
       "answer": 2
     },
     {
@@ -2329,7 +2983,13 @@
       "type": "mc",
       "prompt": "Which of the following conditions lead to recurrent abdominal pain and cramping accompanied by bloody diarrhea and weight loss?",
       "rationale": "",
-      "choices": ["Inflammatory bowel disease", "Irritable bowel syndrome", "Peptic ulcer disease", "Gastroesophageal reflux disease (GERD)", "Pelvic inflammatory disease"],
+      "choices": [
+        "Inflammatory bowel disease",
+        "Irritable bowel syndrome",
+        "Peptic ulcer disease",
+        "Gastroesophageal reflux disease (GERD)",
+        "Pelvic inflammatory disease"
+      ],
       "answer": 0
     },
     {
@@ -2340,7 +3000,13 @@
       "type": "mc",
       "prompt": "Your athlete complains of upper right quadrant pain after eating, especially food such as French fries or hotdogs. They have a positive Blumberg’s sign. What do you suspect is causing the athlete’s symptoms?",
       "rationale": "",
-      "choices": ["Appendicitis", "Kidney stones", "Ulcerative colitis", "A peptic ulcer", "Gallstones"],
+      "choices": [
+        "Appendicitis",
+        "Kidney stones",
+        "Ulcerative colitis",
+        "A peptic ulcer",
+        "Gallstones"
+      ],
       "answer": 4
     },
     {
@@ -2402,7 +3068,13 @@
       "type": "mc",
       "prompt": "What should the blood glucose levels be after normal fasting (eight hours)?",
       "rationale": "",
-      "choices": ["60 to 80 mg/dl", "80 to 100 mg/dl", "\u003e130 mg/dl", "100 to 140 mg/dl", "126 to 130 mg/dl"],
+      "choices": [
+        "60 to 80 mg/dl",
+        "80 to 100 mg/dl",
+        ">130 mg/dl",
+        "100 to 140 mg/dl",
+        "126 to 130 mg/dl"
+      ],
       "answer": 0
     },
     {
@@ -2413,7 +3085,13 @@
       "type": "mc",
       "prompt": "For patients with mononucleosis, a heterophile antibody test, or monospot test, is commonly ordered. What is the test reliability?",
       "rationale": "",
-      "choices": ["10%", "25%", "50%", "75%", "90%"],
+      "choices": [
+        "10%",
+        "25%",
+        "50%",
+        "75%",
+        "90%"
+      ],
       "answer": 4
     },
     {
@@ -2424,7 +3102,13 @@
       "type": "mc",
       "prompt": "Which STD or STI can cause incapacitating cardiovascular disease that is often accompanied by neurological signs if left untreated?",
       "rationale": "",
-      "choices": ["Gonorrhea", "Chlamydia", "HPV", "Herpes simplex 2", "Syphilis"],
+      "choices": [
+        "Gonorrhea",
+        "Chlamydia",
+        "HPV",
+        "Herpes simplex 2",
+        "Syphilis"
+      ],
       "answer": 4
     },
     {
@@ -2452,7 +3136,13 @@
       "type": "mc",
       "prompt": "Which condition can occur due to elevated levels of uric acid in the blood?",
       "rationale": "",
-      "choices": ["Rheumatoid arthritis", "Osteoarthritis", "Psoriatic arthritis", "Gout", "Lupus"],
+      "choices": [
+        "Rheumatoid arthritis",
+        "Osteoarthritis",
+        "Psoriatic arthritis",
+        "Gout",
+        "Lupus"
+      ],
       "answer": 3
     },
     {
@@ -2463,7 +3153,13 @@
       "type": "mc",
       "prompt": "Which eating disorder has potentially life-threatening consequences with long-term mortality rates of approximately 20%?",
       "rationale": "",
-      "choices": ["Anorexia nervosa", "Bulimia nervosa", "Binge eating disorder", "Overeating disorder", "Pica disorder"],
+      "choices": [
+        "Anorexia nervosa",
+        "Bulimia nervosa",
+        "Binge eating disorder",
+        "Overeating disorder",
+        "Pica disorder"
+      ],
       "answer": 0
     },
     {
@@ -2474,7 +3170,13 @@
       "type": "mc",
       "prompt": "Which term best describes a form of fluctuating depression associated with decreased exposure to sunlight over time?",
       "rationale": "",
-      "choices": ["Cyclothymia", "Bipolar disorder", "Light deprivation disorder", "Manic-depression", "Seasonal affective disorder"],
+      "choices": [
+        "Cyclothymia",
+        "Bipolar disorder",
+        "Light deprivation disorder",
+        "Manic-depression",
+        "Seasonal affective disorder"
+      ],
       "answer": 4
     },
     {
@@ -2485,7 +3187,13 @@
       "type": "mc",
       "prompt": "What is the resting position for patellofemoral articulation?",
       "rationale": "",
-      "choices": ["Full knee extension", "Slight knee flexion between 10° and 20° of knee flexion", "35° of knee flexion", "45° to 50° of knee flexion", "10° of knee extension"],
+      "choices": [
+        "Full knee extension",
+        "Slight knee flexion between 10° and 20° of knee flexion",
+        "35° of knee flexion",
+        "45° to 50° of knee flexion",
+        "10° of knee extension"
+      ],
       "answer": 1
     },
     {
@@ -2513,7 +3221,13 @@
       "type": "mc",
       "prompt": "To which nerve roots is the patellar tendon attributed?",
       "rationale": "",
-      "choices": ["L2/L3/L4", "L3/L4/L5", "L4/L5/S1", "L1/L2/L3", "L5/S1/S2"],
+      "choices": [
+        "L2/L3/L4",
+        "L3/L4/L5",
+        "L4/L5/S1",
+        "L1/L2/L3",
+        "L5/S1/S2"
+      ],
       "answer": 0
     },
     {
@@ -2524,7 +3238,13 @@
       "type": "mc",
       "prompt": "What is the normal end-feel for elbow extension?",
       "rationale": "",
-      "choices": ["Hard", "Firm", "Soft", "Boggy", "Empty"],
+      "choices": [
+        "Hard",
+        "Firm",
+        "Soft",
+        "Boggy",
+        "Empty"
+      ],
       "answer": 0
     },
     {
@@ -2535,7 +3255,13 @@
       "type": "mc",
       "prompt": "Which of the following special tests assesses posterior cruciate ligament integrity?",
       "rationale": "",
-      "choices": ["Lachman test", "Pivot shift test", "Anterior drawer test", "Valgus stress test", "Posterior drawer test"],
+      "choices": [
+        "Lachman test",
+        "Pivot shift test",
+        "Anterior drawer test",
+        "Valgus stress test",
+        "Posterior drawer test"
+      ],
       "answer": 4
     },
     {
@@ -2546,7 +3272,13 @@
       "type": "mc",
       "prompt": "Which special test is used to assess for a meniscal tear of the knee?",
       "rationale": "",
-      "choices": ["Thompson test", "McMurray test", "Ballottment test", "Ober test", "Trendelenburg test"],
+      "choices": [
+        "Thompson test",
+        "McMurray test",
+        "Ballottment test",
+        "Ober test",
+        "Trendelenburg test"
+      ],
       "answer": 1
     },
     {
@@ -2557,7 +3289,13 @@
       "type": "mc",
       "prompt": "Which nerve root(s) is associated with ankle dorsiflexion weakness?",
       "rationale": "",
-      "choices": ["L1–L2", "L2–L3", "L3–L4", "L4–L5", "L5–S1"],
+      "choices": [
+        "L1–L2",
+        "L2–L3",
+        "L3–L4",
+        "L4–L5",
+        "L5–S1"
+      ],
       "answer": 3
     },
     {
@@ -2568,7 +3306,13 @@
       "type": "mc",
       "prompt": "Which of the following muscles is primarily responsible for hip abduction?",
       "rationale": "",
-      "choices": ["Gluteus maximus", "Iliopsoas", "Adductor longus", "Gluteus medius", "Rectus femoris"],
+      "choices": [
+        "Gluteus maximus",
+        "Iliopsoas",
+        "Adductor longus",
+        "Gluteus medius",
+        "Rectus femoris"
+      ],
       "answer": 3
     },
     {
@@ -2579,7 +3323,13 @@
       "type": "mc",
       "prompt": "Which of the following is considered a positive sign for appendicitis?",
       "rationale": "",
-      "choices": ["Murphy’s sign", "McBurney’s point tenderness", "Rebound test", "Homan’s sign", "Tinel’s sign"],
+      "choices": [
+        "Murphy’s sign",
+        "McBurney’s point tenderness",
+        "Rebound test",
+        "Homan’s sign",
+        "Tinel’s sign"
+      ],
       "answer": 1
     },
     {
@@ -2590,7 +3340,13 @@
       "type": "mc",
       "prompt": "Which of the following findings is associated with a tension pneumothorax?",
       "rationale": "",
-      "choices": ["Bradycardia", "Hypotension", "Tracheal deviation", "Decreased blood glucose", "Bilateral breath sounds"],
+      "choices": [
+        "Bradycardia",
+        "Hypotension",
+        "Tracheal deviation",
+        "Decreased blood glucose",
+        "Bilateral breath sounds"
+      ],
       "answer": 2
     },
     {
@@ -2601,7 +3357,13 @@
       "type": "mc",
       "prompt": "You assess a patient’s respirations during an evaluation. The patient is sitting at rest. What would you expect the respiratory rate for this patient to be if they are within a normal range?",
       "rationale": "",
-      "choices": ["8 to 10 breaths per minute", "10 to 12 breaths per minute", "12 to 20 breaths per minute", "20 to 30 breaths per minute", "25 to 35 breaths per minute"],
+      "choices": [
+        "8 to 10 breaths per minute",
+        "10 to 12 breaths per minute",
+        "12 to 20 breaths per minute",
+        "20 to 30 breaths per minute",
+        "25 to 35 breaths per minute"
+      ],
       "answer": 2
     },
     {
@@ -2612,7 +3374,13 @@
       "type": "mc",
       "prompt": "You are evaluating a patient who has been training for a marathon for complaints of pain. You suspect a stress fracture. Which of the following is the most common site of a stress fracture in runners?",
       "rationale": "",
-      "choices": ["Femoral neck", "Calcaneus", "Fibula", "Tibia", "Talus"],
+      "choices": [
+        "Femoral neck",
+        "Calcaneus",
+        "Fibula",
+        "Tibia",
+        "Talus"
+      ],
       "answer": 3
     },
     {
@@ -2623,7 +3391,13 @@
       "type": "mc",
       "prompt": "Which cranial nerve is responsible for facial sensation?",
       "rationale": "",
-      "choices": ["Facial nerve", "Glossopharyngeal nerve", "Hypoglossal nerve", "Trigeminal nerve", "Vagus nerve"],
+      "choices": [
+        "Facial nerve",
+        "Glossopharyngeal nerve",
+        "Hypoglossal nerve",
+        "Trigeminal nerve",
+        "Vagus nerve"
+      ],
       "answer": 3
     },
     {
@@ -2634,7 +3408,13 @@
       "type": "mc",
       "prompt": "Which special test is used to assess the integrity of the Achilles tendon?",
       "rationale": "",
-      "choices": ["Homan’s test", "Thompson test", "Anterior drawer test", "Tinel’s test", "McMurray test"],
+      "choices": [
+        "Homan’s test",
+        "Thompson test",
+        "Anterior drawer test",
+        "Tinel’s test",
+        "McMurray test"
+      ],
       "answer": 1
     },
     {
@@ -2645,7 +3425,13 @@
       "type": "mc",
       "prompt": "Which of the following is a sign of compartment syndrome?",
       "rationale": "",
-      "choices": ["Pallor", "Paresthesia", "Pulselessness", "Paralysis", "All of the above"],
+      "choices": [
+        "Pallor",
+        "Paresthesia",
+        "Pulselessness",
+        "Paralysis",
+        "All of the above"
+      ],
       "answer": 4
     },
     {
@@ -2656,7 +3442,13 @@
       "type": "mc",
       "prompt": "You are providing coverage during a high school basketball game when one of the athletes falls to the ground, holding his ankle. You witnessed the athlete land on the outside of his foot coming down from a jump, causing the ankle to roll inward. Based on the mechanism of injury, which of the following structures is most likely to have been injured?",
       "rationale": "",
-      "choices": ["Deltoid ligament", "Posterior talofibular ligament", "Syndesmosis", "Anterior talofibular ligament", "Calcaneofibular ligament"],
+      "choices": [
+        "Deltoid ligament",
+        "Posterior talofibular ligament",
+        "Syndesmosis",
+        "Anterior talofibular ligament",
+        "Calcaneofibular ligament"
+      ],
       "answer": 3
     },
     {
@@ -2667,7 +3459,13 @@
       "type": "mc",
       "prompt": "Which of the following is a red flag sign in low back pain that warrants immediate referral?",
       "rationale": "",
-      "choices": ["Mild muscle spasm", "Localized tenderness", "Loss of bowel or bladder control", "Decreased flexibility", "Pain with movement"],
+      "choices": [
+        "Mild muscle spasm",
+        "Localized tenderness",
+        "Loss of bowel or bladder control",
+        "Decreased flexibility",
+        "Pain with movement"
+      ],
       "answer": 2
     },
     {
@@ -2678,7 +3476,13 @@
       "type": "mc",
       "prompt": "Which of the following is characteristic of a grade III muscle strain?",
       "rationale": "",
-      "choices": ["Mild pain with no loss of strength", "Moderate pain with slight weakness", "Complete tear with significant loss of function", "Mild swelling only", "Tightness with activity"],
+      "choices": [
+        "Mild pain with no loss of strength",
+        "Moderate pain with slight weakness",
+        "Complete tear with significant loss of function",
+        "Mild swelling only",
+        "Tightness with activity"
+      ],
       "answer": 2
     },
     {
@@ -2689,7 +3493,13 @@
       "type": "mc",
       "prompt": "Which nerve is commonly affected in a “stinger” or “burner” injury?",
       "rationale": "",
-      "choices": ["Radial nerve", "Ulnar nerve", "Median nerve", "Brachial plexus", "Axillary nerve"],
+      "choices": [
+        "Radial nerve",
+        "Ulnar nerve",
+        "Median nerve",
+        "Brachial plexus",
+        "Axillary nerve"
+      ],
       "answer": 3
     },
     {
@@ -2717,7 +3527,13 @@
       "type": "mc",
       "prompt": "Which of the following tests assesses for lumbar nerve root irritation?",
       "rationale": "",
-      "choices": ["Patrick’s test", "Straight leg raise test", "Lachman test", "Varus stress test", "McMurray test"],
+      "choices": [
+        "Patrick’s test",
+        "Straight leg raise test",
+        "Lachman test",
+        "Varus stress test",
+        "McMurray test"
+      ],
       "answer": 1
     },
     {
@@ -2728,7 +3544,13 @@
       "type": "mc",
       "prompt": "Which condition is associated with a “butterfly rash” across the cheeks?",
       "rationale": "",
-      "choices": ["Psoriasis", "Rosacea", "Systemic lupus erythematosus", "Impetigo", "Cellulitis"],
+      "choices": [
+        "Psoriasis",
+        "Rosacea",
+        "Systemic lupus erythematosus",
+        "Impetigo",
+        "Cellulitis"
+      ],
       "answer": 2
     },
     {
@@ -2739,7 +3561,13 @@
       "type": "mc",
       "prompt": "Which of the following is the most common cause of anterior knee pain in adolescents?",
       "rationale": "",
-      "choices": ["ACL tear", "Patellar fracture", "Osgood-Schlatter disease", "Meniscus tear", "Patellar tendon rupture’"],
+      "choices": [
+        "ACL tear",
+        "Patellar fracture",
+        "Osgood-Schlatter disease",
+        "Meniscus tear",
+        "Patellar tendon rupture’"
+      ],
       "answer": 2
     },
     {
@@ -2750,7 +3578,13 @@
       "type": "mc",
       "prompt": "Which of the following is associated with a positive Tinel’s sign at the wrist?",
       "rationale": "",
-      "choices": ["Ulnar nerve entrapment", "Radial nerve palsy", "Carpal tunnel syndrome", "Cubital tunnel syndrome", "Thoracic outlet syndrome"],
+      "choices": [
+        "Ulnar nerve entrapment",
+        "Radial nerve palsy",
+        "Carpal tunnel syndrome",
+        "Cubital tunnel syndrome",
+        "Thoracic outlet syndrome"
+      ],
       "answer": 2
     },
     {
@@ -2761,7 +3595,13 @@
       "type": "mc",
       "prompt": "Which of the following describes the mechanism of a Jones fracture?",
       "rationale": "",
-      "choices": ["Inversion injury of the ankle", "Eversion injury of the ankle", "Direct blow to the tibia", "Fracture at the base of the fifth metatarsal", "Stress fracture of the navicular"],
+      "choices": [
+        "Inversion injury of the ankle",
+        "Eversion injury of the ankle",
+        "Direct blow to the tibia",
+        "Fracture at the base of the fifth metatarsal",
+        "Stress fracture of the navicular"
+      ],
       "answer": 3
     },
     {
@@ -2772,7 +3612,13 @@
       "type": "mc",
       "prompt": "Which of the following is a common symptom of hypoglycemia?",
       "rationale": "",
-      "choices": ["Polyuria", "Polydipsia", "Fruity breath", "Shakiness and sweating", "Hypertension"],
+      "choices": [
+        "Polyuria",
+        "Polydipsia",
+        "Fruity breath",
+        "Shakiness and sweating",
+        "Hypertension"
+      ],
       "answer": 3
     },
     {
@@ -2783,7 +3629,13 @@
       "type": "mc",
       "prompt": "Which of the following best describes orthostatic hypotension?",
       "rationale": "",
-      "choices": ["Elevated blood pressure when standing", "Stable blood pressure when sitting", "Drop in blood pressure upon standing", "Increased pulse pressure", "Elevated diastolic pressure"],
+      "choices": [
+        "Elevated blood pressure when standing",
+        "Stable blood pressure when sitting",
+        "Drop in blood pressure upon standing",
+        "Increased pulse pressure",
+        "Elevated diastolic pressure"
+      ],
       "answer": 2
     },
     {
@@ -2825,7 +3677,12 @@
       "type": "mc",
       "prompt": "A judo practitioner gets put into a lock during competition and hears a pop in their elbow. They complain of medial elbow pain with some pain into the forearm. Which test can evaluate the integrity of the UCL?",
       "rationale": "",
-      "choices": ["Varus stress", "Valgus stress", "Cozen’s", "Tinel’s"],
+      "choices": [
+        "Varus stress",
+        "Valgus stress",
+        "Cozen’s",
+        "Tinel’s"
+      ],
       "answer": 1
     },
     {
@@ -2836,7 +3693,12 @@
       "type": "mc",
       "prompt": "A client presents to you with pain in their hand along the distribution of the median nerve. On further testing, you find pain along the superior lateral aspect of the arm into the thumb and index fingers, a diminished biceps and brachioradialis reflex, and weakness with elbow flexion and wrist extension. What is your likely diagnosis?",
       "rationale": "",
-      "choices": ["Carpal tunnel syndrome", "C6 radiculopathy", "C7 radiculopathy and carpal tunnel syndrome", "Undetermined (more testing needed)"],
+      "choices": [
+        "Carpal tunnel syndrome",
+        "C6 radiculopathy",
+        "C7 radiculopathy and carpal tunnel syndrome",
+        "Undetermined (more testing needed)"
+      ],
       "answer": 1
     },
     {
@@ -2847,7 +3709,12 @@
       "type": "mc",
       "prompt": "You are trying to diagnose differentially between cervical radiculopathy and a local paresthesia in the wrist and hand. What triage test can help rule out the cervical spine?",
       "rationale": "",
-      "choices": ["Upper quarter screen", "Spurling’s test", "Upper limb tension test", "None (insufficient diagnostic accuracy)"],
+      "choices": [
+        "Upper quarter screen",
+        "Spurling’s test",
+        "Upper limb tension test",
+        "None (insufficient diagnostic accuracy)"
+      ],
       "answer": 1
     },
     {
@@ -2858,7 +3725,12 @@
       "type": "mc",
       "prompt": "A female runner presents to your clinic with pain over the inferior pole of the patella when ascending or descending stairs, running, or sitting at work. On palpation, you elicit the concordant pain right on the distal patella. What is the most likely diagnosis?",
       "rationale": "",
-      "choices": ["Patellofemoral pain syndrome", "Patellar tendinopathy", "Patellar malalignment", "Plica syndrome"],
+      "choices": [
+        "Patellofemoral pain syndrome",
+        "Patellar tendinopathy",
+        "Patellar malalignment",
+        "Plica syndrome"
+      ],
       "answer": 1
     },
     {
@@ -2869,7 +3741,12 @@
       "type": "mc",
       "prompt": "A football player presents to your clinic after a blow to the lateral knee during last week’s game. On further evaluation, the patient has pain with palpation of the MCL, pain with ROM, and increased laxity on valgus testing as compared with the other side. What is your diagnosis?",
       "rationale": "",
-      "choices": ["LCL tear", "Partial LCL tear", "MCL tear", "Partial MCL tear"],
+      "choices": [
+        "LCL tear",
+        "Partial LCL tear",
+        "MCL tear",
+        "Partial MCL tear"
+      ],
       "answer": 2
     },
     {
@@ -2896,7 +3773,12 @@
       "type": "mc",
       "prompt": "A client presents at your clinic with the presence of upper motor neuron signs and symptoms at multiple dermatome levels. What is your diagnosis for the patient?",
       "rationale": "",
-      "choices": ["Cervical radiculopathy", "Cervical myelopathy", "Cervical discogenic pain", "Cervical nerve root pain"],
+      "choices": [
+        "Cervical radiculopathy",
+        "Cervical myelopathy",
+        "Cervical discogenic pain",
+        "Cervical nerve root pain"
+      ],
       "answer": 1
     },
     {
@@ -2907,7 +3789,12 @@
       "type": "mc",
       "prompt": "Which of the following is NOT an indicator for thoracic spine x-ray screening?",
       "rationale": "",
-      "choices": ["MVA", "A fall", "Ejection from a car or motorcycle", "A kick during a taekwondo match"],
+      "choices": [
+        "MVA",
+        "A fall",
+        "Ejection from a car or motorcycle",
+        "A kick during a taekwondo match"
+      ],
       "answer": 1
     },
     {
@@ -2918,7 +3805,12 @@
       "type": "mc",
       "prompt": "Where is the SIJ pain primarily located at?",
       "rationale": "",
-      "choices": ["Buttocks", "Lower lumbar spine", "Groin", "Lateral hip"],
+      "choices": [
+        "Buttocks",
+        "Lower lumbar spine",
+        "Groin",
+        "Lateral hip"
+      ],
       "answer": 0
     },
     {
@@ -2929,7 +3821,12 @@
       "type": "mc",
       "prompt": "A 70-year-old client presents to your clinic with shoulder pain that is worse at night. The client does not remember any trauma and reports insidious onset. She has weakness in abduction and external rotation. No change in symptoms is noted with repeated cervical ROM or Spurling’s test. What is the most likely diagnosis?",
       "rationale": "",
-      "choices": ["Rotator cuff tear", "Radiculopathy", "Partial radiculopathy", "Inconclusive (further testing needed)"],
+      "choices": [
+        "Rotator cuff tear",
+        "Radiculopathy",
+        "Partial radiculopathy",
+        "Inconclusive (further testing needed)"
+      ],
       "answer": 0
     },
     {
@@ -2940,7 +3837,12 @@
       "type": "mc",
       "prompt": "A client presents to you after trauma to their right shoulder in a skiing accident. They report falling on an outstretched right hand after running into another person with their right shoulder. The client reports anterior and superior pain. Which special test can help rule out clavicle fracture?",
       "rationale": "",
-      "choices": ["Bony apprehension test", "Olecranon manubrium test", "None (diagnostic imaging required)", "Palpation of the clavicle"],
+      "choices": [
+        "Bony apprehension test",
+        "Olecranon manubrium test",
+        "None (diagnostic imaging required)",
+        "Palpation of the clavicle"
+      ],
       "answer": 1
     },
     {
@@ -2964,7 +3866,7 @@
             "right": "Babinski"
           },
           {
-            "left": "Passive and quick movement of the ankle into dorsiflexion with a positive response of \u003e3 involuntary beats",
+            "left": "Passive and quick movement of the ankle into dorsiflexion with a positive response of >3 involuntary beats",
             "right": "Clonus"
           },
           {
@@ -3079,8 +3981,16 @@
       "type": "ms",
       "prompt": "What are the two bones of the TMJ? Choose all that apply.",
       "rationale": "",
-      "choices": ["The mandible", "The temporal bone", "The zygomatic bone", "The maxilla"],
-      "answer": [0, 1]
+      "choices": [
+        "The mandible",
+        "The temporal bone",
+        "The zygomatic bone",
+        "The maxilla"
+      ],
+      "answer": [
+        0,
+        1
+      ]
     },
     {
       "id": "domain2_q110",
@@ -3090,7 +4000,12 @@
       "type": "mc",
       "prompt": "In which area of the vertebra would spondylolysis likely to occur?",
       "rationale": "",
-      "choices": ["Pars interarticularis", "Anterior vertebral body", "Pedicles", "Laminae"],
+      "choices": [
+        "Pars interarticularis",
+        "Anterior vertebral body",
+        "Pedicles",
+        "Laminae"
+      ],
       "answer": 0
     },
     {
@@ -3117,7 +4032,12 @@
       "type": "mc",
       "prompt": "Which hip lesion is diagnosed by a positive leg log rolling test?",
       "rationale": "",
-      "choices": ["Slipped capital femoral epiphysis", "Labral tear", "Osteoarthritis", "Lateral trochanteric bursitis"],
+      "choices": [
+        "Slipped capital femoral epiphysis",
+        "Labral tear",
+        "Osteoarthritis",
+        "Lateral trochanteric bursitis"
+      ],
       "answer": 1
     },
     {
@@ -3145,7 +4065,13 @@
             "How would you describe the pain in your knee?",
             "On a scale of 0 to 10, how would you rate your pain?"
           ],
-          "answer": [0, 1, 3, 5, 6]
+          "answer": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ]
         },
         {
           "id": "domain2_t01_q114",
@@ -3161,7 +4087,12 @@
             "Is there a time of the day that your knee feels better?",
             "Is there a time of the day that your knee feels worse?"
           ],
-          "answer": [0, 1, 2, 3]
+          "answer": [
+            0,
+            1,
+            2,
+            3
+          ]
         },
         {
           "id": "domain2_t01_q115",
@@ -3181,7 +4112,14 @@
             "Active internal rotation of the tibia",
             "Active external rotation of the tibia"
           ],
-          "answer": [1, 3, 4, 5, 6, 7]
+          "answer": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
         },
         {
           "id": "domain2_t01_q116",
@@ -3201,7 +4139,12 @@
             ]
           },
           "dd": {
-            "tokens": ["Biceps femoris", "Rectus femoris", "Gluteus medius, gluteus minimus, tensor fascia lata", "Gluteus maximus"],
+            "tokens": [
+              "Biceps femoris",
+              "Rectus femoris",
+              "Gluteus medius, gluteus minimus, tensor fascia lata",
+              "Gluteus maximus"
+            ],
             "zones": [
               {
                 "id": "knee_flexion",
@@ -3225,7 +4168,10 @@
               }
             ],
             "table": {
-              "column_headers": ["Motion", "Primary Muscles Being Tested"],
+              "column_headers": [
+                "Motion",
+                "Primary Muscles Being Tested"
+              ],
               "rows": [
                 [
                   "Knee flexion",
@@ -3263,8 +4209,20 @@
           "type": "ms",
           "prompt": "Both the neurological and circulatory assessments were within normal limits. Which are the special tests that may be most appropriate to aid in the assessment of this athlete?",
           "rationale": "",
-          "choices": ["Active lateral glide test", "Bounce home", "Anterior drawer test", "External rotation/dial test", "Apley’s compression/distraction", "Apprehension", "Nobel’s compression test"],
-          "answer": [1, 2, 4]
+          "choices": [
+            "Active lateral glide test",
+            "Bounce home",
+            "Anterior drawer test",
+            "External rotation/dial test",
+            "Apley’s compression/distraction",
+            "Apprehension",
+            "Nobel’s compression test"
+          ],
+          "answer": [
+            1,
+            2,
+            4
+          ]
         },
         {
           "id": "domain2_t01_q118",
@@ -3285,7 +4243,11 @@
             "Patella tilt test",
             "Patellar apprehension test"
           ],
-          "answer": [0, 2, 3]
+          "answer": [
+            0,
+            2,
+            3
+          ]
         },
         {
           "id": "domain2_t01_q119",
@@ -3295,8 +4257,21 @@
           "type": "ms",
           "prompt": "Both the neurological and circulatory assessments were within normal limits. Which are the special tests that may be most appropriate to aid in the assessment of this athlete?",
           "rationale": "",
-          "choices": ["Posterior drawer test", "Posterior sag test", "Sweep", "Wilson’s test", "Q-angle", "Pivot shift test", "Quadriceps active test", "Renne’s test"],
-          "answer": [2, 3, 5]
+          "choices": [
+            "Posterior drawer test",
+            "Posterior sag test",
+            "Sweep",
+            "Wilson’s test",
+            "Q-angle",
+            "Pivot shift test",
+            "Quadriceps active test",
+            "Renne’s test"
+          ],
+          "answer": [
+            2,
+            3,
+            5
+          ]
         },
         {
           "id": "domain2_t01_q120",
@@ -3307,8 +4282,18 @@
           "prompt": "Read the patient evaluation. Which injuries or conditions are a part of the differential diagnosis based on the findings? Choose all that apply.",
           "rationale": "",
           "supporting_text": "The examination reveals the following:\n  - Anterior drawer test: Patient is guarding during the test—appears to have some laxity but is unsure of endpoint.\n  - Ballotable patella: Mild effusion is present.\n  - Bounce home: Pain is elicited at full knee extension.\n  - Clarke’s sign/patellar grind: It is painful on the medial side of the knee during the test.\n  - Lachman test: Patient is guarding during the test—appears to have some laxity but is unsure of endpoint.\n  - Prone Lachman test: Patient is guarding during the test—appears to have some laxity but is unsure of endpoint.\n  - Wilson’s test: Pain is at approximately 30°—relieved with external rotation of the tibia.\n  - Pivot shift test: Patient is guarding during the test—unsure if laxity is present.",
-          "choices": ["Apophysitis (Osgood-Schlatter’s disease)", "Baker’s cyst", "Chondromalacia", "Contusion of the infrapatellar fat pad", "Ligament sprains"],
-          "answer": [1, 2, 4]
+          "choices": [
+            "Apophysitis (Osgood-Schlatter’s disease)",
+            "Baker’s cyst",
+            "Chondromalacia",
+            "Contusion of the infrapatellar fat pad",
+            "Ligament sprains"
+          ],
+          "answer": [
+            1,
+            2,
+            4
+          ]
         }
       ],
       "rationale": ""
@@ -3337,7 +4322,14 @@
             "How would you describe the pain in your wrist?",
             "Does your pain radiate up your arm or down into your hand?"
           ],
-          "answer": [0, 1, 2, 3, 4, 5]
+          "answer": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
         },
         {
           "id": "domain2_t02_q122",
@@ -3360,7 +4352,18 @@
             "column_headers": "Drop-spot table"
           },
           "dd": {
-            "tokens": ["Hamate", "Lunate", "Pisiform", "Triquetrum", "Ulna", "Trapezoid", "Trapezium", "Capitate", "Scaphoid (navicular)", "Radius"],
+            "tokens": [
+              "Hamate",
+              "Lunate",
+              "Pisiform",
+              "Triquetrum",
+              "Ulna",
+              "Trapezoid",
+              "Trapezium",
+              "Capitate",
+              "Scaphoid (navicular)",
+              "Radius"
+            ],
             "zones": [
               {
                 "label": "A",
@@ -3419,7 +4422,13 @@
             "alt": "Image placeholder for Domain 2 question 123",
             "placeholder": true
           },
-          "choices": ["Forearm supination and pronation", "Metacarpal phalangeal adduction", "Interphalangeal flexion and extension", "Thumb flexion and extension", "Wrist flexion and extension"],
+          "choices": [
+            "Forearm supination and pronation",
+            "Metacarpal phalangeal adduction",
+            "Interphalangeal flexion and extension",
+            "Thumb flexion and extension",
+            "Wrist flexion and extension"
+          ],
           "answer": 1,
           "review_status": "source_labeled_drag_drop_but_converted_to_choice_item_for_html_support"
         },
@@ -3437,7 +4446,13 @@
             "alt": "Image placeholder for Domain 2 question 124",
             "placeholder": true
           },
-          "choices": ["Forearm supination and pronation", "Metacarpal phalangeal abduction", "Interphalangeal flexion and extension", "Thumb flexion and extension", "Wrist flexion and extension"],
+          "choices": [
+            "Forearm supination and pronation",
+            "Metacarpal phalangeal abduction",
+            "Interphalangeal flexion and extension",
+            "Thumb flexion and extension",
+            "Wrist flexion and extension"
+          ],
           "answer": 0,
           "review_status": "source_labeled_drag_drop_but_converted_to_choice_item_for_html_support"
         },
@@ -3455,7 +4470,13 @@
             "alt": "Image placeholder for Domain 2 question 125",
             "placeholder": true
           },
-          "choices": ["Forearm supination and pronation", "Interphalangeal abduction", "Metacarpal phalangeal flexion and extension", "Thumb flexion and extension", "Wrist flexion and extension"],
+          "choices": [
+            "Forearm supination and pronation",
+            "Interphalangeal abduction",
+            "Metacarpal phalangeal flexion and extension",
+            "Thumb flexion and extension",
+            "Wrist flexion and extension"
+          ],
           "answer": 2,
           "review_status": "source_labeled_drag_drop_but_converted_to_choice_item_for_html_support"
         },
@@ -3473,7 +4494,13 @@
             "alt": "Image placeholder for Domain 2 question 126",
             "placeholder": true
           },
-          "choices": ["Forearm supination and pronation", "Metacarpal phalangeal abduction", "Interphalangeal flexion and extension", "Thumb flexion and extension", "Wrist flexion and extension"],
+          "choices": [
+            "Forearm supination and pronation",
+            "Metacarpal phalangeal abduction",
+            "Interphalangeal flexion and extension",
+            "Thumb flexion and extension",
+            "Wrist flexion and extension"
+          ],
           "answer": 4,
           "review_status": "source_labeled_drag_drop_but_converted_to_choice_item_for_html_support"
         },
@@ -3491,7 +4518,13 @@
             "alt": "Image placeholder for Domain 2 question 127",
             "placeholder": true
           },
-          "choices": ["Thumb abduction and adduction", "Metacarpal phalangeal abduction", "Interphalangeal flexion and extension", "Thumb flexion and extension", "Opposition"],
+          "choices": [
+            "Thumb abduction and adduction",
+            "Metacarpal phalangeal abduction",
+            "Interphalangeal flexion and extension",
+            "Thumb flexion and extension",
+            "Opposition"
+          ],
           "answer": 3,
           "review_status": "source_labeled_drag_drop_but_converted_to_choice_item_for_html_support"
         },
@@ -3509,7 +4542,13 @@
             "alt": "Image placeholder for Domain 2 question 128",
             "placeholder": true
           },
-          "choices": ["Metacarpal phalangeal adduction", "Radial and ulnar deviations", "Metacarpal phalangeal flexion and extension", "Thumb abduction and adduction", "Thumb opposition"],
+          "choices": [
+            "Metacarpal phalangeal adduction",
+            "Radial and ulnar deviations",
+            "Metacarpal phalangeal flexion and extension",
+            "Thumb abduction and adduction",
+            "Thumb opposition"
+          ],
           "answer": 1,
           "review_status": "source_labeled_drag_drop_but_converted_to_choice_item_for_html_support"
         },
@@ -3527,7 +4566,13 @@
             "alt": "Image placeholder for Domain 2 question 129",
             "placeholder": true
           },
-          "choices": ["Metacarpal phalangeal adduction", "Thumb flexion and extension", "Metacarpal phalangeal flexion and extension", "Thumb abduction and adduction", "Thumb opposition"],
+          "choices": [
+            "Metacarpal phalangeal adduction",
+            "Thumb flexion and extension",
+            "Metacarpal phalangeal flexion and extension",
+            "Thumb abduction and adduction",
+            "Thumb opposition"
+          ],
           "answer": 3,
           "review_status": "source_labeled_drag_drop_but_converted_to_choice_item_for_html_support"
         },
@@ -3545,7 +4590,13 @@
             "alt": "Image placeholder for Domain 2 question 130",
             "placeholder": true
           },
-          "choices": ["Metacarpal phalangeal adduction", "Radial and ulnar deviations", "Metacarpal phalangeal flexion and extension", "Thumb abduction and adduction", "Thumb opposition"],
+          "choices": [
+            "Metacarpal phalangeal adduction",
+            "Radial and ulnar deviations",
+            "Metacarpal phalangeal flexion and extension",
+            "Thumb abduction and adduction",
+            "Thumb opposition"
+          ],
           "answer": 2,
           "review_status": "source_labeled_drag_drop_but_converted_to_choice_item_for_html_support"
         },
@@ -3563,7 +4614,13 @@
             "alt": "Image placeholder for Domain 2 question 131",
             "placeholder": true
           },
-          "choices": ["Metacarpal phalangeal adduction", "Thumb flexion and extension", "Metacarpal phalangeal flexion and extension", "Thumb abduction and adduction", "Thumb opposition"],
+          "choices": [
+            "Metacarpal phalangeal adduction",
+            "Thumb flexion and extension",
+            "Metacarpal phalangeal flexion and extension",
+            "Thumb abduction and adduction",
+            "Thumb opposition"
+          ],
           "answer": 4,
           "review_status": "source_labeled_drag_drop_but_converted_to_choice_item_for_html_support"
         },
@@ -3581,7 +4638,13 @@
             "alt": "Image placeholder for Domain 2 question 132",
             "placeholder": true
           },
-          "choices": ["Metacarpal phalangeal abduction", "Radial and ulnar deviations", "Metacarpal phalangeal flexion and extension", "Thumb abduction and adduction", "Thumb opposition"],
+          "choices": [
+            "Metacarpal phalangeal abduction",
+            "Radial and ulnar deviations",
+            "Metacarpal phalangeal flexion and extension",
+            "Thumb abduction and adduction",
+            "Thumb opposition"
+          ],
           "answer": 0,
           "review_status": "source_labeled_drag_drop_but_converted_to_choice_item_for_html_support"
         },
@@ -3603,7 +4666,11 @@
             "Flexor pollicis longus",
             "Extensor pollicis brevis"
           ],
-          "answer": [0, 3, 7]
+          "answer": [
+            0,
+            3,
+            7
+          ]
         },
         {
           "id": "domain2_t02_q134",
@@ -3635,26 +4702,41 @@
               {
                 "id": "supination",
                 "label": "Forearm supination",
-                "accept": ["Biceps brachii", "Supinator"]
+                "accept": [
+                  "Biceps brachii",
+                  "Supinator"
+                ]
               },
               {
                 "id": "pronation",
                 "label": "Forearm pronation",
-                "accept": ["Pronator teres", "Pronator quadratus"]
+                "accept": [
+                  "Pronator teres",
+                  "Pronator quadratus"
+                ]
               },
               {
                 "id": "wrist_flexion",
                 "label": "Wrist flexion",
-                "accept": ["Flexor carpi radialis", "Flexor carpi ulnaris"]
+                "accept": [
+                  "Flexor carpi radialis",
+                  "Flexor carpi ulnaris"
+                ]
               },
               {
                 "id": "wrist_extension",
                 "label": "Wrist extension",
-                "accept": ["Extensor carpi ulnaris", "Extensor carpi radialis longus"]
+                "accept": [
+                  "Extensor carpi ulnaris",
+                  "Extensor carpi radialis longus"
+                ]
               }
             ],
             "table": {
-              "column_headers": ["Joint Motion", "Associated Muscle"],
+              "column_headers": [
+                "Joint Motion",
+                "Associated Muscle"
+              ],
               "rows": [
                 [
                   "Forearm supination",
@@ -3715,16 +4797,26 @@
               {
                 "id": "radial_deviation_1",
                 "label": "Radial deviation",
-                "accept": ["Flexor carpi radialis", "Extensor carpi radialis longus", "Extensor carpi radialis brevis"]
+                "accept": [
+                  "Flexor carpi radialis",
+                  "Extensor carpi radialis longus",
+                  "Extensor carpi radialis brevis"
+                ]
               },
               {
                 "id": "ulnar_deviation_1",
                 "label": "Ulnar deviation",
-                "accept": ["Flexor carpi ulnaris", "Extensor carpi ulnaris"]
+                "accept": [
+                  "Flexor carpi ulnaris",
+                  "Extensor carpi ulnaris"
+                ]
               }
             ],
             "table": {
-              "column_headers": ["Joint Motion", "Associated Muscle"],
+              "column_headers": [
+                "Joint Motion",
+                "Associated Muscle"
+              ],
               "rows": [
                 [
                   "Radial deviation",
@@ -3773,16 +4865,26 @@
               {
                 "id": "mp_flexion_1",
                 "label": "Metacarpal phalangeal flexion",
-                "accept": ["Lumbricales (2nd to 4th)", "Flexor digiti minimi (5th)"]
+                "accept": [
+                  "Lumbricales (2nd to 4th)",
+                  "Flexor digiti minimi (5th)"
+                ]
               },
               {
                 "id": "mp_extension_1",
                 "label": "Metacarpal phalangeal extension",
-                "accept": ["Extensor indicis (2nd)", "Extensor digiti minimi (5th)", "Extensor digitorum (2nd to 5th)"]
+                "accept": [
+                  "Extensor indicis (2nd)",
+                  "Extensor digiti minimi (5th)",
+                  "Extensor digitorum (2nd to 5th)"
+                ]
               }
             ],
             "table": {
-              "column_headers": ["Joint Motion", "Associated Muscle"],
+              "column_headers": [
+                "Joint Motion",
+                "Associated Muscle"
+              ],
               "rows": [
                 [
                   "Metacarpal phalangeal flexion",
@@ -3832,26 +4934,38 @@
               {
                 "id": "mp_abduction_1",
                 "label": "Metacarpal phalangeal abduction",
-                "accept": ["Abductor digiti minimi (5th)", "Dorsal interossei (2nd to 4th)"]
+                "accept": [
+                  "Abductor digiti minimi (5th)",
+                  "Dorsal interossei (2nd to 4th)"
+                ]
               },
               {
                 "id": "mp_adduction_1",
                 "label": "Metacarpal phalangeal adduction",
-                "accept": ["Palmar interossei"]
+                "accept": [
+                  "Palmar interossei"
+                ]
               },
               {
                 "id": "pip_flexion_1",
                 "label": "Proximal interphalangeal flexion",
-                "accept": ["Flexor digitorum superficialis"]
+                "accept": [
+                  "Flexor digitorum superficialis"
+                ]
               },
               {
                 "id": "dip_flexion_1",
                 "label": "Distal interphalangeal flexion",
-                "accept": ["Profundus"]
+                "accept": [
+                  "Profundus"
+                ]
               }
             ],
             "table": {
-              "column_headers": ["Joint Motion", "Associated Muscle"],
+              "column_headers": [
+                "Joint Motion",
+                "Associated Muscle"
+              ],
               "rows": [
                 [
                   "Metacarpal phalangeal abduction",
@@ -3911,21 +5025,32 @@
               {
                 "id": "ip_extension_1",
                 "label": "Interphalangeal extension (both DIP and PIP)",
-                "accept": ["Extensor digiti minimi (5th)", "Extensor digitorum (2nd to 5th)", "Extensor indicis (2nd)"]
+                "accept": [
+                  "Extensor digiti minimi (5th)",
+                  "Extensor digitorum (2nd to 5th)",
+                  "Extensor indicis (2nd)"
+                ]
               },
               {
                 "id": "first_mcp_flexion_1",
                 "label": "First metacarpophalangeal joint flexion",
-                "accept": ["Extensor pollicis brevis"]
+                "accept": [
+                  "Extensor pollicis brevis"
+                ]
               },
               {
                 "id": "first_ip_flexion_1",
                 "label": "First interphalangeal joint flexion",
-                "accept": ["Extensor pollicis longus"]
+                "accept": [
+                  "Extensor pollicis longus"
+                ]
               }
             ],
             "table": {
-              "column_headers": ["Joint Motion", "Associated Muscle"],
+              "column_headers": [
+                "Joint Motion",
+                "Associated Muscle"
+              ],
               "rows": [
                 [
                   "Interphalangeal extension (both DIP and PIP)",
@@ -3979,16 +5104,24 @@
               {
                 "id": "thumb_abduction_1",
                 "label": "Thumb abduction",
-                "accept": ["Abductor pollicis longus and brevis"]
+                "accept": [
+                  "Abductor pollicis longus and brevis"
+                ]
               },
               {
                 "id": "opposition_1",
                 "label": "Opposition",
-                "accept": ["Digiti minimi", "Opponens pollicis"]
+                "accept": [
+                  "Digiti minimi",
+                  "Opponens pollicis"
+                ]
               }
             ],
             "table": {
-              "column_headers": ["Joint Motion", "Associated Muscle"],
+              "column_headers": [
+                "Joint Motion",
+                "Associated Muscle"
+              ],
               "rows": [
                 [
                   "Thumb abduction",
@@ -4014,8 +5147,19 @@
           "type": "ms",
           "prompt": "The athletic trainer decides that this injury may be bone related and decides the injury warrants an x-ray. Who can order the x-ray for this injury? Choose all that apply.",
           "rationale": "",
-          "choices": ["Athletic trainer", "Physician", "Parents", "Only a hand and wrist orthopedic specialist physician", "Physical therapist (in certain states)", "Radiologist"],
-          "answer": [1, 4, 5]
+          "choices": [
+            "Athletic trainer",
+            "Physician",
+            "Parents",
+            "Only a hand and wrist orthopedic specialist physician",
+            "Physical therapist (in certain states)",
+            "Radiologist"
+          ],
+          "answer": [
+            1,
+            4,
+            5
+          ]
         },
         {
           "id": "domain2_t02_q141",
@@ -4025,8 +5169,20 @@
           "type": "ms",
           "prompt": "What is the athletic trainer’s differential diagnosis of this athlete’s injury? Which injuries or conditions are possible based on the examination? Choose all that apply.",
           "rationale": "",
-          "choices": ["Bennett’s fracture", "Bishop’s deformity", "Boutonniere deformity", "Scapho-lunate disarticulation", "Scaphoid fracture", "Colles fracture", "De Quervain’s syndrome"],
-          "answer": [3, 4, 6]
+          "choices": [
+            "Bennett’s fracture",
+            "Bishop’s deformity",
+            "Boutonniere deformity",
+            "Scapho-lunate disarticulation",
+            "Scaphoid fracture",
+            "Colles fracture",
+            "De Quervain’s syndrome"
+          ],
+          "answer": [
+            3,
+            4,
+            6
+          ]
         }
       ],
       "rationale": ""
@@ -4051,7 +5207,16 @@
           "review_notes": "Structured item; review drop spots/pairs during HTML conversion.",
           "json_conversion_notes": "Create JSON dd object with tokens and zones.",
           "dd": {
-            "tokens": ["Anterior pillar change to palatoglossal arch", "Hard palate", "Right tonsil", "Pharynx", "Soft palate", "Uvula", "Tongue", "Posterior pillar change to palatopharyngeal arch"],
+            "tokens": [
+              "Anterior pillar change to palatoglossal arch",
+              "Hard palate",
+              "Right tonsil",
+              "Pharynx",
+              "Soft palate",
+              "Uvula",
+              "Tongue",
+              "Posterior pillar change to palatopharyngeal arch"
+            ],
             "zones": [
               {
                 "label": "1",
@@ -4110,7 +5275,12 @@
             "Otoscope of ears, nose, and throat",
             "Palpation of the abdomen"
           ],
-          "answer": [0, 1, 5, 6]
+          "answer": [
+            0,
+            1,
+            5,
+            6
+          ]
         },
         {
           "id": "domain2_t03_q144",
@@ -4124,34 +5294,67 @@
           "review_notes": "Structured item; review drop spots/pairs during HTML conversion.",
           "json_conversion_notes": "Create JSON dd object with tokens and zones. Render as a table/drop-zone interaction in HTML.",
           "table": {
-            "column_headers": ["Left Upper Quadrant | Right Upper Quadrant | Left Lower Quadrant | Right Lower Quadrant", "Drop spot 1 | Drop spot 2 | Drop spot 3 | Drop spot 4"]
+            "column_headers": [
+              "Left Upper Quadrant | Right Upper Quadrant | Left Lower Quadrant | Right Lower Quadrant",
+              "Drop spot 1 | Drop spot 2 | Drop spot 3 | Drop spot 4"
+            ]
           },
           "dd": {
-            "tokens": ["Appendix", "Cecum", "Bladder (R)", "Bladder (L)", "Duodenum", "Gallbladder", "Left adrenal gland", "Left kidney", "Pancreas", "Sigmoid colon"],
+            "tokens": [
+              "Appendix",
+              "Cecum",
+              "Bladder (R)",
+              "Bladder (L)",
+              "Duodenum",
+              "Gallbladder",
+              "Left adrenal gland",
+              "Left kidney",
+              "Pancreas",
+              "Sigmoid colon"
+            ],
             "zones": [
               {
                 "id": "luq",
                 "label": "Left Upper Quadrant",
-                "accept": ["Left adrenal gland", "Left kidney", "Pancreas"]
+                "accept": [
+                  "Left adrenal gland",
+                  "Left kidney",
+                  "Pancreas"
+                ]
               },
               {
                 "id": "ruq",
                 "label": "Right Upper Quadrant",
-                "accept": ["Duodenum", "Gallbladder"]
+                "accept": [
+                  "Duodenum",
+                  "Gallbladder"
+                ]
               },
               {
                 "id": "llq",
                 "label": "Left Lower Quadrant",
-                "accept": ["Bladder (L)", "Sigmoid colon"]
+                "accept": [
+                  "Bladder (L)",
+                  "Sigmoid colon"
+                ]
               },
               {
                 "id": "rlq",
                 "label": "Right Lower Quadrant",
-                "accept": ["Appendix", "Cecum", "Bladder (R)"]
+                "accept": [
+                  "Appendix",
+                  "Cecum",
+                  "Bladder (R)"
+                ]
               }
             ],
             "table": {
-              "column_headers": ["Left Upper Quadrant", "Right Upper Quadrant", "Left Lower Quadrant", "Right Lower Quadrant"],
+              "column_headers": [
+                "Left Upper Quadrant",
+                "Right Upper Quadrant",
+                "Left Lower Quadrant",
+                "Right Lower Quadrant"
+              ],
               "rows": [
                 [
                   {
@@ -4184,34 +5387,67 @@
           "review_notes": "Structured item; review drop spots/pairs during HTML conversion.",
           "json_conversion_notes": "Create JSON dd object with tokens and zones. Render as a table/drop-zone interaction in HTML.",
           "table": {
-            "column_headers": ["Left Upper Quadrant | Right Upper Quadrant | Left Lower Quadrant | Right Lower Quadrant", "Drop spot 1 | Drop spot 2 | Drop spot 3 | Drop spot 4"]
+            "column_headers": [
+              "Left Upper Quadrant | Right Upper Quadrant | Left Lower Quadrant | Right Lower Quadrant",
+              "Drop spot 1 | Drop spot 2 | Drop spot 3 | Drop spot 4"
+            ]
           },
           "dd": {
-            "tokens": ["Left ovary", "Left spermatic cord", "Left ureter", "Liver", "Right adrenal gland", "Right ovary", "Right spermatic cord", "Right ureter", "Spleen", "Stomach"],
+            "tokens": [
+              "Left ovary",
+              "Left spermatic cord",
+              "Left ureter",
+              "Liver",
+              "Right adrenal gland",
+              "Right ovary",
+              "Right spermatic cord",
+              "Right ureter",
+              "Spleen",
+              "Stomach"
+            ],
             "zones": [
               {
                 "id": "luq",
                 "label": "Left Upper Quadrant",
-                "accept": ["Spleen", "Stomach"]
+                "accept": [
+                  "Spleen",
+                  "Stomach"
+                ]
               },
               {
                 "id": "ruq",
                 "label": "Right Upper Quadrant",
-                "accept": ["Liver", "Right adrenal gland"]
+                "accept": [
+                  "Liver",
+                  "Right adrenal gland"
+                ]
               },
               {
                 "id": "llq",
                 "label": "Left Lower Quadrant",
-                "accept": ["Left ovary", "Left spermatic cord", "Left ureter"]
+                "accept": [
+                  "Left ovary",
+                  "Left spermatic cord",
+                  "Left ureter"
+                ]
               },
               {
                 "id": "rlq",
                 "label": "Right Lower Quadrant",
-                "accept": ["Right ovary", "Right spermatic cord", "Right ureter"]
+                "accept": [
+                  "Right ovary",
+                  "Right spermatic cord",
+                  "Right ureter"
+                ]
               }
             ],
             "table": {
-              "column_headers": ["Left Upper Quadrant", "Right Upper Quadrant", "Left Lower Quadrant", "Right Lower Quadrant"],
+              "column_headers": [
+                "Left Upper Quadrant",
+                "Right Upper Quadrant",
+                "Left Lower Quadrant",
+                "Right Lower Quadrant"
+              ],
               "rows": [
                 [
                   {
@@ -4250,7 +5486,14 @@
             "Pulse",
             "Request a urine sample from the patient"
           ],
-          "answer": [0, 2, 3, 4, 5, 6]
+          "answer": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
         },
         {
           "id": "domain2_t03_q147",
@@ -4264,7 +5507,11 @@
           "review_notes": "Structured item; review drop spots/pairs during HTML conversion.",
           "json_conversion_notes": "Create JSON dd object with tokens and zones. Correct mapping may need manual review.",
           "dd": {
-            "tokens": ["Auscultation", "Palpation", "Percussion"],
+            "tokens": [
+              "Auscultation",
+              "Palpation",
+              "Percussion"
+            ],
             "zones": [
               {
                 "id": "order_1",
@@ -4283,7 +5530,10 @@
               }
             ],
             "table": {
-              "column_headers": ["Order", "Special Test"],
+              "column_headers": [
+                "Order",
+                "Special Test"
+              ],
               "rows": [
                 [
                   "1",
@@ -4315,8 +5565,20 @@
           "type": "ms",
           "prompt": "What is the athletic trainer’s differential diagnosis of this athlete’s injury? What are those injuries or conditions that are a result of the examination? Choose all that apply.",
           "rationale": "",
-          "choices": ["Abdominal aortic aneurysm", "Appendicitis", "Celiac disease", "Colorectal cancer", "Mononucleosis", "Peptic ulcer disease (PUD)", "Splenomegaly"],
-          "answer": [4, 5, 6]
+          "choices": [
+            "Abdominal aortic aneurysm",
+            "Appendicitis",
+            "Celiac disease",
+            "Colorectal cancer",
+            "Mononucleosis",
+            "Peptic ulcer disease (PUD)",
+            "Splenomegaly"
+          ],
+          "answer": [
+            4,
+            5,
+            6
+          ]
         }
       ],
       "rationale": ""
@@ -4345,7 +5607,13 @@
             "Why did you continue to play after you hit your head?",
             "Are you taking any medications?"
           ],
-          "answer": [0, 1, 2, 3, 5]
+          "answer": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ]
         },
         {
           "id": "domain2_t04_q150",
@@ -4363,7 +5631,14 @@
             "On a scale of 1 to 10, how would you rate your pain?",
             "Does your pain come and go or is it fairly constant?"
           ],
-          "answer": [0, 1, 2, 3, 4, 5]
+          "answer": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
         },
         {
           "id": "domain2_t04_q151",
@@ -4374,8 +5649,25 @@
           "prompt": "Read the patient history. Which of the following are some concussion-related symptoms asked of the patient during head injury assessment? Choose all that apply.",
           "rationale": "",
           "review_notes": "Image/photo appears required but no image ID was identified in source.",
-          "choices": ["Balance problems", "Dizziness", "Blurred vision", "Fatigue or low energy", "Confusion", "Headache", "Difficulty in remembering", "Difficulty in focusing"],
-          "answer": [0, 1, 2, 3, 4, 6, 7],
+          "choices": [
+            "Balance problems",
+            "Dizziness",
+            "Blurred vision",
+            "Fatigue or low energy",
+            "Confusion",
+            "Headache",
+            "Difficulty in remembering",
+            "Difficulty in focusing"
+          ],
+          "answer": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7
+          ],
           "supporting_text": "The history reveals the following:\n\n  - The patient was doing heading drills for about 20 minutes.\n  - The patient’s head collided with another player on the right side of his head, and he has consistent throbbing pain.\n  - His pain level is 8 on a 10-point scale.\n  - His neck feels stiff, but he has no pain or numbness anywhere else.\n  - The patient takes Adderall for ADHD.",
           "context_title": "Patient History"
         },
@@ -4400,7 +5692,12 @@
             "Fluid coming from the nostrils, known as rhinorrhea",
             "Discoloration around the neck and throat region"
           ],
-          "answer": [0, 1, 4, 6],
+          "answer": [
+            0,
+            1,
+            4,
+            6
+          ],
           "review_status": "source_labeled_drag_drop_but_converted_to_choice_item_for_html_support",
           "context_title": "Concussion Evaluation"
         },
@@ -4497,7 +5794,10 @@
               }
             ],
             "table": {
-              "column_headers": ["Cranial Nerve Number", "Name"],
+              "column_headers": [
+                "Cranial Nerve Number",
+                "Name"
+              ],
               "rows": [
                 [
                   "I",
@@ -4597,7 +5897,13 @@
             ]
           },
           "matching": {
-            "options": ["Smell an alcohol wipe", "Check pupils with a light pen", "Clench teeth tightly together", "Look side to side", "Look up"],
+            "options": [
+              "Smell an alcohol wipe",
+              "Check pupils with a light pen",
+              "Clench teeth tightly together",
+              "Look side to side",
+              "Look up"
+            ],
             "zones": [
               {
                 "id": "t154_i",
@@ -4625,7 +5931,11 @@
               }
             ],
             "table": {
-              "column_headers": ["Number", "Cranial Nerve", "Testing Method"],
+              "column_headers": [
+                "Number",
+                "Cranial Nerve",
+                "Testing Method"
+              ],
               "rows": [
                 [
                   "I",
@@ -4730,7 +6040,11 @@
               }
             ],
             "table": {
-              "column_headers": ["Number", "Cranial Nerve", "Testing Method"],
+              "column_headers": [
+                "Number",
+                "Cranial Nerve",
+                "Testing Method"
+              ],
               "rows": [
                 [
                   "I",
@@ -4787,7 +6101,13 @@
           "prompt": "Read the patient’s report. What is the total Standardized Assessment of Concussion (SAC) score earned by this patient? Choose only one.",
           "rationale": "",
           "supporting_text": "\nFrom the previous questions, the athletic trainer discovers that the patient’s pupils are equal and react to light, and the Romberg test shows mild instability when progressing to eyes closed and single-leg position.\nNext, the athletic trainer performs a standard assessment of concussion. The patient’s responses to each segment are below:\nORIENTATION:\nMonth (August)\nDate (The 26th)\nDay of week (Wednesday)\nYear (2026)\nTime (within 1 hour) (Maybe 20 minutes until 2)\nIMMEDIATE MEMORY: [Note: (+) = a correct response; (―) = an incorrect response]\nWord Trial 1 Trial 2 Trial 3\nElbow + + +\nApple + + +\nCarpet — + —\nSaddle + — +\nBubble — + —\nCONCENTRATION: (Note: BOLDED and Highlighted strings were correctly responded to by the patient, strings with a strikethrough were incorrectly responded to, and strings in normal font were not used for this patient.)\n4-9-3 6-2-9\n3-8-1-4 3-2-7-9\n6-2-9-7-1 1-5-2-8-5\n7-1-8-4-6-2 5-3-9-1-4-8\nMonths of the year, backward (Note: BOLDED and Highlighted strings were correctly responded to by the patient, strings with a strikethrough line were incorrectly responded to)\nDecember - November - October - September - August - July - June - May - April - March - February - January\nNeurological assessment of cervical vertebrae dermatome, myotomes and reflexes are all within normal limits.\nDELAYED RECALL:\nElbow +\nApple +\nCarpet +\nSaddle +\nBubble —\n20/30\n24/30",
-          "choices": ["22/30", "23/30", "21/30", "20/30", "24/30"],
+          "choices": [
+            "22/30",
+            "23/30",
+            "21/30",
+            "20/30",
+            "24/30"
+          ],
           "answer": 2,
           "context_title": "Patient Report",
           "supporting_html": "<div class=\"patient-report-rich\">\n  <p>From the previous questions, the athletic trainer discovers that the patient’s pupils are equal and react to light, and the Romberg test shows mild instability when progressing to eyes closed and single-leg position.</p>\n  <p>Next, the athletic trainer performs a standard assessment of concussion. The patient’s responses to each segment are below:</p>\n  <p><strong>ORIENTATION:</strong></p>\n  <table class=\"report-table\">\n    <tbody>\n      <tr><td>Month</td><td>(August)</td></tr>\n      <tr><td>Date</td><td>(The 26th)</td></tr>\n      <tr><td>Day of week</td><td>(Wednesday)</td></tr>\n      <tr><td>Year</td><td>(2026)</td></tr>\n      <tr><td>Time (within 1 hour)</td><td>(Maybe 20 minutes until 2)</td></tr>\n    </tbody>\n  </table>\n  <p><strong>IMMEDIATE MEMORY:</strong> [Note: (+) = a correct response; (―) = an incorrect response]</p>\n  <table class=\"report-table\">\n    <thead>\n      <tr><th>Word</th><th>Trial 1</th><th>Trial 2</th><th>Trial 3</th></tr>\n    </thead>\n    <tbody>\n      <tr><td>Elbow</td><td>+</td><td>+</td><td>+</td></tr>\n      <tr><td>Apple</td><td>+</td><td>+</td><td>+</td></tr>\n      <tr><td>Carpet</td><td>―</td><td>+</td><td>―</td></tr>\n      <tr><td>Saddle</td><td>+</td><td>―</td><td>+</td></tr>\n      <tr><td>Bubble</td><td>―</td><td>+</td><td>―</td></tr>\n    </tbody>\n  </table>\n  <p><strong>CONCENTRATION:</strong> (Note: <strong>BOLDED</strong> and <mark>Highlighted</mark> strings were correctly responded to by the patient, strings with a strikethrough were incorrectly responded to, and strings in normal font were not used for this patient.)</p>\n  <p><mark>4-9-3</mark>&nbsp;&nbsp;&nbsp;6-2-9</p>\n  <p><del>3-8-1-4</del>&nbsp;&nbsp;&nbsp;<mark>3-2-7-9</mark></p>\n  <p><del>6-2-9-7-1</del>&nbsp;&nbsp;&nbsp;<del>1-5-2-8-5</del></p>\n  <p>7-1-8-4-6-2&nbsp;&nbsp;&nbsp;5-3-9-1-4-8</p>\n  <p>Months of the year, backward (Note: BOLDED and <mark>Highlighted</mark> strings were correctly responded to by the patient, strings with a strikethrough line were incorrectly responded to)</p>\n  <p><mark>December</mark> - <mark>November</mark> - <mark>October</mark> - <mark>September</mark> - <mark>August</mark> - <del>July</del> - <del>June</del> - <mark>May - April - March</mark> - <mark>February - January</mark></p>\n  <p>Neurological assessment of cervical vertebrae dermatome, myotomes and reflexes are all within normal limits.</p>\n  <p><strong>DELAYED RECALL:</strong></p>\n  <table class=\"report-table\">\n    <tbody>\n      <tr><td>Elbow</td><td>+</td></tr>\n      <tr><td>Apple</td><td>+</td></tr>\n      <tr><td>Carpet</td><td>+</td></tr>\n      <tr><td>Saddle</td><td>+</td></tr>\n      <tr><td>Bubble</td><td>―</td></tr>\n    </tbody>\n  </table>\n</div>"
@@ -4813,7 +6133,14 @@
             "Remaining out of the stance for more than five seconds",
             "Flexing the knee of the stance leg(s) more than 25°"
           ],
-          "answer": [1, 2, 3, 4, 5, 7]
+          "answer": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ]
         },
         {
           "id": "domain2_t04_q158",
@@ -4823,8 +6150,19 @@
           "type": "ms",
           "prompt": "Which of the following special tests might the athletic trainer use to further assess this patient’s dynamic balance, concentration, and coordination? Choose all that apply.",
           "rationale": "",
-          "choices": ["Stroop Word Color test", "Trail Making test", "Serial sevens test", "Hopkins Verbal Learning test", "Finger-to-nose coordination test", "Heel-to-toe tandem gait test"],
-          "answer": [2, 4, 5]
+          "choices": [
+            "Stroop Word Color test",
+            "Trail Making test",
+            "Serial sevens test",
+            "Hopkins Verbal Learning test",
+            "Finger-to-nose coordination test",
+            "Heel-to-toe tandem gait test"
+          ],
+          "answer": [
+            2,
+            4,
+            5
+          ]
         },
         {
           "id": "domain2_t04_q159",
@@ -4848,7 +6186,15 @@
             "Acute severe headache, especially associated with nausea and vomiting or focal neurological deficits",
             "Constant repeating of questions about self or past events"
           ],
-          "answer": [0, 2, 4, 5, 6, 7, 8]
+          "answer": [
+            0,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
         }
       ],
       "rationale": ""
@@ -4861,7 +6207,13 @@
       "type": "mc",
       "prompt": "Which of the following is a component of an emergency action plan?",
       "rationale": "",
-      "choices": ["Size of the venue", "Padlocks on gates", "Cooperation between emergency care providers", "Directions to the venue", "Consent of the patient"],
+      "choices": [
+        "Size of the venue",
+        "Padlocks on gates",
+        "Cooperation between emergency care providers",
+        "Directions to the venue",
+        "Consent of the patient"
+      ],
       "answer": 2
     },
     {
@@ -4991,7 +6343,13 @@
       "type": "mc",
       "prompt": "In what period of time will irreversible brain damage occur?",
       "rationale": "",
-      "choices": ["1 minute of asystole", "4 minutes of asystole", "4 to 6 minutes of asystole", "6 to 10 minutes of asystole", "More than 10 minutes of asystole"],
+      "choices": [
+        "1 minute of asystole",
+        "4 minutes of asystole",
+        "4 to 6 minutes of asystole",
+        "6 to 10 minutes of asystole",
+        "More than 10 minutes of asystole"
+      ],
       "answer": 2
     },
     {
@@ -5070,7 +6428,13 @@
       "type": "mc",
       "prompt": "What do agonal respirations indicate?",
       "rationale": "",
-      "choices": ["Diabetic ketoacidosis", "Spinal cord injury", "Increased intracranial pressure", "Seizure", "Early-stage cardiac arrest"],
+      "choices": [
+        "Diabetic ketoacidosis",
+        "Spinal cord injury",
+        "Increased intracranial pressure",
+        "Seizure",
+        "Early-stage cardiac arrest"
+      ],
       "answer": 4
     },
     {
@@ -5081,7 +6445,13 @@
       "type": "mc",
       "prompt": "A patient who has diabetes presents with the following signs: is conscious but confused, has normal breathing rates, has normal breath odor, and their pulse is rapid and weak. Given the signs presented, what is the athletic trainer’s best immediate emergency care of this patient?",
       "rationale": "",
-      "choices": ["Inject insulin.", "Administer glucose between the cheek and gum line.", "Monitor vital signs.", "Administer high-flow oxygen.", "Determine if their breath smells sweet."],
+      "choices": [
+        "Inject insulin.",
+        "Administer glucose between the cheek and gum line.",
+        "Monitor vital signs.",
+        "Administer high-flow oxygen.",
+        "Determine if their breath smells sweet."
+      ],
       "answer": 1
     },
     {
@@ -5092,7 +6462,13 @@
       "type": "mc",
       "prompt": "What is most likely to result from a posterior dislocation of the sternal end of the clavicle?",
       "rationale": "",
-      "choices": ["Cardiac arrest", "Difficulty in breathing", "Pneumothorax", "Ruptured subclavian artery", "Rupture of the esophagus"],
+      "choices": [
+        "Cardiac arrest",
+        "Difficulty in breathing",
+        "Pneumothorax",
+        "Ruptured subclavian artery",
+        "Rupture of the esophagus"
+      ],
       "answer": 1
     },
     {
@@ -5103,7 +6479,13 @@
       "type": "mc",
       "prompt": "What injury will result from significant blunt trauma to the chest wall?",
       "rationale": "",
-      "choices": ["Hemothorax", "Splenic rupture", "Rupture of the diaphragm", "Sucking chest wound", "Pneumothorax"],
+      "choices": [
+        "Hemothorax",
+        "Splenic rupture",
+        "Rupture of the diaphragm",
+        "Sucking chest wound",
+        "Pneumothorax"
+      ],
       "answer": 0
     },
     {
@@ -5114,7 +6496,13 @@
       "type": "mc",
       "prompt": "A baseball hits an athlete in the chest, directly over the heart. What condition does this most likely lead to?",
       "rationale": "",
-      "choices": ["Respiratory arrest", "Hypotension", "Commotio cordis", "Traumatic asphyxia", "Myocarditis"],
+      "choices": [
+        "Respiratory arrest",
+        "Hypotension",
+        "Commotio cordis",
+        "Traumatic asphyxia",
+        "Myocarditis"
+      ],
       "answer": 2
     },
     {
@@ -5125,7 +6513,13 @@
       "type": "mc",
       "prompt": "What form of shock likely results from bradycardia, hypotension, and signs of a neck injury?",
       "rationale": "",
-      "choices": ["Cardiogenic", "Septic", "Neurogenic", "Psychogenic", "Hypovolemic"],
+      "choices": [
+        "Cardiogenic",
+        "Septic",
+        "Neurogenic",
+        "Psychogenic",
+        "Hypovolemic"
+      ],
       "answer": 2
     },
     {
@@ -5204,7 +6598,13 @@
       "type": "mc",
       "prompt": "What is the proper equipment needed for backboarding a patient who is in a seated position?",
       "rationale": "",
-      "choices": ["A stair chair", "A flexible stretcher", "A long backboard", "Start with a short backboard and then strap to a long backboard", "A scoop stretcher"],
+      "choices": [
+        "A stair chair",
+        "A flexible stretcher",
+        "A long backboard",
+        "Start with a short backboard and then strap to a long backboard",
+        "A scoop stretcher"
+      ],
       "answer": 3
     },
     {
@@ -5215,7 +6615,13 @@
       "type": "mc",
       "prompt": "A patient presents the following signs and symptoms: restlessness, confusion, obtundation, hypotension, tachycardia, respiration changes, and narrowing of pulse pressure. What condition is it most likely?",
       "rationale": "",
-      "choices": ["A drug overdose", "A seizure", "Altitude sickness", "Rhabdomyolysis", "Shock"],
+      "choices": [
+        "A drug overdose",
+        "A seizure",
+        "Altitude sickness",
+        "Rhabdomyolysis",
+        "Shock"
+      ],
       "answer": 4
     },
     {
@@ -5226,7 +6632,13 @@
       "type": "mc",
       "prompt": "What does a pulse pressure of 50 mmHg or greater indicate?",
       "rationale": "",
-      "choices": ["Heart contusion", "Stroke", "Ruptured aorta", "Increased intracranial bleeding", "Sudden cardiac death"],
+      "choices": [
+        "Heart contusion",
+        "Stroke",
+        "Ruptured aorta",
+        "Increased intracranial bleeding",
+        "Sudden cardiac death"
+      ],
       "answer": 3
     },
     {
@@ -5271,7 +6683,12 @@
       "type": "mc",
       "prompt": "A patient presents with lower leg swelling, decreased sensation over the dorsum of the foot, and a glossy skin appearance. What condition do you suspect the patient is experiencing?",
       "rationale": "",
-      "choices": ["Deep vein thrombosis", "Anterior compartment syndrome", "Lymphedema", "Normal swelling after running for long periods of time"],
+      "choices": [
+        "Deep vein thrombosis",
+        "Anterior compartment syndrome",
+        "Lymphedema",
+        "Normal swelling after running for long periods of time"
+      ],
       "answer": 1
     },
     {
@@ -5316,7 +6733,13 @@
       "type": "mc",
       "prompt": "What injury would the athletic trainer most likely suspect if a patient’s mechanism of injury is a forceful impact to the forearm, intense swelling, and bruising with no deformity or specific point of pain but with severe pain with passive motion of the fingers?",
       "rationale": "",
-      "choices": ["Fracture of both forearm bones", "Compartment syndrome", "Radial head fracture", "Tennis elbow", "Ruptured common flexor tendon"],
+      "choices": [
+        "Fracture of both forearm bones",
+        "Compartment syndrome",
+        "Radial head fracture",
+        "Tennis elbow",
+        "Ruptured common flexor tendon"
+      ],
       "answer": 1
     },
     {
@@ -5344,7 +6767,13 @@
       "type": "mc",
       "prompt": "The patient presents with a narrowing pulse pressure, engorged jugular veins, and muffled heart sounds. What is the suspected injury?",
       "rationale": "",
-      "choices": ["Hemothorax", "Cardiac tamponade", "Flail chest", "Rib fracture", "Pneumothorax"],
+      "choices": [
+        "Hemothorax",
+        "Cardiac tamponade",
+        "Flail chest",
+        "Rib fracture",
+        "Pneumothorax"
+      ],
       "answer": 1
     },
     {
@@ -5355,7 +6784,13 @@
       "type": "mc",
       "prompt": "A patient with a known communicable disease is bleeding profusely from a wound. The athletic trainer fears for their physical well-being. What policy gives the athletic trainer the right to withhold service?",
       "rationale": "",
-      "choices": ["None", "Bystander law", "Refusal to Care Rule", "NATA Code of Ethics", "Good Samaritan Act"],
+      "choices": [
+        "None",
+        "Bystander law",
+        "Refusal to Care Rule",
+        "NATA Code of Ethics",
+        "Good Samaritan Act"
+      ],
       "answer": 0
     },
     {
@@ -5383,7 +6818,13 @@
       "type": "mc",
       "prompt": "What is the bodily position for a patient who is going into shock as a result of a heart attack?",
       "rationale": "",
-      "choices": ["Supine with feet elevated", "Supine with head elevated", "On the side to allow fluids to drain", "Supine", "Prone"],
+      "choices": [
+        "Supine with feet elevated",
+        "Supine with head elevated",
+        "On the side to allow fluids to drain",
+        "Supine",
+        "Prone"
+      ],
       "answer": 1
     },
     {
@@ -5411,7 +6852,13 @@
       "type": "mc",
       "prompt": "When using a bag-valve mask on an adult, without using supplemental oxygen, what level of oxygen concentration can this device provide for the patient?",
       "rationale": "",
-      "choices": ["3% to 5%", "5% to 10%", "10% to 15%", "15% to 20%", "21%"],
+      "choices": [
+        "3% to 5%",
+        "5% to 10%",
+        "10% to 15%",
+        "15% to 20%",
+        "21%"
+      ],
       "answer": 4
     },
     {
@@ -5473,7 +6920,13 @@
       "type": "mc",
       "prompt": "When the athletic trainer suspects an unconscious patient has a blocked airway, what is the first thing that needs to be done to correct it?",
       "rationale": "",
-      "choices": ["Begin chest thrusts.", "Begin chest compressions.", "Do a finger sweep.", "Give two breaths.", "Open the airway by tilting the head and lifting the chin."],
+      "choices": [
+        "Begin chest thrusts.",
+        "Begin chest compressions.",
+        "Do a finger sweep.",
+        "Give two breaths.",
+        "Open the airway by tilting the head and lifting the chin."
+      ],
       "answer": 4
     },
     {
@@ -5518,7 +6971,13 @@
       "type": "mc",
       "prompt": "Under what condition can an oropharyngeal airway be used?",
       "rationale": "",
-      "choices": ["The patient is combative.", "The patient has orofacial trauma.", "The patient has an intact gag reflex.", "The patient is unconscious.", "The patient is conscious."],
+      "choices": [
+        "The patient is combative.",
+        "The patient has orofacial trauma.",
+        "The patient has an intact gag reflex.",
+        "The patient is unconscious.",
+        "The patient is conscious."
+      ],
       "answer": 3
     },
     {
@@ -5529,7 +6988,13 @@
       "type": "mc",
       "prompt": "What is a side effect of taking nitroglycerin?",
       "rationale": "",
-      "choices": ["Decreased respirator effort", "Stomach pain", "Restlessness", "Anxiety", "Headache"],
+      "choices": [
+        "Decreased respirator effort",
+        "Stomach pain",
+        "Restlessness",
+        "Anxiety",
+        "Headache"
+      ],
       "answer": 4
     },
     {
@@ -5591,7 +7056,13 @@
       "type": "mc",
       "prompt": "The athletic trainer has controlled neck bleeding that could be from a lacerated vein or artery. What is the proper dressing for this area?",
       "rationale": "",
-      "choices": ["Sterile gauze", "Occlusive dressing", "Pressure dressing", "Skin tape", "Semiocclusive dressing"],
+      "choices": [
+        "Sterile gauze",
+        "Occlusive dressing",
+        "Pressure dressing",
+        "Skin tape",
+        "Semiocclusive dressing"
+      ],
       "answer": 1
     },
     {
@@ -5602,7 +7073,13 @@
       "type": "mc",
       "prompt": "What is the most accurate way to measure the core body temperature in a hyperthermic patient?",
       "rationale": "",
-      "choices": ["Oral measurement", "Axillary measurement", "Tympanic measurement", "Temporal measurement", "Rectal thermistor measurement"],
+      "choices": [
+        "Oral measurement",
+        "Axillary measurement",
+        "Tympanic measurement",
+        "Temporal measurement",
+        "Rectal thermistor measurement"
+      ],
       "answer": 4
     },
     {
@@ -5613,7 +7090,13 @@
       "type": "mc",
       "prompt": "What is the immediate treatment for an auricular hematoma?",
       "rationale": "",
-      "choices": ["Aspiration", "Compression", "Ice", "A pressure bandage", "Antibiotics"],
+      "choices": [
+        "Aspiration",
+        "Compression",
+        "Ice",
+        "A pressure bandage",
+        "Antibiotics"
+      ],
       "answer": 2
     },
     {
@@ -5830,7 +7313,13 @@
       "type": "mc",
       "prompt": "The patient is unconscious and has the following signs: deep breathing, pale skin tone, equal pupils, no paralysis, no convulsions, and acetone breath. What is the most likely condition?",
       "rationale": "",
-      "choices": ["Concussion", "Epilepsy", "Shock", "Diabetic coma", "Fainting"],
+      "choices": [
+        "Concussion",
+        "Epilepsy",
+        "Shock",
+        "Diabetic coma",
+        "Fainting"
+      ],
       "answer": 3
     },
     {
@@ -6001,7 +7490,10 @@
         "Checking the circulation above and below the site of the fracture and elevating once splinted",
         "Applying the largest splint possible to be sure the surrounding areas are stable"
       ],
-      "answer": [0, 1]
+      "answer": [
+        0,
+        1
+      ]
     },
     {
       "id": "domain3_q077",
@@ -6045,7 +7537,12 @@
       "type": "mc",
       "prompt": "An athlete begins to have chest pain, heart palpitations, uncharacteristic shortness of breath, and dyspnea. Which of the following diagnostic testing would be most appropriate to determine the cause of the patient’s symptoms?",
       "rationale": "",
-      "choices": ["CT scan", "Echocardiogram", "Cardiac event monitoring", "In-office ECG"],
+      "choices": [
+        "CT scan",
+        "Echocardiogram",
+        "Cardiac event monitoring",
+        "In-office ECG"
+      ],
       "answer": 2
     },
     {
@@ -6056,7 +7553,12 @@
       "type": "mc",
       "prompt": "An athlete who receives a direct blow to the chest wall with a hard projectile may develop commotio cordis. Which among the following causes this life-threatening condition?",
       "rationale": "",
-      "choices": ["Coronary artery compression", "Ventricular fibrillation", "Traumatic aortic rupture", "Mitral valve prolapse"],
+      "choices": [
+        "Coronary artery compression",
+        "Ventricular fibrillation",
+        "Traumatic aortic rupture",
+        "Mitral valve prolapse"
+      ],
       "answer": 1
     },
     {
@@ -6067,7 +7569,12 @@
       "type": "mc",
       "prompt": "A patient presents for an eye exam after an injury. During examination, you see that there is an obscuration of the structures behind the cornea because of a cloudy anterior chamber. Which among the following is likely the cause?",
       "rationale": "",
-      "choices": ["Cataract", "Orbital fracture", "Hyphema", "Retinal detachment"],
+      "choices": [
+        "Cataract",
+        "Orbital fracture",
+        "Hyphema",
+        "Retinal detachment"
+      ],
       "answer": 2
     },
     {
@@ -6078,7 +7585,12 @@
       "type": "mc",
       "prompt": "A patient presents with photopsia, floaters, and loss of central visual acuity. Which of the following conditions is most likely to be associated with these symptoms?",
       "rationale": "",
-      "choices": ["Dislocated contact lens", "Traumatic iritis", "Retinal detachment", "Macular degeneration"],
+      "choices": [
+        "Dislocated contact lens",
+        "Traumatic iritis",
+        "Retinal detachment",
+        "Macular degeneration"
+      ],
       "answer": 2
     },
     {
@@ -6089,7 +7601,12 @@
       "type": "mc",
       "prompt": "A patient is presenting with signs and symptoms, such as pain disproportionate to wound severity, rapidly changing skin surface, fever, respiratory difficulty, and confusion. What do they most likely have?",
       "rationale": "",
-      "choices": ["MRSA", "Necrotizing fasciitis", "HIV", "Hepatitis B"],
+      "choices": [
+        "MRSA",
+        "Necrotizing fasciitis",
+        "HIV",
+        "Hepatitis B"
+      ],
       "answer": 1
     },
     {
@@ -6137,7 +7654,13 @@
       "type": "mc",
       "prompt": "Which of the following is the best initial management for a suspected cervical spine injury?",
       "rationale": "",
-      "choices": ["Test for range of motion.", "Remove helmet immediately.", "Sit the athlete upright.", "Stabilize the head and neck in the position found.", "Apply ice to the cervical spine."],
+      "choices": [
+        "Test for range of motion.",
+        "Remove helmet immediately.",
+        "Sit the athlete upright.",
+        "Stabilize the head and neck in the position found.",
+        "Apply ice to the cervical spine."
+      ],
       "answer": 3
     },
     {
@@ -6192,7 +7715,10 @@
               }
             ],
             "table": {
-              "column_headers": ["Order", "Action"],
+              "column_headers": [
+                "Order",
+                "Action"
+              ],
               "rows": [
                 [
                   "1",
@@ -6285,7 +7811,8 @@
               "xPct": 44,
               "yPct": 52
             },
-            "tolerancePct": 6
+            "tolerancePct": 6,
+            "alt": "Athlete lying on grass with one leg elevated on folded towels, used to identify the proper intramuscular EpiPen injection site on the thigh."
           }
         },
         {
@@ -6342,7 +7869,13 @@
             "An emergency card",
             "The patient’s medical history"
           ],
-          "answer": [0, 1, 2, 3, 5]
+          "answer": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ]
         },
         {
           "id": "domain3_t01_q091",
@@ -6361,7 +7894,12 @@
             "List of treatments provided in chronological order",
             "Name of ambulance crew who received the transfer of care"
           ],
-          "answer": [0, 1, 4, 5]
+          "answer": [
+            0,
+            1,
+            4,
+            5
+          ]
         }
       ],
       "rationale": ""
@@ -6458,7 +7996,12 @@
           "prompt": "The patient is secure on the backboard and the jersey, shoulder pads, and helmet have been removed. The patient is not moving. The EMS has arrived and has asked the athletic trainer to place four ECG electrodes on the patient’s extremities.",
           "rationale": "",
           "dd": {
-            "tokens": ["LL", "RA", "RL", "LA"],
+            "tokens": [
+              "LL",
+              "RA",
+              "RL",
+              "LA"
+            ],
             "zones": [
               {
                 "id": "drop_spot_4",
@@ -6482,7 +8025,10 @@
               }
             ],
             "table": {
-              "column_headers": ["ECG Electrode", "Drop Spot"],
+              "column_headers": [
+                "ECG Electrode",
+                "Drop Spot"
+              ],
               "rows": [
                 [
                   "A",
@@ -6634,7 +8180,8 @@
               "xPct": 51,
               "yPct": 64
             },
-            "tolerancePct": 6
+            "tolerancePct": 6,
+            "alt": "Front view of a bare chest and upper abdomen used to identify the location of the xiphoid process."
           }
         },
         {
@@ -6651,7 +8198,8 @@
               "xPct": 58,
               "yPct": 55
             },
-            "tolerancePct": 6
+            "tolerancePct": 6,
+            "alt": "Front view of a bare chest and upper abdomen used to identify correct hand placement for chest compressions during CPR."
           }
         }
       ],
@@ -6712,7 +8260,11 @@
             "Checking for blood circulation",
             "Taking blood pressure"
           ],
-          "answer": [0, 4, 6]
+          "answer": [
+            0,
+            4,
+            6
+          ]
         },
         {
           "id": "domain3_t03_q101",
@@ -6722,8 +8274,17 @@
           "type": "ms",
           "prompt": "The athletic trainer has a patient who is struggling to breathe. The patient is lying on their back. What questions should the athletic trainer ask the patient? Choose all that apply.",
           "rationale": "",
-          "choices": ["What happened?", "When did the injury occur?", "What is your family health history?", "How much exercise do you get?", "Did you consume alcohol?"],
-          "answer": [0, 1]
+          "choices": [
+            "What happened?",
+            "When did the injury occur?",
+            "What is your family health history?",
+            "How much exercise do you get?",
+            "Did you consume alcohol?"
+          ],
+          "answer": [
+            0,
+            1
+          ]
         },
         {
           "id": "domain3_t03_q102",
@@ -6741,7 +8302,12 @@
             "Is there a position that provides you more comfort?",
             "What is your pain like?"
           ],
-          "answer": [0, 1, 2, 5]
+          "answer": [
+            0,
+            1,
+            2,
+            5
+          ]
         },
         {
           "id": "domain3_t03_q103",
@@ -6751,7 +8317,13 @@
           "type": "mc",
           "prompt": "The patient tells the athletic trainer that the bleachers collapsed and a small rod penetrated his chest; then the patient pulled it out. The patient feels stabbing pain and pressure. Upon observation, the athletic trainer notices the patient has distended neck veins and a deviation of the trachea. What injury should be suspected based on this information? Choose all that apply.",
           "rationale": "",
-          "choices": ["Suffocation", "Shock", "Obstructed airway", "Cardiac tamponade", "Sucking chest wound"],
+          "choices": [
+            "Suffocation",
+            "Shock",
+            "Obstructed airway",
+            "Cardiac tamponade",
+            "Sucking chest wound"
+          ],
           "answer": 4,
           "review_notes": "Source heading says Multiple Choice, but prompt says “Choose all that apply.” Only one answer is marked; consider ms or keep mc after review.\nNeeds review"
         },
@@ -6770,7 +8342,10 @@
             "Apply direct pressure to the area.",
             "Seal three sides of the dressing."
           ],
-          "answer": [2, 4]
+          "answer": [
+            2,
+            4
+          ]
         },
         {
           "id": "domain3_t03_q105",
@@ -6782,8 +8357,17 @@
           "rationale": "",
           "context_title": "Patient Scenario",
           "supporting_text": "\nThe patient tells the athletic trainer that the bleachers collapsed and a small rod penetrated the chest; then the patient pulled it out. The patient feels stabbing pain and pressure.\nThe patient has the following signs and symptoms:\n     -Low blood pressure\n     -Decreased breath sounds on the side of the sucking chest wound\n     -Distended neck veins\n     -Altered level of consciousness\n     -Deviation of the trachea opposite to the sucking chest wound",
-          "choices": ["Blood clot at the wound site", "Shock", "Tension pneumothorax", "Internal bleeding", "Cardiac tamponade"],
-          "answer": [0, 2]
+          "choices": [
+            "Blood clot at the wound site",
+            "Shock",
+            "Tension pneumothorax",
+            "Internal bleeding",
+            "Cardiac tamponade"
+          ],
+          "answer": [
+            0,
+            2
+          ]
         },
         {
           "id": "domain3_t03_q106",
@@ -6795,8 +8379,17 @@
           "rationale": "",
           "context_title": "Patient Scenario",
           "supporting_text": "\nThe patient tells the athletic trainer that the bleachers collapsed and a small rod penetrated the chest; then the patient pulled it out. The patient feels stabbing pain and pressure.\nThe patient has the following signs and symptoms:\n    -Low blood pressure\n    -Decreased breath sounds on the side of the sucking chest wound\n    -Distended neck veins\n    -Altered level of consciousness\n    -Deviation of the trachea opposite to the sucking chest wound",
-          "choices": ["Apply oxygen.", "Partially remove the wound dressing.", "Insert a chest tube.", "Insert an endotracheal tube.", "Elevate the patient’s head."],
-          "answer": [0, 1]
+          "choices": [
+            "Apply oxygen.",
+            "Partially remove the wound dressing.",
+            "Insert a chest tube.",
+            "Insert an endotracheal tube.",
+            "Elevate the patient’s head."
+          ],
+          "answer": [
+            0,
+            1
+          ]
         },
         {
           "id": "domain3_t03_q107",
@@ -6809,7 +8402,13 @@
           "context_title": "Patient Information",
           "supporting_text": "The patient tells the athletic trainer that the bleachers collapsed and a small rod penetrated the chest; then the patient pulled it out. The athletic trainer is reviewing the pulse oximeter.\nNormal | 95% to 100% | Drop spot 1\nMild hypoxia | 91% to 95% | Drop spot 2\nMild-moderate hypoxia | 88% to 90% | Drop spot 3\nModerate hypoxia | 86% to 90% | Drop spot 4\nSevere hypoxia | <85% | Drop spot 5",
           "dd": {
-            "tokens": ["None needed", "15 L/min or higher", "10 to 15 L/min", "6 to 10 L/min", "1 to 6 L/min"],
+            "tokens": [
+              "None needed",
+              "15 L/min or higher",
+              "10 to 15 L/min",
+              "6 to 10 L/min",
+              "1 to 6 L/min"
+            ],
             "zones": [
               {
                 "id": "drop_spot_1",
@@ -6838,7 +8437,11 @@
               }
             ],
             "table": {
-              "column_headers": ["Range", "Percentage of Oxygen Saturation", "Flow rate"],
+              "column_headers": [
+                "Range",
+                "Percentage of Oxygen Saturation",
+                "Flow rate"
+              ],
               "rows": [
                 [
                   "Normal",
@@ -6890,7 +8493,12 @@
           "context_title": "Patient Information",
           "supporting_text": "The patient tells the athletic trainer that the bleachers collapsed and a small rod penetrated the chest; then the patient pulled it out. The athletic trainer is reviewing the pulse oximeter.\nNormal | 95% to 100% | None needed | Drop spot 1\nMild hypoxia | 91% to 95% | 1 to 6 L/min | Drop spot 2\nMild-moderate hypoxia | 88% to 90% | 6 to 10 L/min | Drop spot 3\nModerate hypoxia | 86% to 90% | 10 to 15 L/min | Drop spot 4",
           "dd": {
-            "tokens": ["None needed", "Non-rebreather mask or bag-valve mask", "Simple oxygen mask", "Nasal cannula"],
+            "tokens": [
+              "None needed",
+              "Non-rebreather mask or bag-valve mask",
+              "Simple oxygen mask",
+              "Nasal cannula"
+            ],
             "zones": [
               {
                 "id": "drop_spot_1",
@@ -6914,7 +8522,12 @@
               }
             ],
             "table": {
-              "column_headers": ["Range", "Percentage of Oxygen Saturation", "Flow rate", "Best device to deliver the oxygen"],
+              "column_headers": [
+                "Range",
+                "Percentage of Oxygen Saturation",
+                "Flow rate",
+                "Best device to deliver the oxygen"
+              ],
               "rows": [
                 [
                   "Normal",
@@ -6948,7 +8561,12 @@
                     "zoneId": "drop_spot_4"
                   }
                 ],
-                ["Severe hypoxia", "<85%", "15 L/min or higher", "Non-rebreather mask or bag-valve mask"]
+                [
+                  "Severe hypoxia",
+                  "<85%",
+                  "15 L/min or higher",
+                  "Non-rebreather mask or bag-valve mask"
+                ]
               ]
             }
           }
@@ -7016,7 +8634,10 @@
               }
             ],
             "table": {
-              "column_headers": ["Order", "Action"],
+              "column_headers": [
+                "Order",
+                "Action"
+              ],
               "rows": [
                 [
                   "1",
@@ -7084,22 +8705,85 @@
     "note": "Updated from the verified Domain 3 conversion spreadsheet. Domain 3 testlet scenarios are stored once at the testlet level. Image placeholder objects were added for image-needed rows. Hot spot questions include temporary xPct/yPct coordinates until final image placement is reviewed.",
     "generated_at": "2026-06-16T00:00:00",
     "total_numbered_questions_found": 365,
-    "domains_included": ["Domain 1", "Domain 2", "Domain 3"],
+    "domains_included": [
+      "Domain 1",
+      "Domain 2",
+      "Domain 3"
+    ],
     "domain_1_question_count": 97,
     "domain_2_question_count": 159,
     "domain_3_question_count": 109,
     "domain_2_standalone_questions": 112,
     "domain_2_testlet_questions": 47,
     "domain_2_testlets": 4,
-    "domain_2_image_placeholders": [1, 8, 16, 17, 20, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 151],
-    "domain_2_image_placeholders_without_ids": [123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 151],
+    "domain_2_image_placeholders": [
+      1,
+      8,
+      16,
+      17,
+      20,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      151
+    ],
+    "domain_2_image_placeholders_without_ids": [
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      151
+    ],
     "domain_3_standalone_questions": 85,
     "domain_3_testlet_questions": 24,
     "domain_3_testlets": 3,
-    "domain_3_image_placeholders": [87, 88, 92, 94, 96, 97, 98],
-    "domain_3_image_placeholders_without_ids": [87, 88, 92, 94, 96, 97, 98],
-    "domain_3_hotspot_questions": [88, 97, 98],
-    "domain_3_hotspot_questions_with_temporary_coordinates": [88, 97, 98],
-    "domain_3_table_or_drop_zone_review_questions": [86, 94, 107, 108, 109]
+    "domain_3_image_placeholders": [
+      87,
+      88,
+      92,
+      94,
+      96,
+      97,
+      98
+    ],
+    "domain_3_image_placeholders_without_ids": [
+      87,
+      88,
+      92,
+      94,
+      96,
+      97,
+      98
+    ],
+    "domain_3_hotspot_questions": [
+      88,
+      97,
+      98
+    ],
+    "domain_3_hotspot_questions_with_temporary_coordinates": [
+      88,
+      97,
+      98
+    ],
+    "domain_3_table_or_drop_zone_review_questions": [
+      86,
+      94,
+      107,
+      108,
+      109
+    ]
   }
 }
